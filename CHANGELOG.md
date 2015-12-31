@@ -1,8 +1,12 @@
 # Changelog
 
+- Latest production version: v3.1.4.5(382)
+- Latest beta version: v4.0.2(4002)
+
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
 ## [Unreleased]
+- TBD
 
 ## [4.0.2] - 2015-12-31 (BETA)
 ### Core
