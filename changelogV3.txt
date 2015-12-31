@@ -1,0 +1,543 @@
+########## v3.1.4.5(382) #########
+@General
+- Improved: Clutter database.
+
+########## v3.1.4.4(381) #########
+@General
+- Improved: Clutter database.
+
+########## v3.1.4.3(380) #########
+@General
+- Improved: Clutter database.
+- Added: Deletion safeguards against platform changes and human error.
+
+########## v3.1.4.2(379) #########
+@CorpseFinder
+- Added: Safeguards to prevent future false positives caused by certain database changes.
+- Fixed: False positives caused by database changes in v3.1.4.1. (Huge thanks to Ruaraidh Mackay for notifying and helping me fix this.)
+
+########## v3.1.4.1(378) #########
+@Common
+- Improved: Clutter database.
+- Improved: Cache database.
+@CorpseFinder
+- Fixed: Issue related to LPatcher leading to false positives. Support your devs, buy apps.
+
+########## v3.1.4.0(377) #########
+@Common
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Changed database format to reduce size and prepare for SD Maid v4.
+- Added: Safeguard against framework errors (IPC buffer) and weird ROM setups. When checking for install states, package "android" is always assumed to be installed.
+- Removed: App names from database. They are not needed for SD Maids operations, displaying them was not well supported.
+@CorpseFinder
+- Fixed: Fixed dex files being listed as corpse if their owner is a jar file that returns a valid packagename.
+- Improved: Added default exclude for /data/app/mcRegistry, affects older devices and hasn't been an issue so far, but better safe than sorry.
+
+########## v3.1.3.9(376) #########
+@Common
+- Fixed: Storage detection issue where duplicate mount points could lead to SD Maid skipping the primary storage.
+
+########## v3.1.3.8(375) #########
+@Common
+- Fixed: Cases where granting SD Maid access to secondary storage didn't stick. Happened when Activity's in the background were destroyed immediately.
+@AppControl
+- Improved: Detection of running apps on all Android versions.
+- Fixed: Detection of running apps on 5.1.
+
+########## v3.1.3.7(374) #########
+@Common
+- Improved: Translations.
+- Improved: Clutter database.
+@AppControl
+- Fixed: 2nd try to fix issues on 64bit devices.
+
+########## v3.1.3.6(373) #########
+@Common
+- Improved: Clutter database.
+@Explorer
+- Improved: Loading speed of directories that support owner research.
+@AppControl
+- Fixed: Freezing/Clearing/Toggling on 64bit devices (e.g., Nexus 9) (Good catch Mike L!).
+@CorpseFinder
+- Improved: Results on devices with hidden apps (e.g., KNOX, Emulators, other shenanigans) (Ty Dieter R.).
+- Fixed: False positive on Samsung devices related to 'MobiCore' VPN.
+
+########## v3.1.3.5(372) #########
+@Common
+- Improved: Clutter database.
+- Improved: Translations.
+@Explorer
+- Fixed: Pathdump function.
+
+########## v3.1.3.4(371) #########
+@Common
+- Improved: Clutter database.
+- Improved: Translations.
+- Fixed: Android M internal storage detection.
+@AppCleaner
+- Fixed: Cleaning private caches on devices without root and Android M.
+
+########## v3.1.3.3(370) #########
+@Common
+- Improved: Translations.
+- Improved: Clutter database.
+@SystemCleaner
+- Fixed: Custom filter editor duplicating path entries when trying to edit them (Ty carlese@XDA).
+
+########## v3.1.3.2(369) #########
+@Common
+- Improved: Translations.
+- Improved: Updated clutter db.
+
+########## v3.1.3.1(368) #########
+@Common
+- Improved: Updated cache DB.
+- Improved: Updated clutterDB.
+- Improved: Performance through better thread locking & syncronization.
+@QuickAccess
+- Fixed: Lag on first run and cancel.
+- Improved: UI responsiveness.
+@CorpseFinder
+- Changed: To prevent abuse, the reporting option is now hidden when SD Maid lacks permission to delete that item (padlock). The reporting option is for false positives.
+
+########## v3.1.3.0(367) #########
+@Common
+- Improved: Updated clutterDB.
+- Improved: Updated languages.
+- Improved: Updated compileSDK, Buildtools and support library.
+- Improved: XPrivacy compatibility.
+- Improved: Fixed analytics issue.
+- Fixed: Duplicate database entries.
+
+########## v3.1.2.9(366) #########
+@Common
+- Improved: Updated languages.
+- Improved: Updated ClutterDB.
+- Changed: Some internal routine refactoring, no visible changes, just cleaner code.
+- Removed: Unused crash report information.
+- Removed: Some analytics information.
+
+########## v3.1.2.8(365) #########
+@Common
+- Improved: Updated languages.
+- Improved: Updated ClutterDB.
+- Removed: Tracking low memory events, statistic showed to yield no useful information.
+@Overview
+- Changed: Overview items are now top aligned again on phones.
+
+########## v3.1.2.7(364) #########
+@Common
+- Added: Temporary tracking of a specific issue with Lollipop external storage access and sdcards without UUID.
+- Added: Piwik as new analytics system.
+- Improved: Clutter DB.
+- Improved: Translations.
+- Changed: Update check now ignores grace period if it just updated.
+- Removed: Old self-made analytics system.
+@QuickAccess
+- Fixed: Go button flickering shortly on UI switch. (Ty killoid@XDA).
+@Overview
+- Added: Access info for restricted external sdcards now open http://sdmaid.darken.eu/help/#kitkatsdcard .
+- Fixed: Fixed multiple layout issues in landscape on tablets.
+@CorpseFinder
+- Fixed: Issue with SD Maid removing an .xml file storing "uninstalled" system apps (uninstalled_delapp.xml).
+@SystemCleaner
+- Added: "/data/log_other_mode/" to the "/data/log" filter, seems to affect mostly "Cubot" devices (why so special?).
+
+########## v3.1.2.6(363) #########
+@Common
+- Added: Mechanism to manually update the ClutterDB.
+- Improved Clutter DB.
+- Improved: Translations.
+- Improved: Checks to ensure database correctness.
+- Improved: Fixed a few possible multithreading issues when people browse the settings while SD Maid is running.
+- Improved: Debugging capabilities for 5.0 storage framework issues.
+- Improved: Updated ACRA crash tracking.
+- Fixed: SD Maid not drinking coffee on Lollipop!!
+- Changed: When/Which debug output gets printed into logs.
+- Changed: Settings arrangement.
+- Changed: Simplified update check.
+- Changed: Updated connection details for new crash tracking
+- Removed: Page fading animation on <4.0.
+- Removed: Warning dialog before entering advanced settings, was really annoying, read what it does and we don't need it, hmkay?
+@OverView
+- Changed: CPU details.
+- Changed: Layout of the partition overview.
+@Explorer
+- Changed: Progress feedback when entering folders.
+@Searcher
+- Fixed: CAB items not updating correctly after unselecting entries (Ty @ MikeL).
+@AppControl
+- Fixed: List jumping when killing apps while filtering.
+@SystemCleaner
+- Fixed: IsDirectory checkbox toggeling "user-readable".
+@AppCleaner
+- Changed: Default cache matching is now caseinsentive.
+- Fixed: Setting value text for "cache age" being initially invisible.
+
+########## v3.1.2.5(362) #########
+@Common
+- Improved: Updated clutterDB.
+- Improved: Updated translations.
+- Improved: Improved performance of detecting file ownership (aka "Owner Forensics") for devices with high app counts.
+- Fixed: Ownership detection for /data/app-lib (on Android 5.0+).
+- Fixed: Ownership detection for /data/app (on Android 5.1).
+@AppControl
+- Improved: Detection of apk path and base code path (diverges since Android 5.0).
+- Fixed: Autostart detection after toggeling it (on Android 5.1).
+- Fixed: Frozen state detection after toggeling it (on Android 5.1).
+@CorpseFinder
+- Changed: Re-enabled /data/app-lib filter for 5.0+ devices.
+
+########## v3.1.2.4(361) #########
+@Common
+- Improved: Updated clutterDB & hidden cache DB.
+- Changed: In-app emails are now prefilled directly instead of just a reference UUID (as the existing statistic system will be phased out).
+@Searcher
+- Changed: Search field no longer gets automatically focused.
+@AppControl
+- Changed: Search field no longer gets automatically focused.
+@CorpseFinder
+- Fixed: Custom fonts being removed on HTC devices.
+@SystemCleaner
+- Added: "ppy_cross" to advertisement file filter.
+@Duplicates
+- Changed: Search field no longer gets automatically focused.
+
+########## v3.1.2.3(360) #########
+@Common
+- Improved: Clutter database.
+- Improved: Updated translations (thx!).
+- Fixed: Navigation drawer being unclickable on Android 4.0.4 devices (bug between ListView and animateLayoutChanges flag).
+@SystemCleaner
+- Improved: Added Unity advertisement video cache folder to advertisement filter.
+
+########## v3.1.2.2(359) #########
+@Common
+- Improved: Updated clutter DB.
+- Improved: Hidden cache DB.
+- Improved: Cleaned up log output in default mode.
+- Improved: Preference list selector color is now matching the theme (Good eye MikeL).
+- Fixed: ListView theme issues when scrolling.
+- Fixed: Crash when trying to delete via LP's storage access framework.
+- Fixed: Multiple minor UI issues on Gingerbread.
+@AppControl
+- Changed: Details dialogs now take langer to load but don't crash on very complex apps.
+@AppCleaner
+- Fixed: Missleading progress result if deletion is directly canceled after starting it.
+
+########## v3.1.2.1(358) #########
+@Common
+- Improved: Updated clutter db.
+- Improved: Updated cache db.
+- Fixed: Detection of location accesstypes. Some location were wrongly detected as not accessible if they didn't have execute permission.
+- Fixed: Readability issues on some ROMs where there was white on white text.
+- Changed: Background colors.
+@Overview
+- Added: Detection for Kinguser SU app (SuperSU is recommended for best compatibility).
+@Excludes
+- Added: Excluding the wallpaperpicker database from Databases.
+- Changed: There are now default entries as well as locked entries, some default entries can be modified now.
+- Changed: Added dialog message to fix issues with margins/padding on small screen devices.
+@Explorer
+- Improved: View alignment..
+- Added: Pathdump function (Experimental).
+- Added: TAG in bottom bar when filesystem is mounted read-only.
+- Fixed: Crash when trying to delete something despite being told that AccessType is NONE.
+- Fixed: Entries not being correctly recolored if unreadable.
+- Fixed: Folder/File creation not working due to accesstype being determined for the not yet existing element instead of its parent.
+- Fixed: Pasting files/folders from sdcard to /system or /data on devices running SuperUser.
+- Changed: The permission text instead of the name is now colored red if it's unreSadable, orange if its unwritable, green if it's both readable and writeable.
+- Changed: Restricted writed access to DEBUGFS, PROCFS and SYSFS by default.
+@AppControl
+- Fixed: Crash when trying to clear an app that was already uninstalled.
+- Fixed: Uninstalling system apps not working on some ROMs.
+- Fixed: Crash when generating data on devices that have an app without sourcedir.
+@CorpseFinder
+- Fixed: Crash when matching dalvik-cache files against app canidates which have no sourceDir.
+
+########## v3.1.2.0(357) #########
+@Common
+- Improved: Updated database
+- Improved: Updated hiddencache database
+- Improved: Added "fast scroll" for all most ListViews (this was long overdue, sorry)
+- Improved: Rewrote deletion logic, should now be smarter and pick a successful deletion method on first try
+- Improved: Filesystem writeability detection
+- Improved: Deletions are no longer marked as failed if the file failed to delete, but actually no longer exists (AppCleaner/SystemCleaner concurrency issue)
+- Added: Support for writing to secondary storage on Android 5.0 without root (Thanks to Paul W. for doing some early tests)
+- Fixed: Not being able to return to SD Maid directly through the unlockers button (Backstack: SDM->GPlay->Unlocker->SDM)
+- Fixed: Files being removed from the UI although deletion failed
+@OneClick
+- Improved: Inconsistent Button layout, adapted slightly to material guidelines
+@Overview
+- Improved: Storage related UI elements and information
+@Explorer
+- Improved: Detection logic whether write access is available
+- Added: Bottombar info when filesystem is "Read-Only"
+- Added: File & Directory creation on secondary storages on Android 5.0 without root
+@AppControl
+- Added: Tapping the app icon now opens the native app details window
+@CorpseFinder
+- Improved: Detection of ".external." prefixed symlinks in private data storage
+- Added: Displays a little lock icon for each item that could not be deleted
+@SystemCleaner
+- Added: Filter for /data/local/tmp (by default off) (was previously hidden by experimental flag)
+- Added: Filter for album cover images (by default off)
+- Added: Filters containing items that failed to be deleted now display a little lock icon
+- Fixed: ANR filter for newer devices
+@AppCleaner
+- Added: Apps that contain files that couldn't be deleted now display a little lock icon
+@Duplicates
+- Added: Clones that failed to delete now display a little lock icon
+@Databases
+- Added: Databases that have been found but can't be accessed now display a little lock icon too
+
+########## v3.1.1.4(356) #########
+@Common
+- Improved: Clutter database
+- Improved: Hiddencache database
+- Improved: DALVIK/ART Runtime detection
+- Improved: Fixed premature escape character consumption when using context switching
+- Added: Preview loading of Lollipops new VectorDrawables (e.g. Lollipop SystemUI Icon)
+@AppControl
+- Fixed: (Lolipop only) Bug where toggling autostart entries that reside in inner classes leads to disabling of the outer class
+@CorpseFinder
+- Improved: Scan speed of the AppData filter (and others) by ~390% (N5 390ms -> 10 ms), Ty 2_i@xda
+- Improved: Progress feedback, more details
+@Excludes
+- Fixed: List not refreshing after adding a new exclude
+
+########## v3.1.1.3(355) #########
+@Common
+- Improved: Clutter database
+@Explorer
+- Fixed: Refresh issue
+@CorpseFinder
+- Improved: Reduced amount of root use
+- Fixed: A case where on rooted device no corpses would be found in <sdcard>/Android/data/
+
+########## v3.1.1.2(354) #########
+@Overview
+- Improved: Centered layout on tablets
+- Fixed: Crash on some ROMs using SuperUser when checking the root status
+@Explorer
+- Improved: History cache stale time increases by 3s per level
+- Fixed: Issue between history cache and file paste operations
+
+########## v3.1.1.1(353) #########
+@Common
+- Improved: Clutter database
+- Improved: Handeling of SELinux on Android 5.0
+@Explorer
+- Added: 3-stage history for previous folders (goes stale after some time). This allows for quick peeks into folders (Ty @ Markus Birth)
+- Removed: Zoom out gesture listener, due to causing unvoluntary dirUp events
+@AppControl:
+- Fixed: Uninstaller on Lollipop (currently requires SuperSu)
+- Fixed: Freezing on Lollipop (currently requires SuperSu)
+- Fixed: Autostart toggeling on Lollipop (currently requires SuperSu)
+@CorpseFinder
+- Fixed: Dalvik corpse filter on Lollipop
+- Fixed: Apk corpse filter on Lollipop
+- Changed: Reenabled previously deactivated filters on Lollipop
+
+########## v3.1.1.0(352) #########
+@Common
+- Improved: Clutter database
+- Fixed: Ownership detection of app-lib child items (<= Android 4.4)
+- Fixed: Ownership detection of additional app generated dalvik-cache files
+@AppControl
+- Changed: Debug output to track down uninstall issues
+@CorpseFinder
+- Changed: All filters (excluding appdata) have been deactivated on Android 5.0 for safety reasons until a future update.
+
+########## v3.1.0.9(351) #########
+@Common
+- Improved: Translations
+- Improved: Settings UI now instantly reflects changed search paths
+- Changed: Editing excludes no longer creates a copy
+- Fixed: A few crashes when using Dialogs after device rotation
+@SystemCleaner
+- Removed: Google Play search suggestions filter, caused problems
+@Databases
+- Fixed: Settings not correctly reflecting default search paths
+- Added: Default exclusion for the Xposed(2.7+) database
+
+########## v3.1.0.8(350) #########
+@QuickAccess
+- Fixed: Crash when clicking clean with deactivated confirmation dialog
+
+########## v3.1.0.7(349) #########
+@Common
+- Improved: App & Cache db
+- Improved: Translations
+- Fixed: A rotation crash
+- Fixed: Crash on startup when hiding all tools (why?)
+- Changed: Removed fix for Bluestacks app player, it caused issues, they will have to fix their system
+@Explorer
+- Fixed: Crash when loading ownership icons
+- Fixed: Crash when enabling preview/icons in settings and returning to the main app
+@AppControl
+- Fixed: Crash when generating views for apps without apk
+@Databases
+- Fixed: Crash when viewing details
+- Added: Android 5.0 support
+- Changed: The active default launcher is excluded from results
+@QuickAccess
+- Fixed: Crash when confirming deletion after device rotation
+
+########## v3.1.0.6(348) #########
+@Common
+- Improved: Updated languages
+- Fixed: "Buy Pro" message still showing when returning to SD Maid after buying the unlocker
+
+########## v3.1.0.5(347) #########
+@Common
+- Improved: App database, new entries, fixed syntax bug
+- Improved: New translations
+@Excludes
+- Improved: UI, cleaner, better explanation
+- Changed: Turned off keyboard autocompletion (It's really annoying when typing pathes)
+
+########## v3.1.0.4(346) #########
+@Common
+- Improved: Updated languages
+- Improved: App database
+- Fixed: A crash of the crash reporting tool :D (Ty Avamander)
+@QuickAccess
+- Fixed: Case where the Database tool showed the wrong icon
+@Duplicates
+- Fixed: Crash when running autoselection due to stale settings
+- Changed: The autoselection mode had to be reset to default again to fix an issue
+@Databases
+- Changed: You can no longer run the optimization twice on the same dataset without refreshing
+@Scheduler
+- Fixed: Settings bug
+- Changed: Settings for the scheduler have been reset to fix a bug
+
+########## v3.1.0.3(345) #########
+@Common
+- Improved: App database
+- Improved: Translations
+- Fixed: Problem with crash reporting
+- Fixed: Crash on rotation while dragging the navigation drawer
+@QuickAccess
+- Fixed: Icon displaying wrong state
+
+########## v3.1.0.2(344) #########
+@Common
+- Improved: ActionBar title font,size and style
+- Fixed: ActionBar leftside back/home button not working on several activities
+@QuickAccess
+- Fixed: Two two cases where the state & icons did not correctly refresh
+- Added: The autoselection method for Duplicates can be changed in the settings of Duplicates
+- Changed: Duplicates is by default hidden
+@Duplicates
+- Added: The autoselection dialog now has a little checkbox "make default". This affects both settings, Scheduler and QuickAccess
+- Changed: The default autoselection mode is now "Keep Oldest". Idea: You send a picture via an app, the app copies it, thus creating a newer copy, we only know the location of the older copy, so we remove the new one. YMMV
+@Scheduler:
+- Fixed: Selected Autoselection methods being wrongly selected (options were off by 1). It always executed the one above the selected one. If you selected the first one it would select them by search order.
+- Changed: Moved the autoselection method to the settings of Duplicates
+
+########## v3.1.0.1(343) #########
+@Common
+- Improved: Cache database
+- Improved: App database
+- Improved: Less performance impact on system services when running multiple operations
+- Improved: Don't change thread priority if foreground state has not changed
+- Fixed: Orientation issues
+- Fixed: Cause for many different crashes on devices with many installed apps while running multiple operations (TransactionTooLargeException)
+- Fixed: Black list background color on Samsung/Gingerbread devices when scrolling
+- Fixed: Layout inconsistencies and alignment issues between the pages
+- Added: Safe guards against bad getInstalledPackages results on <API15 devices
+- Changed: Removed progressive start on progressbars
+- Changed: Workers that are in queue no longer display an indeterminate progressbar
+@QuickAccess
+- Fixed: Duplicate service binding
+- Fixed: Various layout issues
+- Added: Screensize specific layouts
+- Added: QuickAccess man now wiggles to let you know where the actionbar went
+- Changed: The way the layout is build
+@CorpseFinder
+- Fixed: UninstallWatcher popping up despite SD Maid being in foreground
+- Fixed: UninstallWatcher should now display the deleting notification too
+@Duplicates
+- Fixed: Not correctly switching to indeterminate progress display when starting
+@Databases
+- Changed: Optimize icon
+
+########## v3.1.0.0(342) #########
+@Common
+- Improved: App database (new entries)
+- Improved: Scroll performance of ListViews with previews/icons
+- Improved: Support for Bluestacks App Player (has buggy Android API implementation)
+- Improved: Refactored code, you can't see it, but SD Maid is now more beautiful on the inside
+- Improved: SmoothProgressBar is smooth :)
+- Improved: Overall UI design
+- Fixed: All placeholder when loading previews, should be the same size now
+- Fixed: Inconsistent colors
+- Fixed: Inconsistent font sizes
+- Added: Permission WAKE_LOCK to acquire/release wakelocks with the goal of fixing scheduler issues
+- Added: SD Maid can now generate logs to debug itself
+- Added: SDMaid remembers whether you had the QuickAccess UI or the main UI open
+- Added: SD Maid now remembers the last opened page
+- Added: Most confirmation dialogs now have a checkbox "Don't show again"
+- Changed: All references from thedarken.eu to darken.eu (Both still work, but in the long run I'm switching to the shorter url)
+- Changed: Notification now only appear when SD Maid is not open, and disappear when SD Maid is reentered
+- Changed: "Use at own risk" disclaimer is now only being displayed once
+- Changed: Progress submessages show less rapid changing stuff to reduce UI lag
+@Overview
+- Changed: Moved a few infos around
+@Explorer
+- Improved: Display of owner icons
+- Improved: Scroll performance/smoothness
+- Fixed: Crash when opening files
+- Changed: Open dialog now displays filename instead of "Opening" title
+@AppControl
+- Improved: Robustness of app-uninstaller
+- Fixed: Size calculation sometimes delivering inaccurate results
+- Added: Alternative way to get app infos on buggy ROMs
+@CorpseFinder
+- Added: Safeguard against false positives due to inconsistent results from the PackageManager on buggy ROMs
+- Improved: Uninstall watcher to automaticly check and display a confirmation with results
+- Changed: You should only see the activated UninstallWatcher if it finds a Corpse after uninstalling an app
+@AppCleaner:
+- Fixed: Wrongly showing the lightbulb info button on tablets when it was not relevant
+@Databases:
+- Fixed: Icon being slightly brighter than others
+- Fixed: Bug that left the background worker in a faulty state when aborting
+- Changed: To display all databases that have been processed, instead of all databases with a changed size
+@Scheduler
+- Fixed: Device prematurely reentering deep sleep state causing the scheduler to not run reliably
+- Changed: Scheduled tasks now always run sequential
+@QuickAccess
+- Added: This. I'm new! (Thanks Aron Binienda)
+- Added: A tool to quickly trigger other tools and make using SD Maid as easy&quick as possible
+- Added: Setting to do scan&clean in a single pass
+- Added: Single press executes scan/cleaning
+- Added: Long press switched to tools page
+
+########## v3.0.4.1(341) #########
+@Common
+- Improved: App database (new entries & fixed FPs)
+- Improved: Cache database
+- Improved: languages
+- Fixed: Indonesian not being available due to Android bug
+- Fixed: BusyBox error dialog crashing on Gingerbread
+- Fixed: BusyBox error dialog not showing when it should
+- Fixed: (finally) that ******* progress bar becoming invisible (#158)
+- Fixed: Debugmode/verbosemode not respecting debug-level setting
+- Added: Timeout logic for stuck deletions (not yet enabled)
+- Changed: Issue tracker link in settings is no longer grayed out without entered email
+@Overview
+- Changed: Icon colors to reflect that no SQLite/BusyBox binary is the worst state (red)
+- Fixed: Crash when viewing PieGraphs (#169)
+@Explorer
+- Fixed: Deletion confirmation now displaying the item name again
+- Fixed: Forced media scan crashing (#174)
+@AppControl
+- Fixed: App reset now also accounts for system untracked folders (#173)
+- Changed: Apps are now killed before being uninstalled or reset
+- Changed: Uninstall option on unrooted devices is now also available if the system app has updates (uninstalling resets the app to install state in that case)
+@Databases
+- Changed: Apps are now killed before their database is being worked on (#152)
+- Changed: Databases whose owner can not be determined are now excluded

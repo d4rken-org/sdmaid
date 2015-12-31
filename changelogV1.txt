@@ -1,0 +1,579 @@
+########## v0.9.8.7(57) #########
+@Common
+- Added portuguese(brazil)
+- Added SGS3 external_sd path
+- Updated languages
+- Some code cleanup
+@Duplicates
+- Fixed highlighting
+
+########## v0.9.8.6(56) #########
+@Common
+- Updated translations
+- Tweaked UI
+- Tweaked startup
+@CorpseFinder
+- Small security fix, reduced used permissions
+@Duplicates
+- Entries are now sorted, default is by size
+
+########## v0.9.8.5(55) #########
+@Common
+- Updated chinese
+- Updated italian
+- New ARM & MIPSEL busybox
+- Some changes to debug output
+@Explorer
+- Fixed filer recognition on some file systems
+- Fixed "Send to" sometimes not being available
+@Appcontrol
+- Better compatibility for freezing apps
+- Fixed bug on removing apps, but keeping data
+- Changed freeze type for API14+ devices to disabled-user
+- Added an additional routine to deal with apps could not be frozen/unfrozen the normal way
+- Added advanced setting to double check for frozen apps for devices having issues with Androids PackageManager
+
+########## v0.9.8.4(54) #########
+@Common
+- Fixed startup and unlocking problems introduced with v0.9.8.3. Sorry for that and thanks to everyone who mailed me!
+
+########## v0.9.8.3(53) #########
+@Common
+- Added Chinese&Taiwanese translation (thanks StrikeÂ·welkin)
+- Updated German translation
+- Updated Hungarian translation
+- Updated Spanish translation
+- Updated Italian translation
+- Updated Danish translation
+- Improved a few code calls
+- Changed small UI details
+- Improved unlocking procedure
+@Startpage
+- Fixed FC when there is a busybox problem
+- Fixed FC when data partition is unavailable
+- Improved size calculations
+- Added support for more partitions
+@Explorer
+- Fixed FC and simplified size calculation
+@Biggest files
+- Fixed show/hide tab text
+- Fixed crash on huge file amounts
+
+########## v0.9.8.2(52) #########
+@Common
+- Moved some settings arround
+- Slimmed various code passages
+- Fixed a possible bug when getting wakelocks
+- Improved debug output
+- Updated danish translation (if you want to help translate, mail)
+- Open details dialog only when there is something to show
+- Removed all statistics but total freed space
+- Improved startup speed
+- Fixed race condition causing FC when UI/Activity instantiated/closed prematurely
+@Startpage
+- Fixed UI timeout
+@Explorer
+- Removed ro toast on browsing /system
+- Fixed bug causing removal of single files not updating stats
+- Fixed FC when updating some statistics
+@AppControl
+- Fixed FC on loading list (2. try)
+- Fixed hang on removing system apps
+@AppCleaner
+- Fixed wrong size calculation
+@Duplicates
+- Changed greytone for highlights
+- Fixed FC on rare circumstances
+- Added contextmenu option to jump to explorer
+@Vacuum
+- Moved to misc tab
+@Misc
+- Moved biggest files to own tab
+
+
+########## v0.9.8.1(51) #########
+@Common
+- Fixed startup bug on unrooted devices (Sorry :-( )
+
+########## v0.9.8(50) #########
+@Common
+- Various code cleanups
+- Improved support for multiple sdcards + usb devices
+- New busybox version replacing the hotfix
+- Added hungarian language
+- Added support for Android MIPS Devices
+- Streamlined system calls through new class
+- Updated all translations
+- Made tabwidth constant
+- Fixed a crash on sorting empty directories
+@Startpage
+- More support for custom partitions
+- Removed Diagnosis popup
+@Explorer
+- Warning only shows once now
+- Highlighting of selected entries
+- Added remount system RW button
+- Total size of files/dirs now shows in a popup
+- Removed unnecessary calculations on deletion
+@Searcher:
+- Improved UI
+- Warning only shows once now
+@AppControl
+- NEW FEATURE! :-)
+@App Cleaner
+- Highlighting of selected entries
+@Duplicate finder
+- Reduced memory usage (still crashes @ ~80k files)
+@Optimize database
+- Has an icon now
+
+
+########## v0.9.7.5(48) #########
+@Common:
+- Temporary fix for busybox problems on android 2.2
+
+########## v0.9.7.4(47) #########
+@Common:
+- Added info about my new app Diagnosis
+- Fixed possible FC after background operations finished
+- Fixed possible hang during startup
+- Improved and cleaned various coded parts
+- Made some improvements for ICS
+- New busybox to fix issues on galaxy nexus devices
+- Better handling of files with non latin characters
+- Less log spamming when debug is not enabled in settings
+- Some permissions changes to increase security
+@Explorer
+- Fixed possible FC on opening directories
+- Added a onetime warning dialog
+- Removed the object size of directories (too misleading for users)
+@Searcher
+- Fixed possible FC on opening directories
+- Added a onetime warning dialog
+@Systemcleaner:
+- Fixed an issue where the systemcleaner would cause FCs when cleaning /cache on HTC EVO 4G 
+@Duplicate finder:
+- After deletion of duplicates the remaining file will be hidden
+- Sets will now be recolored after each deletion
+- Fixed summary not updating after single duplicate deletion
+- Selections are cleared on single deletion
+@Optimize databases
+- Added sqlite3 binary for devices for devices without one (Thanks to the Titanium Backup Team for allowing me to use theirs)
+
+########## v0.9.7.3(46) #########
+@Common:
+- updated german translation
+- adjusted save button on details window
+- put additional output under control of debug setting
+- various small code improvements
+- updated help file
+@Startpage:
+- improved first loadtime of startpage
+- added display for space left in internal app folder for devices having this on an extra partition
+@Explorer:
+- added option to remember last path
+@Searcher:
+- added open to show found files in explorer
+@Optimize database:
+- fixed summarized size output (again...)
+
+########## v0.9.7.2(45) #########
+@Common:
+- catched a force close when the busybox version could not be read, it means SD Maid can't be used, but now it will not crash and also give you some instructions
+- added popup message with instructions in case busybox could not be used
+- catched a FC when pressing "Visit Market" and there is no market installed
+- updated german translation
+
+########## v0.9.7.1(44) #########
+@Common:
+- Removed some debug output that was forgotten during development
+- added code to force update of old sd maid busybox versions
+- updated busybox to 1.19.3 and changed configuration, i fixed handling of non latin characters, decreased size and improvement speed slightly (Thanks to Stericson for helping me out)
+- decreased changelog fontsize
+- reformated changelog
+@Startpage:
+- fixed display of longer busybox versions
+
+@Explorer:
+- fixed overlapping display of long file/folder names
+- added a hint when browsing /system, that it is read-only and can be remounted writeable through SD Maids settings
+- removed unzip support @ explorer for now, didn't work reliably
+
+@System Cleaner:
+- updated System Cleaner to include Thumbs.db and Desktop.ini
+
+@AppCleaner
+- cleaned up some debug output
+
+@Optimize database:
+- fixed summarized size output 
+- fixed reports of 0 databases found on some devices, because the internal busybox wasn't used (Thanks to Ken for finding this)
+
+
+######### v0.9.7.0(43) #########
+- Fixed missing entry to show/hide optimize dbs tab
+- Updated german and english help file
+- Updated russian translations and helpfile
+- Changed explorer refresh to catch loop on erratic granting of root permissions
+- Fixed a bug on some ROMs causing SD Maid to falsely detect root
+
+
+########### v0.9.6.9(42) ###########
+- Prevent crash on wrong inputs @ Misctab
+- Added new tab "Optimize DBs" which can optimize databases to free up more space and improve database access speed a bit (I will improve the UI a bit more in a future update)
+- Fixed typos
+- Fixed the display of some memory calculations which were off (1000... and 1024 bytes in a kilobyte...), the displayed amount that could be cleaned was higher than shown
+- Added some support for link2sd
+- Improved code to support multiple external sdcards in future versions
+- Improved performance a bit by turning logging off by default and and making some important log information permanent
+
+
+########### v0.9.6.8(41) ###########
+- Made changes to the systemcleaner to reduce RAM use
+- Added a new a new exclude to fix issues for Droid Bionic users
+- Changed some outputs in the dialogs
+
+
+######### v0.9.6.7(40) #########
+- Added a fix for an Android bug related to fast dual core devices
+- Fixed a bug with the automatic refresh after cleaning in the app cleaner
+- Fixed a possible memory leak in the system cleaner
+- Fixed typo in russian translation
+- Fixed typo in english translation
+- Changed news windows to be better readable
+- Improve SD Maids memory usage
+- Updated danish translation
+
+
+######### v0.9.6.6(39) #########
+- Added a failsafe to prevent hangs when using systemcleaner on unrooted devices
+- Fixed system cleaner hang on unrooted devices introduced with the performance tweaks of the last update (sorry for that)
+- Changed the way some preset directories are excluded which should increase performance
+- Small change to app cleaner progress bar
+- Removed some filters that crossed each other and exclude some files that could be deleted
+- Added a button to save the content of detailsboxes to a log file at /sdcard/SD_Maid/
+- App cleaner should now be parsing cache directories on external_sd too
+- Reworked some app cleaner code, performance should be better now
+- Added more information to all progress dialogs, more details of what is going on
+- Added russian translation
+- Slimmed the code down, by packing several code segments into a reuseable class
+- Added XOOM external card path (thanks to Mark)
+- fixed bug where app cleaner would hang on cleaning apps with more than 800 files
+- Updated german translations
+- Enabled system cleaner/*.log files for unrooted devices
+- Enabled system cleaner/*.tmp files for unrooted devices
+
+
+######### v0.9.6.5(38) #########
+- Added Hebrew language
+- Added Italian language
+- Completely reworked system cleaner
+- Removed performance setting for system cleaner again
+- Changed some code to catch FCs on certain cases
+- Some tweaks to the app cleaner
+- Prefixed '*' to the searcher so you don't need to enter them anymore
+- Added external sdcard to the searcher
+- Catched an error in misc tab, when users entered to big numbers
+- Fixed a force close on settings
+- Added automatic settings reset, if they got corrupt
+- Added LOST.DIR directories to system cleaner (Thanks to Pele)
+- Added save to log button for "files last modified"
+
+
+######### v0.9.6.4 #########
+- Moved a missplaced setting
+- Fixed missing text
+- Tweaked system cleaner a bit
+- Added some code to fix a crash if faulty settings existed
+
+
+######### v0.9.6.3 #########
+- corpse finder on unrooted device with limited functionality
+- added external sd to corpsefinder
+- fixed some language typos
+- changed highlight color in duplicate finder
+- updated translations
+- fixed FC in misc tab when showing biggest files
+
+
+######### v0.9.6.2 #########
+- added automatic refresh when renaming files/dirs in explorer
+- removed contact/mail button in the root problem dialog, to many spam emails
+- improved system cleaner performance
+- added option to increase system cleaner speed on fast devices
+- moved exit button to menu
+- added possibility to change amount of biggest files to be shown
+- option hide pro features now hides all pro features
+- improved display of duplicate files
+- removed some obsolete code
+
+
+######### v0.9.6.1 #########
+- Tweaked some code to prevent possible force closes on app resume
+- Removed the low memory feature which was BETA and didn't have the desired effect
+- Fixed crash when sdcard is unmounted
+
+
+######### v0.9.6 #########
+- Added spanish translation
+- Few tweaks to the icon, for better display on black backgrounds
+- Added option to hide the misc tab
+- Added automatic refresh to the explorer
+- Added statistics to cleaning options
+- Added statistics display to the menu
+- Added option to reset statistics in the settings
+- Added external sdcards for HUWEI tablets
+- Added Option to force English as language
+- Updated German,Danish and Spanish translation
+- Fixed wrong string in buy pro dialog when pressing root search
+- Fixed some wrong strings in translated settings
+- Made changes to the duplicate finder for better performance on low memory devices
+- Fixed problems with external sdcards mounted in "mnt/sdcard-ext" thx to the user Garo
+- Cleaned and refined the explorers context menu
+- Fixed a possible problem with white spaces in directory names (@App Cleaner)
+- Refined the App Cleaners code
+- Removed the restriction on clean all in the app cleaner
+- Enabled App Cleaner for unrooted devices in limited mode
+- Added top50 biggest files in misc tab
+- Reworked some code regarding excludes
+- Added exclude option to context menu in app cleaner
+- Added exclude option to context menu in corpse finder
+- Added exclude option to context menu in duplicate finder
+- Added option to add excludes from explorer or search
+- Fixed getting stuck in the explorer, when inside a directory that was deleted (Thx to user fozzie@xda)
+
+
+######### v0.9.5.4 #########
+- Changed system cleaner backend, should be more robust against hangs on slow devices and or huge file amounts
+- Fixed bug that prevented cleaning if files existed but were of size 0
+- Added misc tab
+- Added option to clean market search history @ misc
+- Slimmed App Cleaner code and improved code
+- Fixed a bug where directories with spaces would not get deleted under certain conditions
+- Keep Screen on default is now activated
+- Added feature to show all files that have been modified in the last X minutes @ misc
+- Added options for showing last modified files
+- New launcher icon
+
+
+######### v0.9.5.3 #########
+- Fixed problem with special characters in file/directory names
+
+
+######### v0.9.5.2 #########
+- Added Danish translation
+- Option to keep screen on during processing
+- Rewritten Systemcleaner backend to support non rooted devices
+
+
+######### v0.9.5.1 #########
+- Fixed bug in duplicate finder introduced through more external_sd compatibility
+- Fixed that non rooted users could get stuck in explorer in root needing directories
+
+
+######### v0.9.5 #########
+- prevented FC when trying to remove an empty exclude
+- Renaming files in the explorer and searcher now automaticly starts with the current filename already typed in
+- Added settings to choose directory and file colors for the explorer
+- Added setting to choose between explorer sorting methods (Linux/Windows/Alphabetical)
+- System cleaner now includes function to remove empty directories
+- Added Delete/Copy/Cut selection again when pressing . or .. folder
+- Added multiple language support (currently only EN/DE)
+- Added CM7 external sd check
+- Added external sd for LG2x
+
+
+######### v0.9.4 #########
+- Fixed FC on start when Unlocker received UNLICENSED or RETRY from server
+
+
+######### v0.9.3 #########
+- Fixed FC when trying to change permissions under special circumstances
+- Reworked SD Maids start to increase loading and rootcheck performance
+- Added async task for directory creation to prevent timeouts when working with huge file amounts
+- Rearranged explorer context menu
+- Prevented user from removing "." and ".." which were not actually deleted but removed from view
+- Improved performance when previewing what will be deleted (long pressing an item) in the System cleaner,Corpse finder and App cleaner
+- Improved root check, should now detect non rooted devices more reliable and launch in limited mode
+- Fixed external sd not displaying for the droid incredible on the startpage
+
+
+######### v0.9.2 #########
+- Fixed FC when renaming after creating a directory, or creating a directory after renaming.
+- Added requested feature to hide individual tabs
+
+
+######### v0.9.1 #########
+- Changed corpse finder algorithm
+
+
+######### v0.9 #########
+- added option to hide Pro features when using free version
+- added lowMemoryProfile option
+- added option to hide tab bar
+- added a root explorer
+- integrated copy/cut + paste functionality of root explorer with searcher
+- added option to remount /system read+write for root users
+- all images resized and optimized for better view and no overlapping text (thanks to nitr8)
+- added better control of excludes
+
+
+######### v0.8.9.2 #########
+- small fix inside the searcher which selected a different item on long presses then on short presses.
+
+
+######### v0.8.9.1 #########
+- Reworked some code of 'Clean System' routines
+- Duplicate scanner releases list memory now earlier, could fix errors on low memory devices.
+- Fixed vanishing results on system cleaner after screen turned off
+- new options in the menu to globally exclude files or directories
+- new entry in settings menu to reset exclude list to default
+- fixed a bug where the duplicate scanner could FC certain filenames
+
+
+######### v0.8.9 #########
+- Fixed FC on open when no application for the file type is in installed
+
+
+######### v0.8.8 #########
+- sd maid cleaned itself, space needed and routines got cleaned up
+- added modified value to duplicate finder (request by user 'Mainism')
+- instead of warning the user about selecting every duplicate file, it is now no longer possible to select all items
+- fixed the cause for FCs when opening settings (thanks to David)
+- new function added "Searcher", lets you search for files on your device. The free version supports searching on internal&external sd, the Pro version supports search the entire devices filesystem.
+- increased compatiblity with non rooted devices
+- fixed displaying wrong item names in confirmation dialogs
+
+
+######### v0.8.7 #########
+- (App cleaner) Deactivated clean all when Scan system packages is selected
+
+
+######### v0.8.6 #########
+- Fixed bug in duplicate scanner where filters only applied on next app launch
+- Fixed bug in app cleaner where the scan system apps setting would only apply on next launch
+- Fixed typos where it said refresh instead of check
+- Fixed bug (nullpointer exception) in duplicate scanner
+- Fixed stackoverflow FC in app cleaner and system cleaner under certain circumstances where root was allowed on app launch but denied afterwards
+- Disabled a performance increasing fix to ensure stable running on all devices, will enable soon again
+
+
+######### v0.8.5 #########
+- Fixed second FC, caused by a bug during data pulling for the overviewscreen
+
+
+######### v0.8.4 #########
+- Fixed FC on start sorry!
+
+
+######### v0.8.3 #########
+- excluded directories from being searched, that had already been excluded from deletion
+- second attempt at fixing motorola atrix paths
+- new icons
+- merged corpse finders
+- system info tab added
+- Changed size stats formatting method
+- Changed all occurences (hopefully) from 'SD maid' to 'SD Maid'
+- Removed some unecessary code
+- Fixed bug in Windows thumbs.db search
+- Added 'Clean apps' tab, to use the cleaning function you will need the pro version
+- Added 'Duplicates' tab, cleaning function requires pro version
+- Fixed hangup of system cleaner on devices with a shit load of files (thanks for the bug reports)
+- Fixed bug where sometimes folder were skipped because root could not get retreived
+- SD Maid can now be started on not rooted devices with limited functionality
+
+
+######### v0.8.2 #########
+- Changed some routines to behave more expected for the user
+- Changed menu layout
+- Moved 'Contact darken' from news to menu ( to many empty mails from random users...)
+- Added internal changelog for people (especially Eric) who can't find it on market sites or XDA
+- Removed extra internal class for samsung corpse finder, uses the android corpse finders class with different paths now, which is much more robust.
+- Changed some toast message to give further information about errors
+
+
+######### v0.8.1 #########
+- Small change to size calculation to display nicer values and to fix a rare FC on some devices
+
+
+######### v0.8 #########
+- Get detailed information by long pressing an item
+- Fixed FC & refresh problems on single click deletion.
+- Changed method to calculate directory size to use 'du' from the included busybox, to speed up the process and prevent recursions.
+- Changed base start path to account for different paths on the motorola ATRIX.
+- Clean system now uses multi-threading which should improve performance for high end devices significantly
+- Added time out for clean system after 9 minutes
+- Added exception for fancywidget, which doesnt use standard naming convetion
+- Included /cache/lost+found again
+- Added contact button to news
+- Changed file permissions management to work on any device
+- Fully migrated to built in custom busybox
+
+
+######### v0.7.3 #########
+- Fixed bug when cleaning files with spaces
+- Fixed mac file cleaning
+- Excluded /data/data/.nomedia from android corpsefinder
+
+
+######### v0.7.2 #########
+- Fixed FC when pressing single item in android corpse finder
+
+
+######### v0.7.1 #########
+- FCs on CM7 after cleaning /cache are now fixed (Thanks to Brian "neatchee" Resnik)
+- Using included custom busybox now (available at /data/data/eu.thedarken.sdm/files/busybox)
+- Fixed problems with filenames with included spaces, when using Mac/Windows file finders
+- Added much requested confirmation dialog
+- Added news dialog on start
+- Added extra Log.d output for people having problems
+- Added menu button for news dialog
+- Excluded /data/data/hosts from android corpse finder
+- Added option to clean gallery thumbnails
+
+
+######### v0.7 #########
+- Fixed bug in working dialog which made it not show and caused the GUI/device to hang
+- Added progress bar to working dialog
+- Fixed FC when the screen orientation was changed during refresh
+- Added clean options "Temporary files","Log files","Windows (thumbs.db)","Windows (desktop.ini)","MacOs (.DS_Store)" and "MacOS (._* files)"
+- Added "Settings" menu, to toggle "Clean system" entries on and off for people having problems with cleaning certain locations
+- Removed auto refresh before clean all as precaution for people accidently clicking it
+- Changed standard selection for "Clean system" tab
+
+
+######### v0.6.1 #########
+- Fixed a ForceClose under certain circumstances
+
+
+######### v0.6 #########
+- Added app to market
+- Took out unused tab for now
+- Added more zombies
+- Added work in progress dialog during refresh phase
+- Added menu with info option
+- Improved corpse finders to factor in apps with non standard naming conventions
+
+
+######### v0.5 #########
+- AWESOME NEW ZOMBIE ICON
+- Added clean system functionality with 4 directories for now
+- Made some old routines more robust
+
+
+######### v0.4 #########
+- Redone some routines to be more efficient
+- Added icons by ironlood
+- Added cleaning function for all android devices
+
+
+######### v0.3 #########
+- Changed layout, added function to delete corpses
+
+
+######### v0.2 #########
+- Fixed force close on non existend directory.
+
+
+######### v0.1 #########
+- Find (not delete) unnecessary directories.

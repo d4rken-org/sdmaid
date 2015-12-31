@@ -1,0 +1,450 @@
+########## v2.1.4.1(231) #########
+@Common
+- Bugfixes
+
+########## v2.1.4.0(230) #########
+@Common
+- Added 2nd check when setting up the busybox on first launch to deal with some rare cases
+@Explorer
+- Fixed bug in 'Change permissions' that made it ignore the non recursive flag
+- Made permission changing non-intrusive so it doesn't touch flags other then RWX (i.e. SETUID)
+@CorpseFinder
+- Added fix for buggy custom ROMs that could return unexpected results
+
+########## v2.1.3.9(229) #########
+@Common
+- Language updates
+- New language: Spanish (Mexico)
+
+########## v2.1.3.8(228) #########
+@Common
+- Updated italian, fixed greek language having wrong language code
+
+########## v2.1.3.7(227) #########
+@Common
+- Updated translations
+- Fixed crash's caused by turkey translation
+@Explorer
+- Changed background when explorer shows empty directory
+@AppControl
+- Removed current caching of app icons (it crashed at 400+ Apps installed, this will be readded but better in another update)
+@Corpsefinder
+- Updated experimental ClutterDB
+
+########## v2.1.3.6(226) #########
+@Common
+- Changed a link
+- Updated translations
+
+########## v2.1.3.5(225) #########
+@Common
+- Updated languages
+- Changed busybox checks to account for weird filesystem structure
+- No longer shows pro version button in news dialog, when unlocker is installed
+- Fixed startup hang and partition detection issue
+@Duplicates
+- Fixed bug showing false file counts
+
+########## v2.1.3.4(224) #########
+@Common
+- Better log output during start, to help troubleshooting
+- Changed SD Maids version numbering to better reflect changes
+@Corpsefinder
+- Fixed size not accounting for excludes
+@BiggestFiles
+- Lowered memory footprint slightly
+
+########## v2.1.3.3(223) #########
+@Common
+- Fixed bug in busybox fallback routine
+- Updated languages
+
+########## v2.1.3.2(222) #########
+@Common
+- Changed busybox compatibility criteria (busyboxes were unnecessarily excluded)
+
+########## v2.1.3.1(221) #########
+@Common
+- If the internal busybox is crippled during root access (i.e. S4 issue), SD Maid will check your system busybox, if it is not compatible (or doesn't exit) SD Maid will try to inject its own busybox into /system/xbin/busybox.sdm . If SD Maid detects during startup that the injected busybox is no longer necessary it will remove it.
+- Updated languages
+@Startpage
+- Added little colored tag behind busybox version to indicate if a workaround is used
+
+########## v2.1.3.0(220) #########
+@Common
+- Added detection of external sdcards for some Sony Xperia devices
+- Reenabled permission to backup SD Maid
+- Increased statistics accuracy
+- Target API is now 18
+- SD Maid tries the system busybox in case of problems. This allows operations on devices with handicapped root access (such as the S4 on latest stock kernel) (Thanks to Sebastian Sleiman).
+- Changed install location to 'auto'
+- Updated translations
+@AppControl
+- Fixed statistics not being updated every time
+- Tweaked details loading routine
+@AppCleaner
+- Fixed statistics not being updated
+
+########## v2.1.2.5(219) #########
+@Common
+- Updated languages
+@Explorer
+- Tweaked entry display
+@CorpseFinder
+- Updated clutterDB
+- Fixed excludes not being honored without root
+
+########## v2.1.2.4(218) #########
+@Explorer
+- Fixed crash due faulty sorting implementation
+- Fixed symbolic link display
+@AppControl
+- Fixed app size not being displayed in details view (may be in slightly incorrect on unrooted devices)
+
+########## v2.1.2.3(217) #########
+@Common
+- Prevented the user from adding duplicate excludes
+@DuplicateFinder
+- Fixed a bug where on devices with multiple sdcards a duplicate would be falsely excluded
+
+########## v2.1.2.2(216) #########
+@Startpage
+- Tweaked partition display
+- Updated languages
+@DuplicateFinder
+- Replaced custom file reading code with common 'HybridReader' class the other functions use too
+- Fixed issue with "DirectoryBind" tool
+- Fixed .apk filter
+
+########## v2.1.2.1(215) #########
+@Common
+- Updated languages
+
+########## v2.1.2.0(214) #########
+@Common
+- Merged and simplified some routines
+@Explorer
+- Refreshing the current dir now remembers the scroll position
+@AppControl
+- Added confirmation dialog when uninstalling a selection of apps
+@CorpseFinder
+- Adopted contextual actionbar element
+- Multiple entries can now be selected and deleted
+@SystemCleaner
+- Fixed excludes not being honored
+- Adopted contextual actionbar element
+@DuplicateFinder
+- Adopted contextual actionbar element
+- Removed checkboxes
+
+########## v2.1.1.0(213) #########
+@Common
+- Updated Finnish language
+- Added Croatian language
+@Explorer
+- Fixed default opening method for files not working
+@SystemCleaner
+- Fixed scanning issue
+@AppControl
+- Multiple apps can now be frozen or removed (long press to select)
+- Tweaked the line layout a bit
+- Improved App size calculation
+- App size is calculated in listview (EXPERIMENTAL)
+- Selecting exclude pre inputs packagename now instead of appname
+
+########## v2.1.0.0(212) #########
+@Common
+- Added external path for some Sony Xperia devices
+- Fixed typos
+- Updated languages
+- Various internal code improvements
+- Preparations for new UI
+- Replaced some vague global excludes with more specific variants in the relevant features
+- Declaring voluntary permission android.permission.ACCESS_SUPERUSER
+- Reduced peak memory usage in several features
+- Some DetailsBoxes allow 'open in explorer' and 'add exclude'
+- Added thumbnail previews for files (currently only images), see settings [PRO]
+- Reduced size
+- Increased default ShellDelay from 50 to 100 to deal with stability on some custom ROMs
+- Debugmode can no longer be turned on manually
+- Detail Boxes: Replaced save button with share button that launches a share text intent 
+@Explorer
+- Fixed rename behavior
+- Added better error display
+- Turned off suggestions for rename and new dir dialogs
+- Major rewrite of UI and engine
+- Copied item now can be pasted multiple times, cut items only once
+- Permissions can now be changed for several items at once
+@Searcher
+- Removed permission display
+- Fixed a hang issue on Huawei devices
+@AppControl
+- Fixed crash when building details layout
+- Added filtering by apk path
+- Better details output + option to save details
+- Faster loading
+- Launches Uninstall intent on unrooted devices
+- Now maintains scroll position after refresh
+- Shows if an app is running
+- Now allows searching for tags
+- Removed SYSTEM/FROZEN/NOAPK sort modes (superfluous)
+@CorpseFinder
+- Improved detection (Thanks to Pele)
+- Added dex/odex scanning
+- Added apk scanning
+- Added asec file/folder scanning
+- Reduced amount of su calls when deleting
+- Added advanced matching of arbitrary sdcard folders against a database, (Experimental)
+@AppCleaner
+- Reduced memory usage
+- It is now possible to exclude files instead of the whole app entry
+- Rewritten logic, less SU calls, more speed :-)!
+@SystemCleaner
+- Added new default entry for "ANR traces" (root/unrooted)
+- Tighter thumbnailsfilter
+- Fixed hang on Huawei devices (Thanks to Julie Nolf)
+@DuplicateFinder
+- Changed highlighting
+- Added thumbnail preview for files (currently only images) [PRO]
+- Clicking a thumbnail directly opens the file
+@Misc
+- Workaround for optimize DB crash when finishing in background
+- Improved search speed for finding databases
+- Fixed a hang when optimizing dbs
+
+########## v2.0.2.3(210) #########
+@Common
+- Fixed startup crash on unrooted devices (Sorry)
+
+########## v2.0.2.2(209) #########
+@Common
+- Added support for x86 architecture processors
+- Updated busyboxes
+- Fixed bug in partition detection (Fixes issue on TF300)
+- Expanded file area that is used in some features when in UNROOTED mode
+- Reduced memory usage
+- Improved shell execution class
+- Improved Jellybean 4.2 compatibility (thx to scarmon for helping test)
+- Fixed bug in partition recognition
+@Explorer
+- Improved browsing speed
+- Feedback on failed paste
+@SystemCleaner
+- Fixed issue with deletions of several thousand items
+- Improved filtering of default entries
+@DuplicateFinder
+- Fixed crash on autoselection:random
+- Tweaks to confirmation checks
+- Improved failsafe (replaced path resolving by inode checking)
+@AppCleaner
+- Fixed issue deleting non root empty directories from caches
+- Fixed issue with deletions of several thousand items
+
+########## v2.0.2.1(208) #########
+@Common
+- Improved the details dialog (supports easier scrolling now)
+- Reduced code size
+- Added external sdcard of galaxy note2 to detection whitelist (Thanks to Ralph)
+- Streamlined code a bit through common classes
+@Explorer
+- If creating a directory fails (i.e. it already exists) an error toast will be shown
+- Fixed some inconsistent dialog behavior
+- Tweaked menu behavior
+@Searcher
+- Improved memory usage
+@CorpseFinder
+- Fixed toast message showing wrong entry after deletion
+@SystemCleaner
+- Fixed toast message showing wrong entry after deletion
+- Empty directories should now be deleted in one run
+- Fixed a bug that caused some custom filters not to delete filters (Thanks to VÃ­t for helping me debug this)
+@AppCleaner
+- Fixed toast message showing wrong entry after deletion
+- Improved deletion, should only need one pass to clean an entry
+@DuplicateFinder
+- Fixed toast message showing wrong entry after deletion
+@Misc
+- Added two reboot buttons (experimental)
+
+########## v2.0.2.0(207) #########
+@Common
+- Refactored code
+- New startup dialog
+- Moved news menu entry to top left icon
+- Revamped/Improved Excludes management
+- Updated languages
+- Added french
+- Updated to ABS 4.2
+- Tweaked title and texts deal with screenwidth issues
+- Few tweaks to improve partition detection
+- Wrote new common file system logic to reduce common code and overlap between features
+@Startpage
+- Fixed 'Check' not refreshing free space correctly
+@Explorer
+- Automaticly truncating spaces at front and back when creating new directories
+- Path remembering is now on by default
+- Fixed FCs when selecting,unselecting, then triggering actions
+- Reduced memory usage
+- Listing will now scroll to position of the previously exited folder :)
+@Searcher
+- Reduced memory usage
+@AppControl
+- Reduced memory usage
+@CorpseFinder
+- Reduced memory usage
+- Reduced code size and improved flexibility
+@SystemCleaner
+- Fixed issue leading to fewer results on JellyBean
+- Changed misleading text when previewing empty entries
+- Added a custom ProgressDialog
+- Reduced memory usage
+- Reworked filtering, preparing for custom entries
+- If scan finishes in background and there is enough memory, the results should be kept
+- Created Options Entry in ActionBar, moving settings entries there and the ability to add custom entries
+@AppCleaner
+- Refactored code to use new classes
+- Fixed FC where the AppCleaner choked on cleaning a single entry with a huge amount of files
+@Duplicates
+- Added a custom ProgressDialog
+- Reduced memory usage
+- Now correctly using 'clean selection' icon
+@BiggestFiles
+- Now honors excludes
+- Fixed FC on directory listing issue
+@Misc
+- LastModified now has a searchable ListView, with clickable items taking you to the explorer
+- Reduced vacuum memory usage
+- Fixed optimize DBs (broke it in 2.0.1.5, sorry)
+
+########## v2.0.1.5(206) #########
+@Common
+- Fixed tab deselection code not triggering correctly
+- Added permission KILL_BACKGROUND_PROCESSES to obviously kill background processes (i.e. when deleting market history, to restart the market)
+- Improved behavior for HidePro setting
+- Exiting through the BackButton now requires a DoubleClick
+- Updated languages
+- Added /mnt/sdcard1 as known external sdcard of some CM10 ROMs
+- Changed timestamp to formatted date on Details safefile.
+- Moved savefile location from details to /Android/data/eu.thedarken.sdm/details/, to not leave those behind on uninstall
+@StartPage
+- Fixed possible ANR when refreshing
+@Explorer
+- Added open file dialog
+- Added option to force open files as text files
+- Added option run .sh shell scripts and produce output + errors into DetailsBox (experimental)
+- Cleaned up backend code
+- Improved error detection
+- Fixed crash when refreshing/entering a directory failed
+- Added button to go to sdcard when CAB is active
+- Fixed up/refresh entry being selectable
+@AppControl
+- Improved FROZEN detection on some ROMs
+- Added sort modes Name/PackageName/FROZEN/SYSTEM/NOAPK
+- Fixed possible ANR when viewing Details
+- Fixed FC on App with ApkPath being null
+- Tweaked list filtering
+- Fixed issue where /system is busy during remount
+- Tweaked layout
+@CorpseFinder
+- Tidied code, made preperations for possible addition of odex file corpse checking
+- Added more detailed information to list entries
+- Changed parsing methods
+@DuplicateFinder
+- Removed descriptors and cut name into first row leaving more space for the path
+- Changed autoselection from longest/shortest path into actual nested level comparison
+@Misc
+- Added button to delete Googles QuickSearch history
+
+########## v2.0.1.4(205) #########
+@SystemCleaner
+- Fixed FC when filtering files with a certain path
+@Explorer
+- Fixed sort mode not being respected
+@AppCleaner
+- Entries can now be sorted by Size/Name/Count (Default is Size)
+
+########## v2.0.1.3(204) #########
+@Common
+- Fixed root detection problem (Thanks to the users who mailed and helped me get to the bottom of this)
+- Refactored code for better structure
+- Updated translations
+@AppControl
+- Now listing uninstalled (grey out apps) too
+- Tweaked uninstall routine to better deal with system apps on JellyBean
+@SystemCleaner
+- Added 'UsageStats reports' entry to clean out /data/system/usagestats, which contains information about your app usage
+@Misc
+- Added option to delete batterystats.bin
+
+########## v2.0.1.2(203) #########
+@Common
+- Attempt on root detection fix
+- Rewritten onResume handling, tries to recover previously detected settings now
+- Bugfixes for some UI related FCs
+@Explorer
+- Fixed hang/empty lists on some devices that resolved UIDs and GIDs (Thanks to rudjgaard for helping me fix this)
+- Tweaked line layout to look more consistent per row
+
+########## v2.0.1.1(202) #########
+@Common
+- Added external sd path for Acer tablets
+- Fixed problems with partition detection
+@Duplicates
+- Added failsafe for weird partition setups
+
+########## v2.0.0.1(201) #########
+@Common
+- Fixed crash in Japanese version
+- Fixed unnecessary busybox update that increased start time (Thanks to vlt96 for pointing it out)
+- Fixed crash on resume
+- Attempt on fixing rare FCs in lists
+- Improved startup, global objects are no longer all loaded on start, but dynamicly when asked for
+@Explorer
+- Fixed crash on resume
+@AppControl
+- Attempt on fixing rare FC
+
+########## v2.0.0.0(200) #########
+@Common
+- Complete new UI (ActionBar+Fragments+ViewPager)
+- Rewritten a lot of the backend code, making the code cleaner and more straight forward
+- Added smarter partition detection
+- Tidied log outputs
+- Fixed possible bug in root detection
+- Updated translations
+- Tweaked statistics dialog (it is still very vague only and i might remove it in an update)
+- Fixed a potential security issue
+- Fixed SD Maid Pro detection on JellyBean (Thanks to Chris)
+@Startpage
+- New greeting picture
+- Added advanced partition view
+@Explorer
+- Simplified code and improved browsing speed
+- Removed context menu in favor of ICS style actionbar menu
+- Made a more user friendly permission dialog
+- Better SendTo compatibility
+- Nicer refresh, dir up
+@Searcher
+- Improved speed
+- Removed rename,delete context menu option
+- Deactivated autocomplete
+- Improved JellyBean compatibility
+@AppControl
+- Improved compatibility with JellyBean
+- Added smart permission detection for better compatibility with some ROMs
+@CorpseFinder
+- 
+@AppCleaner
+- Fixed a rare case where not all files are deleted
+- Fixed load issue, to keep some devices from rebooting
+@Duplicates
+- Worked on performance, especially for low mem devices
+- Added experimental feature AutoSelection (see advanced settings)
+- Fixed FC when usb storage was mounted
+- Improved progress display
+@BiggestFiles
+- 
+@SystemCleaner
+- Added entry 'Bugreport files' (Thanks to Jeff Kosowsky)
+@Misc
+-
