@@ -1,12 +1,51 @@
 # Changelog
 
 - Latest production version: v3.1.4.5(382)
-- Latest beta version: v4.0.2(4002)
+- Latest beta version: v4.0.3(4003)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
 ## [Unreleased]
-- TBD
+- TBA
+
+## [4.0.3] - 2016-01-02 (BETA)
+### Core
+- Improved: Translations.
+- Improved: Log output and crashtracking.
+- Fixed: SDCard not being detected on multi-user devices without SuperSU.
+- Fixed: Possible crash when changing fragments at certain moments.
+- Fixed: Possible crash when navigating settings.
+- Fixed: Crash when no mount size information could be obtained via StatsFS.
+- Fixed: Possible crash when switching to a specific page in SD Maid through widgets or notifications.
+- Fixed: Crash when checking Venom SuperUser su binary.
+- Fixed: Possible crash when opening or close SD Maid when a task finishes.
+- Fixed: Possible crash tasks start/finish in quick succession.
+- Fixed: Possible crash when doing list item multiselection.
+- Improved: SD Maid will no longer crash if the VIBRATE permission has been revoked.
+
+### QuickAccess
+- Fixed: Crash when the UI was shown before SD Maid was ready and the user clicked an action.
+
+### Explorer:
+- Fixed: Crash if the user press back before the Explorer UI is completely loaded (no default path is available).
+
+### AppControl
+- Fixed: Crash when an action was started from the details activity and the activity was closed before the action finished.
+- Fixed: Crash when an app with no APK was scanned.
+
+### CorpseFinder
+- Fixed: A crash when canceling the scan at certain moments.
+- Fixed: Deleting from details erroneously required the pro version.
+- Improved: The sdcard filter should cancel quicker now.
+
+### SystemCleaner
+- Fixed: Deleting from details erroneously required the pro version.
+
+### Exclusions
+- Fixed: Crash upon entering the exclusion manager (#274).
+
+### Scheduler
+- Fixed: Fixed random crash when entering/leaving the scheduler page.
 
 ## [4.0.2] - 2015-12-31 (BETA)
 ### Core
