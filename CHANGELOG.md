@@ -1,12 +1,44 @@
 # Changelog
 
-- Latest production version: v3.1.4.5(382)
+- Latest production version: v3.1.4.6(383)
 - Latest beta version: v4.0.3(4003)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
 ## [Unreleased]
-- TBA
+### Core
+- Improved: Strings and translations.
+- Improved: Debugging for storage access related issues (i.e. SD Maid not recognizing permissions for external sdcards).
+- Improved: Slightly better performance when reading files.
+- Fixed: Old pro version icon being visible in the BuyPro dialog.
+- Fixed: Thread synchronization when reading files, rare hanging cases and a few crashes related to canceling are fixed now.
+- Fixed: Progress indicators in the navigation drawer being shown for wrong items.
+- Changed: Task error handling, previously some errors might just have been ignored instead of crashing the app, preventing me from finding out about them and fixing it.
+
+### Explorer:
+- Improved: UX by disabling the new file/dir add button if no text is entered (#282).
+- Changed: Visual distinction between user and default bookmarks (#284).
+- Fixed: Crash when trying to add a bookmark on an unloaded Explorer (#286).
+- Fixed: Fixed FAB button showing with sidebar open (#285).
+
+### Searcher
+- Fixed: Root search checkbox being weird (#287).
+
+### CorpseFinder
+- Improved: The UninstallWatcher now only returns results that can be attributed to the uninstalled app.
+- Improved: SDCard filter scanning speed.
+- Fixed: Corpse filter not acting according to their default settings value.
+
+### AppControl
+- Fixed: APK export failing when exporting to external sdcards on 5.0+ (#271 & #270).
+
+### Scheduler
+- Fixed: Rewritten the external task system, which is now what both scheduler and widgets use to trigger actions indirectly (fixes #277).
+- Fixed: Scheduler failing because setup was not done by enforcing the setup to happen before setting a schedule (fixes #278).
+
+### QuickAccess
+- Improved: Dialog messages in single-pass mode (#279).
+- Fixed: BuyPro Dialog not showing when necessary.
 
 ## [4.0.3] - 2016-01-02 (BETA)
 ### Core
