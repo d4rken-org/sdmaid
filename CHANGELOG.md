@@ -1,23 +1,35 @@
 # Changelog
 
 - Latest production version: v3.1.4.6(383)
-- Latest beta version: v4.0.3(4003)
+- Latest beta version: v4.0.4(4004)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## [Unreleased]
+## [4.0.4] - 2016-01-27 (BETA)
 ### Core
+- Added: SD Maid Pro now displays a SnackBar if the unlocker not have a minimum version (currently 4000).
+- Added: Reenabled coffee easteregg.
+- Added: Experimental support for injecting busybox & sqlite binary into the systemless root area. This should help on devices where SD Maid other would have to inject into /system to work with root.
 - Improved: Strings and translations.
+- Improved: ToolBar navigation icon behavior in tablet layout.
 - Improved: Debugging for storage access related issues (i.e. SD Maid not recognizing permissions for external sdcards).
 - Improved: Slightly better performance when reading files.
+- Improved: UI updating when doing actions within the details views. Especially rotation should now be handled better.
+- Changed: Removed most analytics of events, if the information isn't useful, we dont't need to track it :), and it wasn't really helping me :(. Added a few analytics for widget usage.
+- Fixed: Not being able to select two dirs that share part of their name within the picker.
+- Fixed: Picker content now refreshes after creating a file/dir (#290).
 - Fixed: Old pro version icon being visible in the BuyPro dialog.
 - Fixed: Thread synchronization when reading files, rare hanging cases and a few crashes related to canceling are fixed now.
 - Fixed: Progress indicators in the navigation drawer being shown for wrong items.
-- Changed: Task error handling, previously some errors might just have been ignored instead of crashing the app, preventing me from finding out about them and fixing it.
+- Fixed: Entering and exiting item details should no longer cause memory leaks.
+- Fixed: Crash when entering and exiting the details view and then deleting an item through the tools main page.
+- Changed: Task error handling, previously some errors might just have been ignored instead of crashing the app, preventing me from finding out about them and fixing it
 
 ### Explorer:
 - Improved: UX by disabling the new file/dir add button if no text is entered (#282).
 - Changed: Visual distinction between user and default bookmarks (#284).
+- Fixed: ActionMode staying active despite leaving the main activity.
+- Fixed: After permission changes not scrolling to the right item.
 - Fixed: Crash when trying to add a bookmark on an unloaded Explorer (#286).
 - Fixed: Fixed FAB button showing with sidebar open (#285).
 
@@ -27,10 +39,20 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### CorpseFinder
 - Improved: The UninstallWatcher now only returns results that can be attributed to the uninstalled app.
 - Improved: SDCard filter scanning speed.
+- Changed: Trying new icon. Ghosty :)
 - Fixed: Corpse filter not acting according to their default settings value.
 
 ### AppControl
+- Improved: Cross check items that are to be removed on uninstall if they are shared with another app.
 - Fixed: APK export failing when exporting to external sdcards on 5.0+ (#271 & #270).
+- Fixed: Crash on apps that either don't have an apk file or they have one but SD Maid can't find it.
+- Fixed: Not being able to enter app details again after uninstalling an app.
+
+### AppCleaner
+- Fixed: Exclusions are no longer applied if we can't enforce them (e.g. non-root private caches) (#246).
+
+### Duplicates
+- Fixed: Being able to press/longpress the header when viewing details which lead to a crash.
 
 ### Scheduler
 - Fixed: Rewritten the external task system, which is now what both scheduler and widgets use to trigger actions indirectly (fixes #277).
