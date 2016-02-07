@@ -1,11 +1,68 @@
 # Changelog
 
-- Latest production version: v3.1.4.6(383)
-- Latest beta version: v4.0.4(4004)
+- Latest production version: SD Maid v3.1.4.6(383), Unlocker v3.1.0.4(310)
+- Latest beta version: v4.0.5(4005), Unlocker v4.0.1(4001)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## [4.0.4] - 2016-01-27 (BETA)
+## [Unreleased]
+...
+
+## Unlocker [4.0.1] - 2016-02-07 (BETA)
+### Core
+- Improved: Translations.
+
+## SD Maid [4.0.5] - 2016-02-07 (BETA)
+### Core
+- Added: Fast scrolling to most lists.
+- Improved: Settings organization and icons.
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Hidden cache database.
+- Fixed: Opening SD Maid after updating the unlocker should now correctly update and remove all update indicators.
+- Fixed: Rare crash when entering settings because menu actions failed to load.
+- Fixed: Popup for unlocker update not showing despite being set (what an unexpected source of agony).
+- Fixed: Rare crash when exiting a details activity.
+- Fixed: Rare crash when doing quickly exiting the permission setup.
+- Fixed: ActionMode not restoring correctly after device orientation change in details activities.
+- Fixed: Possible hang on outputs not ending with a new line.
+- Changed: Code related loading the coffee animation in an attempt to address glide#928.
+
+### Explorer
+- Fixed: Progress result when making files/directories.
+- Fixed: Progress result when renaming items.
+- Fixed: Progress result when path dumping.
+- Fixed: Progress result when calculating item size.
+
+### AppControl
+- Improved: XML based freezing method, smarter logic instead of hardcoded values.
+- Fixed: Secondary freezing methods on 4.2+ ROMs.
+- Fixed: Detailed size display in app details.
+- Fixed: App reset causing apps to no longer start.
+- Changed: Added "Autostarts" label to function "Receiver Manager", lessen the confusion.
+- Removed: Outdated app uninstall mechanisms related to <4.0 Android.
+
+### SystemCleaner
+- Improved: Scan performance by parallelizing read operations and filtering.
+
+### Biggest
+- Improved: Scan performance by parallelizing read operations and file tree creation.
+
+### Duplicates
+- Improved: Scan performance by parallelizing read operations and first filtering pass (size-based).
+- Improved: Scan performance by improving the order in which criteria are checked that sort files out (most common first).
+
+### Databases
+- Removed: Unnecessary progress information.
+
+### Scheduler
+- Fixed: Scheduler not triggering from skip notifications.
+
+### QuickAccess
+- Fixed: Crash when entering and immediately exiting the UI.
+- Fixed: Widget crashing when saving configuration.
+
+## SD Maid [4.0.4] - 2016-01-27 (BETA)
 ### Core
 - Added: SD Maid Pro now displays a SnackBar if the unlocker not have a minimum version (currently 4000).
 - Added: Reenabled coffee easteregg.
@@ -62,7 +119,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Dialog messages in single-pass mode (#279).
 - Fixed: BuyPro Dialog not showing when necessary.
 
-## [4.0.3] - 2016-01-02 (BETA)
+## SD Maid [4.0.3] - 2016-01-02 (BETA)
 ### Core
 - Improved: Translations.
 - Improved: Log output and crashtracking.
@@ -101,7 +158,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### Scheduler
 - Fixed: Fixed random crash when entering/leaving the scheduler page.
 
-## [4.0.2] - 2015-12-31 (BETA)
+## SD Maid [4.0.2] - 2015-12-31 (BETA)
 ### Core
 - Added: If the busybox setup fails, the final explanation screen will now show an actual error message with details.
 - Added: Exclusion for SD Maid from the databases tool.
@@ -158,7 +215,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Replaced extra searchbar with built in searchview.
 - Fixed: Fixed exclusions being cut off.
 
-## [4.0.1] - 2015-12-19 (BETA)
+## SD Maid [4.0.1] - 2015-12-19 (BETA)
 ### Core
 - Fixed: Timeout during root check not working leading to endless waiting.
 - Fixed: Crash due missing update data.
@@ -193,7 +250,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### LastModified
 - Fixed: Crash when entering settings.
 
-## [4.0.0] - 2015-12-18 (BETA)
+## SD Maid [4.0.0] - 2015-12-18 (BETA)
 ### Core
 - Added: Support for API23 permission system.
 - Added: Advanced option to work around Kingo Root's faulty su binary behavior.
