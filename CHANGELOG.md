@@ -1,12 +1,29 @@
 # Changelog
 
 - Latest production version: SD Maid v3.1.4.6(383), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.5(4005), Unlocker v4.0.1(4001)
+- Latest beta version: v4.0.6(4006), Unlocker v4.0.1(4001)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## [Unreleased]
-...
+## Unreleased
+### Core
+- Fixed: Rare racecondition crash when su binary version is obtained, but the shell blocks and timeouts.
+
+## SD Maid [4.0.6] - 2016-02-08 (BETA)
+### Core
+- Improved: Updated G+ icon.
+- Improved: Translations.
+
+### AppControl
+- Fixed: Crash double checking of frozen apps is enabled.
+- Fixed: Rare crash when exiting app details.
+- Fixed: Possible crash when entering app details.
+
+### SystemCleaner
+- Improved: User filter loading, account for permission issues and fail gracefully while logging the error.
+
+### Exclusions
+- Fixed: Crash when entering the exclusion manager.
 
 ## Unlocker [4.0.1] - 2016-02-07 (BETA)
 ### Core
