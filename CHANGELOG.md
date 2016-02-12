@@ -7,7 +7,28 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ## Unreleased
 ### Core
+- Added: There is now an advanced setting that allows you to restore the unlocker icon.
+- Improved: Mechanics for shell creation. This brings no noticeable change but the code is a lot clean now which makes the developer happy.
 - Fixed: Rare racecondition crash when su binary version is obtained, but the shell blocks and timeouts.
+- Fixed: Crash if a deletion using root failed due to the shell timing out.
+- Fixed: Crash when enabling or disabling previews and returning from the settings to the main app.
+- Fixed: Failure to copy or move files if the source was located outside of the public storage but still readable.
+- Fixed: Crash when disabling pages in settings and returning to the main view.
+
+### Explorer
+- Improved: When creating a new bookmark, the name is now prepopulated with the current directory name.
+- Fixed: File previews not loading anything for /data/app-asec.
+
+### AppControl
+- Fixed: Export results showing wrong success counter.
+- Fixed: Export failing without root, due to SD Maid not correctly determining access.
+- Fixed: Showing size -1 if the item had a size of 0.
+
+### AppCleaner
+- Fixed: Showing size -1 if the item had a size of 0.
+
+### Scheduler
+- Improved: If no schedule is active, the SchedulerWard that checks if restoring is necessary after a reboot, will no longer start.
 
 ## SD Maid [4.0.6] - 2016-02-08 (BETA)
 ### Core
