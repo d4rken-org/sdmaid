@@ -1,34 +1,57 @@
 # Changelog
 
 - Latest production version: SD Maid v3.1.4.6(383), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.6(4006), Unlocker v4.0.1(4001)
+- Latest beta version: v4.0.7(4007), Unlocker v4.0.1(4001)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## Unreleased
+## SD Maid [4.0.7] - 2016-02-24 (BETA)
 ### Core
+- Added: Support for /data/app-private
 - Added: There is now an advanced setting that allows you to restore the unlocker icon.
 - Improved: Mechanics for shell creation. This brings no noticeable change but the code is a lot clean now which makes the developer happy.
+- Improved: Task & Result system to prepare for better statistics.
+- Improved: Clutter database (#299).
+- Improved: Translations.
+- Improved: UI behavior in regard to canceling.
+- Changed: Some settings reordering.
+- Changed: Further reduced analytics, because I got all I needed from it.
 - Fixed: Rare racecondition crash when su binary version is obtained, but the shell blocks and timeouts.
 - Fixed: Crash if a deletion using root failed due to the shell timing out.
 - Fixed: Crash when enabling or disabling previews and returning from the settings to the main app.
 - Fixed: Failure to copy or move files if the source was located outside of the public storage but still readable.
 - Fixed: Crash when disabling pages in settings and returning to the main view.
+- Fixed: Racecondition crash when entering/exiting details.
+- Fixed: Menu icons reshowing in details after rotation.
+- Fixed: After failing to grant SD Maid permission, the overflow menu now correctly makes the option "Don't show again" visible.
+- Fixed: 3 cases of canceling to hang endlessly.
+- Fixed: Fixed location being UNKNOWN for some subdirectories of /data.
 
 ### Explorer
 - Improved: When creating a new bookmark, the name is now prepopulated with the current directory name.
 - Fixed: File previews not loading anything for /data/app-asec.
 
 ### AppControl
+- Added: Support for enabling/disabling any type of receiver and categorization for all default Android receiver types.
 - Fixed: Export results showing wrong success counter.
 - Fixed: Export failing without root, due to SD Maid not correctly determining access.
 - Fixed: Showing size -1 if the item had a size of 0.
+
+### SystemCleaner
+- Added: A second default thumbnail filter.
+- Improved: Scan speed (depending on active filters).
 
 ### AppCleaner
 - Fixed: Showing size -1 if the item had a size of 0.
 
 ### Scheduler
 - Improved: If no schedule is active, the SchedulerWard that checks if restoring is necessary after a reboot, will no longer start.
+
+### Statistics
+- Added: Data and charts for space gained values per individual tool.
+- Added: Searchable chronic that details SD Maids last actions.
+- Added: Settings to configure size stats timespan and setting to limit chronic size.
+- Fixed: Toolbar navigation button.
 
 ## SD Maid [4.0.6] - 2016-02-08 (BETA)
 ### Core
