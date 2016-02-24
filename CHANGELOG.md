@@ -45,6 +45,9 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### AppCleaner
 - Fixed: Showing size -1 if the item had a size of 0.
 
+### Databases
+- Improved: Result detection, previously failed VACUUM attempts were not correctly displayed.
+
 ### Scheduler
 - Improved: If no schedule is active, the SchedulerWard that checks if restoring is necessary after a reboot, will no longer start.
 
