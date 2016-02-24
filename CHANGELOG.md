@@ -33,6 +33,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ### AppControl
 - Added: Support for enabling/disabling any type of receiver and categorization for all default Android receiver types.
+- Added: Support for enabling/disabling multiple receiver at once.
 - Fixed: Export results showing wrong success counter.
 - Fixed: Export failing without root, due to SD Maid not correctly determining access.
 - Fixed: Showing size -1 if the item had a size of 0.
