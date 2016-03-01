@@ -5,6 +5,43 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
+## SD Maid [4.0.8] - Unknown (BETA)
+### Core
+- Added: Progress indicator for stats being processed at the end of a task.
+- Improved: Various small layout issues.
+- Improved: Within settings that use the path picker screen, directory creation is now disabled where it doesn't make sense (i.e. import stuff).
+- Improved: Overall memory footprint, during parallel operation of multiple tools as well as after finishing operations SD Maids memory usage should further drop.
+- Changed: Workers no longer display individual notifications, instead a single notification is displayed. The notification displays the active worker count and when all tasks are finished it will show how many ran OK and how many failed. This fixes notification spam, some tools might get specific notification functionality, if necessary, at a later point.
+
+### Explorer
+- Added: Size and item count information as a list header.
+- Added: Information about determined access type and location (Debug/Experimental).
+- Fixed: Case where too simple storage detection led to wrong permission and assumptions and thus failing operations.
+
+### AppControl
+- Changed: Replaced permanent SearchBar with collapsible one in the toolbar, more screen-estate yay!
+
+### Duplicates
+- Changed: Replaced permanent SearchBar with collapsible one in the toolbar, more screen-estate yay!
+
+### Databases
+- Fixed: Crash when vacuum results are processed and some databases were not accessible.
+- Fixed: SD Maid being killed when running vacuum from the background (scheduler/widget).
+
+### QuickAccess
+- Improved: Marked the area where you can press the row entry to trigger its action.
+- Improved: Widget events, it's a lot more responsive but may glitch, working on that.
+- Changed: Button bar to FAB again (see poll).
+- Fixed: Wrong icon for Databases action.
+
+### Statistics
+- Added: Settings now allow negative numbers. Chronic or statistics limit at 0 will remove any limits, setting it to < 0 will disable it.
+- Improved: Rotation handling regarding search field.
+- Improved: Entering nonsense values will now reset it to default instead of crashing.
+- Improved: Layouting and removed duplicate code, the chronic is now just rehoused in a full activity if the user chooses to expand it.
+- Fixed: Chart on-click behavior, replaced snackbar with actual chart-marker. (Ty Geocfu1@XDA)
+- Fixed: Potential crash when closing or changing rotation.
+
 ## SD Maid [4.0.7] - 2016-02-24 (BETA)
 ### Core
 - Added: Support for /data/app-private
