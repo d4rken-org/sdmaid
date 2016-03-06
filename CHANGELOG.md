@@ -1,7 +1,7 @@
 # Changelog
 
 - Latest production version: SD Maid v3.1.4.6(383), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.7(4007), Unlocker v4.0.1(4001)
+- Latest beta version: v4.0.8(4008), Unlocker v4.0.2(4002), v3.1.4.7(384)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
@@ -9,22 +9,56 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### Core
 - Added: Progress indicator for stats being processed at the end of a task.
 - Improved: Various small layout issues.
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Tool events that result in an UI action other than the results being populated (showing a snackbar etc) could have dropped these theoretically before, this should now no longer happen.
+- Improved: Minor text issues i.e. 'show' vs 'open'.
+- Improved: Busybox check on rooted devices (#313 Ty elhennig@github).
 - Improved: Within settings that use the path picker screen, directory creation is now disabled where it doesn't make sense (i.e. import stuff).
 - Improved: Overall memory footprint, during parallel operation of multiple tools as well as after finishing operations SD Maids memory usage should further drop.
+- Fixed: Race condition UI crash when a tool starts working and SD maids updates the navigation drawer UI.
 - Changed: Workers no longer display individual notifications, instead a single notification is displayed. The notification displays the active worker count and when all tasks are finished it will show how many ran OK and how many failed. This fixes notification spam, some tools might get specific notification functionality, if necessary, at a later point.
+- Changed: Disabled coffee drinking animation on <API18 devices.
 
 ### Explorer
 - Added: Size and item count information as a list header.
 - Added: Information about determined access type and location (Debug/Experimental).
+- Improved: Detection whether a location is writeable and readable, which fixes what action are available.
 - Fixed: Case where too simple storage detection led to wrong permission and assumptions and thus failing operations.
 
+### Searcher
+- Added: Option to allow for case sensitive search (#230 Ty mcl21014).
+
 ### AppControl
+- Added: Option to share information about your installed apps to text (other apps or text file). Currently includes: Name, package-name, version, version-code, Google-Play download link. The shared text is markdown formatted, but that's up for discussion :) (#249 #255 Ty cloud_strife84).
+- Added: Action to 'Force stop' applications(requires root). Note that a force-stopped application will not run until the user explicitly opens it.
+- Added: Force-stopped apps (e.g. apps with state stopped=true) now show a 'Stopped' tag by which you can also filter.
+- Improved: UI updating and progress feedback when executing tasks from the details view.
+- Improved: Killing an app will use root if available.
+- Improved: When killing and root is available all pids matching the packagename will be killed instead of only the first one.
 - Changed: Replaced permanent SearchBar with collapsible one in the toolbar, more screen-estate yay!
+- Fixed: Double check for frozen apps always coming up empty due to reading wrong xml tag.
+
+### SystemCleaner
+- Removed: Setting entry, because we currently have no settings (#315 Ty SuperSandro2000).
+
+### AppCleaner
+- Added: If an app is running and can't be killed, it will be skipped.
+- Improved: SD Maid will now also try to use root to kill an app before working on it.
 
 ### Duplicates
 - Changed: Replaced permanent SearchBar with collapsible one in the toolbar, more screen-estate yay!
+- Fixed: Possible racecondition crash when deleting items while viewing details.
+
+### Biggest
+- Added: Option to delete items, via info dialog and multi selection (#149).
+- Changed: Long press now triggers multiselection, dialog has a show option that open the Explorer.
 
 ### Databases
+- Added: If an app is running and can't be killed, it's database will be skipped.
+- Improved: Databases from official database folders that are sql databases are now also found (#182 Ty h4ku).
+- Improved: Only valid sql databases are now shown. 
+- Improved: SD Maid will now also try to use root to kill an app before working on it's database.
 - Fixed: Crash when vacuum results are processed and some databases were not accessible.
 - Fixed: SD Maid being killed when running vacuum from the background (scheduler/widget).
 
@@ -32,14 +66,15 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Marked the area where you can press the row entry to trigger its action.
 - Improved: Widget events, it's a lot more responsive but may glitch, working on that.
 - Changed: Button bar to FAB again (see poll).
-- Fixed: Wrong icon for Databases action.
+- Fixed: Wrong icon for Databases action (#316 Ty DO97).
+- Fixed: VACUUM action not showing in the toolbar.
 
 ### Statistics
 - Added: Settings now allow negative numbers. Chronic or statistics limit at 0 will remove any limits, setting it to < 0 will disable it.
 - Improved: Rotation handling regarding search field.
 - Improved: Entering nonsense values will now reset it to default instead of crashing.
 - Improved: Layouting and removed duplicate code, the chronic is now just rehoused in a full activity if the user chooses to expand it.
-- Fixed: Chart on-click behavior, replaced snackbar with actual chart-marker. (Ty Geocfu1@XDA)
+- Fixed: Chart on-click behavior, replaced snackbar with actual chart-marker (#311 Ty Geocfu1@XDA).
 - Fixed: Potential crash when closing or changing rotation.
 
 ## SD Maid [4.0.7] - 2016-02-24 (BETA)
@@ -61,8 +96,11 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: Racecondition crash when entering/exiting details.
 - Fixed: Menu icons reshowing in details after rotation.
 - Fixed: After failing to grant SD Maid permission, the overflow menu now correctly makes the option "Don't show again" visible.
-- Fixed: 3 cases of canceling to hang endlessly.
+- Fixed: 3 cases of canceling to hang endlessly (#302 Ty Geocfu).
 - Fixed: Fixed location being UNKNOWN for some subdirectories of /data.
+ 
+### QuickAccess
+- Changed: When in singlepass mode, confirmations are no longer shown (#305 Ty Geocfu).
 
 ### Explorer
 - Improved: When creating a new bookmark, the name is now prepopulated with the current directory name.
