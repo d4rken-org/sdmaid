@@ -5,7 +5,7 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.0.8] - Unknown (BETA)
+## SD Maid [4.0.8] - 06.03.2015 (BETA)
 ### Core
 - Added: Progress indicator for stats being processed at the end of a task.
 - Improved: Various small layout issues.
