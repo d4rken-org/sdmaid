@@ -1,9 +1,26 @@
 # Changelog
 
 - Latest production version: SD Maid v3.1.4.6(383), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.8(4008), Unlocker v4.0.2(4002), v3.1.4.7(384)
+- Latest beta version: v4.0.8(4008), Unlocker v4.0.2(4002), v3.1.4.8(385)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.0.9] - TBD (BETA)
+### Core
+- Added: Default exclusion matching "com.android.systemui" for Databases, AppCleaner and SystemCleaner.
+- Fixed: Crash when canceling root operations (#323 Ty Geocfu).
+
+### SystemCleaner
+- Improved: Empty folders that are mountpoints are now ignored by the Empty directories filter.
+
+### AppCleaner
+- Added: Option to skip running apps, which is OFF by default.
+- Changed: Apps will no longer be forcefully killed.
+
+### Databases
+- Added: Option to skip running apps, which is ON by default.
+- Changed: If running apps are not skipped, SD Maid will suspend (SIGSTOP) them before working on their database (root only) instead of killing them (Fixes #325).
+- Improved: Result now indicates successful, skipped and failed operations.
 
 ## SD Maid [4.0.8] - 06.03.2015 (BETA)
 ### Core

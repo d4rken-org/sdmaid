@@ -1,3 +1,9 @@
+########## v3.1.4.8(385) #########
+@General
+- Improved: Clutter database.
+- Removed: Automatic crash tracking.
+- Changed: Changelog is no longer contained, but pointing to Github.
+
 ########## v3.1.4.7(384) #########
 @General
 - Improved: Clutter database.
