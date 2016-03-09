@@ -10,6 +10,13 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Added: Default exclusion matching "com.android.systemui" for Databases, AppCleaner and SystemCleaner.
 - Fixed: Crash when canceling root operations (#323 Ty Geocfu).
 
+### QuickAccess
+- Improved: Progressbar and message behavior, especiall yon rotation.
+- Fixed: Inconsistent confirmation dialogs in single-pass mode.
+- Fixed: Jumping textboxes (#314 Ty Geocfu).
+- Fixed: Cut off titles on small displays (as good as possible) (#318 Ty Geocfu).
+- Fixed: ButtonBar not correctly switching states in single-pass mode (#322 Ty Geocfu).
+
 ### SystemCleaner
 - Improved: Empty folders that are mountpoints are now ignored by the Empty directories filter.
 
