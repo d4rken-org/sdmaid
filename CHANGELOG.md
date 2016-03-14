@@ -1,9 +1,22 @@
 # Changelog
 
-- Latest production version: SD Maid v3.1.4.6(383), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.9(4009), Unlocker v4.0.2(4002), v3.1.4.8(385)
+- Latest production version: SD Maid v3.1.4.8(385), Unlocker v3.1.0.4(310)
+- Latest beta version: v4.0.9(4009), Unlocker v4.0.2(4002)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.0.10] - TBD (BETA)
+### Core
+- Added: USB-OTG support if device supported (4.x-5.x).
+- Improved: Determining how something is read and writeable for SD Maid.
+- Improved: Added caching mechanisms for read/write lookup (speed improvements when dealing with the same files again).
+- Fixed: Dialogs in settings not having the correct app theme.
+- Fixed: Batch deletion failing if items had different types of write accesstype.
+- Fixed: SD Maid not asking for secondary storage (Android 5.X) permission despite needing it.
+- Removed: Label lookup for mounts, due to failing consistently on newer ROMs and serving no useful purpose.
+
+### Duplicates
+- Added: Default inclusion of portable storage within search paths.
 
 ## SD Maid [4.0.9] - 10.03.2016 (BETA)
 ### Core
