@@ -15,6 +15,13 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: SD Maid not asking for secondary storage (Android 5.X) permission despite needing it.
 - Removed: Label lookup for mounts, due to failing consistently on newer ROMs and serving no useful purpose.
 
+### QuickAccess
+- Fixed: Subsequent delete attempts in single-pass mode only scanning and not deleting (#329 Ty Geocfu).
+- Fixed: Layout issues (#328 Ty Geocfu)
+
+### AppControl
+- Changed: Apps system pages are reachable again through a tap on the icon instead of long press.
+
 ### Duplicates
 - Added: Default inclusion of portable storage within search paths.
 
