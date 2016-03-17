@@ -1,29 +1,57 @@
 # Changelog
 
 - Latest production version: SD Maid v3.1.4.8(385), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.9(4009), Unlocker v4.0.2(4002)
+- Latest beta version: v4.0.10(4010), Unlocker v4.0.2(4002)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.0.10] - TBD (BETA)
+## SD Maid [4.0.10] - 18.03.2016 (BETA)
 ### Core
+- Added: Support for adopted storage (6.x).
+- Added: Support for portable storage (6.x).
 - Added: USB-OTG support if device supported (4.x-5.x).
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Updated all libraries.
+- Improved: Minimized file size of used png images.
+- Improved: Removed unused text, layout and image resources.
 - Improved: Determining how something is read and writeable for SD Maid.
+- Improved: If possible, the systems storage access framework activity will directly launch in advanced mode (no longer requiering to toggle "Show SD card").
 - Improved: Added caching mechanisms for read/write lookup (speed improvements when dealing with the same files again).
+- Improved: Made code more resiliant at some locations, though some of those crashes could theoretically only happen if people screw around with the APK...
 - Fixed: Dialogs in settings not having the correct app theme.
+- Fixed: StorageAccessFramework (SAF) based access on Android N (https://code.google.com/p/android/issues/detail?id=204119).
 - Fixed: Batch deletion failing if items had different types of write accesstype.
 - Fixed: SD Maid not asking for secondary storage (Android 5.X) permission despite needing it.
+- Fixed: Potential crash within tool details when removing the last item.
+- Fixed: Concurrency crash when multiple threads tried to instantiate a worker.
+- Fixed: Crash when canceling I/O operations via shells at just the right moment (after starting one, but just before it begins).
 - Removed: Label lookup for mounts, due to failing consistently on newer ROMs and serving no useful purpose.
 
 ### QuickAccess
 - Fixed: Subsequent delete attempts in single-pass mode only scanning and not deleting (#329 Ty Geocfu).
 - Fixed: Layout issues (#328 Ty Geocfu)
 
+### Explorer
+- Fixed: Crash on opening the Explorer due to a racecondition where the UI initialised too fast and got bad values.
+
 ### AppControl
+- Fixed: Crash due to app having no data dir (Android N).
 - Changed: Apps system pages are reachable again through a tap on the icon instead of long press.
+
+### CorpseFinder
+- Added: Preliminary support for /data/user_de (Android N).
+
+### AppCleaner
+- Fixed: Crash due to app having no data dir (Android N).
+- Added: Option to show inaccessible items that would require manual action.
+- Changed: Private cache sizes on 6.0 without root are no longer shown, instead a button with further details will be made visible.
 
 ### Duplicates
 - Added: Default inclusion of portable storage within search paths.
+
+### Databases
+- Removed: Total database sizes from scan task result (gives no useful information but is missleading).
 
 ## SD Maid [4.0.9] - 10.03.2016 (BETA)
 ### Core
