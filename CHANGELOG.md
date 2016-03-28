@@ -1,9 +1,33 @@
 # Changelog
 
 - Latest production version: SD Maid v3.1.4.8(385), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.10(4010), Unlocker v4.0.2(4002)
+- Latest beta version: v4.0.11(4011), Unlocker v4.0.2(4002)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.0.11] - 28.03.2016 (BETA)
+### Core
+- Improved: Translations
+- Improved: Busybox error screen now shows more debugging information that might help me, help you.
+- Improved: Busybox setup now cycles through other architecture canidates if the first one fails.
+- Improved: Issues while granting uri access no longer take down the app (Improves upon #336 Ty Vagelis1608).
+- Improved: Granting sdcard access via SAF uri should no longer fail on most LG devices (Improves upon #231).
+- Improved: Notification progress results are more accurate if it's only one task finishing.
+- Improved: Navdrawer headcard layouting on <5.0.
+- Fixed: Write-access test for java.io.File accessible storage (e.g. secondary storage + sdcardfix) (#330 Ty gaich).
+- Fixed: Crash on 4.4 devices where a hacky file deletion method for sdcards fails.
+
+### Overview
+- Improved: Text layouting being cut off early on some languages (#331 Ty jpzex).
+- Fixed: Storage location "Read only" tag is now based on a the global routine that all tools use (previously it had a simplified check that could yield different results).
+
+### AppControl
+- Improved: Added progress results via snackbar in details view.
+- Fixed: Receiver state not updating correctly after toggeling it.
+- Fixed: 0.00 byte apk size on <4.3 devices.
+
+### AppCleaner
+- Improved: Manually selecting all apps to clean will no longer make SD Maid additionally use the native cache clearing routine, while using the clean all button will (Allows to manually only delete public caches on unrooted devices).
 
 ## SD Maid [4.0.10] - 18.03.2016 (BETA)
 ### Core
