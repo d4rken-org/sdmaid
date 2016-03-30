@@ -1,9 +1,19 @@
 # Changelog
 
 - Latest production version: SD Maid v3.1.4.8(385), Unlocker v3.1.0.4(310)
-- Latest beta version: v4.0.11(4011), Unlocker v4.0.2(4002)
+- Latest beta version: v4.1.0(4100), Unlocker v4.0.3(4003)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.1.0] - 30.03.2016 (RC)
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: If all tabs are hidden (accident?) auto show the navdrawer to reduce confusion.
+- Fixed: Bug that prevented the improved sdcard access granting (added in 4.0.11) via SAF to fail (#231 #330).
+
+### QuickAccess
+- Fixed: Link to sdmaid.darken.eu/help not working.
 
 ## SD Maid [4.0.11] - 28.03.2016 (BETA)
 ### Core
