@@ -8,6 +8,24 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ## SD Maid [4.1.2] - TBD (RC)
 ### Core
 - Added: Another easteregg.
+- Added: Animation to the overflow menu during storage access framework setup.
+- Added: Link to help website from overflow menu during setup.
+- Improved: Code around setup, some more defensive checks so we don't crash but gracefully deal with it.
+- Improved: General error messages should now also show in the tools page via SnackBar.
+- Improved: Log output for debugging.
+- Improved: Various rare crashs that only a few persons experienced.
+- Improved: Support for keyboard based navigation.
+- Changed: Animation handling to fix possible crash on app resume.
+
+### Overview
+- Fixed: Should no longer crash if sqlite binary setup failed.
+
+### SystemCleaner
+- Improved: Excluded app default "files" and "cache" directories from empty directory filter as these are automatically recreated.
+
+### Databases
+- Added: Default exclusion for Google Photos (doesn't play nice with SQL VACUUM).
+- Fixed: If no SQL binary is available, we exit with an error instead of crashing.
 
 ## SD Maid [4.1.1] - 31.03.2016 (RC)
 ### Core
