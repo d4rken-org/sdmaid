@@ -5,6 +5,10 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
+## SD Maid [4.1.3] - TBD (RC)
+### AppControl
+- Improved: Handling and feedback when exporting APKs fails.
+
 ## SD Maid [4.1.2] - 03.04.2016 (RC)
 ### Core
 - Added: Another easteregg.
