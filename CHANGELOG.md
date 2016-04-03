@@ -1,11 +1,11 @@
 # Changelog
 
-- Latest production version: v4.1.1(4101), Unlocker v4.0.3(4003)
+- Latest production version: v4.1.2(4102), Unlocker v4.0.3(4003)
 - Latest beta version: ~
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.1.2] - TBD (RC)
+## SD Maid [4.1.2] - 03.04.2016 (RC)
 ### Core
 - Added: Another easteregg.
 - Added: Animation to the overflow menu during storage access framework setup.
@@ -13,6 +13,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Code around setup, some more defensive checks so we don't crash but gracefully deal with it.
 - Improved: General error messages should now also show in the tools page via SnackBar.
 - Improved: Log output for debugging.
+- Improved: Translations.
 - Improved: Various rare crashs that only a few persons experienced.
 - Improved: Support for keyboard based navigation.
 - Changed: Animation handling to fix possible crash on app resume.
