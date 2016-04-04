@@ -1,13 +1,20 @@
 # Changelog
 
-- Latest production version: v4.1.2(4102), Unlocker v4.0.3(4003)
+- Latest production version: v4.1.3(4103), Unlocker v4.0.3(4003)
 - Latest beta version: ~
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.1.3] - TBD (RC)
+## SD Maid [4.1.3] - 04.04.2016 (RC)
+### Core
+- Improved: Handling of invalid and or corrupt filenames.
+- Improved: Clutter database.
+- Fixed: Crash caused by invalid filenames.
+- Fixed: Various small crashs, mostly racecondition cases where SD Maid was quickly closed or opened when doing something.
+
 ### AppControl
 - Improved: Handling and feedback when exporting APKs fails.
+- Fixed: SD Maid not directly updating an app's enabled/disabled state on some ROMs.
 
 ## SD Maid [4.1.2] - 03.04.2016 (RC)
 ### Core
