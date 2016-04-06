@@ -1,9 +1,34 @@
 # Changelog
 
-- Latest production version: v4.1.3(4103), Unlocker v4.0.3(4003)
+- Latest production version: v4.1.4(4104), Unlocker v4.0.3(4003)
 - Latest beta version: ~
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.1.4] - 06.04.2016
+### Core
+- Added: If you accidentally disabled system apps required for storage access, SD Maid will now warn you (e.g. Package Disabler apps for Samsung).
+- Improved: Secondary storage setup now tries to display the same name the documents activity also display for its storage entries.
+- Improved: Busybox setup, as fallback option "/system/bin/busybox will" now also be checked (#355).
+- Improved: Logging regarding matches exclusions.
+- Improved: Stage0 busybox setup, try loading version first then do further tests.
+- Fixed: Option "Don't show again" during setup of secondary storage, previously you had to toggle it on/off/on for it to stick (#356).
+- Fixed: Duplicate test for the same busybox applet.
+- Fixed: During secondary storage setup, exiting the "Documents" app without selecting something (e.g. if it's empty) now counts as failure and makes the "Don't show again" option visible (#352).
+- Fixed: Occasional crash when exiting SD Maid during setup initialisation.
+
+### Explorer
+- Fixed: Floating Action Button not being clickable on <Android4.3 (#357).
+- Fixed: Share file option not being visible.
+
+### AppControl
+- Fixed: Occasional crash when quickly entering or leaving app details (e.g. when uninstalling an app).
+
+### Databases
+- Added: Database entries now show if they have been skipped or failed (#353).
+- Added: Default exclusion for AquaMail (org.kman.AquaMail) (#354).
+- Improved: Scan performance by skipping too small files early on (#344).
+- Fixed: Check database existence right before any sqlite3 action to prevent accidental creation of a new database (#354).
 
 ## SD Maid [4.1.3] - 04.04.2016 (RC)
 ### Core
