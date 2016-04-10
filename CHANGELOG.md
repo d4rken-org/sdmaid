@@ -5,7 +5,27 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.1.4] - 06.04.2016
+## SD Maid [4.1.5] - TBD
+### Core
+- Fixed: Startup crash on some MediaTek based devices (#361).
+- Improved: On some custom ROMs SD Maids own cache folders was not created, SD Maid will check that now and try to create it.
+- Improved: When a modded ROM is missing string resources for storage labels SD Maid will now gracefully deals with that instead of crash.
+- Changed: The user interface elements will now unsubscribe from workers in onPause instead of onViewDestroyed.
+- Changed: The way events that happen on rotation or while the main UI was paused are cached and replayed.
+
+### Explorer
+- Improved: Pathdumps now follow symlinks (#364).
+
+### SystemCleaner
+- Fixed: Crash if a device has no public storage.
+
+### Biggest
+- Fixed: Possible crash if storage situation changed while SD Maid was traversing file structures.
+
+### Duplicates
+- Fixed: Wrong item count in confirmation message when deleting from details.
+
+## SD Maid [4.1.4] - 06.04.2016 (RC)
 ### Core
 - Added: If you accidentally disabled system apps required for storage access, SD Maid will now warn you (e.g. Package Disabler apps for Samsung).
 - Improved: Secondary storage setup now tries to display the same name the documents activity also display for its storage entries.
