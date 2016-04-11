@@ -1,29 +1,49 @@
 # Changelog
 
 - Latest production version: v4.1.4(4104), Unlocker v4.0.3(4003)
-- Latest beta version: ~
+- Latest beta version: v4.1.5(4105)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.1.5] - TBD
+## SD Maid [4.1.5] - 11.04.2016 (RC)
 ### Core
+- Fixed: A few occasional RecyclerView crashes.
 - Fixed: Startup crash on some MediaTek based devices (#361).
+- Improved: Clutter database.
 - Improved: On some custom ROMs SD Maids own cache folders was not created, SD Maid will check that now and try to create it.
 - Improved: When a modded ROM is missing string resources for storage labels SD Maid will now gracefully deals with that instead of crash.
+- Improved: When displaying previews, basic fallback icons for filetypes are now higher resolution and scaled to target.
 - Changed: The user interface elements will now unsubscribe from workers in onPause instead of onViewDestroyed.
 - Changed: The way events that happen on rotation or while the main UI was paused are cached and replayed.
 
 ### Explorer
 - Improved: Pathdumps now follow symlinks (#364).
+- Fixed: Crash when quickly scrolling lists with several hundred entries (bitmap recycling issue).
+
+### AppControl:
+- Added: Information about who installed an app (e.g. Google Play).
+- Fixed: Crash when trying to toggle receivers for apps that have been uninstalled.
+- Changed: Removed circle cropping from app icons.
 
 ### SystemCleaner
 - Fixed: Crash if a device has no public storage.
 
-### Biggest
-- Fixed: Possible crash if storage situation changed while SD Maid was traversing file structures.
+### AppCleaner
+- Changed: Removed circle cropping from app icons.
 
 ### Duplicates
 - Fixed: Wrong item count in confirmation message when deleting from details.
+
+### Biggest
+- Fixed: Possible crash if storage situation changed while SD Maid was traversing file structures.
+- Changed: Reduced list item height 72dp to 56dp (#346).
+
+### Databases
+- Changed: Removed circle cropping from app icons.
+
+### Scheduler
+- Fixed: A crash when using choosing a recurrence through the seekbar (#339).
+- Changed: Max recurrence is now 14 days.
 
 ## SD Maid [4.1.4] - 06.04.2016 (RC)
 ### Core
