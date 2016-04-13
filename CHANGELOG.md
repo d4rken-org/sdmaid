@@ -1,9 +1,14 @@
 # Changelog
 
-- Latest production version: v4.1.4(4104), Unlocker v4.0.3(4003)
-- Latest beta version: v4.1.5(4105)
+- Latest production version: v4.1.6(4106), Unlocker v4.0.4(4004)
+- Latest beta version: 
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.1.6] - 12.04.2016 (RC)
+### Core
+- Improved: Translations.
+- Fixed: Memory leak on device rotation.
 
 ## SD Maid [4.1.5] - 11.04.2016 (RC)
 ### Core
