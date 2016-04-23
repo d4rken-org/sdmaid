@@ -10,10 +10,10 @@
         "\/WhatsApp\/Media\/WhatsApp"
     ],
     "regexes": [
-        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Video/Sent/)(?:[\\W\\w]+?)$",
-        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Images/Sent/)(?:[\\W\\w]+?)$",
-        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Audio/Sent/)(?:[\\W\\w]+?)$",
-        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Documents)/Sent/(?:[\\W\\w]+?)$"
+        "^(?:\/[\\W\\w]+?)(?>\/WhatsApp\/Media\/WhatsApp Video\/Sent\/)(?:[\\W\\w]+?)$",
+        "^(?:\/[\\W\\w]+?)(?>\/WhatsApp\/Media\/WhatsApp Images\/Sent\/)(?:[\\W\\w]+?)$",
+        "^(?:\/[\\W\\w]+?)(?>\/WhatsApp\/Media\/WhatsApp Audio\/Sent\/)(?:[\\W\\w]+?)$",
+        "^(?:\/[\\W\\w]+?)(?>\/WhatsApp\/Media\/WhatsApp Documents\/Sent\/)(?:[\\W\\w]+?)$"
     ],
     "locations": [
         "SDCARD"
