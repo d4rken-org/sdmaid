@@ -1,0 +1,24 @@
+{
+    "version": 4,
+    "label": "WhatsApp Sent Files",
+    "description": "Pics, Videos and other sent files from \/sdcard\/WhatsApp\/Media",
+    "identifier": "whats_app_sent_files.community.scuf.sdm",
+    "color": "#43d854",
+    "rootOnly": false,
+    "targetType": "FILE",
+    "pathContains": [
+        "\/WhatsApp\/Media\/WhatsApp"
+    ],
+    "regexes": [
+        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Video/Sent/)(?:[\\W\\w]+?)$",
+        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Images/Sent/)(?:[\\W\\w]+?)$",
+        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Audio/Sent/)(?:[\\W\\w]+?)$",
+        "^(?:[\\W\\w]+?)(?>WhatsApp/Media/WhatsApp Documents)/Sent/(?:[\\W\\w]+?)$"
+    ],
+    "locations": [
+        "SDCARD"
+    ],
+    "exclusions": [
+        ".nomedia"
+    ]
+}
