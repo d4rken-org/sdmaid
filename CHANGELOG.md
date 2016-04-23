@@ -5,6 +5,35 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
+## SD Maid [4.1.7] - TBD
+### Core
+- Added: User interface for adding and testing regular expression based exclusions.
+- Improved: Setup layouts are now scrollable to allow viewing full content on small devices with large fonts (#368).
+- Improved: Reduced memory by moving a few core objects to a soft-referenced type of singleton that can be garbage collected.
+- Improved: Setup help menu is now available on all setup steps and directly open the setup help page now.
+- Fixed: During secondary storage setup, storage entry not turning green despite success, on low memory devices.
+
+### AppControl
+- Fixed: Crash when checking the state of a component that is for some reason UNKNOWN, we will return it as disabled now.
+- Changed: Removed circle cropping from app icons.
+
+### SystemCleaner
+- Added: UI feedback when importing or exporting user filter.
+- Added: UI elements to specify regex entries for user filters.
+- Added: UI elements to specify locations for user filters.
+- Added: UI elements to specify a minimum and maximum size for user filters.
+- Added: Filter for apks in /Download which have a versionCode less or equal than the already installed version.
+- Fixed: Layout cutting off filter descriptions early.
+- Fixed: Locations data not being persisted after trying to edit an imported file.
+- Fixed: Possible inconsistencies when importing/exporting user filters or trying to overwrite existing filters (missnamed JSON fields).
+
+### Duplicates
+- Fixed: Crash when autoselecting from a filtered list (#367).
+- Fixed: Crash when a stale item was attempted to be selected.
+
+### Databases
+- Added: If there is an issue, more information is available in the databases details window.
+
 ## SD Maid [4.1.6] - 12.04.2016 (RC)
 ### Core
 - Improved: Translations.
@@ -28,7 +57,6 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### AppControl:
 - Added: Information about who installed an app (e.g. Google Play).
 - Fixed: Crash when trying to toggle receivers for apps that have been uninstalled.
-- Changed: Removed circle cropping from app icons.
 
 ### SystemCleaner
 - Fixed: Crash if a device has no public storage.
