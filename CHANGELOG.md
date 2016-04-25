@@ -8,24 +8,36 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ## SD Maid [4.1.7] - TBD
 ### Core
 - Added: User interface for adding and testing regular expression based exclusions.
+- Improved: Translations.
 - Improved: Setup layouts are now scrollable to allow viewing full content on small devices with large fonts (#368).
 - Improved: Reduced memory by moving a few core objects to a soft-referenced type of singleton that can be garbage collected.
 - Improved: Setup help menu is now available on all setup steps and directly open the setup help page now.
 - Fixed: During secondary storage setup, storage entry not turning green despite success, on low memory devices.
+- Fixed: Secondary storage detection on MediaTek devices. Added a workaround that detects this the swapped storage situation and fakes the primary UUID (#312 Ty bgiesing).
 
 ### AppControl
 - Fixed: Crash when checking the state of a component that is for some reason UNKNOWN, we will return it as disabled now.
 - Changed: Removed circle cropping from app icons.
 
+### CorpseFinder
+- Fixed: Size being incorrectly determined (too low) for items from the sdcard filter (#369).
+- Fixed: Setting for public and private data being switched.
+- Changed: Feedback during SDCARD scan now shows a % done feedback but no longer the current item being scanned, was missleading and inconsistent with other filters.
+
 ### SystemCleaner
+- Added: Community filters as a new source to import custom userfilter from. These are filters for specific apps or files that don't warrant inclusion as stock filter. Submit requests via the issue tracker.
 - Added: UI feedback when importing or exporting user filter.
 - Added: UI elements to specify regex entries for user filters.
 - Added: UI elements to specify locations for user filters.
 - Added: UI elements to specify a minimum and maximum size for user filters.
 - Added: Filter for apks in /Download which have a versionCode less or equal than the already installed version.
+- Changed: Moved UI actions to import user filter into a single dialog with different source choices.
 - Fixed: Layout cutting off filter descriptions early.
 - Fixed: Locations data not being persisted after trying to edit an imported file.
 - Fixed: Possible inconsistencies when importing/exporting user filters or trying to overwrite existing filters (missnamed JSON fields).
+
+### AppCleaner
+- Fixed: Not cleaning private caches on unrooted device if the action was triggered through the FAB instead of the toolbar (Ty Steffen).
 
 ### Duplicates
 - Fixed: Crash when autoselecting from a filtered list (#367).
