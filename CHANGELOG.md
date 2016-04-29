@@ -12,6 +12,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Setup layouts are now scrollable to allow viewing full content on small devices with large fonts (#368).
 - Improved: Reduced memory by moving a few core objects to a soft-referenced type of singleton that can be garbage collected.
 - Improved: Setup help menu is now available on all setup steps and directly open the setup help page now.
+- Improved: Slightly changed timing when the UI is initialised to reduce/fix a few random crashes.
 - Fixed: During secondary storage setup, storage entry not turning green despite success, on low memory devices.
 - Fixed: Secondary storage detection on MediaTek devices. Added a workaround that detects this the swapped storage situation and fakes the primary UUID (#312 Ty bgiesing).
 
