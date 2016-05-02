@@ -8,7 +8,9 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ## SD Maid [4.1.7] - TBD
 ### Core
 - Added: User interface for adding and testing regular expression based exclusions.
+- Improved: Workaround for KingoRoot should now be automatically applied (setting has been removed).
 - Improved: Translations.
+- Improved: Details entries should no longer cutoff pathes, independent of their length.
 - Improved: Setup layouts are now scrollable to allow viewing full content on small devices with large fonts (#368).
 - Improved: Reduced memory by moving a few core objects to a soft-referenced type of singleton that can be garbage collected.
 - Improved: Setup help menu is now available on all setup steps and directly open the setup help page now.
@@ -17,6 +19,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: Secondary storage detection on MediaTek devices. Added a workaround that detects this the swapped storage situation and fakes the primary UUID (#312 Ty bgiesing).
 
 ### AppControl
+- Added: Paths in app details are now clickable. Clicking a path opens it in the Explorer.
 - Fixed: Crash when checking the state of a component that is for some reason UNKNOWN, we will return it as disabled now.
 - Changed: Removed circle cropping from app icons.
 
@@ -26,12 +29,13 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Changed: Feedback during SDCARD scan now shows a % done feedback but no longer the current item being scanned, was missleading and inconsistent with other filters.
 
 ### SystemCleaner
-- Added: Community filters as a new source to import custom userfilter from. These are filters for specific apps or files that don't warrant inclusion as stock filter. Submit requests via the issue tracker.
+- Added: Added new filter category "other" for specific use cases.
 - Added: UI feedback when importing or exporting user filter.
 - Added: UI elements to specify regex entries for user filters.
 - Added: UI elements to specify locations for user filters.
 - Added: UI elements to specify a minimum and maximum size for user filters.
 - Added: Filter for apks in /Download which have a versionCode less or equal than the already installed version.
+- Improved: Filter colors to better reflected their risk.
 - Changed: Moved UI actions to import user filter into a single dialog with different source choices.
 - Fixed: Layout cutting off filter descriptions early.
 - Fixed: Locations data not being persisted after trying to edit an imported file.
