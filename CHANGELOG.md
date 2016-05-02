@@ -30,6 +30,11 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ### SystemCleaner
 - Added: Added new filter category "other" for specific use cases.
+- Added: Filter for LeakCanargy files.
+- Added: Filter for WhatsApp sent files.
+- Added: Filter for Fabric - Crashlytics files.
+- Added: Filter for Fabric - Answers files.
+- Added: Filter for Flurry Analytics files.
 - Added: UI feedback when importing or exporting user filter.
 - Added: UI elements to specify regex entries for user filters.
 - Added: UI elements to specify locations for user filters.
