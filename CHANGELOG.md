@@ -1,24 +1,31 @@
 # Changelog
 
 - Latest production version: v4.1.6(4106), Unlocker v4.0.4(4004)
-- Latest beta version: 
+- Latest beta version: -
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.1.7] - TBD
+## SD Maid [4.2.0] - TBD
 ### Core
 - Added: User interface for adding and testing regular expression based exclusions.
-- Improved: Workaround for KingoRoot should now be automatically applied (setting has been removed).
 - Improved: Translations.
+- Improved: Workaround for KingoRoot should now be automatically applied (setting has been removed).
 - Improved: Details entries should no longer cutoff pathes, independent of their length.
 - Improved: Setup layouts are now scrollable to allow viewing full content on small devices with large fonts (#368).
-- Improved: Reduced memory by moving a few core objects to a soft-referenced type of singleton that can be garbage collected.
+- Improved: Reduced peak memory consumption by making a few core objects easier to be garbage collected.
 - Improved: Setup help menu is now available on all setup steps and directly open the setup help page now.
 - Improved: Slightly changed timing when the UI is initialised to reduce/fix a few random crashes.
+- Improved: Detection of localized private data folders on Andriod N.
 - Fixed: During secondary storage setup, storage entry not turning green despite success, on low memory devices.
 - Fixed: Secondary storage detection on MediaTek devices. Added a workaround that detects this the swapped storage situation and fakes the primary UUID (#312 Ty bgiesing).
+- Removed: Update databases option in advanced settings. Will be replaced with a better mechanism in a future update.
+
+### Explorer
+- Improved: Adjusted entries such that entry layouts expand for very long filenames.
+- Fixed: "Save directory structure" and "Force MediaScan" only being visible if >1 items are selected.
 
 ### AppControl
+- Added: List of app permissions to app details.
 - Added: Paths in app details are now clickable. Clicking a path opens it in the Explorer.
 - Fixed: Crash when checking the state of a component that is for some reason UNKNOWN, we will return it as disabled now.
 - Changed: Removed circle cropping from app icons.
@@ -29,24 +36,36 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Changed: Feedback during SDCARD scan now shows a % done feedback but no longer the current item being scanned, was missleading and inconsistent with other filters.
 
 ### SystemCleaner
-- Added: Added new filter category "other" for specific use cases.
-- Added: Filter for LeakCanargy files.
-- Added: Filter for WhatsApp sent files.
-- Added: Filter for Fabric - Crashlytics files.
-- Added: Filter for Fabric - Answers files.
-- Added: Filter for Flurry Analytics files.
+- Added: Added new filter category "other" for more specific use cases.
+- Added: Filter for LeakCanary files.
 - Added: UI feedback when importing or exporting user filter.
 - Added: UI elements to specify regex entries for user filters.
 - Added: UI elements to specify locations for user filters.
 - Added: UI elements to specify a minimum and maximum size for user filters.
 - Added: Filter for apks in /Download which have a versionCode less or equal than the already installed version.
 - Improved: Filter colors to better reflected their risk.
-- Changed: Moved UI actions to import user filter into a single dialog with different source choices.
+- Changed: Scan now show amount of filtered files so far instead of the last filtered file.
 - Fixed: Layout cutting off filter descriptions early.
 - Fixed: Locations data not being persisted after trying to edit an imported file.
 - Fixed: Possible inconsistencies when importing/exporting user filters or trying to overwrite existing filters (missnamed JSON fields).
 
 ### AppCleaner
+- Added: New UI window that allows configuration of filter modules which determine whether an item is expendable.
+- Added: Filter module for default caches.
+- Added: Filter module for hidden caches.
+- Added: Filter module for webview caches.
+- Added: Filter module for bug report files, currently Fabric(by default off).
+- Added: Filter module for analytics related files, currently Fabric & Flurry (by default off).
+- Added: Filter module for WhatsApp Sent files (by default off).
+- Added: Filter module for advertisement files, currently Mologiq (by default off).
+- Added: Setting to enable/disable using 'freeStorageAndNotify'.
+- Improved: Detection of hidden caches with name variations of the default folder name.
+- Improved: Detection of hidden caches nested in /files/.
+- Improved: Updated cache database (Samsung gallery temp files).
+- Improved: Made progress feedback a little more detailed.
+- Improved: Speed of the initial searchpath building step. It should now be faster by a factor of ~10x (caching some resources that were previous looked up on demand).
+- Improved: Speed of the file search and filtering step. Fixing a few badly written routines (nobody is perfect) made the whole thing ~2x faster on my test device.
+- Improved: Peak memory consumption during scan. A few objects can be released earlier from memory now which should help against out of memory crashes on low end devices.
 - Fixed: Not cleaning private caches on unrooted device if the action was triggered through the FAB instead of the toolbar (Ty Steffen).
 
 ### Duplicates
