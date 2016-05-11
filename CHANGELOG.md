@@ -1,11 +1,11 @@
 # Changelog
 
 - Latest production version: v4.1.6(4106), Unlocker v4.0.4(4004)
-- Latest beta version: -
+- Latest beta version: v4.2.0(40200), Unlocker v4.0.5(40005)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.2.0] - TBD
+## SD Maid [4.2.0] - 11.05.2016
 ### Core
 - Added: User interface for adding and testing regular expression based exclusions.
 - Improved: Translations.
