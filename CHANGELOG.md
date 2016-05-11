@@ -16,13 +16,26 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Setup help menu is now available on all setup steps and directly open the setup help page now.
 - Improved: Slightly changed timing when the UI is initialised to reduce/fix a few random crashes.
 - Improved: Detection of localized private data folders on Andriod N.
+- Improved: Feedback on task results, previously the summary details were only visible in progress bars or the menus, now (if applicable) a snackbar temporarily shows the primary result message.
+- Improved: Task description in confirmations and dialogs.
 - Fixed: During secondary storage setup, storage entry not turning green despite success, on low memory devices.
 - Fixed: Secondary storage detection on MediaTek devices. Added a workaround that detects this the swapped storage situation and fakes the primary UUID (#312 Ty bgiesing).
 - Removed: Update databases option in advanced settings. Will be replaced with a better mechanism in a future update.
 
+### Overview
+- Added: Info how much space is left until the storage is considered full.
+- Changed: The icon color of storage entries will now change according to system behavior. Red meaning the system considers the storage full, orange meaning the system considers the storage low on space and restrictions apply (e.g. not being able to install new apps).
+
 ### Explorer
+- Added: Option to enable/disable research of items that match an AppCleaner filter.
+- Added: Option to enable/disable research of items that match a SystemCleaner filter.
+- Added: Icon that shows whether an item matches a SystemCleaner filter.
 - Improved: Adjusted entries such that entry layouts expand for very long filenames.
 - Fixed: "Save directory structure" and "Force MediaScan" only being visible if >1 items are selected.
+
+### Searcher
+- Added: Delete action for selected items.
+- Added: Option to turn off automatic wildscards to allow searching for exact matches.
 
 ### AppControl
 - Added: List of app permissions to app details.
@@ -74,6 +87,9 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ### Databases
 - Added: If there is an issue, more information is available in the databases details window.
+
+### QuickAccess
+- Changed: Global action button now says "run now", instead of "delete".
 
 ## SD Maid [4.1.6] - 12.04.2016 (RC)
 ### Core
