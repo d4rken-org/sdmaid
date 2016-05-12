@@ -1,9 +1,27 @@
 # Changelog
 
 - Latest production version: v4.1.6(4106), Unlocker v4.0.4(4004)
-- Latest beta version: v4.2.0(40200), Unlocker v4.0.5(40005)
+- Latest beta version: v4.2.1(40201), Unlocker v4.0.5(40005)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.1] - 12.05.2016
+### Core
+- Improved: Storage detection for devices that return non-absolute pathes from API calls for external storage (likely due to user modifications, e.g. XInternalSD). Pathes are now checked for absoluteness and SD Maid should now either not crash at all or continue gracefully.
+- Fixed: Crash when resuming SD Maid after being purged from memory and the last page open was a details page.).
+
+### Explorer
+- Fixed: Crash if the current path the explorer tried to open is invalid (e.g. not absolute).
+
+### CorpseFinder
+- Fixed: Crash within the DalvikCache filter if a device has files both in `/cache/dalvik-cache` and `/data/dalvik-cache`.
+
+### SystemCleaner
+- Fixed: Filter-modules not loading and filter configuration being empty (#387 Ty igoivo).
+- Fixed: Crash when creating a UserFilter and entering a minimum or maximum size > Long.MAX_VALUE.
+
+### AppCleaner
+- Fixed: Crash if caches were found via clutter database entries and there was more than entry matching the same file/directory (#388).
 
 ## SD Maid [4.2.0] - 11.05.2016
 ### Core
