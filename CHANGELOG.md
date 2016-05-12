@@ -7,8 +7,11 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ## SD Maid [4.2.1] - 12.05.2016
 ### Core
+- Updated: Translations.
+- Improved: Detection of dalvik-cache locations, previously the SDK level was used, now we check for actual existence.
 - Improved: Storage detection for devices that return non-absolute pathes from API calls for external storage (likely due to user modifications, e.g. XInternalSD). Pathes are now checked for absoluteness and SD Maid should now either not crash at all or continue gracefully.
 - Fixed: Crash when resuming SD Maid after being purged from memory and the last page open was a details page.).
+- Fixed: Navigation entries showing extra highlights when being clicked.
 
 ### Explorer
 - Fixed: Crash if the current path the explorer tried to open is invalid (e.g. not absolute).
@@ -21,7 +24,8 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: Crash when creating a UserFilter and entering a minimum or maximum size > Long.MAX_VALUE.
 
 ### AppCleaner
-- Fixed: Crash if caches were found via clutter database entries and there was more than entry matching the same file/directory (#388).
+- Fixed: Crash if caches were found via clutter database entries and there was more than one entry matching the same file/directory (#388).
+- Fixed: Non-Root routines being used even if root is not available.
 
 ## SD Maid [4.2.0] - 11.05.2016
 ### Core
