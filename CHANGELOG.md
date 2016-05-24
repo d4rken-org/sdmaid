@@ -1,9 +1,44 @@
 # Changelog
 
-- Latest production version: v4.1.6(4106), Unlocker v4.0.4(4004)
-- Latest beta version: v4.2.1(40201), Unlocker v4.0.5(40005)
+- Latest production version: v4.1.6(4106), Unlocker v4.0.5(40005)
+- Latest beta version: v4.2.2(40202), Unlocker v4.0.6(40006)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.2] - 24.05.2016
+### Core
+- Added: Launch screen.
+- Added: A hidden debug menu :).
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Improved overall scan speed by reducing time it takes to match clutter markers (skip internal test data, require simple match before regex match).
+- Removed: No longer needed logging statements.
+- Fixed: A couple of rare UI related racecondition crashes (i.e. opening closing the ui with tasks finishing simultaneously). 
+
+### AppControl
+- Fixed: Crash when exiting app details after uninstalling app on Android <4.1.2.
+
+### CorpseFinder
+- Improved: Scan speed of SDCARD filter.
+
+### AppCleaner
+- Improved: Hidden cache database.
+- Improved: Bug reporting database.
+- Improved: Scan performance durching search and sort (2nd phase).
+
+### Biggest
+- Fixed: Parent size calculation if a child is deleted.
+- Fixed: Deleted item reappearing if a directory is reentered.
+
+### Scheduler
+- Added: Automatic scheduler check when launching SD Maid.
+- Improved: Accuracy of seconds countdown.
+- Improved: Reduced resource use, we no longer need to check the countdown daily.
+- Changed: Rewrote implementation and use of the AlarmManager service in an attempt to fix the unreliability I could not reproduce.
+
+### Statistics
+- Improved: Space usage, better truncating of data, preemptively throw away old data if new data will exceed the truncate threshold.
+- Improved: Handling of error situations such as inaccessible databases or full disks (should crash less often).
 
 ## SD Maid [4.2.1] - 12.05.2016
 ### Core
@@ -20,6 +55,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: Crash within the DalvikCache filter if a device has files both in `/cache/dalvik-cache` and `/data/dalvik-cache`.
 
 ### SystemCleaner
+- Improved: Scan performance by reducing overhead of matching against file pathes.
 - Fixed: Filter-modules not loading and filter configuration being empty (#387 Ty igoivo).
 - Fixed: Crash when creating a UserFilter and entering a minimum or maximum size > Long.MAX_VALUE.
 
