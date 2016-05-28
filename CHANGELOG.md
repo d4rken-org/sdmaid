@@ -1,9 +1,23 @@
 # Changelog
 
 - Latest production version: v4.1.6(4106), Unlocker v4.0.5(40005)
-- Latest beta version: v4.2.2(40202), Unlocker v4.0.6(40006)
+- Latest beta version: v4.2.3(40202), Unlocker v4.0.6(40006)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.3] - 28.05.2016
+### Core
+- Improved: Translations.
+- Improved: Added fallback options if for some reason the default private cache or files directory doesn't exist (weird crash reports from weird devices).
+
+### CorpseFinder
+- Fixed: A few cases of false positive results within filters for "/data/app", "/data/app-private", "/data/app-asec" and "/data/app-lib", if the install number appendix is bigger than a single digit (#394 Ty ew@XDA).
+
+### AppCleaner
+- Fixed: Possible crash when opening/closing the UI right after a deletion.
+
+### Scheduler
+- Fixed: Scheduler ward being disabled when it shouldn't be. The scheduler ward cares for the scheduler alarm and reinstates it if necessary. For battery improvements this component is enabled/disabled if not necessary, but its state was falsely tied to the existence of the alarm instead of the setting that tells us whether it should be turned on. 
 
 ## SD Maid [4.2.2] - 24.05.2016
 ### Core
