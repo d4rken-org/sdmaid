@@ -1,3 +1,7 @@
+########## v3.1.5.3(390) #########
+@General
+- Improved: Clutter database.
+
 ########## v3.1.5.2(389) #########
 @CorpseFinder
 - Fixed: [Backport from v4] A few cases of false positive results if the install number appendix for an app is bigger than a single digit (#394 Ty ew@XDA).
