@@ -1,9 +1,33 @@
 # Changelog
 
-- Latest production version: v4.1.6(4106), Unlocker v4.0.5(40005)
-- Latest beta version: v4.2.3(40202), Unlocker v4.0.6(40006)
+- Latest production version: v4.2.3(40203), Unlocker v4.0.6(40006)
+- Latest beta version: v4.2.4(40204)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.4] - 04.06.2016
+### Core
+- Improved: Ownership detection for `/system/app` and `/system/priv-app` files that are superseeded by an updated app in userspace (prepares for future AppControl operations and Explorer enhancements).
+- Improved: Translations.
+- Improved: Improved exit behavior. Less UI lag when exiting SD Maid and operations have to be cancelled.
+- Fixed: Navigation entry width glitching when doing a cold start of the app on tool pages where the navigation menu is opened on launch.
+- Fixed: Glitchy showing and hiding of tabhostbar in details activies if there is only one item.
+- Fixed: A few UI crashes in details pages when operations finished just when you were closing or opening the UI.
+- Fixed: Subtitle shortly showing as "CorpseFinder" when opening details activies.
+- Fixed: False positive ownership detection, if app names overlap, in `/system/priv-app`, `/system/app` and `/system`.
+
+### AppControl
+- Fixed: Failing system app uninstalls if it's apk removal was blocked through a false positive ownership match (#391 Ty Alexey).
+
+### AppCleaner
+- Added: Optional filter for files received through WhatsApp.
+- Fixed: Exclusions not working completely on unrooted devices despite deactivatin the "freeStorageAndNotify" option (#401 Ty Kisl0iD).
+
+### Biggest
+- Changed: Searchpath has been reset to prepare for future support of multiple locations.
+
+### Databases
+- Fixed: Settings displaying (not using) wrong default search pathes under specific conditions.
 
 ## SD Maid [4.2.3] - 28.05.2016
 ### Core
