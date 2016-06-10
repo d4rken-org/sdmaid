@@ -1,9 +1,26 @@
 # Changelog
 
 - Latest production version: v4.2.3(40203), Unlocker v4.0.6(40006)
-- Latest beta version: v4.2.4(40204)
+- Latest beta version: v4.2.5(40205)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.5] - 10.06.2016
+### Core
+- Improved: Updated clutter database.
+- Improved: Reduced log spam on <4.3 devices due to missing functionality.
+- Improved: Resilience against weird storage setups, in this case the internal storage being available multiple times (spotted on X800+, Micromax q346).
+- Fixed: Crash when a system apk exists but can't be read.
+- Fixed: More cases of UI raceconditions that could lead to crashes.
+
+### AppCleaner
+- Improved: Advertisement filter, added "Vungle" (Ty Brandon).
+
+### Databases
+- Changed: Collation sequence errors will now be shown as "skipped" as this is a permanent condition and distracts from actual errors.
+
+### Scheduler
+- Fixed: Cutoff layout of schedule picker on small screens (it now scrolls).
 
 ## SD Maid [4.2.4] - 04.06.2016
 ### Core
