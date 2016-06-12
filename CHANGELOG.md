@@ -1,9 +1,13 @@
 # Changelog
 
-- Latest production version: v4.2.3(40203), Unlocker v4.0.6(40006)
-- Latest beta version: v4.2.5(40205)
+- Latest production version: v4.2.5(40205), Unlocker v4.0.6(40006)
+- Latest beta version: -
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.6] - TBD
+### Core
+- Changed: Debugging options have been moved into a hidden page which can be reached through long presing the settings entry. This makes it easier to record debug logs if SD Maid malfunctions during setup (as entering settings already triggers a basic setup).
 
 ## SD Maid [4.2.5] - 10.06.2016
 ### Core
