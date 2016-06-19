@@ -1,11 +1,11 @@
 # Changelog
 
 - Latest production version: v4.2.5(40205), Unlocker v4.0.6(40006)
-- Latest beta version: -
+- Latest beta version: v4.2.6(40206)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.2.6] - TBD
+## SD Maid [4.2.6] - 19.06.2016
 ### Core
 - Added: Support for "/vendor" as location within tools (affects AppControl).
 - Improved: Translations.
