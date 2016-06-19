@@ -8,6 +8,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ## SD Maid [4.2.6] - TBD
 ### Core
 - Added: Support for "/vendor" as location within tools (affects AppControl).
+- Improved: Translations.
 - Improved: Logging when troubleshooting issues
 - Improved: Simplified actions necessary to help me debug issues.
 - Improved: Speed of executing shell commands. Any tool (basically all tools) using shell commands should be slightly faster now.
