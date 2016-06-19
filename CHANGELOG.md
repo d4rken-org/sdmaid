@@ -7,13 +7,34 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ## SD Maid [4.2.6] - TBD
 ### Core
-- Fixed: Issues handling files with unicode characters in their name (#408).
+- Added: Support for "/vendor" as location within tools (affects AppControl).
+- Improved: Logging when troubleshooting issues
+- Improved: Simplified actions necessary to help me debug issues.
 - Improved: Speed of executing shell commands. Any tool (basically all tools) using shell commands should be slightly faster now.
+- Improved: Now building against Android N (API24).
+- Improved: Several layout files have been fixed for future (correct) RTL support.
 - Changed: Debugging options have been moved into a hidden page which can be reached through long presing the settings entry. This makes it easier to record debug logs if SD Maid malfunctions during setup (as entering settings already triggers a basic setup).
+- Fixed: Issues handling files with unicode characters in their name (#408).
+- Fixed: SD Maid accepting system busyboxes that don't work correctly (seg fault), but also return correct data (#397).
+- Fixed: Overlapping switch buttons overlaying other UI elements on <5.0 (#398).
+
+### Explorer
+- Fixed: Fixed being able to select directories for the share action leading to errors (#383).
+
+### AppControl
+- Improved: Fixed impossible actions being visible.
+- Fixed: List elements making a clicking sound despite not being clickable.
+- Fixed: System app uninstall failing for files sourcing their apk from /vendor (#410 Ty Morpheus).
+
+### AppCleaner
+- Fixed: Private app directories not being completely searched if directory permission allow reading (or more) without root (#413 Ty rsngfrce & JERW86).
 
 ### Widget
 - Improved: Handling of UI updates if multiple widgets are used.
 - Fixed: All actions triggering if widget is more than one action is defined.
+
+### Scheduler
+- Improved: TimePicker will use 12/24 mode depending on system settings (#415).
 
 ## SD Maid [4.2.5] - 10.06.2016
 ### Core
