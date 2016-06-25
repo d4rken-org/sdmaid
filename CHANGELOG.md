@@ -5,6 +5,30 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
+## SD Maid [4.2.7] - TBD
+### Core
+- Updated: Clutter database.
+- Improved: Resiliance against weird storage setups. SD Maid will try continue even if the system API crashes while trying to determine external storages.
+- Changed: The working notification is now no longer cosmetic and will elevate the service to foreground priority within the systems task killer, when the workers are done and the result is displayed, the service releases foreground mode and displays a normal notification.
+- Changed: Settings layout and behavior. Removed lots of legacy code and wrote a cleaner solution that is not as fragile to support library updates.
+- Fixed: Preferences not being themed correctly (#421 Ty dukelc).
+
+### Explorer
+- Fixed: Not navigating correctly between symlinked directories (#416 Ty Morpheus)
+
+### AppControl
+- Fixed: Uninstalls, freezing and disabling of broadcast receivers failing since v4.2.6 due to component names not being correctly wrapped when being passed to the packagemanager (#422 Ty Roman).
+
+### SystemCleaner
+- Changed: Filter that only work on rooted devices will now be hidden if SD Maid doesn't have root (it's cleaner and less confusing).
+- Fixed: Longer filter load time due to root filter being loaded on unrooted devices.
+
+### Scheduler
+- Improved: Reliability when running in background. The working notification is now used to start the service in foreground mode, which should reduce issues with SD Maid being prematurely killed to free memory (#420).
+
+### Widget
+- Fixed: Color issues on Android N.
+
 ## SD Maid [4.2.6] - 19.06.2016
 ### Core
 - Added: Support for "/vendor" as location within tools (affects AppControl).
