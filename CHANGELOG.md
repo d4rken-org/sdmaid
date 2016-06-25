@@ -1,9 +1,14 @@
 # Changelog
 
 - Latest production version: v4.2.5(40205), Unlocker v4.0.6(40006)
-- Latest beta version: v4.2.7(40207)
+- Latest beta version: v4.2.8(40208)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.8] - 25.06.2016
+### Core
+- Improved: Updated translations.
+- Fixed: Settings pages not opening (#424 Ty Trasd).
 
 ## SD Maid [4.2.7] - 25.06.2016
 ### Core
