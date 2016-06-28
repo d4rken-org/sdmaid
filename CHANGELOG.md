@@ -1,9 +1,26 @@
 # Changelog
 
 - Latest production version: v4.2.5(40205), Unlocker v4.0.6(40006)
-- Latest beta version: v4.2.8(40208)
+- Latest beta version: v4.2.9(40209)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [4.2.9] - 29.06.2016
+### Core
+- Added: Support for plurals (day/days, item/items) where applicable.
+- Improved: Translations (specifically plurals).
+- Fixed: Possibly racecondition crash on devices with physical menu buttons when they are rapidly pressed during UI changes (#341).
+- Fixed: Remount of /system failing on newer CM13 builds (toybox/toolbox issue).
+- Fixed: UI pages always switching back to the initial one if the UI was launched through the QuickAccess widget.
+
+### Explorer
+- Added: Option to manually specify a path to load.
+- Improved: Navigation should be more consistent, instead of buttons/crumbs not reacting, SD Maid will now enter any folder and display any errors it may encounter.
+- Fixed: Crash when pressung the backbutton on a cold start.
+- Fixed: Crash due to trying to load "//" after navigating to the root, then reentering the Explorer again.
+
+### QuickAccess
+- Added: Summary of estimated space affected by actions to be executed (because we can't know how much it is for VACUUM per databases, it currently just adds 4KB per database) (#407).
 
 ## SD Maid [4.2.8] - 25.06.2016
 ### Core
