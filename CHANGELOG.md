@@ -5,6 +5,18 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
+## SD Maid [4.2.10] - 30.06.2016
+### Core
+- Improved: Clutter database.
+- Improved: Simplified a few strings/translations.
+- Improved: Updated translations.
+- Fixed: A few cases where shell error handling would not work correctly.
+- Fixed: Possible crash when switching UI pages.
+- Fixed: Rotation still not handling page switching correctly in every edge case.
+
+### Explorer
+- Fixed: Scrollbar not initialising correctly (#429).
+
 ## SD Maid [4.2.9] - 29.06.2016
 ### Core
 - Added: Support for plurals (day/days, item/items) where applicable.
