@@ -5,6 +5,19 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
+## SD Maid [4.2.12] - TBD
+### Core
+- Improved: Translations. Our awesome translators have added lots of missing translations and refined existing phrases.
+- Changed: Reset worker count to default (2), due to making changes on how it is stored.
+- Fixed: Crash if the worker-count was set to 0 (someone was curious...).
+- Fixed: Crash when changing advanced settings that require a restart and quickly exiting settings.
+- Fixed: Crash due to support-library initialising the menu on a detached fragment.
+- Fixed: Being able to create invalid regex exclusions that could be created but crashed SD Maid on scan.
+
+### Explorer
+- Fixed: Crash if directory could not be read, but it wasn't due to permission issues.
+- Fixed: Crash if an explorer action was completing but there was not yet a directory loaded.
+
 ## SD Maid [4.2.11] - 01.07.2016
 ### Core
 - Fixed: Hungary crashing.
