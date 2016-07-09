@@ -1,13 +1,14 @@
 # Changelog
 
 - Latest production version: v4.2.11(40211), Unlocker v4.0.6(40006)
-- Latest beta version: -
+- Latest beta version: v4.2.12(40212)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [4.2.12] - TBD
+## SD Maid [4.2.12] - 09.07.2016
 ### Core
 - Improved: Translations. Our awesome translators have added lots of missing translations and refined existing phrases.
+- Improved: Added new clutter database entries.
 - Changed: Reset worker count to default (2), due to making changes on how it is stored.
 - Fixed: Crash if the worker-count was set to 0 (someone was curious...).
 - Fixed: Crash when changing advanced settings that require a restart and quickly exiting settings.
@@ -17,6 +18,12 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### Explorer
 - Fixed: Crash if directory could not be read, but it wasn't due to permission issues.
 - Fixed: Crash if an explorer action was completing but there was not yet a directory loaded.
+
+### SystemCleaner
+- Improved: Filter for advertisement files.
+
+### Appcleaner
+- Improved: Hidden cache filter.
 
 ## SD Maid [4.2.11] - 01.07.2016
 ### Core
