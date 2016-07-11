@@ -1,9 +1,17 @@
 # Changelog
 
-- Latest production version: v4.2.11(40211), Unlocker v4.0.6(40006)
-- Latest beta version: v4.2.12(40212)
+- Latest production version: v4.2.13(40213), Unlocker v4.0.6(40006)
+- Latest beta version: -
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [TBD] - TBD
+### Core
+- Improved: Ownership detection. In some cases SD Maid will now match "fixed paths" -> "variable packagenames", previousy we could only match "fixed package names" -> "variable pathes". Example: Match "/sdcard/.strawberry/eu.thedarken.sdm" without specifically having a database entry for "eu.thedarken.sdm").
+
+## SD Maid [4.2.13] - 11.07.2016
+### Core
+- Fixed: Settings using slider inputs not displaying correct default values.
 
 ## SD Maid [4.2.12] - 09.07.2016
 ### Core
