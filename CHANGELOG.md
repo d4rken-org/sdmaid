@@ -7,7 +7,35 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ## SD Maid [TBD] - TBD
 ### Core
+- Added: Option to toggle animations (coffee drinking).
+- Improved: If SD Maid is running in the background but requires setup via user action, operations are canceled and a notification is displayed (#435 Ty sjoshua270).
+- Improved: Operation results (ok, skipped, failed) now only show values that are non zero.
+- Improved: Speed of file object creation, some calls be done in a more effective order and a few memory optimizations weren't effective.
+- Improved: File forensics performance, less information is (i.e. App name) is requested during research and deferred to be gathered when it is actually needed.
+- Improved: Reduced memory use by reducing the footprint of the clutter matching.
 - Improved: Ownership detection. In some cases SD Maid will now match "fixed paths" -> "variable packagenames", previousy we could only match "fixed package names" -> "variable pathes". Example: Match "/sdcard/.strawberry/eu.thedarken.sdm" without specifically having a database entry for "eu.thedarken.sdm").
+- Improved: Busybox error screen more device infos and a better explanation.
+- Fixed: Task results not showing correct amount of failed deletions.
+- Fixed: "Double tap to exit" toast not being correctly themed (#438 Ty TWiStErRob).
+
+### Explorer
+- Change: Don't popup a snackbar for every path change.
+- Fixed: Pathbar at the top not updating correctly when switching to the Explorer from a different tool, directly loading that path (#439).
+
+### AppControl
+- Added: Right-side drawer with additional information and filtering options (#406).
+- Improved: Tags for filtering (e.g. frozen apps) are no longer a search string and can be used in addition to manual search input (i.e. search in all frozen apps).
+- Improved: SD Maid will check more locations now to find all items that belong to an app, this was previously limited to specific locations such as data/dalvik etc. but now covers all locations SD Maid knows.
+- Improved: Files and sizes belonging to each app (estate) can now be determined on-demand.
+- Improved: Speed when determining files owned by an app (estate).
+- Changed: By default app files and sizes are not researched during list generation, except if the sort-mode is SIZE or the option to do the research in advance is turned on in the settings.
+
+### CorpseFinder
+- Improved: SDcard filter scan speed. Changes to clutter information allow us to better determine when we have to search deeper and when reading the top level item is sufficient.
+
+### SystemCleaner
+- Added: Tracking to determine how often UserFilter are actually used.
+- Fixed: UserFilter creation was possible without the pro version.
 
 ## SD Maid [4.2.13] - 11.07.2016
 ### Core
