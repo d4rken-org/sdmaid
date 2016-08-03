@@ -10,6 +10,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Added: Added support for location "/oem" (#441).
 - Added: Option to toggle animations (currently only coffee drinking).
 - Added: If SD Maid is running in the background but requires setup via user action, operations are canceled and a notification is displayed (#435 Ty sjoshua270).
+- Improved: Updated busyboxes to v1.24.2 (stable).
 - Improved: Reduced SD Maids resource (RAM/CPU) consumption by reducing the amount of shells that are kept open. Reading files now shares a shell with all other operations (delete, move, copy etc).
 - Improved: Operation results (ok, skipped, failed) now only show values that are non zero.
 - Improved: Speed of file object creation, some calls be done in a more effective order and a few memory optimizations weren't effective.
@@ -21,13 +22,15 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: "Double tap to exit" toast not being correctly themed (#438 Ty TWiStErRob).
 - Fixed: Shell data not being disregarded directly if data is streamed instead of buffered. This should reduce peak memory consumption during scan for SystemCleaner, Duplicates, Biggest and Databases.
 - Fixed: Commands failing that use remounting on Android 6.0+. Multiple mount commands were used to guarantee reliable execution on different devices, but on some the toybox binary segfault. This would cause any command using remounting to end up with a segfault (139) errorcode. SD Maid now checks if the toybox binary segfaults during setup.
+- Fixed: A racecondition where the FAB become visible when SD Maid started executing a task triggered from list multiselection.
 
 ### Explorer
-- Changed: Don't popup a snackbar for every path change.
 - Fixed: Pathbar at the top not updating correctly when switching to the Explorer from a different tool, directly loading that path (#439).
 - Fixed: Creating dirs/files not updating directory content correctly without extra refresh.
 - Fixed: Directory content not updating correctly after deletion.
 - Fixed: Paste action causing change to parent directory.
+- Fixed: Trying to remount a source as 'rw' if we are only copying files.
+- Changed: Don't popup a snackbar for every path change.
 
 ### AppControl
 - Added: Right-side drawer with additional information and filtering options (#406).
