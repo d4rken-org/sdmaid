@@ -39,7 +39,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Changed: Refresh no longer reloads the storage manager, it is now only refreshed once per session.
 
 ### Explorer
-- Added: Support for extracting ZIP files (#198).
+- Added: Support for extracting ZIP (zip/apk etc, anything zip based) files (#198).
 - Added: Details dialog, currently a bit rough, will be expanded later on.
 - Added: Files now show both blocksize (size file actually occupies) and file length (size file says it is), if this value differs. The format is `size on storage (file length)`.
 - Fixed: Pathbar at the top not updating correctly when switching to the Explorer from a different tool, directly loading that path (#439).
@@ -68,6 +68,13 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### SystemCleaner
 - Added: Tracking to determine how often UserFilter are actually used.
 - Fixed: UserFilter creation was possible without the pro version.
+
+### Biggest
+- Added: Support for locations requiring root access (#129).
+- Added: "Device view" (#467). The tool starts out with a "device view" showing all available storages the tool can show. Changing any settings is no longer necessary.
+- Improved: Refresh behavior. Previously a refresh caused the whole cached file-tree to be reloaded. Now we can just refresh subnodes of the cached file-tree.
+- Changed: Made list items more compact (#346).
+- Removed: Settings page (no longer necessary).
 
 ### LastModified
 - Removed: This tools functionality has been merged into the searcher tool.
