@@ -7,10 +7,12 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ## SD Maid [TBD] - TBD
 ### Core
+- Added: Adaptive support for different (core-utils providing) binaries, currently "toybox" and "busybox".
 - Added: Added support for location "/oem" (#441).
 - Added: Option to toggle animations (currently only coffee drinking).
 - Added: If SD Maid is running in the background but requires setup via user action, operations are canceled and a notification is displayed (#435 Ty sjoshua270).
-- Improved: Updated busyboxes to v1.24.2 (stable).
+- Improved: Instead of tapping out with a "busybox error", SD Maid will now relinquish root access if the current toybox/busybox setup is not root compatible (#442).
+- Improved: Both busybox and toybox can be used by SD Maid and both types of binaries will be tried as fallback solution (#452).
 - Improved: Reduced SD Maids resource (RAM/CPU) consumption by reducing the amount of shells that are kept open. Reading files now shares a shell with all other operations (delete, move, copy etc).
 - Improved: Operation results (ok, skipped, failed) now only show values that are non zero.
 - Improved: Speed of file object creation, some calls be done in a more effective order and a few memory optimizations weren't effective.
@@ -18,19 +20,38 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Reduced memory use by reducing the footprint of the clutter matching (simpler objects).
 - Improved: Ownership detection. In some cases SD Maid will now match "fixed paths" -> "variable packagenames", previousy we could only match "fixed package names" -> "variable pathes". Example: Match "/sdcard/.strawberry/eu.thedarken.sdm" without specifically having a database entry for "eu.thedarken.sdm").
 - Improved: Busybox error screen shows more device infos and a better explanation.
+- Improved: Logging. Reduced logging in production builds and adjusted logging priorities to be more useful (verbose vs debug).
 - Fixed: Task results not showing correct amount of failed deletions.
 - Fixed: "Double tap to exit" toast not being correctly themed (#438 Ty TWiStErRob).
 - Fixed: Shell data not being disregarded directly if data is streamed instead of buffered. This should reduce peak memory consumption during scan for SystemCleaner, Duplicates, Biggest and Databases.
 - Fixed: Commands failing that use remounting on Android 6.0+. Multiple mount commands were used to guarantee reliable execution on different devices, but on some the toybox binary segfault. This would cause any command using remounting to end up with a segfault (139) errorcode. SD Maid now checks if the toybox binary segfaults during setup.
 - Fixed: A racecondition where the FAB become visible when SD Maid started executing a task triggered from list multiselection.
+- Fixed: Shell operation (move/create) failing if the the target path was a symlink pointing to a read-only partition with a different path (e.g. /vendor -> /system/vendor).
+- Changed: Instead of file length, "size on filesystem" is now used to calculate the amount of space freed by a deletion. You will notice that with the exception of sparse-files, deletion will show slightly (blocksize) increased amounts of freed space, especially when deleting lots of small files.
+- Changed: SD Maid now ships with toybox instead of busybox (leaner and fixes #451).
+- Changed: Log files are now stored in SD Maids cache instead of files folder (i.e. `/sdcard/Android/data/eu.thedarken.sdm/cache/logfiles`).
+
+### QuickAccess
+- Fixed: Database tool still requiring confirmation despite single-pass option activated.
+
+### Overview
+- Added: If SD Maid relinquihes root access to avoid a busybox/toybox error the root state will display this (#442).
+- Changed: Refresh no longer reloads the storage manager, it is now only refreshed once per session.
 
 ### Explorer
+- Added: Support for extracting ZIP files (#198).
+- Added: Details dialog, currently a bit rough, will be expanded later on.
+- Added: Files now show both blocksize (size file actually occupies) and file length (size file says it is), if this value differs. The format is `size on storage (file length)`.
 - Fixed: Pathbar at the top not updating correctly when switching to the Explorer from a different tool, directly loading that path (#439).
 - Fixed: Creating dirs/files not updating directory content correctly without extra refresh.
 - Fixed: Directory content not updating correctly after deletion.
 - Fixed: Paste action causing change to parent directory.
 - Fixed: Trying to remount a source as 'rw' if we are only copying files.
+- Fixed: When trying to create a file the operation could return an error even if it was successful.
 - Changed: Don't popup a snackbar for every path change.
+
+### Searcher
+- Added: Options find files based on minimum and maximum modification date. Using these options automatically causes results to be sorted by date.
 
 ### AppControl
 - Added: Right-side drawer with additional information and filtering options (#406).
@@ -39,6 +60,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Improved: Files and sizes belonging to each app (estate) can now be determined on-demand.
 - Improved: Speed when determining files owned by an app (estate).
 - Changed: By default app files and sizes are not researched during list generation, except if the sort-mode is SIZE or the option to do the research in advance is turned on in the settings.
+- Fixed: Corruption of exported APKs (#451).
 
 ### CorpseFinder
 - Improved: SDcard filter scan speed. Changes to clutter information allow us to better determine when we have to search deeper and when reading the top level item is sufficient.
@@ -46,6 +68,9 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 ### SystemCleaner
 - Added: Tracking to determine how often UserFilter are actually used.
 - Fixed: UserFilter creation was possible without the pro version.
+
+### LastModified
+- Removed: This tools functionality has been merged into the searcher tool.
 
 ## SD Maid [4.2.13] - 11.07.2016
 ### Core
