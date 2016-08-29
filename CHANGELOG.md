@@ -5,12 +5,13 @@
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [TBD] - TBD
+## SD Maid [v4.3.0] - TBD
 ### Core
 - Added: Adaptive support for different (core-utils providing) binaries, currently "toybox" and "busybox".
 - Added: Added support for location "/oem" (#441).
 - Added: Option to toggle animations (currently only coffee drinking).
 - Added: If SD Maid is running in the background but requires setup via user action, operations are canceled and a notification is displayed (#435 Ty sjoshua270).
+- Improved: Updated all of SD Maids dependencies and libraries.
 - Improved: Instead of tapping out with a "busybox error", SD Maid will now relinquish root access if the current toybox/busybox setup is not root compatible (#442).
 - Improved: Both busybox and toybox can be used by SD Maid and both types of binaries will be tried as fallback solution (#452).
 - Improved: Reduced SD Maids resource (RAM/CPU) consumption by reducing the amount of shells that are kept open. Reading files now shares a shell with all other operations (delete, move, copy etc).
@@ -27,6 +28,9 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: Commands failing that use remounting on Android 6.0+. Multiple mount commands were used to guarantee reliable execution on different devices, but on some the toybox binary segfault. This would cause any command using remounting to end up with a segfault (139) errorcode. SD Maid now checks if the toybox binary segfaults during setup.
 - Fixed: A racecondition where the FAB become visible when SD Maid started executing a task triggered from list multiselection.
 - Fixed: Shell operation (move/create) failing if the the target path was a symlink pointing to a read-only partition with a different path (e.g. /vendor -> /system/vendor).
+- Fixed: Random crashes related to inflating the menu in each tools toolbar, possibly related to devices with hardware menu-buttons.
+- Fixed: Crash related to a race-condition between UI input (e.g. clicks) and UI state.
+- Fixed: Crash if SD Maid could not find any locations of type `SDCARD` but tried use the data to build sub-locations such as `PUBLIC_DATA`.
 - Changed: Instead of file length, "size on filesystem" is now used to calculate the amount of space freed by a deletion. You will notice that with the exception of sparse-files, deletion will show slightly (blocksize) increased amounts of freed space, especially when deleting lots of small files.
 - Changed: SD Maid now ships with toybox instead of busybox (leaner and fixes #451).
 - Changed: Log files are now stored in SD Maids cache instead of files folder (i.e. `/sdcard/Android/data/eu.thedarken.sdm/cache/logfiles`).
@@ -39,6 +43,8 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Changed: Refresh no longer reloads the storage manager, it is now only refreshed once per session.
 
 ### Explorer
+- Added: Option to place a shortcut on your home screen which open the explorer and refreshes it (#187).
+- Added: Reporting option via context menu if you have experimental mode enabled.
 - Added: Support for extracting ZIP (zip/apk etc, anything zip based) files (#198).
 - Added: Details dialog, currently a bit rough, will be expanded later on.
 - Added: Files now show both blocksize (size file actually occupies) and file length (size file says it is), if this value differs. The format is `size on storage (file length)`.
@@ -64,16 +70,22 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ### CorpseFinder
 - Improved: SDcard filter scan speed. Changes to clutter information allow us to better determine when we have to search deeper and when reading the top level item is sufficient.
+- Improved: Reporting tool is now more comfortable and allows adding more information.
+- Changed: Reports are now posted via GitHub, which requires a free GitHub account. People that want to contribute can now do so in higher quality and get recognition for their contributions. People who kept spamming me via the old report tool with weird stories can now try again and then be banned from SD Maids GitHub repository.
 
 ### SystemCleaner
 - Added: Tracking to determine how often UserFilter are actually used.
+- Added: '.chartboost' to advertisement filter.
+- Improved: Some people create placeholders for '__chartboost' and '.chartboost' to block them from being created, these will no longer be removed.
 - Fixed: UserFilter creation was possible without the pro version.
 
 ### Biggest
+- Added: File previews if you have SD Maid Pro.
 - Added: Support for locations requiring root access (#129).
 - Added: "Device view" (#467). The tool starts out with a "device view" showing all available storages the tool can show. Changing any settings is no longer necessary.
 - Improved: Refresh behavior. Previously a refresh caused the whole cached file-tree to be reloaded. Now we can just refresh subnodes of the cached file-tree.
 - Changed: Made list items more compact (#346).
+- Changed: The tool has been renamed to "Storage analyzer".
 - Removed: Settings page (no longer necessary).
 
 ### LastModified
