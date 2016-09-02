@@ -1,16 +1,21 @@
 # Changelog
 
 - Latest production version: v4.2.13(40213), Unlocker v4.0.7(40007)
-- Latest beta version: -
+- Latest beta version: v4.3.0(40300)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
 
-## SD Maid [v4.3.0] - TBD
+## SD Maid [v4.3.0] - 02.09.2016 (BETA)
 ### Core
 - Added: Adaptive support for different (core-utils providing) binaries, currently "toybox" and "busybox".
-- Added: Added support for location "/oem" (#441).
+- Added: Added support for location "/oem" (#441 Ty randomname1234).
 - Added: Option to toggle animations (currently only coffee drinking).
 - Added: If SD Maid is running in the background but requires setup via user action, operations are canceled and a notification is displayed (#435 Ty sjoshua270).
+- Added: SD Maids file forensics can now get clutter markers from dynamic sources. This means that in addition to static sources (i.e. a database with entries), there are now dynamic sources that can generate clutter markers without explicitly knowing an app.
+- Added: Dynamic clutter sources for `.UTSystemConfig` and `.EveryplayCache`.
+- Improved: Accuracy of size calculation when deleting files of which some failed to be deleted (or don't exist anymore).
+- Improved: Clutter database (dozen of new entries).
+- Improved: Clutter database format to better cover multiple apps with the same clutter.
 - Improved: Updated all of SD Maids dependencies and libraries.
 - Improved: Instead of tapping out with a "busybox error", SD Maid will now relinquish root access if the current toybox/busybox setup is not root compatible (#442).
 - Improved: Both busybox and toybox can be used by SD Maid and both types of binaries will be tried as fallback solution (#452).
@@ -34,6 +39,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Changed: Instead of file length, "size on filesystem" is now used to calculate the amount of space freed by a deletion. You will notice that with the exception of sparse-files, deletion will show slightly (blocksize) increased amounts of freed space, especially when deleting lots of small files.
 - Changed: SD Maid now ships with toybox instead of busybox (leaner and fixes #451).
 - Changed: Log files are now stored in SD Maids cache instead of files folder (i.e. `/sdcard/Android/data/eu.thedarken.sdm/cache/logfiles`).
+- Changed: If root access is available, SD Maid will skip asking for storage access via the storage-access-framework (SAF).
 
 ### QuickAccess
 - Fixed: Database tool still requiring confirmation despite single-pass option activated.
@@ -44,6 +50,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ### Explorer
 - Added: Option to place a shortcut on your home screen which open the explorer and refreshes it (#187).
+- Added: Octal permission display when changing permissions.
 - Added: Reporting option via context menu if you have experimental mode enabled.
 - Added: Support for extracting ZIP (zip/apk etc, anything zip based) files (#198).
 - Added: Details dialog, currently a bit rough, will be expanded later on.
@@ -52,7 +59,7 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 - Fixed: Creating dirs/files not updating directory content correctly without extra refresh.
 - Fixed: Directory content not updating correctly after deletion.
 - Fixed: Paste action causing change to parent directory.
-- Fixed: Trying to remount a source as 'rw' if we are only copying files.
+- Fixed: Trying to remount a source as `rw` if we are only copying files.
 - Fixed: When trying to create a file the operation could return an error even if it was successful.
 - Changed: Don't popup a snackbar for every path change.
 
@@ -75,9 +82,11 @@ This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](ch
 
 ### SystemCleaner
 - Added: Tracking to determine how often UserFilter are actually used.
-- Added: '.chartboost' to advertisement filter.
-- Improved: Some people create placeholders for '__chartboost' and '.chartboost' to block them from being created, these will no longer be removed.
+- Added: `.chartboost` and `adhub` to advertisement filter.
+- Added: Help link to SD Maids wiki (#298 Ty Trasd).
+- Improved: Some people create placeholders for `__chartboost` and `.chartboost` to block them from being created, these will no longer be removed.
 - Fixed: UserFilter creation was possible without the pro version.
+- Fixed: Size calculation for AdvertisementFilter items, should now also show children of matched directories (#471 Ty Solomon1732).
 
 ### Biggest
 - Added: File previews if you have SD Maid Pro.
