@@ -2,8 +2,15 @@
 
 - Latest production version: v4.2.13(40213), Unlocker v4.0.7(40007)
 - Latest beta version: v4.3.1(40301)
+- Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+## SD Maid [v4.3.2] - TBD
+### Explorer
+- Improved: Creating user filter for the system cleaner now tries to fill in the location field.
+- Fixed: Crash if quickly entering and leaving the clutter reporter tool (#486).
+
+### SystemCleaner
+- Fixed: Crash when creating a new user filter from scratch (#485).
 
 ## SD Maid [v4.3.1] - 07.09.2016
 ### Core
