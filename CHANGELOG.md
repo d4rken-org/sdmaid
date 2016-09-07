@@ -1,9 +1,29 @@
 # Changelog
 
 - Latest production version: v4.2.13(40213), Unlocker v4.0.7(40007)
-- Latest beta version: v4.3.0(40300)
+- Latest beta version: v4.3.1(40301)
 
 This changelog is for SD Maid v4. For older logs: [v3](changelogV3.txt), [v2](changelogV2.txt), [v1](changelogV1.txt).
+
+## SD Maid [v4.3.1] - 07.09.2016
+### Core
+- Improved: Translations
+- Improved: Clutter database (#481, #480, #479).
+- Improved: If a tool can't find any storage (why?), that tool will now display an error instead of crashing SD Maid.
+- Improved: Display of error messages in tools.
+- Fixed: Crash on devices where SD Maid used rootfs injection to get a working binary. Despite having root, SD Maid didn't use when looking up mounts, causing that to fail and SD Maid ending up with no detected storages (#475 Ty Sandris).
+- Fixed: Crash if the shell process would die prematurely. Tasks scheduled for execution would get a NULL result instead of an result with state "error".
+
+### AppControl
+- Fixed: Crash if estates were determined based on a stale list of installed apps.
+
+### SystemCleaner
+- Added: Filter for `/data/logger` (LG devices) (#464).
+- Improved: Matching of already existing filters, better deal with file-seperators.
+
+### Storage Analyzer
+- Fixed: Crash when operations were too quick (divide by 0) (#477).
+- Fixed: Crash wen pressing the backbutton without loaded data (#476).
 
 ## SD Maid [v4.3.0] - 02.09.2016 (BETA)
 ### Core
