@@ -1,16 +1,33 @@
 # Changelog
 
 - Latest production version: v4.2.13(40213), Unlocker v4.0.7(40007)
-- Latest beta version: v4.3.1(40301)
+- Latest beta version: v4.3.2(40302)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.3.2] - TBD
+## SD Maid [v4.3.2] - 10.09.2016
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Added link to wiki to the exclusions help dialog.
+- Fixed: Crash during resource cleanup when operations end and an interactive shell died prematurely without causing the whole operation to fail. 
+- Fixed: Exclusions import always showing success.
+
 ### Explorer
 - Improved: Creating user filter for the system cleaner now tries to fill in the location field.
 - Fixed: Crash if quickly entering and leaving the clutter reporter tool (#486).
 
+### AppControl
+- Fixed: Trying to open a file as directory when clicking a path in app details.
+
 ### SystemCleaner
 - Fixed: Crash when creating a new user filter from scratch (#485).
+
+### Databases
+- Fixed: Possible hang during size comparison on devices with high database (800+) counts (#488 Ty danielling23).
+
+### QuickAccess
+- Fixed: Database tool entry always showing something to do.
+- Fixed: Database tool always showing expected sizes for all items, not only those that are still unprocessed.
 
 ## SD Maid [v4.3.1] - 07.09.2016
 ### Core
