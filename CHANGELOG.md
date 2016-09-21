@@ -1,12 +1,39 @@
 # Changelog
 
 - Latest production version: v4.3.2(40302), Unlocker v4.0.7(40007)
-- Latest beta version: -
+- Latest beta version: v4.3.3(40303)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.3.3] - TBD
+## SD Maid [v4.3.3] - 21.09.2016
 ### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Fast scroller behavior (library: github.com/FutureMind/recycler-fast-scroll).
+- Improved: Swapped labeling when asking for secondary storage permission to help users better identify the target storage.
 - Improved: Core shell routines. Simplified some unnecessarily complex code constructs (I don't think the performance gain is noticeable).
+- Improved: Logging to better help users with sdcard (secondary public storage) issues.
+- Improved: Breadcrumb bars displaying pathes.
+- Improved: Mount point detection, on KNOX enabled devices, if the internal mount applet can't be called without root, SD Maid will try the systems native mount applet to obtain the users mountpoints (see #502).
+- Fixed: Various minor RTL related ui issues (#483).
+- Fixed: Issues granting access to secondary storage on "Prestigio" devices (#493).
+- Fixed: Erroneously detecting /storage/emulated/legacy as secondary public storage on "Prestigio" devices (#492).
+- Fixed: Mount point detection issue caused by mount space seperation (#502 Ty Ivan).
+- Fixed: Fixed rare "random" (depends on ps output) crash during detection of running apps.
+- Fixed: Fixed rare crash if a system app returns an empty sourcedir path or one that points to rootfs.
+
+### Explorer
+- Improved: Archive extraction is now cancelable.
+- Improved: ZIP archive extraction now also works on secondary storages if storage permission have been granted (#478 Ty dukelc).
+- Improved: If secondary storage setup has been been skipped and extraction is attempted, a snackbar will show asking the user to complete the setup.
+- Changed: Error message when a directory can't be accessed (#478).
+- Fixed: ZIP extraction action should only be visible for public storages.
+
+### AppControl
+- Improved: Right side drawer now allows multiple filter tags to be selected at once.
+- Fixed: Filter tags not being reapplied to results after refreshing the lest (#495).
+
+### Storage Analyzer
+- Improved: Browsing already loaded data no longer shows the "Successful" toolbar (it was anoying, wasn't it?).
 
 ## SD Maid [v4.3.2] - 10.09.2016
 ### Core
