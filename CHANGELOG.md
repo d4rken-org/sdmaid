@@ -1,8 +1,22 @@
 # Changelog
 
 - Latest production version: v4.3.2(40302), Unlocker v4.0.7(40007)
-- Latest beta version: v4.3.3(40303)
+- Latest beta version: v4.3.4(40304)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.3.4] - 24.09.2016
+### Core
+- Added: SD Maid can now use two different binaries for root/normal actions. This increases device compatibility and makes it less likely that SD Maid or the user has to install a binary into /system.
+- Improved: SD Maid will no longer require a preinstalled system binary on devices that don't have a default `chmod` applet (though this is bad in any case and the user should install a system toybox/busybox to fix their `chmod` applet).
+- Fixed: Mountpoint detection fallback solution not working due to unexpected output format (#522).
+- Fixed: Crash if the api call for external storages returns an array containing a `null` value (#519).
+- Fixed: Failure to detect mountpoints from user perspective if SD Maid employed RootFS injection to use it's binary with root (#521).
+- Changed: Storage size determination will now be run on the storage path itself, not its mountpoint (affects Overview & Storage Analyzer).
+
+### Explorer
+- Fixed: Crash if we try to restore the last path, have to fallback to a default value, and then the system gives us an empty string as external storage path.
+- Fixed: Crash when trying to select files in type 'UNKNOWN' locations (#520).
+- Fixed: Crash when trying to extract empty files (#518).
 
 ## SD Maid [v4.3.3] - 21.09.2016
 ### Core
