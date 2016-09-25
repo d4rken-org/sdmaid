@@ -1,8 +1,23 @@
 # Changelog
 
 - Latest production version: v4.3.2(40302), Unlocker v4.0.7(40007)
-- Latest beta version: v4.3.4(40304)
+- Latest beta version: v4.3.5(40305)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.3.5] - 25.09.2016
+### Core
+- Fixed: UI related crash when reentering SD Maids UI by downgrading to an older support library (newest version introduced this crash) (#525).
+- Fixed: SD Maid trying to use Android 6.0+ code on <6.0 devices, didn't cause a crash but spammed the log and used unnecessary CPU time.
+- Fixed: Crash if binary is not available instead of allowing an error to be displayed.
+
+### Overview
+- Improved: If a binary is not available (mostly affects sqlite3 binaries), show an info entry about this instead of showing no entry at all.
+
+### AppControl
+- Improved: Name of saved list of apps display human readable date.
+- Improved: Better logging for more detailed debug logs.
+- Fixed: Crash when clicking "show" after exporting a shared list of apps.
+- Fixed: Only being to able to share one item.
 
 ## SD Maid [v4.3.4] - 24.09.2016
 ### Core
