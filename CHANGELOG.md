@@ -1,8 +1,13 @@
 # Changelog
 
-- Latest production version: v4.3.2(40302), Unlocker v4.0.7(40007)
-- Latest beta version: v4.3.5(40305)
+- Latest production version: v4.3.5(40305), Unlocker v4.0.8(40008)
+- Latest beta version: -
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.3.6] - TBD
+### Core
+- Fixed: Alternative binary setup strategies failing on Android Nougat due to mount applet using different arguments (#528).
+- Fixed: SD Maid crashing during initialization if a user binary is not available, but a root binary is available. We should gracefully abort here (#528).
 
 ## SD Maid [v4.3.5] - 25.09.2016
 ### Core
