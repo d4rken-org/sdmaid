@@ -1,13 +1,32 @@
 # Changelog
 
 - Latest production version: v4.3.5(40305), Unlocker v4.0.8(40008)
-- Latest beta version: -
+- Latest beta version: v4.3.6(40306)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.3.6] - TBD
+## SD Maid [v4.3.6] - 03.10.2016
 ### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Internal toybox updated.
 - Fixed: Alternative binary setup strategies failing on Android Nougat due to mount applet using different arguments (#528).
 - Fixed: SD Maid crashing during initialization if a user binary is not available, but a root binary is available. We should gracefully abort here (#528).
+- Fixed: Wrong determining wrong size for files > 2GB.
+- Fixed: SD Maid failing to update its binary on first try.
+
+### Explorer
+- Fixed: Crash when users on KitKat try to extract a file on a secondary storage (external sdcard).
+
+### Searcher
+- Fixed: SD Maid crashing when coming across corrupted files instead of skipping them.
+
+### CorpseFinder
+- Added: Filter for `<public-storage>/Android/media`.
+- Fixed: Fixed one case where the obb corpse filter ignored the "remove keepers" setting.
+
+### Duplicates
+- Added: Additional fail-safe module based on pathes (Ty Chris).
+- Fixed: A case of false-positives on rooted devices if SD Maid fallsback to a native busybox which segfaults (Ty Chris).
 
 ## SD Maid [v4.3.5] - 25.09.2016
 ### Core
