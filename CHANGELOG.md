@@ -4,6 +4,21 @@
 - Latest beta version: -
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v4.3.7] - TBD
+### Core
+- Added: Dynamic clutter marker for `IQQI` (#546).
+- Improved: Clutter database (Ty david082321 #535 - #566).
+- Fixed: Crash if the system returns unusually large (> Int.Max) uids (#537).
+- Fixed: Double press to exit setting being ignored (#538).
+
+### AppCleaner
+- Improved: Hidden caches filter (`.temp`, `.thumbnails`) (Ty david082321 #557, #558).
+
+### Scheduler
+- Fixed: Issue with scheduling a 2 day interval.
+- Fixed: Issue with restoring schedule after reboot to the correct time.
+- Changed: Initial scheduling, will now trigger at the next hour/minute time, then repeat according to interval.
+
 ## SD Maid [v4.3.6] - 03.10.2016
 ### Core
 - Improved: Translations.
