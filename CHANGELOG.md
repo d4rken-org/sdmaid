@@ -12,6 +12,9 @@
 - Fixed: Crash if the system returns unusually large (> Int.Max) uids (#537).
 - Fixed: Double press to exit setting being ignored (#538).
 
+### AppControl
+- Added: Option to add a launcher shortcut for this tool.
+
 ### AppCleaner
 - Improved: Hidden caches filter (`.temp`, `.thumbnails`) (Ty david082321 #557, #558).
 - Improved: Hidden caches filter (`.face` and video player thumbnails).
