@@ -8,11 +8,16 @@
 ### Core
 - Added: Dynamic clutter marker for `IQQI` (#546).
 - Improved: Clutter database (Ty david082321 #535 - #566).
+- Improved: If available root will be used to determine running apps (#527).
 - Fixed: Crash if the system returns unusually large (> Int.Max) uids (#537).
 - Fixed: Double press to exit setting being ignored (#538).
 
 ### AppCleaner
 - Improved: Hidden caches filter (`.temp`, `.thumbnails`) (Ty david082321 #557, #558).
+- Improved: Hidden caches filter (`.face` and video player thumbnails).
+
+### CorpseFinder
+- Changed: "Keeper" items, e.g. backups/photos now show a red circle in addition to a tag, independent of corpse location.
 
 ### Scheduler
 - Fixed: Issue with scheduling a 2 day interval.
