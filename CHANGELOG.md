@@ -4,6 +4,26 @@
 - Latest beta version: v4.3.7(40307)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v4.3.8] - 15.10.2016
+### Core
+- Improved: Clutter database.
+
+### CorpseFinder
+- Added: SD Maid now tries to show file previews in the details page (requires SD Maid Pro).
+- Added: Tapping the icon of a list item in the details view asks the system to open that file with a compatible app.
+
+### SystemCleaner
+- Added: SD Maid now tries to show file previews in the details page (requires SD Maid Pro).
+- Added: Tapping the icon of a list item in the details view asks the system to open that file with a compatible app.
+
+### AppCleaner
+- Added: SD Maid now tries to show file previews in the details page (requires SD Maid Pro).
+- Added: Tapping the icon of a list item in the details view asks the system to open that file with a compatible app.
+- Changed: Clutter items marked as `COMMON`, which means that their name is too common to remove them via AppControl or CorpseFinder, will no longer be skipped when searching for caches (e.g. folder `<sdcard>/.thumbnails`).
+
+### Duplicates
+- Added: Last modification date to items in the details view.
+
 ## SD Maid [v4.3.7] - 14.10.2016
 ### Core
 - Added: Dynamic clutter marker for `IQQI` (#546).
