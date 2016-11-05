@@ -1,8 +1,54 @@
 # Changelog
 
 - Latest production version: v4.3.8(40308), Unlocker v4.0.9(40009)
-- Latest beta version: -
+- Latest beta version: v4.4.0(40400)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.4.0] - 05.11.2016
+### Core
+- Added: Support for CustomTabs when opening web links (#576).
+- Improved: Clutter database (#569, #580, #584, #585, #593, #592).
+- Improved: Translations.
+- Improved: API targets and build tools raised to API25.
+- Improved: In the weird event that a ROM has no activity to grant runtime permissions, gracefully show an error instead of crashing.
+- Fixed: No longer showing snackbars for empty results.
+- Fixed: Possible crash when launching SD Maid for the first time after an install.
+- Fixed: Tab hiding affecting tool access from QuickAccess (#540).
+- Changed: Label for scan actions from 'check' to 'scan' (:D).
+
+### Explorer
+- Added: Support for showing mount points. Items that are mountpoints will show an extra icon if option 'Research owners' is enabled (#579).
+- Fixed: Possible crash when opening files.
+- Fixed: Possible crash when trying to determine file type when trying to open a file.
+
+### Searcher
+- Added: Function to share files/results (#382).
+- Improved: Search progress feedback.
+- Fixed: Crash when encountering corrupt filesystem entries (will now just be omitted).
+
+### AppControl
+- Added: Option change list sorting from the right side filter drawer (#573).
+
+### CorpseFinder
+- Improved: Details layout.
+
+### Duplicates
+- Added: Autoselection option for primary/secondary storage (#473).
+- Improved: Line item layout.
+- Fixed: Duplicates not being found across different storages.
+
+### Storage Analyzer
+- Added: Support for location `/cache` (#575).
+- Added: Clicking files tries to open them.
+- Fixed: No longer showing empty action mode when selecting items in the root view (#577).
+
+### Databases
+- Added: Default exclusion for apple music (#539).
+
+### Statistics
+- Improved: Chart layout and display (#572, #574).
+- Improved: History details and structure (#572, #574).
+- Fixed: Negative stats.
 
 ## SD Maid [v4.3.8] - 15.10.2016
 ### Core
