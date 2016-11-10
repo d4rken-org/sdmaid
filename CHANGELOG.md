@@ -1,8 +1,33 @@
 # Changelog
 
 - Latest production version: v4.3.8(40308), Unlocker v4.0.9(40009)
-- Latest beta version: v4.4.0(40400)
+- Latest beta version: v4.4.1(40401)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.4.1] - 11.11.2016
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Fixed: Crash when trying to open links on devices without a browser.
+
+### Explorer
+- Improved: Loading bookmarks, more resiliant against crashes caused by getting weird pathes from storage or Android APIs.
+
+### CorpseFinder
+- Fixed: Layout issues causing item size to be cutoff.
+
+### SystemCleaner
+- Fixed: Layout issues causing item size to be cutoff.
+
+### AppCleaner
+- Improved: Bugreporting filter (added `btsnoop_hci.log`).
+- Fixed: Layout issues causing item size to be cutoff.
+
+### Statistics
+- Fixed: Crash when trying to track AppControl tasks such as toggeling receivers.
+- Fixed: Crash when event details didn't fit into a single line.
+- Changed: Default limit reduced from 31 days to 7 days.
+- Changed: Reset statistics again.
 
 ## SD Maid [v4.4.0] - 05.11.2016
 ### Core
