@@ -1,8 +1,96 @@
 # Changelog
 
 - Latest production version: v4.4.1(40401), Unlocker v4.0.9(40009)
-- Latest beta version: -
+- Latest beta version: v4.5.0(40500)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.0] - 12.12.2016
+### Core
+- Added: Support for locations `data_system_ce` and `data_system_de`.
+- Added: Additional debugging options.
+- Added: Timestamps to new exclusions, preparing for future sort options.
+- Added: Android TV (leanback) support (#389).
+- Added: Debug option to run all tools.
+- Added: Debug option to disable the root check.
+- Improved: Clutter database.
+- Improved: User-interface, various small tweaks (e.g. #578).
+- Improved: Updated SD Maids internal toybox (bugfixes, removed ls applet, added pidof applet).
+- Improved: If statistics fail due to having no device space, gracefully continue instead of crashing.
+- Improved: UI performance/behavior related to the navigation drawer.
+- Improved: Bugreporting related to binary setup issues (toybox/busybox/sqlite3).
+- Improved: UI. Small tweaks to used strings, a bit of padding here and there.
+- Improved: Setup/Baseconditions task logic. Cleaner abort/continue behavior. Fixed a few issues that could lead to getting stuck in setup, having to kill SD Maid.
+- Improved: Multitasking behavior. Reboot tasks only make sense to be executed when everything else is done. To support this I've rewritten some chunks of SD Maids tasks-to-worker (each tool is a worker) distribution code.
+- Improved: If the statistics database corrupts, it now automatically resets itself.
+- Changed: SD Maids external tasks system to a simpler approach, previously functionality was overkill and convoluted. This should have positive effect on scheduler and widget actions. If it never worked on a specific ROM before, it might now.
+- Fixed: UI crash related to exiting a view when items were selected.
+- Fixed: Crash related to writing (copy/move) to external storage through the storage access framework.
+- Fixed: Crash related to storage access framework based access (external sdcards/portable storage).
+- Fixed: Crash related to deletion on external storage on Android 4.4 devices (provider trick).
+- Fixed: Crash related to initialization of SD Maids multiuser detection.
+- Fixed: Crash related to unlocker detection.
+- Fixed: Crash related to loading AppControl while either CorpseFinder or SystemCleaner was running.
+- Fixed: Android 4.4's "Provider trick" deletion method being used on other version too, where it obviously failed and slowed down deletion in edge cases (#595).
+- Fixed: Running apps detection on Android 7.0+ (#527).
+- Fixed: Floating action button not anchoring correctly (#610).
+
+### Explorer
+- Improved: Extraction behavior to better deal with uncommon archives structures.
+- Improved: Error message when opening something (#612).
+- Fixed: A rare UI related crash when trying to open a file with an app that directly closes again.
+- Fixed: Crash when trying to create SystemCleaner user-filter based on an invalid item.
+- Fixed: UI issue when quickly opening the report dialog, then closing it.
+
+### Searcher
+- Fixed: Empty searcher tasks failing in some cases instead of just listing the whole device.
+
+### AppControl
+- Added: "Activity manager" which allows you to view all exported Activities an app may have, launch them or add them as shortcut to your home screen (requires SD Maid Pro).
+- Added: View apps internal/external storage location.
+- Added: Action to move apps to internal/external storage on rooted devices (requires SD Maid Pro).
+- Improved: Core routines related to creating and updating "App" objects. A more modular approach now makes it faster to update Apps accurately after actions changed their state/behavior. The new approach also allows easier addition of new app details.
+- Changed: A few layout and color details to make more sense (green running, blue frozen, force stopped in between).
+- Fixed: Don't crash if the ROM has no uninstall activity (wtf?).
+- Fixed: Receivers being no longer shown after disabling them.
+
+### CorpseFinder
+- Added: Filter for `/mnt/secure/asec` (#247).
+- Fixed: Failsafe check for asec related corpses which checks if the `.asec` file is currently mounted (and thus not _yet_ a corpse). 
+
+### SystemCleaner
+- Added: Filter for recent tasks, which deletes metadata and screenshots used to restore the the recent tasks list after reboots (#235).
+
+### Appcleaner
+- Added: Filter to delete send/received files from Telegram (#609).
+- Improved: Analytics filter, added Adobe Analytics related files.
+- Improved: No longer require parent folder to contain the packagenames (fixes matching issues on the sdcard root).
+- Improved: Hidden cache filter.
+- Improved: Hidden cache filter matching. More aggressive matching against variants of the "tmp" folder.
+- Fixed: Bluetooth snoop log matching.
+
+### Storage analyzer
+- Fixed: Possible issue when browsing external storage on Android 5.0+ and base storage item has no parent.
+- Fixed: Being able to enable /cache without root.
+- Fixed: Filetree not being correctly updated after deleting something.
+
+### Databases
+- Added: Options to sort the list by state, app and size (#598).
+
+### Statistics
+- Changed: Reduced default chronic limit to 3 days.
+
+### QuickAccess
+- Added: Triggering QuickAccess through Android 7.1 "app-icon-shortcuts" (requires SD Maid Pro).
+- Improved: Progressbar behavior when tasks switch between "In queue" and working.
+
+### Scheduler
+- Added: Option to reboot the device after scheduler action complete.
+- Improved: Layout padding and tap behavior.
+
+### Exclusions
+- Added: Options to filter the list by type of exclusion (#600).
+- Improved: Exclusions are now sorted by their last modification time (#600).
+- Fixed: Being able to select locked exclusions in multiselect mode.
 
 ## SD Maid [v4.4.1] - 11.11.2016
 ### Core
