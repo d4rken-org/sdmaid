@@ -1,8 +1,45 @@
 # Changelog
 
 - Latest production version: v4.4.1(40401), Unlocker v4.0.9(40009)
-- Latest beta version: v4.5.0(40500)
+- Latest beta version: v4.5.1(40501)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.1] 17.12.2016
+### Core
+- Improved: Debug output.
+- Improved: Updated clutterdb.
+- Improved: Translations.
+- Changed: Leanback launcher icon.
+- Changed: Beta builds now automatically have experimental features enabled.
+- Changed: Reduced and update analytics.
+- Fixed: Previously placed shortcuts and widgets causing a crash and no longer working until recreated (if you recreated them in v4.5.0, then you have to do it again).
+- Fixed: Debug level not updating directly.
+- Fixed: Concurrency issue when multiple tools requested to have a file from the same location type checked.
+
+### Explorer
+- Fixed: Action "Save directory structure" not working (#618 Ty jawz101).
+
+### Searcher
+- Fixed: Not finding anything if modification time settings are not used.
+
+### AppControl
+- Added: Tapping the app icon will launch the app.
+- Added: Info to the app move button saying if an app doesn't want to be moved, but can be forced to.
+- Changed: The activities manager is now flagged as experimental.
+- Fixed: Apps being disabled as movable when they were not (#614 Ty noc-jfcbs).
+- Fixed: Search field not being displayed on smaller screens.
+- Fixed: Crash when unfreezing apps on <5.0.
+- Fixed: Crash when trying to determine app sizes (e.g. after uninstall).
+- Fixed: Crash when refreshing after trying to kill a library type app without application infos.
+- Fixed: Crash when entering and exiting the AppControl page and SD Maid tried to update the ui filters prematurely.
+- Fixed: Issue leading to a crash when placing a shortcut through the activities manager.
+
+### CorpseFinder
+- Fixed: Crash when triggering the uninstall watcher.
+- Fixed: False positive detection of theme/overlay files in private app data on LG devices (#615 Ty Brian).
+
+### SystemCleaner
+- Fixed: Crash when a racecondition lead to division by 0 during progress display.
 
 ## SD Maid [v4.5.0] - 12.12.2016
 ### Core
