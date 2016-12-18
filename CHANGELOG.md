@@ -1,8 +1,21 @@
 # Changelog
 
 - Latest production version: v4.4.1(40401), Unlocker v4.0.9(40009)
-- Latest beta version: v4.5.2(40502)
+- Latest beta version: v4.5.3(40503)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.3] 18.12.2016
+### Explorer
+- Improved: Saving the directory structure now appends a timestamp (epoch).
+
+### AppControl
+- Improved: Running apps detection instead of treating different data sources as fallback options, pull all data, then merge it.
+- Changed: Don't make assumptions about enabled/force-stopped state based on whether a package is running, just check and display. Less prone to show false data if detection of running apps returns incorrect data (issues such as the one fixed in this update would have been easier to detect).
+- Fixed: Incorrectly detecting running apps (shared uid values among apps caused to false positives, especially for system apps).
+- Fixed: Crash when updating the rightside filter drawer.
+
+### AppCleaner
+- Improved: Scan speed by looking up running packages only once.
 
 ## SD Maid [v4.5.2] 17.12.2016
 ### Core
