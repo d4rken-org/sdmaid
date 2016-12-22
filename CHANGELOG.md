@@ -1,8 +1,22 @@
 # Changelog
 
 - Latest production version: v4.4.1(40401), Unlocker v4.0.9(40009)
-- Latest beta version: v4.5.3(40503)
+- Latest beta version: v4.5.4(40504)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.4] 22.12.2016
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+
+### CorpseFinder
+- Fixed: File reporting not opening the browser.
+
+### AppCleaner
+- Added: Option to open files from details in SD Maids Explorer.
+- Improved: Scan performance. Under certain conditions SD Maid scanned the same folder twice.
+- Improved: Handling of issues when determining force-stopped apps.
+- Fixed: Scanning subfolders now also follows symlinks (fixes issues with App2SD apps) (#622 Ty Antonio).
 
 ## SD Maid [v4.5.3] 18.12.2016
 ### Explorer
