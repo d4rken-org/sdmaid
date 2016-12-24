@@ -1,15 +1,22 @@
 # Changelog
 
-- Latest production version: v4.5.4(40504), Unlocker v4.0.9(40009)
+- Latest production version: v4.5.5(40505), Unlocker v4.0.9(40009)
 - Latest beta version: -
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.5.5] ?
+## SD Maid [v4.5.5] 24.12.2016
 ### Core
 - Added: Support for files of type 'named pipes'.
+- Improved: Detection of running apps that use multiple processes.
+
+### AppControl
+- Fixed: Listdata being duplicated when refreshing single entries through tasks (e.g. size check).
 
 ### AppCleaner
 - Improved: Hidden caches filter (TempData).
+
+### Databases
+- Fixed: SD Maid getting stuck when trying to suspend running apps (using bad PID values) (Ty Ben).
 
 ## SD Maid [v4.5.4] 22.12.2016
 ### Core
