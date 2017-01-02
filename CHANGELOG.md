@@ -1,8 +1,30 @@
 # Changelog
 
 - Latest production version: v4.5.5(40505), Unlocker v4.0.9(40009)
-- Latest beta version: -
+- Latest beta version: v4.5.6(40506)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.6] 02.01.2017
+### Core
+- Improved: Updated toybox (#668).
+- Improved: Clutter database (#665 Ty RedMaxKr, #629, #664 & #663 Ty Gitoffthelawn).
+- Improved: File research performance, better sychronization during generation of clutter marker data (#663).
+- Improved: File research performance, prevent the marker cache from containing entries (#663).
+- Improved: Gracefully handle files with invalid modification dates by using a default date as fallback. Previously files with invalid stats would have been omitted causing tools like StorageAnalyzer to break because parent directories were omitted (#668).
+- Fixed: Experimental setting not correctly reflecting the actual state (i.e. when using a beta version).
+- Fixed: File opening on Android N+ (#667 Ty Joly0).
+
+### AppControl
+- Improved: Internal code by further modularizing functionality to reduce bug susceptibility.
+
+### CorpseFinder
+- Added: Ownership information within the details screen (#663).
+
+### SystemCleaner
+- Improved: Advertisement filter, added `.mobvista\d+`.
+
+### Scheduler
+- Added: If a full reboot attempt via system intent fails we try reboot via command line applet as fallback option (#662 Ty Yowlen).
 
 ## SD Maid [v4.5.5] 24.12.2016
 ### Core
