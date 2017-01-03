@@ -1,8 +1,16 @@
 # Changelog
 
 - Latest production version: v4.5.5(40505), Unlocker v4.0.9(40009)
-- Latest beta version: v4.5.6(40506)
+- Latest beta version: v4.5.7(40507)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.7] 03.01.2017
+### Core
+- Improved: Translations.
+- Improved: Debug logging.
+
+### AppControl
+- Fixed: SD Maid crashing after processing an uninstall or app reset.
 
 ## SD Maid [v4.5.6] 02.01.2017
 ### Core
