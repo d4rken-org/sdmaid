@@ -1,8 +1,35 @@
 # Changelog
 
-- Latest production version: v4.5.5(40505), Unlocker v4.0.9(40009)
-- Latest beta version: v4.5.7(40507)
+- Latest production version: v4.5.7(40507), Unlocker v4.0.9(40009)
+- Latest beta version: v4.5.8(40508)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.8] 08.01.2017
+### Core
+- Improved: Clutter database.
+- Improved: Updated android support libraries.
+- Improved: Import screen should now only show files with supported extensions.
+- Improved: Show error instead of crash when trying to import invalid files into exceptions.
+- Fixed: Update check delaying initialization when blocking internet access via firewall.
+
+### Explorer
+- Improved: Files created by "Save directory structure" now contain ROM infos (#675).
+- Fixed: Copy/Move snackbar not consistently showing.
+
+### AppControl
+- Improved: Receiver (boot) details. Previous colors were not very readable. Made some layout changes.
+
+### CorpseFinder
+- Changed: "TWRP" and "clockworkmod" have been flagged as `common` and will no longer be suggested as corpses (#673).
+
+### SystemCleaner
+- Fixed: `/data/system/dropbox` filter (Ty Roman).
+
+### AppCleaner
+- Improved: Hidden cache filter (additional image and video cache matching).
+
+### StorageAnalyzer
+- Added: "Read only" to read-only storages (#676).
 
 ## SD Maid [v4.5.7] 03.01.2017
 ### Core
