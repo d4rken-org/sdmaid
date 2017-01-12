@@ -1,8 +1,22 @@
 # Changelog
 
 - Latest production version: v4.5.7(40507), Unlocker v4.0.9(40009)
-- Latest beta version: v4.5.8(40508)
+- Latest beta version: v4.5.9(40509)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.5.9] 12.01.2017
+### Core
+- Improved: Translations.
+- Improved: Clutter database (#684).
+- Fixed: Clutter report tool crashing when adding apps (#686).
+- Fixed: FAB staying invisible after being hidden (#685).
+- Fixed: FAB being missaligned within the file/path picker screen (exclusions, filters etc.).
+
+### AppControl
+- Fixed: Handling of empty packages/restrictions XML files.
+
+### StorageAnalyzer
+- Improved: Gracefully deal with cases where a file could not be found.
 
 ## SD Maid [v4.5.8] 08.01.2017
 ### Core
