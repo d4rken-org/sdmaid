@@ -1,8 +1,51 @@
 # Changelog
 
 - Latest production version: v4.5.9(40509), Unlocker v4.0.9(40009)
-- Latest beta version: -
+- Latest beta version: v4.6.0(40600)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.6.0] 31.01.2017
+### Core
+- Added: Support for `/data/sdext2`.
+- Added: Support for clutter matching in `/data`.
+- Improved: Clutter database (#711, #695, #696, #697, #694, #701, #702, #704, #705, #707, #708, #709, #710, #703, #706).
+- Improved: Debug output (better performance when debugging, more useful information).
+- Improved: "Double press to exit" now respects the systems vibration settings (#693).
+- Improved: Code responsible for detecting storages.
+- Improved: Updated translations.
+- Fixed: Progress messages when doing statistics.
+
+### AppControl
+- Added: Through SD Maid uninstalled apps are now logged in statistics.
+- Improved: Forced-stopped apps can now also be determined on unrooted devices (#712).
+- Improved: Initial scan speed should be faster, specifically detecting disabled and stopped apps.
+- Changed: App list filter entries are now only shown if they contain apps (#713).
+
+### CorpseFinder
+- Added: Filter for Link2SD and Apps2SD related files.
+
+### AppCleaner
+- Improved: Deletion performance. Items are no longer deleted one by one. SD Maid will try to find common parent directories and then delete in batches while still respecting exclusions (#430).
+- Improved: Scan performance, specifically final checks (alias & exclusions).
+- Improved: Bug reporting file filter.
+
+### Duplicates
+- Added: Default exclusion for Link2SD and Apps2SD (#254).
+- Fixed: Use the same icons as in other places in the app for "Show in Explorer".
+
+### StorageAnalyzer
+- Added: `/data/sdext2` to displayed storages if detected.
+- Added: Root items now display a little extra info like "Requires root permissions" or "Read only".
+- Added: Setting to show inaccessible items (i.e. SD Maid can't search them but still determine the overall storage/size data).
+- Improved: Viewing entries in the Explorer now shows the content if a directory is the target, instead of the directory itself in its parent.
+- Improved: If the system cache is located at `/data/cache`, the entry will be omitted as it's already covered.
+- Changed: `/data` and `/cache` will now be shown on unrooted devices if it's enabled in settings.
+
+### Scheduler
+- Improved: New custom views to improve UI behavior.
+
+### Statistics
+- Changed:  Removed labels from chart (due to overlapping) and moved the size to each legend entry (#699, #689).
 
 ## SD Maid [v4.5.9] 12.01.2017
 ### Core
