@@ -1,8 +1,30 @@
 # Changelog
 
 - Latest production version: v4.5.9(40509), Unlocker v4.0.9(40009)
-- Latest beta version: v4.6.0(40600)
+- Latest beta version: v4.6.1(40601)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+
+## SD Maid [v4.6.1] 10.02.2017
+###
+- Improved: Debug output.
+- Improved: Clutter database (#735,#730,#729).
+- Improved: Translations (#726).
+- Improved: Updated analytics library and reduced amount of tracked actions (popularity: AppControl: togglereceiver>delete>kill>freeze>forcestop>export, Explorer:Delete>move/copy>size>rename), nothing suprising here so I'll no longer track this.
+- Changed: Settings layout.
+
+### AppControl
+- Improved: APK export behavior when encountering errors.
+- Fixed: "Show unknown" (receiver) menu checkbox not reflecting the state correctly.
+
+### CorpseFinder
+- Changed: Removed experimental tag from Link2SD/Apps2SD filter.
+
+### Databases
+- Added: MediaMonkey as default exclusion (#732).
+
+### Scheduler
+- Changed: Increased maximum interval to 31 (#733).
 
 ## SD Maid [v4.6.0] 31.01.2017
 ### Core
