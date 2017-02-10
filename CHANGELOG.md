@@ -1,9 +1,12 @@
 # Changelog
 
 - Latest production version: v4.5.9(40509), Unlocker v4.0.9(40009)
-- Latest beta version: v4.6.1(40601)
+- Latest beta version: v4.6.2(40602)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v4.6.2] 10.02.2017
+### StorageAnalyzer
+- Fixed: Detecting not existing partition.
 
 ## SD Maid [v4.6.1] 10.02.2017
 ###
