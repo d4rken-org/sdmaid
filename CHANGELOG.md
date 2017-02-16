@@ -1,8 +1,28 @@
 # Changelog
 
 - Latest production version: v4.5.9(40509), Unlocker v4.0.9(40009)
-- Latest beta version: v4.6.2(40602)
+- Latest beta version: v4.6.3(40603)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.6.3] 16.02.2017
+### Core
+- Improved: Updated clutter database (#737,#740,#739,#747).
+- Improved: Updated translations.
+- Improved: Various improvements to logging output and code structure.
+- Improved: Routines related to remounting storage when deleting, creating, copying or moving items.
+- Improved: Device related analytics data.
+- Improved: Added mount details to crash reports (#744).
+- Improved: Binary setup on non ARM devices. SD Maid should now correctly detect and use the PREFERRED architecture, if a device supports multiple (#745).
+- Improved: Updated Android support libraries.
+- Improved: App killing code. Fixed crash due to firmware bug on LG devices running Android 7.0 (#748).
+- Fixed: Shell tasks falsely trying to remount the emulated primary storage.
+
+### AppControl
+- Fixed: Crash when APKs failed to export.
+- Fixed: Export failing on some unrooted devices.
+
+### AppCleaner
+- Improved: Hidden cache filter (#747).
 
 ## SD Maid [v4.6.2] 10.02.2017
 ### StorageAnalyzer
