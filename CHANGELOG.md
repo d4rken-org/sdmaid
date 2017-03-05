@@ -1,8 +1,23 @@
 # Changelog
 
 - Latest production version: v4.6.3(40603), Unlocker v4.0.9(40009)
-- Latest beta version: -
+- Latest beta version: v4.6.4(40604)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.6.4] 05.03.2017
+### Core
+- Added: Link to privacy policy (sdmaid.darken.eu/privacy).
+- Added: Support for clutter markers which define their target packages via regular expressions.
+- Improved: Automatic bug reporting tool.
+- Improved: Translations.
+- Improved: Clutter database (#768,#761,#765,#767,#771,#772,#773,#774,#762,#763,#751,#755).
+- Improved: Updated tooling and used libraries.
+- Improved: Code handling dynamic clutter markers (which can match apps without really knowing the specific apps).
+- Fixed: Clutter reporter not including uninstalled (but known apps) in the reports (#769).
+
+### StorageAnalyzer
+- Improved: Internal code structure to allow for better testing.
+- Fixed: Case where deleting files lead to a crash (if the files had already been deleted).
 
 ## SD Maid [v4.6.3] 16.02.2017
 ### Core
