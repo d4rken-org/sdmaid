@@ -1,8 +1,46 @@
 # Changelog
 
 - Latest production version: v4.6.4(40604), Unlocker v4.0.9(40009)
-- Latest beta version: -
+- Latest beta version: v4.6.5(40605)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.6.5] 06.04.2017
+### Core
+- Improved: Translations.
+- Improved: Root binary & app detection, added support for magisku.
+- Improved: Updated clutter database (#799,#780,#782).
+- Improved: Debug output. Fixed typos, better naming.
+- Improved: Root related code. Lots of refactoring and new unit tests. Some preperation to move root related classes into an external library that I can open source.
+- Improved: Improved analytics. Moved to https. Removed tracking for data that proved to be not useful (referrer data). Updated to latest Piwik 2.0 build.
+- Improved: Image loading (latest glide library).
+- Improved: Pro/Unlocker related code. Unified checks and upgrade dialog. More granular control (instead of isPro(), hasFeature(X)). Preparations to allow for different upgrade paths than via the unlocker app.
+- Fixed: Filetype being wrong when sharing files (e.g. uploading to GDrive) (#786).
+- Changed: Changing the "preview" option in the settings no longer requires the pro version. Currently only affects previews in the duplicates tool.
+
+### Searcher
+- Added: Search option field for "Path doesn't contain". Will be exanded to a list in a future rewrite (#809).
+- Removed: Global searcher exclusion as they were not working (#809).
+
+### CorpseFinder
+- Improved: Uninstall watcher should now work on Android O (#800).
+
+### AppControl
+- Fixed: Always showing a toast message when adding an activity (#823).
+- Fixed: App size not correctly determined on unrooted devices (#820).
+- Fixed: Typo in date format when sharing a list of apps.
+
+### AppCleaner
+- Improved: Hidden caches filter, added facebook video cache.
+- Fixed: Inconsistent toolbar icons (#788).
+
+### Duplicates
+- Changed: The free version will now show file previews.
+
+### StorageAnalyzer
+- Fixed: Text being cut off when changing font sizes via accessibility settings (#789).
+
+### Statistics
+- Improved: Only attempt truncation if new limit is lower than old one.
 
 ## SD Maid [v4.6.4] 05.03.2017
 ### Core
