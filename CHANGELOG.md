@@ -1,8 +1,16 @@
 # Changelog
 
 - Latest production version: v4.6.5(40605), Unlocker v4.0.9(40009)
-- Latest beta version: v4.7.1(40701)
+- Latest beta version: v4.7.2(40702)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.7.2] 13.05.2017
+### Core
+- Fixed: Don't crash SD Maid if unknown apps send incompatible intents to the ExternalTaskReceiver.
+- Fixed: Shell environment variables not being correctly set (Ty Марат Зельман & Семен Топаль).
+- Fixed: Preview loading. Previews should no longer fail to load and get stuck on the "spinning circle", should be a little bit faster too.
+- Fixed: Preview failing for some apps build for Android O.
+- Changed: Reverted hotfix from v4.7.1 because it didn't address the underlying issue.
 
 ## SD Maid [v4.7.1] 13.05.2017
 ### Core
