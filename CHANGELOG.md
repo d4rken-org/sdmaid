@@ -1,8 +1,50 @@
 # Changelog
 
 - Latest production version: v4.6.5(40605), Unlocker v4.0.9(40009)
-- Latest beta version: ~
+- Latest beta version: v4.7.0(40700)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.7.0] 13.05.2017
+### Core
+- Improved: Translations (thanks!).
+- Improved: Clutter database (#880,#875,#874,#873,#847,#855,#856,#857,#858,#860,#849,#859,#862,#876).
+- Improved: Debug output (#851).
+- Improved: Updated used libraries & tooling.
+- Improved: Updated toybox binary.
+- Improved: Binary setup/compatibility tests for `xargs` and `find`.
+- Improved: Binary setup. Better ROM comaptibility. "Mix&Match" of applets from different binary sources is now supported.
+- Improved: Dalvik-Cache ownership detection.
+- Improved: Improved `/data/app` & `/data/app-private` ownership detection.
+- Improved: File processing of unusual names (carriage return/newline feeds).
+- Improved: Resource usage, certain internal objects are now no longer aquired multiple times during SD Maids runtime.
+- Improved: Lots of internal code structure, refactoring galore to improve unit testing.
+- Improved: Exclusion creation. It's now no longer possible to accidentally enter `\n` when creating exclusions.
+- Improved: Dates displayed in SD Maid use the users preferred (system set) way of displaying dates (dd/MM/YY vs MM/dd/YY).
+- Fixed: Binary update routine in cases where the existing binary could not be deleted due to wrong permissions.
+- Fixed: Debug data reading on Android O (#833).
+- Fixed: Files not being read correctly depending on which stat applet was used (parsing failure).
+- Fixed: SD Maids own update check not checking the previous version correctly.
+
+### Overview
+- Improved: Busybox/Sqlite details regarding applet use.
+
+### Explorer
+- Added: Corpses marked as "keeper" will now appear with an orange ghost icon instead of the normal white one.
+- Improved: When creating a filter, a sample description will be prefilled.
+- Changed: When creating filters, and the item is a directory, `/` will be appended (#868).
+
+### CorpseFinder
+- Fixed: ApkData false positives on Android O (#829, ty dreamland2000).
+
+### AppControl
+- Improved: App size display. If SD Maid is unsure about an apps size, this is now visible (#844).
+- Changed: SD Maids unlocker is now visible (#837).
+- Changed: Certain actions are disallowed on SD Maid and the Unlocker (it doesn't make sense to let SD Maid disable SD Maid) (#837).
+
+### SystemCleaner
+- Added: Attributes & UI elements to support filtering by `minimumAge` and `maximumAge´ (#333).
+- Improved: UserFilter export. Only save fields into the `.json` file that are actually necessary (#867).
+- Improved: Scan performance for items that will eventually match a filter that doesn't use the `location` criteria.
 
 ## SD Maid [v4.6.5] 06.04.2017
 ### Core
