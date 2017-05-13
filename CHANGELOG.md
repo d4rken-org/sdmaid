@@ -1,8 +1,12 @@
 # Changelog
 
 - Latest production version: v4.6.5(40605), Unlocker v4.0.9(40009)
-- Latest beta version: v4.7.0(40700)
+- Latest beta version: v4.7.1(40701)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.7.1] 13.05.2017
+### Core
+- Fixed: Issue issue when reading/getting files (stat output parsing issue).
 
 ## SD Maid [v4.7.0] 13.05.2017
 ### Core
