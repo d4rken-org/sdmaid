@@ -1,8 +1,22 @@
 # Changelog
 
 - Latest production version: v4.6.5(40605), Unlocker v4.0.9(40009)
-- Latest beta version: v4.7.2(40702)
+- Latest beta version: v4.7.3(40703)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.7.3] 25.05.2017
+### Core
+- Improved: Handling of files with invalid group/user ids (out of valid number) range. Mostly happens with custom mounted storage devices.
+- Improved: Handling of symbolic links without link target (encountered when mounting storage from other operating systems).
+- Improved: Debugging output.
+- Improved: Clutter database (#889,#890,#891,#893,#894,#895,#897,#899,#900,#901,#902).
+- Fixed: Crash when automatic crash reporting was disabled and SD Maid tried to report a specific issue.
+
+### AppControl
+- Fixed: Export function missing since v4.7.2.
+
+### SystemCleaner
+- Added: Filter for old (>1day) WhatsApp message backups to filter page "other" (#904).
 
 ## SD Maid [v4.7.2] 13.05.2017
 ### Core
