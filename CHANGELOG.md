@@ -1,8 +1,28 @@
 # Changelog
 
 - Latest production version: v4.6.5(40605), Unlocker v4.0.9(40009)
-- Latest beta version: v4.7.3(40703)
+- Latest beta version: v4.7.4(40704)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.7.4] 30.05.2017
+### Core
+- Improved: Translations.
+- Improved: Small code improvements.
+- Improved: Clutter database (#944,#943,#942,#940,#938,#937,#936,#935,#933,#909,#913,#914,#941,#934).
+- Changed: The secondary storage setup can now be skipped after a few seconds (before you had to try granting permissionat least once).
+
+### AppControl
+- Fixed: Crash when an app was uninstalled and SD Maid was working with stale data.
+- Fixed: Crash when sorting apps by name and an app had no name.
+
+### SystemCleaner
+- Removed: Filter for old WhatsApp backups. The SystemCleaner works best with files with unknown owners, in this case we know who owns the files (WhatsApp) so the AppCleaner is better suited this as it can check if an app is running or work with exclusions via packagename.
+
+### AppCleaner
+- Added: Filter for old WhatsApp backups.
+- Added: Markers ".Trash" and ".trash" to the hidden caches filter.
+- Improved: WhatsApp sent/received filters. Added matching for "Animated Gifs".
+
 
 ## SD Maid [v4.7.3] 25.05.2017
 ### Core
