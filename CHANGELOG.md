@@ -4,6 +4,14 @@
 - Latest beta version: ¯\\\_(ツ)_/¯
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v4.7.5] ?
+### Core
+- Improved: Clutter database (#977,#972,#971,#970,#968,#965,#955,#952,#950).
+- Fixed: Make sure that we don't launch something like "BlackBerry Market" when trying to take the user to SD Maid on Google Play (#861).
+
+### Explorer
+- Fixed: Not being able to jpg files on some ROMs (#951).
+
 ## SD Maid [v4.7.4] 30.05.2017
 ### Core
 - Improved: Translations.
