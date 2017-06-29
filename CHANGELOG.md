@@ -6,6 +6,7 @@
 
 ## SD Maid [v4.7.5] 29.06.2017
 ### Core
+- Improved: Translations (some new languages yay \o/).
 - Improved: Clutter database (#977,#972,#971,#970,#968,#965,#955,#952,#950,#992,#988).
 - Improved: Code related to checking app cache sizes on Android 6-7.
 - Fixed: Make sure that we don't launch something like "BlackBerry Market" when trying to take the user to SD Maid on Google Play (#861).
