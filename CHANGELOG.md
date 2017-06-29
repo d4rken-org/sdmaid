@@ -1,16 +1,22 @@
 # Changelog
 
 - Latest production version: v4.7.4(40704), Unlocker v4.0.9(40009)
-- Latest beta version: ¯\\\_(ツ)_/¯
+- Latest beta version: v4.7.5(40705)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.7.5] ?
+## SD Maid [v4.7.5] 29.06.2017
 ### Core
-- Improved: Clutter database (#977,#972,#971,#970,#968,#965,#955,#952,#950).
+- Improved: Clutter database (#977,#972,#971,#970,#968,#965,#955,#952,#950,#992,#988).
+- Improved: Code related to checking app cache sizes on Android 6-7.
 - Fixed: Make sure that we don't launch something like "BlackBerry Market" when trying to take the user to SD Maid on Google Play (#861).
+- Fixed: Crash when a newer version of SD Maid is installed and SD Maid tries to update internal binaries.
 
 ### Explorer
 - Fixed: Not being able to jpg files on some ROMs (#951).
+
+### AppControl
+- Improved: App install data (e.g. /data/app ) detection. Adjusted routines for apps with unusual pathes. Mostly relating preinstalled aps, mostly emulator type ROMs but also some others.
+- Fixed: Not being able to access the filter drawer if the list is empty as otherwise the user could be stuck on a specific sort mode.
 
 ## SD Maid [v4.7.4] 30.05.2017
 ### Core
