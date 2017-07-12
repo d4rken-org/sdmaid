@@ -1,7 +1,7 @@
 # Changelog
 
-- Latest production version: v4.7.4(40704), Unlocker v4.0.9(40009)
-- Latest beta version: v4.7.5(40705)
+- Latest production version: v4.7.5(40705), Unlocker v4.0.9(40009)
+- Latest beta version: ☕
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
 ## SD Maid [v4.7.5] 29.06.2017
