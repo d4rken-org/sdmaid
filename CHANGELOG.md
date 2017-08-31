@@ -7,7 +7,7 @@
 ## SD Maid [v4.7.7] ?
 ### Core
 - Added: Dynamic clutter matching for `/sdcard/data/Data/some.pkg` (developer path mistakes).
-- Improved: Clutter database (#1053,#1049,#1048,#1047,#1046,#1054,#1058,#1059,#1060,#1065,#1068,#1070,#1072,#1073,#1074,#1075,#1076,#1077,#1088,#1109,#1108,#1107,#1106,#1105,#1094,#1095,#1027,#1114).
+- Improved: Clutter database (#1053, #1049, #1048, #1047, #1046, #1054, #1058, #1059, #1060, #1065, #1068, #1070, #1072, #1073, #1074, #1075, #1076, #1077, #1088, #1109, #1108, #1107, #1106, #1105, #1094, #1095, #1027, #1114).
 - Improved: Image loading (glide update).
 - Improved: Added support for dynamic package matching more than 1 level deep.
 - Improved: Content description for floating action buttons to help with accessibility (#1027).
@@ -26,12 +26,12 @@
 ## SD Maid [v4.7.6] 05.08.2017
 ### Core
 - Improved: Updated translations.
-- Improved: Updated clutter database (#997,#1009,#1014,#1015,#1021,#1022,#1023,#1024,#1025,#1032,#1034,#1035,#1036,#1017).
+- Improved: Updated clutter database (#997, #1009, #1014, #1015, #1021, #1022, #1023, #1024, #1025, #1032, #1034, #1035, #1036, #1017).
 
 ## SD Maid [v4.7.5] 29.06.2017
 ### Core
 - Improved: Translations (some new languages yay \o/).
-- Improved: Clutter database (#977,#972,#971,#970,#968,#965,#955,#952,#950,#992,#988).
+- Improved: Clutter database (#977, #972, #971, #970, #968, #965, #955, #952, #950, #992, #988).
 - Improved: Code related to checking app cache sizes on Android 6-7.
 - Fixed: Make sure that we don't launch something like "BlackBerry Market" when trying to take the user to SD Maid on Google Play (#861).
 - Fixed: Crash when a newer version of SD Maid is installed and SD Maid tries to update internal binaries.
@@ -47,7 +47,7 @@
 ### Core
 - Improved: Translations.
 - Improved: Small code improvements.
-- Improved: Clutter database (#944,#943,#942,#940,#938,#937,#936,#935,#933,#909,#913,#914,#941,#934).
+- Improved: Clutter database (#944, #943, #942, #940, #938, #937, #936, #935, #933, #909, #913, #914, #941, #934).
 - Changed: The secondary storage setup can now be skipped after a few seconds (before you had to try granting permissionat least once).
 
 ### AppControl
@@ -68,7 +68,7 @@
 - Improved: Handling of files with invalid group/user ids (out of valid number) range. Mostly happens with custom mounted storage devices.
 - Improved: Handling of symbolic links without link target (encountered when mounting storage from other operating systems).
 - Improved: Debugging output.
-- Improved: Clutter database (#889,#890,#891,#893,#894,#895,#897,#899,#900,#901,#902).
+- Improved: Clutter database (#889, #890, #891, #893, #894, #895, #897, #899, #900, #901, #902).
 - Fixed: Crash when automatic crash reporting was disabled and SD Maid tried to report a specific issue.
 
 ### AppControl
@@ -92,7 +92,7 @@
 ## SD Maid [v4.7.0] 13.05.2017
 ### Core
 - Improved: Translations (thanks!).
-- Improved: Clutter database (#880,#875,#874,#873,#847,#855,#856,#857,#858,#860,#849,#859,#862,#876).
+- Improved: Clutter database (#880, #875, #874, #873, #847, #855, #856, #857, #858, #860, #849, #859, #862, #876).
 - Improved: Debug output (#851).
 - Improved: Updated used libraries & tooling.
 - Improved: Updated toybox binary.
@@ -135,7 +135,7 @@
 ### Core
 - Improved: Translations.
 - Improved: Root binary & app detection, added support for magisku.
-- Improved: Updated clutter database (#799,#780,#782).
+- Improved: Updated clutter database (#799, #780, #782).
 - Improved: Debug output. Fixed typos, better naming.
 - Improved: Root related code. Lots of refactoring and new unit tests. Some preperation to move root related classes into an external library that I can open source.
 - Improved: Improved analytics. Moved to https. Removed tracking for data that proved to be not useful (referrer data). Updated to latest Piwik 2.0 build.
@@ -175,7 +175,7 @@
 - Added: Support for clutter markers which define their target packages via regular expressions.
 - Improved: Automatic bug reporting tool.
 - Improved: Translations.
-- Improved: Clutter database (#768,#761,#765,#767,#771,#772,#773,#774,#762,#763,#751,#755).
+- Improved: Clutter database (#768, #761, #765, #767, #771, #772, #773, #774, #762, #763, #751, #755).
 - Improved: Updated tooling and used libraries.
 - Improved: Code handling dynamic clutter markers (which can match apps without really knowing the specific apps).
 - Fixed: Clutter reporter not including uninstalled (but known apps) in the reports (#769).
@@ -186,7 +186,7 @@
 
 ## SD Maid [v4.6.3] 16.02.2017
 ### Core
-- Improved: Updated clutter database (#737,#740,#739,#747).
+- Improved: Updated clutter database (#737, #740, #739, #747).
 - Improved: Updated translations.
 - Improved: Various improvements to logging output and code structure.
 - Improved: Routines related to remounting storage when deleting, creating, copying or moving items.
@@ -211,7 +211,7 @@
 ## SD Maid [v4.6.1] 10.02.2017
 ###
 - Improved: Debug output.
-- Improved: Clutter database (#735,#730,#729).
+- Improved: Clutter database (#735, #730, #729).
 - Improved: Translations (#726).
 - Improved: Updated analytics library and reduced amount of tracked actions (popularity: AppControl: togglereceiver>delete>kill>freeze>forcestop>export, Explorer:Delete>move/copy>size>rename), nothing suprising here so I'll no longer track this.
 - Changed: Settings layout.
