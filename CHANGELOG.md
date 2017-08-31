@@ -1,13 +1,32 @@
 # Changelog
 
-- Latest production version: v4.7.5(40705), Unlocker v4.0.9(40009)
-- Latest beta version: v4.7.6(40706)
+- Latest production version: v4.7.6(40706), Unlocker v4.0.9(40009)
+- Latest beta version: ~
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.7.7] ?
+### Core
+- Added: Dynamic clutter matching for `/sdcard/data/Data/some.pkg` (developer path mistakes).
+- Improved: Clutter database (#1053,#1049,#1048,#1047,#1046,#1054,#1058,#1059,#1060,#1065,#1068,#1070,#1072,#1073,#1074,#1075,#1076,#1077,#1088,#1109,#1108,#1107,#1106,#1105,#1094,#1095,#1027,#1114).
+- Improved: Image loading (glide update).
+- Improved: Added support for dynamic package matching more than 1 level deep.
+- Improved: Content description for floating action buttons to help with accessibility (#1027).
+
+### AppControl
+- Fixed: SD Maid being shown among frozen apps (despite being obviously not frozen, #1103, ty MikeL).
+
+### SystemCleaner
+- Changed: Filter categorization to make more sense.
+
+### AppCleaner
+- Added: Filter for Threema files.
+- Improved: Bug reporting filter to include more log file types.
+- Changed: Filter categorization to make more sense.
 
 ## SD Maid [v4.7.6] 05.08.2017
 ### Core
 - Improved: Updated translations.
-- Improved: Updated clutter database.
+- Improved: Updated clutter database (#997,#1009,#1014,#1015,#1021,#1022,#1023,#1024,#1025,#1032,#1034,#1035,#1036,#1017).
 
 ## SD Maid [v4.7.5] 29.06.2017
 ### Core
