@@ -1,19 +1,39 @@
 # Changelog
 
 - Latest production version: v4.7.6(40706), Unlocker v4.0.9(40009)
-- Latest beta version: ~
+- Latest beta version: v4.8.0(40800)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.7.7] ?
+## SD Maid [v4.8.0] 22.09.2017
 ### Core
+- Added: Language selection, option to enforce different languages than english (#916).
 - Added: Dynamic clutter matching for `/sdcard/data/Data/some.pkg` (developer path mistakes).
-- Improved: Clutter database (#1053, #1049, #1048, #1047, #1046, #1054, #1058, #1059, #1060, #1065, #1068, #1070, #1072, #1073, #1074, #1075, #1076, #1077, #1088, #1109, #1108, #1107, #1106, #1105, #1094, #1095, #1027, #1114).
+- Improved: Clutter database (#1053, #1049, #1048, #1047, #1046, #1054, #1058, #1059, #1060, #1065, #1068, #1070, #1072, #1073, #1074, #1075, #1076, #1077, #1088, #1109, #1108, #1107, #1106, #1105, #1094, #1095, #1027, #1114, #1118, #1119, #1120, #1137, #1131, #1132, #1141, #1142).
 - Improved: Image loading (glide update).
 - Improved: Added support for dynamic package matching more than 1 level deep.
 - Improved: Content description for floating action buttons to help with accessibility (#1027).
+- Improved: USB-OTG device detection (#1116).
+- Improved: Root type detection (MAGISK) (#1092).
+- Improved: Debug output, now also printing environment variables into debug logs to help troubleshoot sdcard/usb detection (#1117).
+- Improved: Raised target SDK to Android Oreo.
+- Improved: App launch speed (#998).
+- Improved: Notification messages.
+- Improved: Translations.
+- Fixed: Crash when checking running processes and the system returns `null` instead of an empty list.
+- Fixed: SD Maid indefinitely hanging at the root check (#878).
+- Fixed: Deadlock during task canceling (#878).
+- Changed: Target API to 26 (Oreo).
+- Changed: Internal background, service and notification behavior to conform to new Android Oreo restrictions (#801, #804). 
+- Removed: Setting "persistent notifications". The notification system was rewritten to improve compatibility with Android Oreo and this setting didn't fit with the changes I had to make (#801).
 
 ### AppControl
+- Improved: App details text can now be selected and copied (#1139).
 - Fixed: SD Maid being shown among frozen apps (despite being obviously not frozen, #1103, ty MikeL).
+
+### CorpseFinder
+- Improved: Wording in the clutter report screen (#1137).
+- Improved: Detect corpses of apps that are still installed, but where the ROM's app installer failed to remove files (in app, app-private) after updates (#996, Ty mzielinskim).
+- Fixed: Ownership detection of base app files for Android Oreo (#802)
 
 ### SystemCleaner
 - Changed: Filter categorization to make more sense.
@@ -22,6 +42,11 @@
 - Added: Filter for Threema files.
 - Improved: Bug reporting filter to include more log file types.
 - Changed: Filter categorization to make more sense.
+- Removed: Shortcut to system storage settings on Android Oreo, due to system cache clearing options no longer being available (#1121).
+
+### Databases
+- Improved: Searching , expanded checked extensions in non database folders to `*.sqlite` and `*.sql`
+- Improved: Search locations, search now includes all public storage (#1067).
 
 ## SD Maid [v4.7.6] 05.08.2017
 ### Core
