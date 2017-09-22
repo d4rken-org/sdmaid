@@ -6,34 +6,34 @@
 
 ## SD Maid [v4.8.0] 22.09.2017
 ### Core
-- Added: Language selection, option to enforce different languages than english (#916).
+- Added: Language selection, option to enforce different languages than english ([#916](https://github.com/d4rken/sdmaid-public/issues/916)).
 - Added: Dynamic clutter matching for `/sdcard/data/Data/some.pkg` (developer path mistakes).
-- Improved: Clutter database (#1053, #1049, #1048, #1047, #1046, #1054, #1058, #1059, #1060, #1065, #1068, #1070, #1072, #1073, #1074, #1075, #1076, #1077, #1088, #1109, #1108, #1107, #1106, #1105, #1094, #1095, #1027, #1114, #1118, #1119, #1120, #1137, #1131, #1132, #1141, #1142).
+- Improved: Clutter database ([#1053](https://github.com/d4rken/sdmaid-public/issues/1053), [#1049](https://github.com/d4rken/sdmaid-public/issues/1049), [#1048](https://github.com/d4rken/sdmaid-public/issues/1048), [#1047](https://github.com/d4rken/sdmaid-public/issues/1047), [#1046](https://github.com/d4rken/sdmaid-public/issues/1046), [#1054](https://github.com/d4rken/sdmaid-public/issues/1054), [#1058](https://github.com/d4rken/sdmaid-public/issues/1058), [#1059](https://github.com/d4rken/sdmaid-public/issues/1059), [#1060](https://github.com/d4rken/sdmaid-public/issues/1060), [#1065](https://github.com/d4rken/sdmaid-public/issues/1065), [#1068](https://github.com/d4rken/sdmaid-public/issues/1068), [#1070](https://github.com/d4rken/sdmaid-public/issues/1070), [#1072](https://github.com/d4rken/sdmaid-public/issues/1072), [#1073](https://github.com/d4rken/sdmaid-public/issues/1073), [#1074](https://github.com/d4rken/sdmaid-public/issues/1074), [#1075](https://github.com/d4rken/sdmaid-public/issues/1075), [#1076](https://github.com/d4rken/sdmaid-public/issues/1076), [#1077](https://github.com/d4rken/sdmaid-public/issues/1077), [#1088](https://github.com/d4rken/sdmaid-public/issues/1088), [#1109](https://github.com/d4rken/sdmaid-public/issues/1109), [#1108](https://github.com/d4rken/sdmaid-public/issues/1108), [#1107](https://github.com/d4rken/sdmaid-public/issues/1107), [#1106](https://github.com/d4rken/sdmaid-public/issues/1106), [#1105](https://github.com/d4rken/sdmaid-public/issues/1105), [#1094](https://github.com/d4rken/sdmaid-public/issues/1094), [#1095](https://github.com/d4rken/sdmaid-public/issues/1095), [#1027](https://github.com/d4rken/sdmaid-public/issues/1027), [#1114](https://github.com/d4rken/sdmaid-public/issues/1114), [#1118](https://github.com/d4rken/sdmaid-public/issues/1118), [#1119](https://github.com/d4rken/sdmaid-public/issues/1119), [#1120](https://github.com/d4rken/sdmaid-public/issues/1120), [#1137](https://github.com/d4rken/sdmaid-public/issues/1137), [#1131](https://github.com/d4rken/sdmaid-public/issues/1131), [#1132](https://github.com/d4rken/sdmaid-public/issues/1132), [#1141](https://github.com/d4rken/sdmaid-public/issues/1141), [#1142](https://github.com/d4rken/sdmaid-public/issues/1142)).
 - Improved: Image loading (glide update).
 - Improved: Added support for dynamic package matching more than 1 level deep.
-- Improved: Content description for floating action buttons to help with accessibility (#1027).
-- Improved: USB-OTG device detection (#1116).
-- Improved: Root type detection (MAGISK) (#1092).
-- Improved: Debug output, now also printing environment variables into debug logs to help troubleshoot sdcard/usb detection (#1117).
+- Improved: Content description for floating action buttons to help with accessibility ([#1027](https://github.com/d4rken/sdmaid-public/issues/1027)).
+- Improved: USB-OTG device detection ([#1116](https://github.com/d4rken/sdmaid-public/issues/1116)).
+- Improved: Root type detection (MAGISK) ([#1092](https://github.com/d4rken/sdmaid-public/issues/1092)).
+- Improved: Debug output, now also printing environment variables into debug logs to help troubleshoot sdcard/usb detection ([#1117](https://github.com/d4rken/sdmaid-public/issues/1117)).
 - Improved: Raised target SDK to Android Oreo.
-- Improved: App launch speed (#998).
+- Improved: App launch speed ([#998](https://github.com/d4rken/sdmaid-public/issues/998)).
 - Improved: Notification messages.
 - Improved: Translations.
 - Fixed: Crash when checking running processes and the system returns `null` instead of an empty list.
-- Fixed: SD Maid indefinitely hanging at the root check (#878).
-- Fixed: Deadlock during task canceling (#878).
+- Fixed: SD Maid indefinitely hanging at the root check ([#878](https://github.com/d4rken/sdmaid-public/issues/878)).
+- Fixed: Deadlock during task canceling ([#878](https://github.com/d4rken/sdmaid-public/issues/878)).
 - Changed: Target API to 26 (Oreo).
-- Changed: Internal background, service and notification behavior to conform to new Android Oreo restrictions (#801, #804). 
-- Removed: Setting "persistent notifications". The notification system was rewritten to improve compatibility with Android Oreo and this setting didn't fit with the changes I had to make (#801).
+- Changed: Internal background, service and notification behavior to conform to new Android Oreo restrictions ([#801](https://github.com/d4rken/sdmaid-public/issues/801), [#804](https://github.com/d4rken/sdmaid-public/issues/804)). 
+- Removed: Setting "persistent notifications". The notification system was rewritten to improve compatibility with Android Oreo and this setting didn't fit with the changes I had to make ([#801](https://github.com/d4rken/sdmaid-public/issues/801)).
 
 ### AppControl
-- Improved: App details text can now be selected and copied (#1139).
-- Fixed: SD Maid being shown among frozen apps (despite being obviously not frozen, #1103, ty MikeL).
+- Improved: App details text can now be selected and copied ([#1139](https://github.com/d4rken/sdmaid-public/issues/1139)).
+- Fixed: SD Maid being shown among frozen apps (despite being obviously not frozen, [#1103](https://github.com/d4rken/sdmaid-public/issues/1103), ty MikeL).
 
 ### CorpseFinder
-- Improved: Wording in the clutter report screen (#1137).
-- Improved: Detect corpses of apps that are still installed, but where the ROM's app installer failed to remove files (in app, app-private) after updates (#996, Ty mzielinskim).
-- Fixed: Ownership detection of base app files for Android Oreo (#802)
+- Improved: Wording in the clutter report screen ([#1137](https://github.com/d4rken/sdmaid-public/issues/1137)).
+- Improved: Detect corpses of apps that are still installed, but where the ROM's app installer failed to remove files (in app, app-private) after updates ([#996](https://github.com/d4rken/sdmaid-public/issues/996), Ty mzielinskim).
+- Fixed: Ownership detection of base app files for Android Oreo ([#802](https://github.com/d4rken/sdmaid-public/issues/802))
 
 ### SystemCleaner
 - Changed: Filter categorization to make more sense.
@@ -42,27 +42,27 @@
 - Added: Filter for Threema files.
 - Improved: Bug reporting filter to include more log file types.
 - Changed: Filter categorization to make more sense.
-- Removed: Shortcut to system storage settings on Android Oreo, due to system cache clearing options no longer being available (#1121).
+- Removed: Shortcut to system storage settings on Android Oreo, due to system cache clearing options no longer being available ([#1121](https://github.com/d4rken/sdmaid-public/issues/1121)).
 
 ### Databases
 - Improved: Searching , expanded checked extensions in non database folders to `*.sqlite` and `*.sql`
-- Improved: Search locations, search now includes all public storage (#1067).
+- Improved: Search locations, search now includes all public storage ([#1067](https://github.com/d4rken/sdmaid-public/issues/1067)).
 
 ## SD Maid [v4.7.6] 05.08.2017
 ### Core
 - Improved: Updated translations.
-- Improved: Updated clutter database (#997, #1009, #1014, #1015, #1021, #1022, #1023, #1024, #1025, #1032, #1034, #1035, #1036, #1017).
+- Improved: Updated clutter database ([#997](https://github.com/d4rken/sdmaid-public/issues/997), [#1009](https://github.com/d4rken/sdmaid-public/issues/1009), [#1014](https://github.com/d4rken/sdmaid-public/issues/1014), [#1015](https://github.com/d4rken/sdmaid-public/issues/1015), [#1021](https://github.com/d4rken/sdmaid-public/issues/1021), [#1022](https://github.com/d4rken/sdmaid-public/issues/1022), [#1023](https://github.com/d4rken/sdmaid-public/issues/1023), [#1024](https://github.com/d4rken/sdmaid-public/issues/1024), [#1025](https://github.com/d4rken/sdmaid-public/issues/1025), [#1032](https://github.com/d4rken/sdmaid-public/issues/1032), [#1034](https://github.com/d4rken/sdmaid-public/issues/1034), [#1035](https://github.com/d4rken/sdmaid-public/issues/1035), [#1036](https://github.com/d4rken/sdmaid-public/issues/1036), [#1017](https://github.com/d4rken/sdmaid-public/issues/1017)).
 
 ## SD Maid [v4.7.5] 29.06.2017
 ### Core
 - Improved: Translations (some new languages yay \o/).
-- Improved: Clutter database (#977, #972, #971, #970, #968, #965, #955, #952, #950, #992, #988).
+- Improved: Clutter database ([#977](https://github.com/d4rken/sdmaid-public/issues/977), [#972](https://github.com/d4rken/sdmaid-public/issues/972), [#971](https://github.com/d4rken/sdmaid-public/issues/971), [#970](https://github.com/d4rken/sdmaid-public/issues/970), [#968](https://github.com/d4rken/sdmaid-public/issues/968), [#965](https://github.com/d4rken/sdmaid-public/issues/965), [#955](https://github.com/d4rken/sdmaid-public/issues/955), [#952](https://github.com/d4rken/sdmaid-public/issues/952), [#950](https://github.com/d4rken/sdmaid-public/issues/950), [#992](https://github.com/d4rken/sdmaid-public/issues/992), [#988](https://github.com/d4rken/sdmaid-public/issues/988)).
 - Improved: Code related to checking app cache sizes on Android 6-7.
-- Fixed: Make sure that we don't launch something like "BlackBerry Market" when trying to take the user to SD Maid on Google Play (#861).
+- Fixed: Make sure that we don't launch something like "BlackBerry Market" when trying to take the user to SD Maid on Google Play ([#861](https://github.com/d4rken/sdmaid-public/issues/861)).
 - Fixed: Crash when a newer version of SD Maid is installed and SD Maid tries to update internal binaries.
 
 ### Explorer
-- Fixed: Not being able to jpg files on some ROMs (#951).
+- Fixed: Not being able to jpg files on some ROMs ([#951](https://github.com/d4rken/sdmaid-public/issues/951)).
 
 ### AppControl
 - Improved: App install data (e.g. /data/app ) detection. Adjusted routines for apps with unusual pathes. Mostly relating preinstalled aps, mostly emulator type ROMs but also some others.
@@ -72,7 +72,7 @@
 ### Core
 - Improved: Translations.
 - Improved: Small code improvements.
-- Improved: Clutter database (#944, #943, #942, #940, #938, #937, #936, #935, #933, #909, #913, #914, #941, #934).
+- Improved: Clutter database ([#944](https://github.com/d4rken/sdmaid-public/issues/944), [#943](https://github.com/d4rken/sdmaid-public/issues/943), [#942](https://github.com/d4rken/sdmaid-public/issues/942), [#940](https://github.com/d4rken/sdmaid-public/issues/940), [#938](https://github.com/d4rken/sdmaid-public/issues/938), [#937](https://github.com/d4rken/sdmaid-public/issues/937), [#936](https://github.com/d4rken/sdmaid-public/issues/936), [#935](https://github.com/d4rken/sdmaid-public/issues/935), [#933](https://github.com/d4rken/sdmaid-public/issues/933), [#909](https://github.com/d4rken/sdmaid-public/issues/909), [#913](https://github.com/d4rken/sdmaid-public/issues/913), [#914](https://github.com/d4rken/sdmaid-public/issues/914), [#941](https://github.com/d4rken/sdmaid-public/issues/941), [#934](https://github.com/d4rken/sdmaid-public/issues/934)).
 - Changed: The secondary storage setup can now be skipped after a few seconds (before you had to try granting permissionat least once).
 
 ### AppControl
@@ -93,14 +93,14 @@
 - Improved: Handling of files with invalid group/user ids (out of valid number) range. Mostly happens with custom mounted storage devices.
 - Improved: Handling of symbolic links without link target (encountered when mounting storage from other operating systems).
 - Improved: Debugging output.
-- Improved: Clutter database (#889, #890, #891, #893, #894, #895, #897, #899, #900, #901, #902).
+- Improved: Clutter database ([#889](https://github.com/d4rken/sdmaid-public/issues/889), [#890](https://github.com/d4rken/sdmaid-public/issues/890), [#891](https://github.com/d4rken/sdmaid-public/issues/891), [#893](https://github.com/d4rken/sdmaid-public/issues/893), [#894](https://github.com/d4rken/sdmaid-public/issues/894), [#895](https://github.com/d4rken/sdmaid-public/issues/895), [#897](https://github.com/d4rken/sdmaid-public/issues/897), [#899](https://github.com/d4rken/sdmaid-public/issues/899), [#900](https://github.com/d4rken/sdmaid-public/issues/900), [#901](https://github.com/d4rken/sdmaid-public/issues/901), [#902](https://github.com/d4rken/sdmaid-public/issues/902)).
 - Fixed: Crash when automatic crash reporting was disabled and SD Maid tried to report a specific issue.
 
 ### AppControl
 - Fixed: Export function missing since v4.7.2.
 
 ### SystemCleaner
-- Added: Filter for old (>1day) WhatsApp message backups to filter page "other" (#904).
+- Added: Filter for old (>1day) WhatsApp message backups to filter page "other" ([#904](https://github.com/d4rken/sdmaid-public/issues/904)).
 
 ## SD Maid [v4.7.2] 13.05.2017
 ### Core
@@ -117,8 +117,8 @@
 ## SD Maid [v4.7.0] 13.05.2017
 ### Core
 - Improved: Translations (thanks!).
-- Improved: Clutter database (#880, #875, #874, #873, #847, #855, #856, #857, #858, #860, #849, #859, #862, #876).
-- Improved: Debug output (#851).
+- Improved: Clutter database ([#880](https://github.com/d4rken/sdmaid-public/issues/880), [#875](https://github.com/d4rken/sdmaid-public/issues/875), [#874](https://github.com/d4rken/sdmaid-public/issues/874), [#873](https://github.com/d4rken/sdmaid-public/issues/873), [#847](https://github.com/d4rken/sdmaid-public/issues/847), [#855](https://github.com/d4rken/sdmaid-public/issues/855), [#856](https://github.com/d4rken/sdmaid-public/issues/856), [#857](https://github.com/d4rken/sdmaid-public/issues/857), [#858](https://github.com/d4rken/sdmaid-public/issues/858), [#860](https://github.com/d4rken/sdmaid-public/issues/860), [#849](https://github.com/d4rken/sdmaid-public/issues/849), [#859](https://github.com/d4rken/sdmaid-public/issues/859), [#862](https://github.com/d4rken/sdmaid-public/issues/862), [#876](https://github.com/d4rken/sdmaid-public/issues/876)).
+- Improved: Debug output ([#851](https://github.com/d4rken/sdmaid-public/issues/851)).
 - Improved: Updated used libraries & tooling.
 - Improved: Updated toybox binary.
 - Improved: Binary setup/compatibility tests for `xargs` and `find`.
@@ -131,7 +131,7 @@
 - Improved: Exclusion creation. It's now no longer possible to accidentally enter `\n` when creating exclusions.
 - Improved: Dates displayed in SD Maid use the users preferred (system set) way of displaying dates (dd/MM/YY vs MM/dd/YY).
 - Fixed: Binary update routine in cases where the existing binary could not be deleted due to wrong permissions.
-- Fixed: Debug data reading on Android O (#833).
+- Fixed: Debug data reading on Android O ([#833](https://github.com/d4rken/sdmaid-public/issues/833)).
 - Fixed: Files not being read correctly depending on which stat applet was used (parsing failure).
 - Fixed: SD Maids own update check not checking the previous version correctly.
 
@@ -141,55 +141,55 @@
 ### Explorer
 - Added: Corpses marked as "keeper" will now appear with an orange ghost icon instead of the normal white one.
 - Improved: When creating a filter, a sample description will be prefilled.
-- Changed: When creating filters, and the item is a directory, `/` will be appended (#868).
+- Changed: When creating filters, and the item is a directory, `/` will be appended ([#868](https://github.com/d4rken/sdmaid-public/issues/868)).
 
 ### CorpseFinder
-- Fixed: ApkData false positives on Android O (#829, ty dreamland2000).
+- Fixed: ApkData false positives on Android O ([#829](https://github.com/d4rken/sdmaid-public/issues/829), ty dreamland2000).
 
 ### AppControl
-- Improved: App size display. If SD Maid is unsure about an apps size, this is now visible (#844).
-- Changed: SD Maids unlocker is now visible (#837).
-- Changed: Certain actions are disallowed on SD Maid and the Unlocker (it doesn't make sense to let SD Maid disable SD Maid) (#837).
+- Improved: App size display. If SD Maid is unsure about an apps size, this is now visible ([#844](https://github.com/d4rken/sdmaid-public/issues/844)).
+- Changed: SD Maids unlocker is now visible ([#837](https://github.com/d4rken/sdmaid-public/issues/837)).
+- Changed: Certain actions are disallowed on SD Maid and the Unlocker (it doesn't make sense to let SD Maid disable SD Maid) ([#837](https://github.com/d4rken/sdmaid-public/issues/837)).
 
 ### SystemCleaner
-- Added: Attributes & UI elements to support filtering by `minimumAge` and `maximumAge´ (#333).
-- Improved: UserFilter export. Only save fields into the `.json` file that are actually necessary (#867).
+- Added: Attributes & UI elements to support filtering by `minimumAge` and `maximumAge´ ([#333](https://github.com/d4rken/sdmaid-public/issues/333)).
+- Improved: UserFilter export. Only save fields into the `.json` file that are actually necessary ([#867](https://github.com/d4rken/sdmaid-public/issues/867)).
 - Improved: Scan performance for items that will eventually match a filter that doesn't use the `location` criteria.
 
 ## SD Maid [v4.6.5] 06.04.2017
 ### Core
 - Improved: Translations.
 - Improved: Root binary & app detection, added support for magisku.
-- Improved: Updated clutter database (#799, #780, #782).
+- Improved: Updated clutter database ([#799](https://github.com/d4rken/sdmaid-public/issues/799), [#780](https://github.com/d4rken/sdmaid-public/issues/780), [#782](https://github.com/d4rken/sdmaid-public/issues/782)).
 - Improved: Debug output. Fixed typos, better naming.
 - Improved: Root related code. Lots of refactoring and new unit tests. Some preperation to move root related classes into an external library that I can open source.
 - Improved: Improved analytics. Moved to https. Removed tracking for data that proved to be not useful (referrer data). Updated to latest Piwik 2.0 build.
 - Improved: Image loading (latest glide library).
 - Improved: Pro/Unlocker related code. Unified checks and upgrade dialog. More granular control (instead of isPro(), hasFeature(X)). Preparations to allow for different upgrade paths than via the unlocker app.
-- Fixed: Filetype being wrong when sharing files (e.g. uploading to GDrive) (#786).
+- Fixed: Filetype being wrong when sharing files (e.g. uploading to GDrive) ([#786](https://github.com/d4rken/sdmaid-public/issues/786)).
 - Changed: Changing the "preview" option in the settings no longer requires the pro version. Currently only affects previews in the duplicates tool.
 
 ### Searcher
-- Added: Search option field for "Path doesn't contain". Will be exanded to a list in a future rewrite (#809).
-- Removed: Global searcher exclusion as they were not working (#809).
+- Added: Search option field for "Path doesn't contain". Will be exanded to a list in a future rewrite ([#809](https://github.com/d4rken/sdmaid-public/issues/809)).
+- Removed: Global searcher exclusion as they were not working ([#809](https://github.com/d4rken/sdmaid-public/issues/809)).
 
 ### CorpseFinder
-- Improved: Uninstall watcher should now work on Android O (#800).
+- Improved: Uninstall watcher should now work on Android O ([#800](https://github.com/d4rken/sdmaid-public/issues/800)).
 
 ### AppControl
-- Fixed: Always showing a toast message when adding an activity (#823).
-- Fixed: App size not correctly determined on unrooted devices (#820).
+- Fixed: Always showing a toast message when adding an activity ([#823](https://github.com/d4rken/sdmaid-public/issues/823)).
+- Fixed: App size not correctly determined on unrooted devices ([#820](https://github.com/d4rken/sdmaid-public/issues/820)).
 - Fixed: Typo in date format when sharing a list of apps.
 
 ### AppCleaner
 - Improved: Hidden caches filter, added facebook video cache.
-- Fixed: Inconsistent toolbar icons (#788).
+- Fixed: Inconsistent toolbar icons ([#788](https://github.com/d4rken/sdmaid-public/issues/788)).
 
 ### Duplicates
 - Changed: The free version will now show file previews.
 
 ### StorageAnalyzer
-- Fixed: Text being cut off when changing font sizes via accessibility settings (#789).
+- Fixed: Text being cut off when changing font sizes via accessibility settings ([#789](https://github.com/d4rken/sdmaid-public/issues/789)).
 
 ### Statistics
 - Improved: Only attempt truncation if new limit is lower than old one.
@@ -200,10 +200,10 @@
 - Added: Support for clutter markers which define their target packages via regular expressions.
 - Improved: Automatic bug reporting tool.
 - Improved: Translations.
-- Improved: Clutter database (#768, #761, #765, #767, #771, #772, #773, #774, #762, #763, #751, #755).
+- Improved: Clutter database ([#768](https://github.com/d4rken/sdmaid-public/issues/768), [#761](https://github.com/d4rken/sdmaid-public/issues/761), [#765](https://github.com/d4rken/sdmaid-public/issues/765), [#767](https://github.com/d4rken/sdmaid-public/issues/767), [#771](https://github.com/d4rken/sdmaid-public/issues/771), [#772](https://github.com/d4rken/sdmaid-public/issues/772), [#773](https://github.com/d4rken/sdmaid-public/issues/773), [#774](https://github.com/d4rken/sdmaid-public/issues/774), [#762](https://github.com/d4rken/sdmaid-public/issues/762), [#763](https://github.com/d4rken/sdmaid-public/issues/763), [#751](https://github.com/d4rken/sdmaid-public/issues/751), [#755](https://github.com/d4rken/sdmaid-public/issues/755)).
 - Improved: Updated tooling and used libraries.
 - Improved: Code handling dynamic clutter markers (which can match apps without really knowing the specific apps).
-- Fixed: Clutter reporter not including uninstalled (but known apps) in the reports (#769).
+- Fixed: Clutter reporter not including uninstalled (but known apps) in the reports ([#769](https://github.com/d4rken/sdmaid-public/issues/769)).
 
 ### StorageAnalyzer
 - Improved: Internal code structure to allow for better testing.
@@ -211,15 +211,15 @@
 
 ## SD Maid [v4.6.3] 16.02.2017
 ### Core
-- Improved: Updated clutter database (#737, #740, #739, #747).
+- Improved: Updated clutter database ([#737](https://github.com/d4rken/sdmaid-public/issues/737), [#740](https://github.com/d4rken/sdmaid-public/issues/740), [#739](https://github.com/d4rken/sdmaid-public/issues/739), [#747](https://github.com/d4rken/sdmaid-public/issues/747)).
 - Improved: Updated translations.
 - Improved: Various improvements to logging output and code structure.
 - Improved: Routines related to remounting storage when deleting, creating, copying or moving items.
 - Improved: Device related analytics data.
-- Improved: Added mount details to crash reports (#744).
-- Improved: Binary setup on non ARM devices. SD Maid should now correctly detect and use the PREFERRED architecture, if a device supports multiple (#745).
+- Improved: Added mount details to crash reports ([#744](https://github.com/d4rken/sdmaid-public/issues/744)).
+- Improved: Binary setup on non ARM devices. SD Maid should now correctly detect and use the PREFERRED architecture, if a device supports multiple ([#745](https://github.com/d4rken/sdmaid-public/issues/745)).
 - Improved: Updated Android support libraries.
-- Improved: App killing code. Fixed crash due to firmware bug on LG devices running Android 7.0 (#748).
+- Improved: App killing code. Fixed crash due to firmware bug on LG devices running Android 7.0 ([#748](https://github.com/d4rken/sdmaid-public/issues/748)).
 - Fixed: Shell tasks falsely trying to remount the emulated primary storage.
 
 ### AppControl
@@ -227,7 +227,7 @@
 - Fixed: Export failing on some unrooted devices.
 
 ### AppCleaner
-- Improved: Hidden cache filter (#747).
+- Improved: Hidden cache filter ([#747](https://github.com/d4rken/sdmaid-public/issues/747)).
 
 ## SD Maid [v4.6.2] 10.02.2017
 ### StorageAnalyzer
@@ -236,8 +236,8 @@
 ## SD Maid [v4.6.1] 10.02.2017
 ###
 - Improved: Debug output.
-- Improved: Clutter database (#735, #730, #729).
-- Improved: Translations (#726).
+- Improved: Clutter database ([#735](https://github.com/d4rken/sdmaid-public/issues/735), [#730](https://github.com/d4rken/sdmaid-public/issues/730), [#729](https://github.com/d4rken/sdmaid-public/issues/729)).
+- Improved: Translations ([#726](https://github.com/d4rken/sdmaid-public/issues/726)).
 - Improved: Updated analytics library and reduced amount of tracked actions (popularity: AppControl: togglereceiver>delete>kill>freeze>forcestop>export, Explorer:Delete>move/copy>size>rename), nothing suprising here so I'll no longer track this.
 - Changed: Settings layout.
 
@@ -249,38 +249,38 @@
 - Changed: Removed experimental tag from Link2SD/Apps2SD filter.
 
 ### Databases
-- Added: MediaMonkey as default exclusion (#732).
+- Added: MediaMonkey as default exclusion ([#732](https://github.com/d4rken/sdmaid-public/issues/732)).
 
 ### Scheduler
-- Changed: Increased maximum interval to 31 (#733).
+- Changed: Increased maximum interval to 31 ([#733](https://github.com/d4rken/sdmaid-public/issues/733)).
 
 ## SD Maid [v4.6.0] 31.01.2017
 ### Core
 - Added: Support for `/data/sdext2`.
 - Added: Support for clutter matching in `/data`.
-- Improved: Clutter database (#711, #695, #696, #697, #694, #701, #702, #704, #705, #707, #708, #709, #710, #703, #706).
+- Improved: Clutter database ([#711](https://github.com/d4rken/sdmaid-public/issues/711), [#695](https://github.com/d4rken/sdmaid-public/issues/695), [#696](https://github.com/d4rken/sdmaid-public/issues/696), [#697](https://github.com/d4rken/sdmaid-public/issues/697), [#694](https://github.com/d4rken/sdmaid-public/issues/694), [#701](https://github.com/d4rken/sdmaid-public/issues/701), [#702](https://github.com/d4rken/sdmaid-public/issues/702), [#704](https://github.com/d4rken/sdmaid-public/issues/704), [#705](https://github.com/d4rken/sdmaid-public/issues/705), [#707](https://github.com/d4rken/sdmaid-public/issues/707), [#708](https://github.com/d4rken/sdmaid-public/issues/708), [#709](https://github.com/d4rken/sdmaid-public/issues/709), [#710](https://github.com/d4rken/sdmaid-public/issues/710), [#703](https://github.com/d4rken/sdmaid-public/issues/703), [#706](https://github.com/d4rken/sdmaid-public/issues/706)).
 - Improved: Debug output (better performance when debugging, more useful information).
-- Improved: "Double press to exit" now respects the systems vibration settings (#693).
+- Improved: "Double press to exit" now respects the systems vibration settings ([#693](https://github.com/d4rken/sdmaid-public/issues/693)).
 - Improved: Code responsible for detecting storages.
 - Improved: Updated translations.
 - Fixed: Progress messages when doing statistics.
 
 ### AppControl
 - Added: Through SD Maid uninstalled apps are now logged in statistics.
-- Improved: Forced-stopped apps can now also be determined on unrooted devices (#712).
+- Improved: Forced-stopped apps can now also be determined on unrooted devices ([#712](https://github.com/d4rken/sdmaid-public/issues/712)).
 - Improved: Initial scan speed should be faster, specifically detecting disabled and stopped apps.
-- Changed: App list filter entries are now only shown if they contain apps (#713).
+- Changed: App list filter entries are now only shown if they contain apps ([#713](https://github.com/d4rken/sdmaid-public/issues/713)).
 
 ### CorpseFinder
 - Added: Filter for Link2SD and Apps2SD related files.
 
 ### AppCleaner
-- Improved: Deletion performance. Items are no longer deleted one by one. SD Maid will try to find common parent directories and then delete in batches while still respecting exclusions (#430).
+- Improved: Deletion performance. Items are no longer deleted one by one. SD Maid will try to find common parent directories and then delete in batches while still respecting exclusions ([#430](https://github.com/d4rken/sdmaid-public/issues/430)).
 - Improved: Scan performance, specifically final checks (alias & exclusions).
 - Improved: Bug reporting file filter.
 
 ### Duplicates
-- Added: Default exclusion for Link2SD and Apps2SD (#254).
+- Added: Default exclusion for Link2SD and Apps2SD ([#254](https://github.com/d4rken/sdmaid-public/issues/254)).
 - Fixed: Use the same icons as in other places in the app for "Show in Explorer".
 
 ### StorageAnalyzer
@@ -295,14 +295,14 @@
 - Improved: New custom views to improve UI behavior.
 
 ### Statistics
-- Changed:  Removed labels from chart (due to overlapping) and moved the size to each legend entry (#699, #689).
+- Changed:  Removed labels from chart (due to overlapping) and moved the size to each legend entry ([#699](https://github.com/d4rken/sdmaid-public/issues/699), [#689](https://github.com/d4rken/sdmaid-public/issues/689)).
 
 ## SD Maid [v4.5.9] 12.01.2017
 ### Core
 - Improved: Translations.
-- Improved: Clutter database (#684).
-- Fixed: Clutter report tool crashing when adding apps (#686).
-- Fixed: FAB staying invisible after being hidden (#685).
+- Improved: Clutter database ([#684](https://github.com/d4rken/sdmaid-public/issues/684)).
+- Fixed: Clutter report tool crashing when adding apps ([#686](https://github.com/d4rken/sdmaid-public/issues/686)).
+- Fixed: FAB staying invisible after being hidden ([#685](https://github.com/d4rken/sdmaid-public/issues/685)).
 - Fixed: FAB being missaligned within the file/path picker screen (exclusions, filters etc.).
 
 ### AppControl
@@ -320,14 +320,14 @@
 - Fixed: Update check delaying initialization when blocking internet access via firewall.
 
 ### Explorer
-- Improved: Files created by "Save directory structure" now contain ROM infos (#675).
+- Improved: Files created by "Save directory structure" now contain ROM infos ([#675](https://github.com/d4rken/sdmaid-public/issues/675)).
 - Fixed: Copy/Move snackbar not consistently showing.
 
 ### AppControl
 - Improved: Receiver (boot) details. Previous colors were not very readable. Made some layout changes.
 
 ### CorpseFinder
-- Changed: "TWRP" and "clockworkmod" have been flagged as `common` and will no longer be suggested as corpses (#673).
+- Changed: "TWRP" and "clockworkmod" have been flagged as `common` and will no longer be suggested as corpses ([#673](https://github.com/d4rken/sdmaid-public/issues/673)).
 
 ### SystemCleaner
 - Fixed: `/data/system/dropbox` filter (Ty Roman).
@@ -336,7 +336,7 @@
 - Improved: Hidden cache filter (additional image and video cache matching).
 
 ### StorageAnalyzer
-- Added: "Read only" to read-only storages (#676).
+- Added: "Read only" to read-only storages ([#676](https://github.com/d4rken/sdmaid-public/issues/676)).
 
 ## SD Maid [v4.5.7] 03.01.2017
 ### Core
@@ -348,25 +348,25 @@
 
 ## SD Maid [v4.5.6] 02.01.2017
 ### Core
-- Improved: Updated toybox (#668).
-- Improved: Clutter database (#665 Ty RedMaxKr, #629, #664 & #663 Ty Gitoffthelawn).
-- Improved: File research performance, better sychronization during generation of clutter marker data (#663).
-- Improved: File research performance, prevent the marker cache from containing entries (#663).
-- Improved: Gracefully handle files with invalid modification dates by using a default date as fallback. Previously files with invalid stats would have been omitted causing tools like StorageAnalyzer to break because parent directories were omitted (#668).
+- Improved: Updated toybox ([#668](https://github.com/d4rken/sdmaid-public/issues/668)).
+- Improved: Clutter database ([#665](https://github.com/d4rken/sdmaid-public/issues/665) Ty RedMaxKr, [#629](https://github.com/d4rken/sdmaid-public/issues/629), [#664](https://github.com/d4rken/sdmaid-public/issues/664) & [#663](https://github.com/d4rken/sdmaid-public/issues/663) Ty Gitoffthelawn).
+- Improved: File research performance, better sychronization during generation of clutter marker data ([#663](https://github.com/d4rken/sdmaid-public/issues/663)).
+- Improved: File research performance, prevent the marker cache from containing entries ([#663](https://github.com/d4rken/sdmaid-public/issues/663)).
+- Improved: Gracefully handle files with invalid modification dates by using a default date as fallback. Previously files with invalid stats would have been omitted causing tools like StorageAnalyzer to break because parent directories were omitted ([#668](https://github.com/d4rken/sdmaid-public/issues/668)).
 - Fixed: Experimental setting not correctly reflecting the actual state (i.e. when using a beta version).
-- Fixed: File opening on Android N+ (#667 Ty Joly0).
+- Fixed: File opening on Android N+ ([#667](https://github.com/d4rken/sdmaid-public/issues/667) Ty Joly0).
 
 ### AppControl
 - Improved: Internal code by further modularizing functionality to reduce bug susceptibility.
 
 ### CorpseFinder
-- Added: Ownership information within the details screen (#663).
+- Added: Ownership information within the details screen ([#663](https://github.com/d4rken/sdmaid-public/issues/663)).
 
 ### SystemCleaner
 - Improved: Advertisement filter, added `.mobvista\d+`.
 
 ### Scheduler
-- Added: If a full reboot attempt via system intent fails we try reboot via command line applet as fallback option (#662 Ty Yowlen).
+- Added: If a full reboot attempt via system intent fails we try reboot via command line applet as fallback option ([#662](https://github.com/d4rken/sdmaid-public/issues/662) Ty Yowlen).
 
 ## SD Maid [v4.5.5] 24.12.2016
 ### Core
@@ -392,10 +392,10 @@
 
 ### AppCleaner
 - Added: Option to open files from details in SD Maids Explorer.
-- Added: Amazon app store to hidden cache and analytics filter (#457 Ty Gitoffthelawn & jawz101).
+- Added: Amazon app store to hidden cache and analytics filter ([#457](https://github.com/d4rken/sdmaid-public/issues/457) Ty Gitoffthelawn & jawz101).
 - Improved: Scan performance. Under certain conditions SD Maid scanned the same folder twice.
 - Improved: Handling of issues when determining force-stopped apps.
-- Fixed: Scanning subfolders now also follows symlinks (fixes issues with App2SD apps) (#622 Ty Antonio).
+- Fixed: Scanning subfolders now also follows symlinks (fixes issues with App2SD apps) ([#622](https://github.com/d4rken/sdmaid-public/issues/622) Ty Antonio).
 
 ## SD Maid [v4.5.3] 18.12.2016
 ### Explorer
@@ -427,7 +427,7 @@
 - Fixed: Concurrency issue when multiple tools requested to have a file from the same location type checked.
 
 ### Explorer
-- Fixed: Action "Save directory structure" not working (#618 Ty jawz101).
+- Fixed: Action "Save directory structure" not working ([#618](https://github.com/d4rken/sdmaid-public/issues/618) Ty jawz101).
 
 ### Searcher
 - Fixed: Not finding anything if modification time settings are not used.
@@ -436,7 +436,7 @@
 - Added: Tapping the app icon will launch the app.
 - Added: Info to the app move button saying if an app doesn't want to be moved, but can be forced to.
 - Changed: The activities manager is now flagged as experimental.
-- Fixed: Apps being disabled as movable when they were not (#614 Ty noc-jfcbs).
+- Fixed: Apps being disabled as movable when they were not ([#614](https://github.com/d4rken/sdmaid-public/issues/614) Ty noc-jfcbs).
 - Fixed: Search field not being displayed on smaller screens.
 - Fixed: Crash when unfreezing apps on <5.0.
 - Fixed: Crash when trying to determine app sizes (e.g. after uninstall).
@@ -446,7 +446,7 @@
 
 ### CorpseFinder
 - Fixed: Crash when triggering the uninstall watcher.
-- Fixed: False positive detection of theme/overlay files in private app data on LG devices (#615 Ty Brian).
+- Fixed: False positive detection of theme/overlay files in private app data on LG devices ([#615](https://github.com/d4rken/sdmaid-public/issues/615) Ty Brian).
 
 ### SystemCleaner
 - Fixed: Crash when a racecondition lead to division by 0 during progress display.
@@ -456,11 +456,11 @@
 - Added: Support for locations `data_system_ce` and `data_system_de`.
 - Added: Additional debugging options.
 - Added: Timestamps to new exclusions, preparing for future sort options.
-- Added: Android TV (leanback) support (#389).
+- Added: Android TV (leanback) support ([#389](https://github.com/d4rken/sdmaid-public/issues/389)).
 - Added: Debug option to run all tools.
 - Added: Debug option to disable the root check.
 - Improved: Clutter database.
-- Improved: User-interface, various small tweaks (e.g. #578).
+- Improved: User-interface, various small tweaks (e.g. [#578](https://github.com/d4rken/sdmaid-public/issues/578)).
 - Improved: Updated SD Maids internal toybox (bugfixes, removed ls applet, added pidof applet).
 - Improved: If statistics fail due to having no device space, gracefully continue instead of crashing.
 - Improved: UI performance/behavior related to the navigation drawer.
@@ -477,13 +477,13 @@
 - Fixed: Crash related to initialization of SD Maids multiuser detection.
 - Fixed: Crash related to unlocker detection.
 - Fixed: Crash related to loading AppControl while either CorpseFinder or SystemCleaner was running.
-- Fixed: Android 4.4's "Provider trick" deletion method being used on other version too, where it obviously failed and slowed down deletion in edge cases (#595).
-- Fixed: Running apps detection on Android 7.0+ (#527).
-- Fixed: Floating action button not anchoring correctly (#610).
+- Fixed: Android 4.4's "Provider trick" deletion method being used on other version too, where it obviously failed and slowed down deletion in edge cases ([#595](https://github.com/d4rken/sdmaid-public/issues/595)).
+- Fixed: Running apps detection on Android 7.0+ ([#527](https://github.com/d4rken/sdmaid-public/issues/527)).
+- Fixed: Floating action button not anchoring correctly ([#610](https://github.com/d4rken/sdmaid-public/issues/610)).
 
 ### Explorer
 - Improved: Extraction behavior to better deal with uncommon archives structures.
-- Improved: Error message when opening something (#612).
+- Improved: Error message when opening something ([#612](https://github.com/d4rken/sdmaid-public/issues/612)).
 - Fixed: A rare UI related crash when trying to open a file with an app that directly closes again.
 - Fixed: Crash when trying to create SystemCleaner user-filter based on an invalid item.
 - Fixed: UI issue when quickly opening the report dialog, then closing it.
@@ -501,14 +501,14 @@
 - Fixed: Receivers being no longer shown after disabling them.
 
 ### CorpseFinder
-- Added: Filter for `/mnt/secure/asec` (#247).
+- Added: Filter for `/mnt/secure/asec` ([#247](https://github.com/d4rken/sdmaid-public/issues/247)).
 - Fixed: Failsafe check for asec related corpses which checks if the `.asec` file is currently mounted (and thus not _yet_ a corpse). 
 
 ### SystemCleaner
-- Added: Filter for recent tasks, which deletes metadata and screenshots used to restore the the recent tasks list after reboots (#235).
+- Added: Filter for recent tasks, which deletes metadata and screenshots used to restore the the recent tasks list after reboots ([#235](https://github.com/d4rken/sdmaid-public/issues/235)).
 
 ### Appcleaner
-- Added: Filter to delete send/received files from Telegram (#609).
+- Added: Filter to delete send/received files from Telegram ([#609](https://github.com/d4rken/sdmaid-public/issues/609)).
 - Improved: Analytics filter, added Adobe Analytics related files.
 - Improved: No longer require parent folder to contain the packagenames (fixes matching issues on the sdcard root).
 - Improved: Hidden cache filter.
@@ -521,7 +521,7 @@
 - Fixed: Filetree not being correctly updated after deleting something.
 
 ### Databases
-- Added: Options to sort the list by state, app and size (#598).
+- Added: Options to sort the list by state, app and size ([#598](https://github.com/d4rken/sdmaid-public/issues/598)).
 
 ### Statistics
 - Changed: Reduced default chronic limit to 3 days.
@@ -535,8 +535,8 @@
 - Improved: Layout padding and tap behavior.
 
 ### Exclusions
-- Added: Options to filter the list by type of exclusion (#600).
-- Improved: Exclusions are now sorted by their last modification time (#600).
+- Added: Options to filter the list by type of exclusion ([#600](https://github.com/d4rken/sdmaid-public/issues/600)).
+- Improved: Exclusions are now sorted by their last modification time ([#600](https://github.com/d4rken/sdmaid-public/issues/600)).
 - Fixed: Being able to select locked exclusions in multiselect mode.
 
 ## SD Maid [v4.4.1] - 11.11.2016
@@ -566,48 +566,48 @@
 
 ## SD Maid [v4.4.0] - 05.11.2016
 ### Core
-- Added: Support for CustomTabs when opening web links (#576).
-- Improved: Clutter database (#569, #580, #584, #585, #593, #592).
+- Added: Support for CustomTabs when opening web links ([#576](https://github.com/d4rken/sdmaid-public/issues/576)).
+- Improved: Clutter database ([#569](https://github.com/d4rken/sdmaid-public/issues/569), [#580](https://github.com/d4rken/sdmaid-public/issues/580), [#584](https://github.com/d4rken/sdmaid-public/issues/584), [#585](https://github.com/d4rken/sdmaid-public/issues/585), [#593](https://github.com/d4rken/sdmaid-public/issues/593), [#592](https://github.com/d4rken/sdmaid-public/issues/592)).
 - Improved: Translations.
 - Improved: API targets and build tools raised to API25.
 - Improved: In the weird event that a ROM has no activity to grant runtime permissions, gracefully show an error instead of crashing.
 - Fixed: No longer showing snackbars for empty results.
 - Fixed: Possible crash when launching SD Maid for the first time after an install.
-- Fixed: Tab hiding affecting tool access from QuickAccess (#540).
+- Fixed: Tab hiding affecting tool access from QuickAccess ([#540](https://github.com/d4rken/sdmaid-public/issues/540)).
 - Changed: Label for scan actions from 'check' to 'scan' (:D).
 
 ### Explorer
-- Added: Support for showing mount points. Items that are mountpoints will show an extra icon if option 'Research owners' is enabled (#579).
+- Added: Support for showing mount points. Items that are mountpoints will show an extra icon if option 'Research owners' is enabled ([#579](https://github.com/d4rken/sdmaid-public/issues/579)).
 - Fixed: Possible crash when opening files.
 - Fixed: Possible crash when trying to determine file type when trying to open a file.
 
 ### Searcher
-- Added: Function to share files/results (#382).
+- Added: Function to share files/results ([#382](https://github.com/d4rken/sdmaid-public/issues/382)).
 - Improved: Search progress feedback.
 - Fixed: Crash when encountering corrupt filesystem entries (will now just be omitted).
 
 ### AppControl
-- Added: Option change list sorting from the right side filter drawer (#573).
+- Added: Option change list sorting from the right side filter drawer ([#573](https://github.com/d4rken/sdmaid-public/issues/573)).
 
 ### CorpseFinder
 - Improved: Details layout.
 
 ### Duplicates
-- Added: Autoselection option for primary/secondary storage (#473).
+- Added: Autoselection option for primary/secondary storage ([#473](https://github.com/d4rken/sdmaid-public/issues/473)).
 - Improved: Line item layout.
 - Fixed: Duplicates not being found across different storages.
 
 ### Storage Analyzer
-- Added: Support for location `/cache` (#575).
+- Added: Support for location `/cache` ([#575](https://github.com/d4rken/sdmaid-public/issues/575)).
 - Added: Clicking files tries to open them.
-- Fixed: No longer showing empty action mode when selecting items in the root view (#577).
+- Fixed: No longer showing empty action mode when selecting items in the root view ([#577](https://github.com/d4rken/sdmaid-public/issues/577)).
 
 ### Databases
-- Added: Default exclusion for apple music (#539).
+- Added: Default exclusion for apple music ([#539](https://github.com/d4rken/sdmaid-public/issues/539)).
 
 ### Statistics
-- Improved: Chart layout and display (#572, #574).
-- Improved: History details and structure (#572, #574).
+- Improved: Chart layout and display ([#572](https://github.com/d4rken/sdmaid-public/issues/572), [#574](https://github.com/d4rken/sdmaid-public/issues/574)).
+- Improved: History details and structure ([#572](https://github.com/d4rken/sdmaid-public/issues/572), [#574](https://github.com/d4rken/sdmaid-public/issues/574)).
 - Fixed: Negative stats.
 
 ## SD Maid [v4.3.8] - 15.10.2016
@@ -632,17 +632,17 @@
 
 ## SD Maid [v4.3.7] - 14.10.2016
 ### Core
-- Added: Dynamic clutter marker for `IQQI` (#546).
-- Improved: Clutter database (Ty david082321 #535 - #566).
-- Improved: If available root will be used to determine running apps (#527).
-- Fixed: Crash if the system returns unusually large (> Int.Max) uids (#537).
-- Fixed: Double press to exit setting being ignored (#538).
+- Added: Dynamic clutter marker for `IQQI` ([#546](https://github.com/d4rken/sdmaid-public/issues/546)).
+- Improved: Clutter database (Ty david082321 [#535](https://github.com/d4rken/sdmaid-public/issues/535) - [#566](https://github.com/d4rken/sdmaid-public/issues/566)).
+- Improved: If available root will be used to determine running apps ([#527](https://github.com/d4rken/sdmaid-public/issues/527)).
+- Fixed: Crash if the system returns unusually large (> Int.Max) uids ([#537](https://github.com/d4rken/sdmaid-public/issues/537)).
+- Fixed: Double press to exit setting being ignored ([#538](https://github.com/d4rken/sdmaid-public/issues/538)).
 
 ### AppControl
 - Added: Option to add a launcher shortcut for this tool.
 
 ### AppCleaner
-- Improved: Hidden caches filter (`.temp`, `.thumbnails`) (Ty david082321 #557, #558).
+- Improved: Hidden caches filter (`.temp`, `.thumbnails`) (Ty david082321 [#557](https://github.com/d4rken/sdmaid-public/issues/557), [#558](https://github.com/d4rken/sdmaid-public/issues/558)).
 - Improved: Hidden caches filter (`.face` and video player thumbnails).
 
 ### CorpseFinder
@@ -658,8 +658,8 @@
 - Improved: Translations.
 - Improved: Clutter database.
 - Improved: Internal toybox updated.
-- Fixed: Alternative binary setup strategies failing on Android Nougat due to mount applet using different arguments (#528).
-- Fixed: SD Maid crashing during initialization if a user binary is not available, but a root binary is available. We should gracefully abort here (#528).
+- Fixed: Alternative binary setup strategies failing on Android Nougat due to mount applet using different arguments ([#528](https://github.com/d4rken/sdmaid-public/issues/528)).
+- Fixed: SD Maid crashing during initialization if a user binary is not available, but a root binary is available. We should gracefully abort here ([#528](https://github.com/d4rken/sdmaid-public/issues/528)).
 - Fixed: Wrong determining wrong size for files > 2GB.
 - Fixed: SD Maid failing to update its binary on first try.
 
@@ -679,7 +679,7 @@
 
 ## SD Maid [v4.3.5] - 25.09.2016
 ### Core
-- Fixed: UI related crash when reentering SD Maids UI by downgrading to an older support library (newest version introduced this crash) (#525).
+- Fixed: UI related crash when reentering SD Maids UI by downgrading to an older support library (newest version introduced this crash) ([#525](https://github.com/d4rken/sdmaid-public/issues/525)).
 - Fixed: SD Maid trying to use Android 6.0+ code on <6.0 devices, didn't cause a crash but spammed the log and used unnecessary CPU time.
 - Fixed: Crash if binary is not available instead of allowing an error to be displayed.
 
@@ -696,15 +696,15 @@
 ### Core
 - Added: SD Maid can now use two different binaries for root/normal actions. This increases device compatibility and makes it less likely that SD Maid or the user has to install a binary into /system.
 - Improved: SD Maid will no longer require a preinstalled system binary on devices that don't have a default `chmod` applet (though this is bad in any case and the user should install a system toybox/busybox to fix their `chmod` applet).
-- Fixed: Mountpoint detection fallback solution not working due to unexpected output format (#522).
-- Fixed: Crash if the api call for external storages returns an array containing a `null` value (#519).
-- Fixed: Failure to detect mountpoints from user perspective if SD Maid employed RootFS injection to use it's binary with root (#521).
+- Fixed: Mountpoint detection fallback solution not working due to unexpected output format ([#522](https://github.com/d4rken/sdmaid-public/issues/522)).
+- Fixed: Crash if the api call for external storages returns an array containing a `null` value ([#519](https://github.com/d4rken/sdmaid-public/issues/519)).
+- Fixed: Failure to detect mountpoints from user perspective if SD Maid employed RootFS injection to use it's binary with root ([#521](https://github.com/d4rken/sdmaid-public/issues/521)).
 - Changed: Storage size determination will now be run on the storage path itself, not its mountpoint (affects Overview & Storage Analyzer).
 
 ### Explorer
 - Fixed: Crash if we try to restore the last path, have to fallback to a default value, and then the system gives us an empty string as external storage path.
-- Fixed: Crash when trying to select files in type 'UNKNOWN' locations (#520).
-- Fixed: Crash when trying to extract empty files (#518).
+- Fixed: Crash when trying to select files in type 'UNKNOWN' locations ([#520](https://github.com/d4rken/sdmaid-public/issues/520)).
+- Fixed: Crash when trying to extract empty files ([#518](https://github.com/d4rken/sdmaid-public/issues/518)).
 
 ## SD Maid [v4.3.3] - 21.09.2016
 ### Core
@@ -715,24 +715,24 @@
 - Improved: Core shell routines. Simplified some unnecessarily complex code constructs (I don't think the performance gain is noticeable).
 - Improved: Logging to better help users with sdcard (secondary public storage) issues.
 - Improved: Breadcrumb bars displaying pathes.
-- Improved: Mount point detection, on KNOX enabled devices, if the internal mount applet can't be called without root, SD Maid will try the systems native mount applet to obtain the users mountpoints (see #502).
-- Fixed: Various minor RTL related ui issues (#483).
-- Fixed: Issues granting access to secondary storage on "Prestigio" devices (#493).
-- Fixed: Erroneously detecting /storage/emulated/legacy as secondary public storage on "Prestigio" devices (#492).
-- Fixed: Mount point detection issue caused by mount space seperation (#502 Ty Ivan).
+- Improved: Mount point detection, on KNOX enabled devices, if the internal mount applet can't be called without root, SD Maid will try the systems native mount applet to obtain the users mountpoints (see [#502](https://github.com/d4rken/sdmaid-public/issues/502)).
+- Fixed: Various minor RTL related ui issues ([#483](https://github.com/d4rken/sdmaid-public/issues/483)).
+- Fixed: Issues granting access to secondary storage on "Prestigio" devices ([#493](https://github.com/d4rken/sdmaid-public/issues/493)).
+- Fixed: Erroneously detecting /storage/emulated/legacy as secondary public storage on "Prestigio" devices ([#492](https://github.com/d4rken/sdmaid-public/issues/492)).
+- Fixed: Mount point detection issue caused by mount space seperation ([#502](https://github.com/d4rken/sdmaid-public/issues/502) Ty Ivan).
 - Fixed: Fixed rare "random" (depends on ps output) crash during detection of running apps.
 - Fixed: Fixed rare crash if a system app returns an empty sourcedir path or one that points to rootfs.
 
 ### Explorer
 - Improved: Archive extraction is now cancelable.
-- Improved: ZIP archive extraction now also works on secondary storages if storage permission have been granted (#478 Ty dukelc).
+- Improved: ZIP archive extraction now also works on secondary storages if storage permission have been granted ([#478](https://github.com/d4rken/sdmaid-public/issues/478) Ty dukelc).
 - Improved: If secondary storage setup has been been skipped and extraction is attempted, a snackbar will show asking the user to complete the setup.
-- Changed: Error message when a directory can't be accessed (#478).
+- Changed: Error message when a directory can't be accessed ([#478](https://github.com/d4rken/sdmaid-public/issues/478)).
 - Fixed: ZIP extraction action should only be visible for public storages.
 
 ### AppControl
 - Improved: Right side drawer now allows multiple filter tags to be selected at once.
-- Fixed: Filter tags not being reapplied to results after refreshing the lest (#495).
+- Fixed: Filter tags not being reapplied to results after refreshing the lest ([#495](https://github.com/d4rken/sdmaid-public/issues/495)).
 
 ### Storage Analyzer
 - Improved: Browsing already loaded data no longer shows the "Successful" toolbar (it was anoying, wasn't it?).
@@ -747,16 +747,16 @@
 
 ### Explorer
 - Improved: Creating user filter for the system cleaner now tries to fill in the location field.
-- Fixed: Crash if quickly entering and leaving the clutter reporter tool (#486).
+- Fixed: Crash if quickly entering and leaving the clutter reporter tool ([#486](https://github.com/d4rken/sdmaid-public/issues/486)).
 
 ### AppControl
 - Fixed: Trying to open a file as directory when clicking a path in app details.
 
 ### SystemCleaner
-- Fixed: Crash when creating a new user filter from scratch (#485).
+- Fixed: Crash when creating a new user filter from scratch ([#485](https://github.com/d4rken/sdmaid-public/issues/485)).
 
 ### Databases
-- Fixed: Possible hang during size comparison on devices with high database (800+) counts (#488 Ty danielling23).
+- Fixed: Possible hang during size comparison on devices with high database (800+) counts ([#488](https://github.com/d4rken/sdmaid-public/issues/488) Ty danielling23).
 
 ### QuickAccess
 - Fixed: Database tool entry always showing something to do.
@@ -765,37 +765,37 @@
 ## SD Maid [v4.3.1] - 07.09.2016
 ### Core
 - Improved: Translations
-- Improved: Clutter database (#481, #480, #479).
+- Improved: Clutter database ([#481](https://github.com/d4rken/sdmaid-public/issues/481), [#480](https://github.com/d4rken/sdmaid-public/issues/480), [#479](https://github.com/d4rken/sdmaid-public/issues/479)).
 - Improved: If a tool can't find any storage (why?), that tool will now display an error instead of crashing SD Maid.
 - Improved: Display of error messages in tools.
-- Fixed: Crash on devices where SD Maid used rootfs injection to get a working binary. Despite having root, SD Maid didn't use when looking up mounts, causing that to fail and SD Maid ending up with no detected storages (#475 Ty Sandris).
+- Fixed: Crash on devices where SD Maid used rootfs injection to get a working binary. Despite having root, SD Maid didn't use when looking up mounts, causing that to fail and SD Maid ending up with no detected storages ([#475](https://github.com/d4rken/sdmaid-public/issues/475) Ty Sandris).
 - Fixed: Crash if the shell process would die prematurely. Tasks scheduled for execution would get a NULL result instead of an result with state "error".
 
 ### AppControl
 - Fixed: Crash if estates were determined based on a stale list of installed apps.
 
 ### SystemCleaner
-- Added: Filter for `/data/logger` (LG devices) (#464).
+- Added: Filter for `/data/logger` (LG devices) ([#464](https://github.com/d4rken/sdmaid-public/issues/464)).
 - Improved: Matching of already existing filters, better deal with file-seperators.
 
 ### Storage Analyzer
-- Fixed: Crash when operations were too quick (divide by 0) (#477).
-- Fixed: Crash wen pressing the backbutton without loaded data (#476).
+- Fixed: Crash when operations were too quick (divide by 0) ([#477](https://github.com/d4rken/sdmaid-public/issues/477)).
+- Fixed: Crash wen pressing the backbutton without loaded data ([#476](https://github.com/d4rken/sdmaid-public/issues/476)).
 
 ## SD Maid [v4.3.0] - 02.09.2016 (BETA)
 ### Core
 - Added: Adaptive support for different (core-utils providing) binaries, currently "toybox" and "busybox".
-- Added: Added support for location "/oem" (#441 Ty randomname1234).
+- Added: Added support for location "/oem" ([#441](https://github.com/d4rken/sdmaid-public/issues/441) Ty randomname1234).
 - Added: Option to toggle animations (currently only coffee drinking).
-- Added: If SD Maid is running in the background but requires setup via user action, operations are canceled and a notification is displayed (#435 Ty sjoshua270).
+- Added: If SD Maid is running in the background but requires setup via user action, operations are canceled and a notification is displayed ([#435](https://github.com/d4rken/sdmaid-public/issues/435) Ty sjoshua270).
 - Added: SD Maids file forensics can now get clutter markers from dynamic sources. This means that in addition to static sources (i.e. a database with entries), there are now dynamic sources that can generate clutter markers without explicitly knowing an app.
 - Added: Dynamic clutter sources for `.UTSystemConfig` and `.EveryplayCache`.
 - Improved: Accuracy of size calculation when deleting files of which some failed to be deleted (or don't exist anymore).
 - Improved: Clutter database (dozen of new entries).
 - Improved: Clutter database format to better cover multiple apps with the same clutter.
 - Improved: Updated all of SD Maids dependencies and libraries.
-- Improved: Instead of tapping out with a "busybox error", SD Maid will now relinquish root access if the current toybox/busybox setup is not root compatible (#442).
-- Improved: Both busybox and toybox can be used by SD Maid and both types of binaries will be tried as fallback solution (#452).
+- Improved: Instead of tapping out with a "busybox error", SD Maid will now relinquish root access if the current toybox/busybox setup is not root compatible ([#442](https://github.com/d4rken/sdmaid-public/issues/442)).
+- Improved: Both busybox and toybox can be used by SD Maid and both types of binaries will be tried as fallback solution ([#452](https://github.com/d4rken/sdmaid-public/issues/452)).
 - Improved: Reduced SD Maids resource (RAM/CPU) consumption by reducing the amount of shells that are kept open. Reading files now shares a shell with all other operations (delete, move, copy etc).
 - Improved: Operation results (ok, skipped, failed) now only show values that are non zero.
 - Improved: Speed of file object creation, some calls be done in a more effective order and a few memory optimizations weren't effective.
@@ -805,7 +805,7 @@
 - Improved: Busybox error screen shows more device infos and a better explanation.
 - Improved: Logging. Reduced logging in production builds and adjusted logging priorities to be more useful (verbose vs debug).
 - Fixed: Task results not showing correct amount of failed deletions.
-- Fixed: "Double tap to exit" toast not being correctly themed (#438 Ty TWiStErRob).
+- Fixed: "Double tap to exit" toast not being correctly themed ([#438](https://github.com/d4rken/sdmaid-public/issues/438) Ty TWiStErRob).
 - Fixed: Shell data not being disregarded directly if data is streamed instead of buffered. This should reduce peak memory consumption during scan for SystemCleaner, Duplicates, Biggest and Databases.
 - Fixed: Commands failing that use remounting on Android 6.0+. Multiple mount commands were used to guarantee reliable execution on different devices, but on some the toybox binary segfault. This would cause any command using remounting to end up with a segfault (139) errorcode. SD Maid now checks if the toybox binary segfaults during setup.
 - Fixed: A racecondition where the FAB become visible when SD Maid started executing a task triggered from list multiselection.
@@ -814,7 +814,7 @@
 - Fixed: Crash related to a race-condition between UI input (e.g. clicks) and UI state.
 - Fixed: Crash if SD Maid could not find any locations of type `SDCARD` but tried use the data to build sub-locations such as `PUBLIC_DATA`.
 - Changed: Instead of file length, "size on filesystem" is now used to calculate the amount of space freed by a deletion. You will notice that with the exception of sparse-files, deletion will show slightly (blocksize) increased amounts of freed space, especially when deleting lots of small files.
-- Changed: SD Maid now ships with toybox instead of busybox (leaner and fixes #451).
+- Changed: SD Maid now ships with toybox instead of busybox (leaner and fixes [#451](https://github.com/d4rken/sdmaid-public/issues/451)).
 - Changed: Log files are now stored in SD Maids cache instead of files folder (i.e. `/sdcard/Android/data/eu.thedarken.sdm/cache/logfiles`).
 - Changed: If root access is available, SD Maid will skip asking for storage access via the storage-access-framework (SAF).
 
@@ -822,17 +822,17 @@
 - Fixed: Database tool still requiring confirmation despite single-pass option activated.
 
 ### Overview
-- Added: If SD Maid relinquihes root access to avoid a busybox/toybox error the root state will display this (#442).
+- Added: If SD Maid relinquihes root access to avoid a busybox/toybox error the root state will display this ([#442](https://github.com/d4rken/sdmaid-public/issues/442)).
 - Changed: Refresh no longer reloads the storage manager, it is now only refreshed once per session.
 
 ### Explorer
-- Added: Option to place a shortcut on your home screen which open the explorer and refreshes it (#187).
+- Added: Option to place a shortcut on your home screen which open the explorer and refreshes it ([#187](https://github.com/d4rken/sdmaid-public/issues/187)).
 - Added: Octal permission display when changing permissions.
 - Added: Reporting option via context menu if you have experimental mode enabled.
-- Added: Support for extracting ZIP (zip/apk etc, anything zip based) files (#198).
+- Added: Support for extracting ZIP (zip/apk etc, anything zip based) files ([#198](https://github.com/d4rken/sdmaid-public/issues/198)).
 - Added: Details dialog, currently a bit rough, will be expanded later on.
 - Added: Files now show both blocksize (size file actually occupies) and file length (size file says it is), if this value differs. The format is `size on storage (file length)`.
-- Fixed: Pathbar at the top not updating correctly when switching to the Explorer from a different tool, directly loading that path (#439).
+- Fixed: Pathbar at the top not updating correctly when switching to the Explorer from a different tool, directly loading that path ([#439](https://github.com/d4rken/sdmaid-public/issues/439)).
 - Fixed: Creating dirs/files not updating directory content correctly without extra refresh.
 - Fixed: Directory content not updating correctly after deletion.
 - Fixed: Paste action causing change to parent directory.
@@ -844,13 +844,13 @@
 - Added: Options find files based on minimum and maximum modification date. Using these options automatically causes results to be sorted by date.
 
 ### AppControl
-- Added: Right-side drawer with additional information and filtering options (#406).
+- Added: Right-side drawer with additional information and filtering options ([#406](https://github.com/d4rken/sdmaid-public/issues/406)).
 - Improved: Tags for filtering (e.g. frozen apps) are no longer a search string and can be used in addition to manual search input (i.e. search in all frozen apps).
 - Improved: SD Maid will check more locations now to find all items that belong to an app, this was previously limited to specific locations such as data/dalvik etc. but now covers all locations SD Maid knows.
 - Improved: Files and sizes belonging to each app (estate) can now be determined on-demand.
 - Improved: Speed when determining files owned by an app (estate).
 - Changed: By default app files and sizes are not researched during list generation, except if the sort-mode is SIZE or the option to do the research in advance is turned on in the settings.
-- Fixed: Corruption of exported APKs (#451).
+- Fixed: Corruption of exported APKs ([#451](https://github.com/d4rken/sdmaid-public/issues/451)).
 
 ### CorpseFinder
 - Improved: SDcard filter scan speed. Changes to clutter information allow us to better determine when we have to search deeper and when reading the top level item is sufficient.
@@ -860,17 +860,17 @@
 ### SystemCleaner
 - Added: Tracking to determine how often UserFilter are actually used.
 - Added: `.chartboost` and `adhub` to advertisement filter.
-- Added: Help link to SD Maids wiki (#298 Ty Trasd).
+- Added: Help link to SD Maids wiki ([#298](https://github.com/d4rken/sdmaid-public/issues/298) Ty Trasd).
 - Improved: Some people create placeholders for `__chartboost` and `.chartboost` to block them from being created, these will no longer be removed.
 - Fixed: UserFilter creation was possible without the pro version.
-- Fixed: Size calculation for AdvertisementFilter items, should now also show children of matched directories (#471 Ty Solomon1732).
+- Fixed: Size calculation for AdvertisementFilter items, should now also show children of matched directories ([#471](https://github.com/d4rken/sdmaid-public/issues/471) Ty Solomon1732).
 
 ### Biggest
 - Added: File previews if you have SD Maid Pro.
-- Added: Support for locations requiring root access (#129).
-- Added: "Device view" (#467). The tool starts out with a "device view" showing all available storages the tool can show. Changing any settings is no longer necessary.
+- Added: Support for locations requiring root access ([#129](https://github.com/d4rken/sdmaid-public/issues/129)).
+- Added: "Device view" ([#467](https://github.com/d4rken/sdmaid-public/issues/467)). The tool starts out with a "device view" showing all available storages the tool can show. Changing any settings is no longer necessary.
 - Improved: Refresh behavior. Previously a refresh caused the whole cached file-tree to be reloaded. Now we can just refresh subnodes of the cached file-tree.
-- Changed: Made list items more compact (#346).
+- Changed: Made list items more compact ([#346](https://github.com/d4rken/sdmaid-public/issues/346)).
 - Changed: The tool has been renamed to "Storage analyzer".
 - Removed: Settings page (no longer necessary).
 
@@ -904,7 +904,7 @@
 ## SD Maid [4.2.11] - 01.07.2016
 ### Core
 - Fixed: Hungary crashing.
-- Fixed: Changing workercount not working reliably (#428 Ty jawz101).
+- Fixed: Changing workercount not working reliably ([#428](https://github.com/d4rken/sdmaid-public/issues/428) Ty jawz101).
 - Improved: Display of translator names.
 
 ## SD Maid [4.2.10] - 30.06.2016
@@ -917,13 +917,13 @@
 - Fixed: Rotation still not handling page switching correctly in every edge case.
 
 ### Explorer
-- Fixed: Scrollbar not initialising correctly (#429).
+- Fixed: Scrollbar not initialising correctly ([#429](https://github.com/d4rken/sdmaid-public/issues/429)).
 
 ## SD Maid [4.2.9] - 29.06.2016
 ### Core
 - Added: Support for plurals (day/days, item/items) where applicable.
 - Improved: Translations (specifically plurals).
-- Fixed: Possibly racecondition crash on devices with physical menu buttons when they are rapidly pressed during UI changes (#341).
+- Fixed: Possibly racecondition crash on devices with physical menu buttons when they are rapidly pressed during UI changes ([#341](https://github.com/d4rken/sdmaid-public/issues/341)).
 - Fixed: Remount of /system failing on newer CM13 builds (toybox/toolbox issue).
 - Fixed: UI pages always switching back to the initial one if the UI was launched through the QuickAccess widget.
 
@@ -934,12 +934,12 @@
 - Fixed: Crash due to trying to load "//" after navigating to the root, then reentering the Explorer again.
 
 ### QuickAccess
-- Added: Summary of estimated space affected by actions to be executed (because we can't know how much it is for VACUUM per databases, it currently just adds 4KB per database) (#407).
+- Added: Summary of estimated space affected by actions to be executed (because we can't know how much it is for VACUUM per databases, it currently just adds 4KB per database) ([#407](https://github.com/d4rken/sdmaid-public/issues/407)).
 
 ## SD Maid [4.2.8] - 25.06.2016
 ### Core
 - Improved: Updated translations.
-- Fixed: Settings pages not opening (#424 Ty Trasd).
+- Fixed: Settings pages not opening ([#424](https://github.com/d4rken/sdmaid-public/issues/424) Ty Trasd).
 
 ## SD Maid [4.2.7] - 25.06.2016
 ### Core
@@ -947,20 +947,20 @@
 - Improved: Resiliance against weird storage setups. SD Maid will try continue even if the system API crashes while trying to determine external storages.
 - Changed: The working notification is now no longer cosmetic and will elevate the service to foreground priority within the systems task killer, when the workers are done and the result is displayed, the service releases foreground mode and displays a normal notification.
 - Changed: Settings layout and behavior. Removed lots of legacy code and wrote a cleaner solution that is not as fragile to support library updates.
-- Fixed: Preferences not being themed correctly (#421 Ty dukelc).
+- Fixed: Preferences not being themed correctly ([#421](https://github.com/d4rken/sdmaid-public/issues/421) Ty dukelc).
 
 ### Explorer
-- Fixed: Not navigating correctly between symlinked directories (#416 Ty Morpheus)
+- Fixed: Not navigating correctly between symlinked directories ([#416](https://github.com/d4rken/sdmaid-public/issues/416) Ty Morpheus)
 
 ### AppControl
-- Fixed: Uninstalls, freezing and disabling of broadcast receivers failing since v4.2.6 due to component names not being correctly wrapped when being passed to the packagemanager (#422 Ty Roman).
+- Fixed: Uninstalls, freezing and disabling of broadcast receivers failing since v4.2.6 due to component names not being correctly wrapped when being passed to the packagemanager ([#422](https://github.com/d4rken/sdmaid-public/issues/422) Ty Roman).
 
 ### SystemCleaner
 - Changed: Filter that only work on rooted devices will now be hidden if SD Maid doesn't have root (it's cleaner and less confusing).
 - Fixed: Longer filter load time due to root filter being loaded on unrooted devices.
 
 ### Scheduler
-- Improved: Reliability when running in background. The working notification is now used to start the service in foreground mode, which should reduce issues with SD Maid being prematurely killed to free memory (#420).
+- Improved: Reliability when running in background. The working notification is now used to start the service in foreground mode, which should reduce issues with SD Maid being prematurely killed to free memory ([#420](https://github.com/d4rken/sdmaid-public/issues/420)).
 
 ### Widget
 - Fixed: Color issues on Android N.
@@ -975,27 +975,27 @@
 - Improved: Now building against Android N (API24).
 - Improved: Several layout files have been fixed for future (correct) RTL support.
 - Changed: Debugging options have been moved into a hidden page which can be reached through long presing the settings entry. This makes it easier to record debug logs if SD Maid malfunctions during setup (as entering settings already triggers a basic setup).
-- Fixed: Issues handling files with unicode characters in their name (#408).
-- Fixed: SD Maid accepting system busyboxes that don't work correctly (seg fault), but also return correct data (#397).
-- Fixed: Overlapping switch buttons overlaying other UI elements on <5.0 (#398).
+- Fixed: Issues handling files with unicode characters in their name ([#408](https://github.com/d4rken/sdmaid-public/issues/408)).
+- Fixed: SD Maid accepting system busyboxes that don't work correctly (seg fault), but also return correct data ([#397](https://github.com/d4rken/sdmaid-public/issues/397)).
+- Fixed: Overlapping switch buttons overlaying other UI elements on <5.0 ([#398](https://github.com/d4rken/sdmaid-public/issues/398)).
 
 ### Explorer
-- Fixed: Fixed being able to select directories for the share action leading to errors (#383).
+- Fixed: Fixed being able to select directories for the share action leading to errors ([#383](https://github.com/d4rken/sdmaid-public/issues/383)).
 
 ### AppControl
 - Improved: Fixed impossible actions being visible.
 - Fixed: List elements making a clicking sound despite not being clickable.
-- Fixed: System app uninstall failing for files sourcing their apk from /vendor (#410 Ty Morpheus).
+- Fixed: System app uninstall failing for files sourcing their apk from /vendor ([#410](https://github.com/d4rken/sdmaid-public/issues/410) Ty Morpheus).
 
 ### AppCleaner
-- Fixed: Private app directories not being completely searched if directory permission allow reading (or more) without root (#413 Ty rsngfrce & JERW86).
+- Fixed: Private app directories not being completely searched if directory permission allow reading (or more) without root ([#413](https://github.com/d4rken/sdmaid-public/issues/413) Ty rsngfrce & JERW86).
 
 ### Widget
 - Improved: Handling of UI updates if multiple widgets are used.
 - Fixed: All actions triggering if widget is more than one action is defined.
 
 ### Scheduler
-- Improved: TimePicker will use 12/24 mode depending on system settings (#415).
+- Improved: TimePicker will use 12/24 mode depending on system settings ([#415](https://github.com/d4rken/sdmaid-public/issues/415)).
 
 ## SD Maid [4.2.5] - 10.06.2016
 ### Core
@@ -1026,11 +1026,11 @@
 - Fixed: False positive ownership detection, if app names overlap, in `/system/priv-app`, `/system/app` and `/system`.
 
 ### AppControl
-- Fixed: Failing system app uninstalls if it's apk removal was blocked through a false positive ownership match (#391 Ty Alexey).
+- Fixed: Failing system app uninstalls if it's apk removal was blocked through a false positive ownership match ([#391](https://github.com/d4rken/sdmaid-public/issues/391) Ty Alexey).
 
 ### AppCleaner
 - Added: Optional filter for files received through WhatsApp.
-- Fixed: Exclusions not working completely on unrooted devices despite deactivatin the "freeStorageAndNotify" option (#401 Ty Kisl0iD).
+- Fixed: Exclusions not working completely on unrooted devices despite deactivatin the "freeStorageAndNotify" option ([#401](https://github.com/d4rken/sdmaid-public/issues/401) Ty Kisl0iD).
 
 ### Biggest
 - Changed: Searchpath has been reset to prepare for future support of multiple locations.
@@ -1044,7 +1044,7 @@
 - Improved: Added fallback options if for some reason the default private cache or files directory doesn't exist (weird crash reports from weird devices).
 
 ### CorpseFinder
-- Fixed: A few cases of false positive results within filters for "/data/app", "/data/app-private", "/data/app-asec" and "/data/app-lib", if the install number appendix is bigger than a single digit (#394 Ty ew@XDA).
+- Fixed: A few cases of false positive results within filters for "/data/app", "/data/app-private", "/data/app-asec" and "/data/app-lib", if the install number appendix is bigger than a single digit ([#394](https://github.com/d4rken/sdmaid-public/issues/394) Ty ew@XDA).
 
 ### AppCleaner
 - Fixed: Possible crash when opening/closing the UI right after a deletion.
@@ -1103,11 +1103,11 @@
 
 ### SystemCleaner
 - Improved: Scan performance by reducing overhead of matching against file pathes.
-- Fixed: Filter-modules not loading and filter configuration being empty (#387 Ty igoivo).
+- Fixed: Filter-modules not loading and filter configuration being empty ([#387](https://github.com/d4rken/sdmaid-public/issues/387) Ty igoivo).
 - Fixed: Crash when creating a UserFilter and entering a minimum or maximum size > Long.MAX_VALUE.
 
 ### AppCleaner
-- Fixed: Crash if caches were found via clutter database entries and there was more than one entry matching the same file/directory (#388).
+- Fixed: Crash if caches were found via clutter database entries and there was more than one entry matching the same file/directory ([#388](https://github.com/d4rken/sdmaid-public/issues/388)).
 - Fixed: Non-Root routines being used even if root is not available.
 
 ## SD Maid [4.2.0] - 11.05.2016
@@ -1116,7 +1116,7 @@
 - Improved: Translations.
 - Improved: Workaround for KingoRoot should now be automatically applied (setting has been removed).
 - Improved: Details entries should no longer cutoff pathes, independent of their length.
-- Improved: Setup layouts are now scrollable to allow viewing full content on small devices with large fonts (#368).
+- Improved: Setup layouts are now scrollable to allow viewing full content on small devices with large fonts ([#368](https://github.com/d4rken/sdmaid-public/issues/368)).
 - Improved: Reduced peak memory consumption by making a few core objects easier to be garbage collected.
 - Improved: Setup help menu is now available on all setup steps and directly open the setup help page now.
 - Improved: Slightly changed timing when the UI is initialised to reduce/fix a few random crashes.
@@ -1124,7 +1124,7 @@
 - Improved: Feedback on task results, previously the summary details were only visible in progress bars or the menus, now (if applicable) a snackbar temporarily shows the primary result message.
 - Improved: Task description in confirmations and dialogs.
 - Fixed: During secondary storage setup, storage entry not turning green despite success, on low memory devices.
-- Fixed: Secondary storage detection on MediaTek devices. Added a workaround that detects this the swapped storage situation and fakes the primary UUID (#312 Ty bgiesing).
+- Fixed: Secondary storage detection on MediaTek devices. Added a workaround that detects this the swapped storage situation and fakes the primary UUID ([#312](https://github.com/d4rken/sdmaid-public/issues/312) Ty bgiesing).
 - Removed: Update databases option in advanced settings. Will be replaced with a better mechanism in a future update.
 
 ### Overview
@@ -1149,7 +1149,7 @@
 - Changed: Removed circle cropping from app icons.
 
 ### CorpseFinder
-- Fixed: Size being incorrectly determined (too low) for items from the sdcard filter (#369).
+- Fixed: Size being incorrectly determined (too low) for items from the sdcard filter ([#369](https://github.com/d4rken/sdmaid-public/issues/369)).
 - Fixed: Setting for public and private data being switched.
 - Changed: Feedback during SDCARD scan now shows a % done feedback but no longer the current item being scanned, was missleading and inconsistent with other filters.
 
@@ -1187,7 +1187,7 @@
 - Fixed: Not cleaning private caches on unrooted device if the action was triggered through the FAB instead of the toolbar (Ty Steffen).
 
 ### Duplicates
-- Fixed: Crash when autoselecting from a filtered list (#367).
+- Fixed: Crash when autoselecting from a filtered list ([#367](https://github.com/d4rken/sdmaid-public/issues/367)).
 - Fixed: Crash when a stale item was attempted to be selected.
 
 ### Databases
@@ -1204,7 +1204,7 @@
 ## SD Maid [4.1.5] - 11.04.2016 (RC)
 ### Core
 - Fixed: A few occasional RecyclerView crashes.
-- Fixed: Startup crash on some MediaTek based devices (#361).
+- Fixed: Startup crash on some MediaTek based devices ([#361](https://github.com/d4rken/sdmaid-public/issues/361)).
 - Improved: Clutter database.
 - Improved: On some custom ROMs SD Maids own cache folders was not created, SD Maid will check that now and try to create it.
 - Improved: When a modded ROM is missing string resources for storage labels SD Maid will now gracefully deals with that instead of crash.
@@ -1213,7 +1213,7 @@
 - Changed: The way events that happen on rotation or while the main UI was paused are cached and replayed.
 
 ### Explorer
-- Improved: Pathdumps now follow symlinks (#364).
+- Improved: Pathdumps now follow symlinks ([#364](https://github.com/d4rken/sdmaid-public/issues/364)).
 - Fixed: Crash when quickly scrolling lists with several hundred entries (bitmap recycling issue).
 
 ### AppControl:
@@ -1231,39 +1231,39 @@
 
 ### Biggest
 - Fixed: Possible crash if storage situation changed while SD Maid was traversing file structures.
-- Changed: Reduced list item height 72dp to 56dp (#346).
+- Changed: Reduced list item height 72dp to 56dp ([#346](https://github.com/d4rken/sdmaid-public/issues/346)).
 
 ### Databases
 - Changed: Removed circle cropping from app icons.
 
 ### Scheduler
-- Fixed: A crash when using choosing a recurrence through the seekbar (#339).
+- Fixed: A crash when using choosing a recurrence through the seekbar ([#339](https://github.com/d4rken/sdmaid-public/issues/339)).
 - Changed: Max recurrence is now 14 days.
 
 ## SD Maid [4.1.4] - 06.04.2016 (RC)
 ### Core
 - Added: If you accidentally disabled system apps required for storage access, SD Maid will now warn you (e.g. Package Disabler apps for Samsung).
 - Improved: Secondary storage setup now tries to display the same name the documents activity also display for its storage entries.
-- Improved: Busybox setup, as fallback option "/system/bin/busybox will" now also be checked (#355).
+- Improved: Busybox setup, as fallback option "/system/bin/busybox will" now also be checked ([#355](https://github.com/d4rken/sdmaid-public/issues/355)).
 - Improved: Logging regarding matches exclusions.
 - Improved: Stage0 busybox setup, try loading version first then do further tests.
-- Fixed: Option "Don't show again" during setup of secondary storage, previously you had to toggle it on/off/on for it to stick (#356).
+- Fixed: Option "Don't show again" during setup of secondary storage, previously you had to toggle it on/off/on for it to stick ([#356](https://github.com/d4rken/sdmaid-public/issues/356)).
 - Fixed: Duplicate test for the same busybox applet.
-- Fixed: During secondary storage setup, exiting the "Documents" app without selecting something (e.g. if it's empty) now counts as failure and makes the "Don't show again" option visible (#352).
+- Fixed: During secondary storage setup, exiting the "Documents" app without selecting something (e.g. if it's empty) now counts as failure and makes the "Don't show again" option visible ([#352](https://github.com/d4rken/sdmaid-public/issues/352)).
 - Fixed: Occasional crash when exiting SD Maid during setup initialisation.
 
 ### Explorer
-- Fixed: Floating Action Button not being clickable on <Android4.3 (#357).
+- Fixed: Floating Action Button not being clickable on <Android4.3 ([#357](https://github.com/d4rken/sdmaid-public/issues/357)).
 - Fixed: Share file option not being visible.
 
 ### AppControl
 - Fixed: Occasional crash when quickly entering or leaving app details (e.g. when uninstalling an app).
 
 ### Databases
-- Added: Database entries now show if they have been skipped or failed (#353).
-- Added: Default exclusion for AquaMail (org.kman.AquaMail) (#354).
-- Improved: Scan performance by skipping too small files early on (#344).
-- Fixed: Check database existence right before any sqlite3 action to prevent accidental creation of a new database (#354).
+- Added: Database entries now show if they have been skipped or failed ([#353](https://github.com/d4rken/sdmaid-public/issues/353)).
+- Added: Default exclusion for AquaMail (org.kman.AquaMail) ([#354](https://github.com/d4rken/sdmaid-public/issues/354)).
+- Improved: Scan performance by skipping too small files early on ([#344](https://github.com/d4rken/sdmaid-public/issues/344)).
+- Fixed: Check database existence right before any sqlite3 action to prevent accidental creation of a new database ([#354](https://github.com/d4rken/sdmaid-public/issues/354)).
 
 ## SD Maid [4.1.3] - 04.04.2016 (RC)
 ### Core
@@ -1312,7 +1312,7 @@
 - Improved: Translations.
 - Improved: Clutter database.
 - Improved: If all tabs are hidden (accident?) auto show the navdrawer to reduce confusion.
-- Fixed: Bug that prevented the improved sdcard access granting (added in 4.0.11) via SAF to fail (#231 #330).
+- Fixed: Bug that prevented the improved sdcard access granting (added in 4.0.11) via SAF to fail ([#231](https://github.com/d4rken/sdmaid-public/issues/231) [#330](https://github.com/d4rken/sdmaid-public/issues/330)).
 
 ### QuickAccess
 - Fixed: Link to sdmaid.darken.eu/help not working.
@@ -1322,15 +1322,15 @@
 - Improved: Translations
 - Improved: Busybox error screen now shows more debugging information that might help me, help you.
 - Improved: Busybox setup now cycles through other architecture canidates if the first one fails.
-- Improved: Issues while granting uri access no longer take down the app (Improves upon #336 Ty Vagelis1608).
-- Improved: Granting sdcard access via SAF uri should no longer fail on most LG devices (Improves upon #231).
+- Improved: Issues while granting uri access no longer take down the app (Improves upon [#336](https://github.com/d4rken/sdmaid-public/issues/336) Ty Vagelis1608).
+- Improved: Granting sdcard access via SAF uri should no longer fail on most LG devices (Improves upon [#231](https://github.com/d4rken/sdmaid-public/issues/231)).
 - Improved: Notification progress results are more accurate if it's only one task finishing.
 - Improved: Navdrawer headcard layouting on <5.0.
-- Fixed: Write-access test for java.io.File accessible storage (e.g. secondary storage + sdcardfix) (#330 Ty gaich).
+- Fixed: Write-access test for java.io.File accessible storage (e.g. secondary storage + sdcardfix) ([#330](https://github.com/d4rken/sdmaid-public/issues/330) Ty gaich).
 - Fixed: Crash on 4.4 devices where a hacky file deletion method for sdcards fails.
 
 ### Overview
-- Improved: Text layouting being cut off early on some languages (#331 Ty jpzex).
+- Improved: Text layouting being cut off early on some languages ([#331](https://github.com/d4rken/sdmaid-public/issues/331) Ty jpzex).
 - Fixed: Storage location "Read only" tag is now based on a the global routine that all tools use (previously it had a simplified check that could yield different results).
 
 ### AppControl
@@ -1365,8 +1365,8 @@
 - Removed: Label lookup for mounts, due to failing consistently on newer ROMs and serving no useful purpose.
 
 ### QuickAccess
-- Fixed: Subsequent delete attempts in single-pass mode only scanning and not deleting (#329 Ty Geocfu).
-- Fixed: Layout issues (#328 Ty Geocfu)
+- Fixed: Subsequent delete attempts in single-pass mode only scanning and not deleting ([#329](https://github.com/d4rken/sdmaid-public/issues/329) Ty Geocfu).
+- Fixed: Layout issues ([#328](https://github.com/d4rken/sdmaid-public/issues/328) Ty Geocfu)
 
 ### Explorer
 - Fixed: Crash on opening the Explorer due to a racecondition where the UI initialised too fast and got bad values.
@@ -1392,14 +1392,14 @@
 ## SD Maid [4.0.9] - 10.03.2016 (BETA)
 ### Core
 - Added: Default exclusion matching "com.android.systemui" for Databases, AppCleaner and SystemCleaner.
-- Fixed: Crash when canceling root operations (#323 Ty Geocfu).
+- Fixed: Crash when canceling root operations ([#323](https://github.com/d4rken/sdmaid-public/issues/323) Ty Geocfu).
 
 ### QuickAccess
 - Improved: Progressbar and message behavior, especiall yon rotation.
 - Fixed: Inconsistent confirmation dialogs in single-pass mode.
-- Fixed: Jumping textboxes (#314 Ty Geocfu).
-- Fixed: Cut off titles on small displays (as good as possible) (#318 Ty Geocfu).
-- Fixed: ButtonBar not correctly switching states in single-pass mode (#322 Ty Geocfu).
+- Fixed: Jumping textboxes ([#314](https://github.com/d4rken/sdmaid-public/issues/314) Ty Geocfu).
+- Fixed: Cut off titles on small displays (as good as possible) ([#318](https://github.com/d4rken/sdmaid-public/issues/318) Ty Geocfu).
+- Fixed: ButtonBar not correctly switching states in single-pass mode ([#322](https://github.com/d4rken/sdmaid-public/issues/322) Ty Geocfu).
 
 ### AppControl
 - Fixed: Possible crash when using the search field and rotating the device.
@@ -1416,7 +1416,7 @@
 
 ### Databases
 - Added: Option to skip running apps, which is ON by default.
-- Changed: If running apps are not skipped, SD Maid will suspend (SIGSTOP) them before working on their database (root only) instead of killing them (Fixes #325).
+- Changed: If running apps are not skipped, SD Maid will suspend (SIGSTOP) them before working on their database (root only) instead of killing them (Fixes [#325](https://github.com/d4rken/sdmaid-public/issues/325)).
 - Improved: Result now indicates successful, skipped and failed operations.
 
 ## SD Maid [4.0.8] - 06.03.2015 (BETA)
@@ -1427,7 +1427,7 @@
 - Improved: Translations.
 - Improved: Tool events that result in an UI action other than the results being populated (showing a snackbar etc) could have dropped these theoretically before, this should now no longer happen.
 - Improved: Minor text issues i.e. 'show' vs 'open'.
-- Improved: Busybox check on rooted devices (#313 Ty elhennig@github).
+- Improved: Busybox check on rooted devices ([#313](https://github.com/d4rken/sdmaid-public/issues/313) Ty elhennig@github).
 - Improved: Within settings that use the path picker screen, directory creation is now disabled where it doesn't make sense (i.e. import stuff).
 - Improved: Overall memory footprint, during parallel operation of multiple tools as well as after finishing operations SD Maids memory usage should further drop.
 - Fixed: Race condition UI crash when a tool starts working and SD maids updates the navigation drawer UI.
@@ -1441,10 +1441,10 @@
 - Fixed: Case where too simple storage detection led to wrong permission and assumptions and thus failing operations.
 
 ### Searcher
-- Added: Option to allow for case sensitive search (#230 Ty mcl21014).
+- Added: Option to allow for case sensitive search ([#230](https://github.com/d4rken/sdmaid-public/issues/230) Ty mcl21014).
 
 ### AppControl
-- Added: Option to share information about your installed apps to text (other apps or text file). Currently includes: Name, package-name, version, version-code, Google-Play download link. The shared text is markdown formatted, but that's up for discussion :) (#249 #255 Ty cloud_strife84).
+- Added: Option to share information about your installed apps to text (other apps or text file). Currently includes: Name, package-name, version, version-code, Google-Play download link. The shared text is markdown formatted, but that's up for discussion :) ([#249](https://github.com/d4rken/sdmaid-public/issues/249) [#255](https://github.com/d4rken/sdmaid-public/issues/255) Ty cloud_strife84).
 - Added: Action to 'Force stop' applications(requires root). Note that a force-stopped application will not run until the user explicitly opens it.
 - Added: Force-stopped apps (e.g. apps with state stopped=true) now show a 'Stopped' tag by which you can also filter.
 - Improved: UI updating and progress feedback when executing tasks from the details view.
@@ -1454,7 +1454,7 @@
 - Fixed: Double check for frozen apps always coming up empty due to reading wrong xml tag.
 
 ### SystemCleaner
-- Removed: Setting entry, because we currently have no settings (#315 Ty SuperSandro2000).
+- Removed: Setting entry, because we currently have no settings ([#315](https://github.com/d4rken/sdmaid-public/issues/315) Ty SuperSandro2000).
 
 ### AppCleaner
 - Added: If an app is running and can't be killed, it will be skipped.
@@ -1465,12 +1465,12 @@
 - Fixed: Possible racecondition crash when deleting items while viewing details.
 
 ### Biggest
-- Added: Option to delete items, via info dialog and multi selection (#149).
+- Added: Option to delete items, via info dialog and multi selection ([#149](https://github.com/d4rken/sdmaid-public/issues/149)).
 - Changed: Long press now triggers multiselection, dialog has a show option that open the Explorer.
 
 ### Databases
 - Added: If an app is running and can't be killed, it's database will be skipped.
-- Improved: Databases from official database folders that are sql databases are now also found (#182 Ty h4ku).
+- Improved: Databases from official database folders that are sql databases are now also found ([#182](https://github.com/d4rken/sdmaid-public/issues/182) Ty h4ku).
 - Improved: Only valid sql databases are now shown. 
 - Improved: SD Maid will now also try to use root to kill an app before working on it's database.
 - Fixed: Crash when vacuum results are processed and some databases were not accessible.
@@ -1480,7 +1480,7 @@
 - Improved: Marked the area where you can press the row entry to trigger its action.
 - Improved: Widget events, it's a lot more responsive but may glitch, working on that.
 - Changed: Button bar to FAB again (see poll).
-- Fixed: Wrong icon for Databases action (#316 Ty DO97).
+- Fixed: Wrong icon for Databases action ([#316](https://github.com/d4rken/sdmaid-public/issues/316) Ty DO97).
 - Fixed: VACUUM action not showing in the toolbar.
 
 ### Statistics
@@ -1488,7 +1488,7 @@
 - Improved: Rotation handling regarding search field.
 - Improved: Entering nonsense values will now reset it to default instead of crashing.
 - Improved: Layouting and removed duplicate code, the chronic is now just rehoused in a full activity if the user chooses to expand it.
-- Fixed: Chart on-click behavior, replaced snackbar with actual chart-marker (#311 Ty Geocfu1@XDA).
+- Fixed: Chart on-click behavior, replaced snackbar with actual chart-marker ([#311](https://github.com/d4rken/sdmaid-public/issues/311) Ty Geocfu1@XDA).
 - Fixed: Potential crash when closing or changing rotation.
 
 ## SD Maid [4.0.7] - 2016-02-24 (BETA)
@@ -1497,7 +1497,7 @@
 - Added: There is now an advanced setting that allows you to restore the unlocker icon.
 - Improved: Mechanics for shell creation. This brings no noticeable change but the code is a lot clean now which makes the developer happy.
 - Improved: Task & Result system to prepare for better statistics.
-- Improved: Clutter database (#299).
+- Improved: Clutter database ([#299](https://github.com/d4rken/sdmaid-public/issues/299)).
 - Improved: Translations.
 - Improved: UI behavior in regard to canceling.
 - Changed: Some settings reordering.
@@ -1510,11 +1510,11 @@
 - Fixed: Racecondition crash when entering/exiting details.
 - Fixed: Menu icons reshowing in details after rotation.
 - Fixed: After failing to grant SD Maid permission, the overflow menu now correctly makes the option "Don't show again" visible.
-- Fixed: 3 cases of canceling to hang endlessly (#302 Ty Geocfu).
+- Fixed: 3 cases of canceling to hang endlessly ([#302](https://github.com/d4rken/sdmaid-public/issues/302) Ty Geocfu).
 - Fixed: Fixed location being UNKNOWN for some subdirectories of /data.
  
 ### QuickAccess
-- Changed: When in singlepass mode, confirmations are no longer shown (#305 Ty Geocfu).
+- Changed: When in singlepass mode, confirmations are no longer shown ([#305](https://github.com/d4rken/sdmaid-public/issues/305) Ty Geocfu).
 
 ### Explorer
 - Improved: When creating a new bookmark, the name is now prepopulated with the current directory name.
@@ -1580,7 +1580,7 @@
 - Fixed: Rare crash when doing quickly exiting the permission setup.
 - Fixed: ActionMode not restoring correctly after device orientation change in details activities.
 - Fixed: Possible hang on outputs not ending with a new line.
-- Changed: Code related loading the coffee animation in an attempt to address glide#928.
+- Changed: Code related loading the coffee animation in an attempt to address glide[#928](https://github.com/d4rken/sdmaid-public/issues/928).
 
 ### Explorer
 - Fixed: Progress result when making files/directories.
@@ -1628,7 +1628,7 @@
 - Improved: UI updating when doing actions within the details views. Especially rotation should now be handled better.
 - Changed: Removed most analytics of events, if the information isn't useful, we dont't need to track it :), and it wasn't really helping me :(. Added a few analytics for widget usage.
 - Fixed: Not being able to select two dirs that share part of their name within the picker.
-- Fixed: Picker content now refreshes after creating a file/dir (#290).
+- Fixed: Picker content now refreshes after creating a file/dir ([#290](https://github.com/d4rken/sdmaid-public/issues/290)).
 - Fixed: Old pro version icon being visible in the BuyPro dialog.
 - Fixed: Thread synchronization when reading files, rare hanging cases and a few crashes related to canceling are fixed now.
 - Fixed: Progress indicators in the navigation drawer being shown for wrong items.
@@ -1637,15 +1637,15 @@
 - Changed: Task error handling, previously some errors might just have been ignored instead of crashing the app, preventing me from finding out about them and fixing it
 
 ### Explorer:
-- Improved: UX by disabling the new file/dir add button if no text is entered (#282).
-- Changed: Visual distinction between user and default bookmarks (#284).
+- Improved: UX by disabling the new file/dir add button if no text is entered ([#282](https://github.com/d4rken/sdmaid-public/issues/282)).
+- Changed: Visual distinction between user and default bookmarks ([#284](https://github.com/d4rken/sdmaid-public/issues/284)).
 - Fixed: ActionMode staying active despite leaving the main activity.
 - Fixed: After permission changes not scrolling to the right item.
-- Fixed: Crash when trying to add a bookmark on an unloaded Explorer (#286).
-- Fixed: Fixed FAB button showing with sidebar open (#285).
+- Fixed: Crash when trying to add a bookmark on an unloaded Explorer ([#286](https://github.com/d4rken/sdmaid-public/issues/286)).
+- Fixed: Fixed FAB button showing with sidebar open ([#285](https://github.com/d4rken/sdmaid-public/issues/285)).
 
 ### Searcher
-- Fixed: Root search checkbox being weird (#287).
+- Fixed: Root search checkbox being weird ([#287](https://github.com/d4rken/sdmaid-public/issues/287)).
 
 ### CorpseFinder
 - Improved: The UninstallWatcher now only returns results that can be attributed to the uninstalled app.
@@ -1655,22 +1655,22 @@
 
 ### AppControl
 - Improved: Cross check items that are to be removed on uninstall if they are shared with another app.
-- Fixed: APK export failing when exporting to external sdcards on 5.0+ (#271 & #270).
+- Fixed: APK export failing when exporting to external sdcards on 5.0+ ([#271](https://github.com/d4rken/sdmaid-public/issues/271) & [#270](https://github.com/d4rken/sdmaid-public/issues/270)).
 - Fixed: Crash on apps that either don't have an apk file or they have one but SD Maid can't find it.
 - Fixed: Not being able to enter app details again after uninstalling an app.
 
 ### AppCleaner
-- Fixed: Exclusions are no longer applied if we can't enforce them (e.g. non-root private caches) (#246).
+- Fixed: Exclusions are no longer applied if we can't enforce them (e.g. non-root private caches) ([#246](https://github.com/d4rken/sdmaid-public/issues/246)).
 
 ### Duplicates
 - Fixed: Being able to press/longpress the header when viewing details which lead to a crash.
 
 ### Scheduler
-- Fixed: Rewritten the external task system, which is now what both scheduler and widgets use to trigger actions indirectly (fixes #277).
-- Fixed: Scheduler failing because setup was not done by enforcing the setup to happen before setting a schedule (fixes #278).
+- Fixed: Rewritten the external task system, which is now what both scheduler and widgets use to trigger actions indirectly (fixes [#277](https://github.com/d4rken/sdmaid-public/issues/277)).
+- Fixed: Scheduler failing because setup was not done by enforcing the setup to happen before setting a schedule (fixes [#278](https://github.com/d4rken/sdmaid-public/issues/278)).
 
 ### QuickAccess
-- Improved: Dialog messages in single-pass mode (#279).
+- Improved: Dialog messages in single-pass mode ([#279](https://github.com/d4rken/sdmaid-public/issues/279)).
 - Fixed: BuyPro Dialog not showing when necessary.
 
 ## SD Maid [4.0.3] - 2016-01-02 (BETA)
@@ -1707,7 +1707,7 @@
 - Fixed: Deleting from details erroneously required the pro version.
 
 ### Exclusions
-- Fixed: Crash upon entering the exclusion manager (#274).
+- Fixed: Crash upon entering the exclusion manager ([#274](https://github.com/d4rken/sdmaid-public/issues/274)).
 
 ### Scheduler
 - Fixed: Fixed random crash when entering/leaving the scheduler page.
@@ -1749,8 +1749,8 @@
 
 ### AppControl
 - Fixed: Crash when quickly opening and closing app details.
-- Fixed: Rotation crash in receiver manager (#263).
-- Improved: Improved receiver manager layouting (#266).
+- Fixed: Rotation crash in receiver manager ([#263](https://github.com/d4rken/sdmaid-public/issues/263)).
+- Improved: Improved receiver manager layouting ([#266](https://github.com/d4rken/sdmaid-public/issues/266)).
 
 ### SystemCleaner
 - Improved: Improved UX of deleting items from the details view.
