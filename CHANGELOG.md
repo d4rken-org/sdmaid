@@ -1,8 +1,19 @@
 # Changelog
 
 - Latest production version: v4.7.6(40706), Unlocker v4.0.9(40009)
-- Latest beta version: v4.8.0(40800)
+- Latest beta version: v4.8.1(40801)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.8.1] 23.09.2017
+### Core
+- Improved: Updated translations.
+- Fixed: Fixed racecondition that could lead to a crash when canceling tasks ([#1150](https://github.com/d4rken/sdmaid-public/issues/1150)).
+- Fixed: Worker thread priority not being set according to foreground/background state of SD Maid.
+- Fixed: SD Maid not correctly detecting when running in the background ([#1148](https://github.com/d4rken/sdmaid-public/issues/1148), ty @GabrielMGitHub).
+- Fixed: Crash when canceling tasks running with root ([#1149](https://github.com/d4rken/sdmaid-public/issues/1149)).
+
+### Databases
+- Fixed: Symlink setting not being used when searching for databases ([#1151](https://github.com/d4rken/sdmaid-public/issues/1151), ty Sergey).
 
 ## SD Maid [v4.8.0] 22.09.2017
 ### Core
