@@ -1,8 +1,27 @@
 # Changelog
 
 - Latest production version: v4.7.6(40706), Unlocker v4.0.9(40009)
-- Latest beta version: v4.8.1(40801)
+- Latest beta version: v4.8.2(40802)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.8.2] 28.09.2017
+### Core
+- Improved: Updated translations.
+- Improved: Clutter database ([#1156](https://github.com/d4rken/sdmaid-public/issues/1156), [#1153](https://github.com/d4rken/sdmaid-public/issues/1153), [#1161](https://github.com/d4rken/sdmaid-public/issues/1161), [#1160](https://github.com/d4rken/sdmaid-public/issues/1160), [#1162](https://github.com/d4rken/sdmaid-public/issues/1162))
+- Improved: Path (breadcrumb) UI elements.
+
+### AppControl
+- Added: App version to list view.
+
+### AppCleaner
+- Added: Hidden Plex cache.
+
+### StorageAnalyzer
+- Fixed: Crash when canceling tasks.
+
+### Databases
+- Improved: UI show "Not possible" instead of "Error" as it's more accurate.
+- Fixed: Database owner being shown as "Unknown".
 
 ## SD Maid [v4.8.1] 23.09.2017
 ### Core
