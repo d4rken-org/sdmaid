@@ -1,8 +1,20 @@
 # Changelog
 
 - Latest production version: v4.7.6(40706), Unlocker v4.0.9(40009)
-- Latest beta version: v4.8.2(40802)
+- Latest beta version: v4.8.3(40803)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.8.3] 30.09.2017
+### Core
+- Added: Setting "Result notifications" which affects whether SD Maid shows notifications for task results, similar to the previous "Persistent notifications" setting. I'll remove this setting again when sufficient people are running Android Oreo (so probably in a few years...).
+- Improved: Translations.
+
+### Explorer
+- Improved: The corpse icon will now be colored teal if SD Maid thinks an item is a corpse, but the item is flagged as common and thus not part of CorpseFinder results (see [common items](https://github.com/d4rken/sdmaid-public/wiki/Explorer#common)).
+
+### CorpseFinder
+- Improved: UninstallWatcher now uses the same scan scope as the normal scan from SD Maids UI. It was previously limited to public storage, and private app data storage.
+- Fixed: UninstallWatcher not finding corpses when SD Maid was still in memory with an old list of installed apps (doing a forced refresh now).
 
 ## SD Maid [v4.8.2] 28.09.2017
 ### Core
