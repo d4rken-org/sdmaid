@@ -1,8 +1,29 @@
 # Changelog
 
 - Latest production version: v4.8.3(40803), Unlocker v4.0.9(40009)
-- Latest beta version: ~
+- Latest beta version: v4.8.4(40804)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.8.4](https://github.com/d4rken/sdmaid-public/milestone/32) 31.10.2017
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Clutter database structure and match generation. Support for multiple markers for the same package. This allows us to describe more apps with less entries.
+- Improved: Internal code structures and unit tests related to file forensics (ownership etc.) to keep SD Maids code base healthy :).
+- Improved: Tooling, libraries and targetSDK to Android 8.1 (API 27).
+- Fixed: USB-OTG storage is now ignored if the mountpoint has the filesystem TMPFS. This should fix SD Maid trying to get permission for non-existing storage ([#1277](https://github.com/d4rken/sdmaid-public/issues/1277)).
+
+### CorpseFinder
+- Fixed: Inconsistently displayed scan results between the UninstallWatcher, QuickAccess page and CorpseFinder main view ([#1281](https://github.com/d4rken/sdmaid-public/issues/1281)).
+
+### AppCleaner
+- Improved: Hiddencaches filter additional `MediaCache` related folders are targeted ([#1258](https://github.com/d4rken/sdmaid-public/issues/1258)).
+
+### SystemCleaner
+- Improved: Internal code structure to reduce duplicate code, improve unit testing and allow better reuse of routines between default and user created filters.
+
+### Databases
+- Added: Default exclusion for the system settings provider and the sync provider on older phones (~Android 5.X).
 
 ## SD Maid [v4.8.3] 30.09.2017
 ### Core
