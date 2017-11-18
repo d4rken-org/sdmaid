@@ -6,7 +6,7 @@
 
 ## SD Maid [v4.8.6] 18.11.2017
 ### Core
-- Fixed: Updated buildtools to 27.0.1 to fix bootloops on CyanogenMod/LineageOS due to OS bug.
+- Fixed: Build with buildtools 27.0.1 to fix bootloops on CyanogenMod 12-13/LineageOS 13/Replicant 6 due to [OS bug](https://issuetracker.google.com/issues/64434571).
 
 ### SystemCleaner
 - Improved: Canceling behavior.
