@@ -1,8 +1,16 @@
 # Changelog
 
-- Latest production version: v4.8.5(40805), Unlocker v4.0.9(40009)
+- Latest production version: v4.8.6(40806), Unlocker v4.0.9(40009)
 - Latest beta version: ~
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.8.6] 18.11.2017
+### Core
+- Fixed: Updated buildtools to 27.0.1 to fix bootloops on CyanogenMod/LineageOS due to OS bug.
+
+### SystemCleaner
+- Improved: Canceling behavior.
+- Fixed: Fixed incorrect scan summaries when exclusions are used ([#1290](https://github.com/d4rken/sdmaid-public/issues/1290)).
 
 ## SD Maid [v4.8.5] 31.10.2017
 ### SystemCleaner
