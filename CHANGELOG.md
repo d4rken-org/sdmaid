@@ -22,7 +22,7 @@
 - Improved: Translations.
 - Improved: Clutter database structure and match generation. Support for multiple markers for the same package. This allows us to describe more apps with less entries.
 - Improved: Internal code structures and unit tests related to file forensics (ownership etc.) to keep SD Maids code base healthy :).
-- Improved: Tooling, libraries and targetSDK to Android 8.1 (API 27).
+- Improved: Tooling, libraries.
 - Fixed: USB-OTG storage is now ignored if the mountpoint has the filesystem TMPFS. This should fix SD Maid trying to get permission for non-existing storage ([#1277](https://github.com/d4rken/sdmaid-public/issues/1277)).
 
 ### CorpseFinder
