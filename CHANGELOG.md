@@ -16,7 +16,7 @@
 ### SystemCleaner
 - Fixed: Stock filters not instantiating (proguard *sigh*).
 
-## SD Maid [v4.8.4](https://github.com/d4rken/sdmaid-public/milestone/32) 31.10.2017
+## SD Maid [v4.8.4](https://github.com/d4rken/sdmaid-public/milestone/32?closed=1) 31.10.2017
 ### Core
 - Improved: Clutter database.
 - Improved: Translations.
@@ -49,7 +49,7 @@
 - Improved: UninstallWatcher now uses the same scan scope as the normal scan from SD Maids UI. It was previously limited to public storage, and private app data storage.
 - Fixed: UninstallWatcher not finding corpses when SD Maid was still in memory with an old list of installed apps (doing a forced refresh now).
 
-## SD Maid [v4.8.2] 28.09.2017
+## SD Maid [v4.8.2](https://github.com/d4rken/sdmaid-public/milestone/31?closed=1) 28.09.2017
 ### Core
 - Improved: Updated translations.
 - Improved: Clutter database ([#1156](https://github.com/d4rken/sdmaid-public/issues/1156), [#1153](https://github.com/d4rken/sdmaid-public/issues/1153), [#1161](https://github.com/d4rken/sdmaid-public/issues/1161), [#1160](https://github.com/d4rken/sdmaid-public/issues/1160), [#1162](https://github.com/d4rken/sdmaid-public/issues/1162))
@@ -68,7 +68,7 @@
 - Improved: UI show "Not possible" instead of "Error" as it's more accurate.
 - Fixed: Database owner being shown as "Unknown".
 
-## SD Maid [v4.8.1] 23.09.2017
+## SD Maid [v4.8.1](https://github.com/d4rken/sdmaid-public/milestone/30?closed=1) 23.09.2017
 ### Core
 - Improved: Updated translations.
 - Fixed: Fixed racecondition that could lead to a crash when canceling tasks ([#1150](https://github.com/d4rken/sdmaid-public/issues/1150)).
@@ -79,7 +79,7 @@
 ### Databases
 - Fixed: Symlink setting not being used when searching for databases ([#1151](https://github.com/d4rken/sdmaid-public/issues/1151), ty Sergey).
 
-## SD Maid [v4.8.0] 22.09.2017
+## SD Maid [v4.8.0](https://github.com/d4rken/sdmaid-public/milestone/29?closed=1) 22.09.2017
 ### Core
 - Added: Language selection, option to enforce different languages than english ([#916](https://github.com/d4rken/sdmaid-public/issues/916)).
 - Added: Dynamic clutter matching for `/sdcard/data/Data/some.pkg` (developer path mistakes).
@@ -123,12 +123,12 @@
 - Improved: Searching , expanded checked extensions in non database folders to `*.sqlite` and `*.sql`
 - Improved: Search locations, search now includes all public storage ([#1067](https://github.com/d4rken/sdmaid-public/issues/1067)).
 
-## SD Maid [v4.7.6] 05.08.2017
+## SD Maid [v4.7.6](https://github.com/d4rken/sdmaid-public/milestone/28?closed=1) 05.08.2017
 ### Core
 - Improved: Updated translations.
 - Improved: Updated clutter database ([#997](https://github.com/d4rken/sdmaid-public/issues/997), [#1009](https://github.com/d4rken/sdmaid-public/issues/1009), [#1014](https://github.com/d4rken/sdmaid-public/issues/1014), [#1015](https://github.com/d4rken/sdmaid-public/issues/1015), [#1021](https://github.com/d4rken/sdmaid-public/issues/1021), [#1022](https://github.com/d4rken/sdmaid-public/issues/1022), [#1023](https://github.com/d4rken/sdmaid-public/issues/1023), [#1024](https://github.com/d4rken/sdmaid-public/issues/1024), [#1025](https://github.com/d4rken/sdmaid-public/issues/1025), [#1032](https://github.com/d4rken/sdmaid-public/issues/1032), [#1034](https://github.com/d4rken/sdmaid-public/issues/1034), [#1035](https://github.com/d4rken/sdmaid-public/issues/1035), [#1036](https://github.com/d4rken/sdmaid-public/issues/1036), [#1017](https://github.com/d4rken/sdmaid-public/issues/1017)).
 
-## SD Maid [v4.7.5] 29.06.2017
+## SD Maid [v4.7.5](https://github.com/d4rken/sdmaid-public/milestone/27?closed=1) 29.06.2017
 ### Core
 - Improved: Translations (some new languages yay \o/).
 - Improved: Clutter database ([#977](https://github.com/d4rken/sdmaid-public/issues/977), [#972](https://github.com/d4rken/sdmaid-public/issues/972), [#971](https://github.com/d4rken/sdmaid-public/issues/971), [#970](https://github.com/d4rken/sdmaid-public/issues/970), [#968](https://github.com/d4rken/sdmaid-public/issues/968), [#965](https://github.com/d4rken/sdmaid-public/issues/965), [#955](https://github.com/d4rken/sdmaid-public/issues/955), [#952](https://github.com/d4rken/sdmaid-public/issues/952), [#950](https://github.com/d4rken/sdmaid-public/issues/950), [#992](https://github.com/d4rken/sdmaid-public/issues/992), [#988](https://github.com/d4rken/sdmaid-public/issues/988)).
@@ -143,7 +143,7 @@
 - Improved: App install data (e.g. /data/app ) detection. Adjusted routines for apps with unusual pathes. Mostly relating preinstalled aps, mostly emulator type ROMs but also some others.
 - Fixed: Not being able to access the filter drawer if the list is empty as otherwise the user could be stuck on a specific sort mode.
 
-## SD Maid [v4.7.4] 30.05.2017
+## SD Maid [v4.7.4](https://github.com/d4rken/sdmaid-public/milestone/26?closed=1) 30.05.2017
 ### Core
 - Improved: Translations.
 - Improved: Small code improvements.
@@ -163,7 +163,7 @@
 - Improved: WhatsApp sent/received filters. Added matching for "Animated Gifs".
 
 
-## SD Maid [v4.7.3] 25.05.2017
+## SD Maid [v4.7.3](https://github.com/d4rken/sdmaid-public/milestone/25?closed=1) 25.05.2017
 ### Core
 - Improved: Handling of files with invalid group/user ids (out of valid number) range. Mostly happens with custom mounted storage devices.
 - Improved: Handling of symbolic links without link target (encountered when mounting storage from other operating systems).
@@ -189,7 +189,7 @@
 ### Core
 - Fixed: Issue issue when reading/getting files (stat output parsing issue).
 
-## SD Maid [v4.7.0] 13.05.2017
+## SD Maid [v4.7.0](https://github.com/d4rken/sdmaid-public/milestone/24?closed=1) 13.05.2017
 ### Core
 - Improved: Translations (thanks!).
 - Improved: Clutter database ([#880](https://github.com/d4rken/sdmaid-public/issues/880), [#875](https://github.com/d4rken/sdmaid-public/issues/875), [#874](https://github.com/d4rken/sdmaid-public/issues/874), [#873](https://github.com/d4rken/sdmaid-public/issues/873), [#847](https://github.com/d4rken/sdmaid-public/issues/847), [#855](https://github.com/d4rken/sdmaid-public/issues/855), [#856](https://github.com/d4rken/sdmaid-public/issues/856), [#857](https://github.com/d4rken/sdmaid-public/issues/857), [#858](https://github.com/d4rken/sdmaid-public/issues/858), [#860](https://github.com/d4rken/sdmaid-public/issues/860), [#849](https://github.com/d4rken/sdmaid-public/issues/849), [#859](https://github.com/d4rken/sdmaid-public/issues/859), [#862](https://github.com/d4rken/sdmaid-public/issues/862), [#876](https://github.com/d4rken/sdmaid-public/issues/876)).
@@ -231,7 +231,7 @@
 - Improved: UserFilter export. Only save fields into the `.json` file that are actually necessary ([#867](https://github.com/d4rken/sdmaid-public/issues/867)).
 - Improved: Scan performance for items that will eventually match a filter that doesn't use the `location` criteria.
 
-## SD Maid [v4.6.5] 06.04.2017
+## SD Maid [v4.6.5](https://github.com/d4rken/sdmaid-public/milestone/23?closed=1) 06.04.2017
 ### Core
 - Improved: Translations.
 - Improved: Root binary & app detection, added support for magisku.
@@ -269,7 +269,7 @@
 ### Statistics
 - Improved: Only attempt truncation if new limit is lower than old one.
 
-## SD Maid [v4.6.4] 05.03.2017
+## SD Maid [v4.6.4](https://github.com/d4rken/sdmaid-public/milestone/22?closed=1) 05.03.2017
 ### Core
 - Added: Link to privacy policy (sdmaid.darken.eu/privacy).
 - Added: Support for clutter markers which define their target packages via regular expressions.
@@ -284,7 +284,7 @@
 - Improved: Internal code structure to allow for better testing.
 - Fixed: Case where deleting files lead to a crash (if the files had already been deleted).
 
-## SD Maid [v4.6.3] 16.02.2017
+## SD Maid [v4.6.3](https://github.com/d4rken/sdmaid-public/milestone/21?closed=1) 16.02.2017
 ### Core
 - Improved: Updated clutter database ([#737](https://github.com/d4rken/sdmaid-public/issues/737), [#740](https://github.com/d4rken/sdmaid-public/issues/740), [#739](https://github.com/d4rken/sdmaid-public/issues/739), [#747](https://github.com/d4rken/sdmaid-public/issues/747)).
 - Improved: Updated translations.
@@ -308,7 +308,7 @@
 ### StorageAnalyzer
 - Fixed: Detecting not existing partition.
 
-## SD Maid [v4.6.1] 10.02.2017
+## SD Maid [v4.6.1](https://github.com/d4rken/sdmaid-public/milestone/20?closed=1) 10.02.2017
 ###
 - Improved: Debug output.
 - Improved: Clutter database ([#735](https://github.com/d4rken/sdmaid-public/issues/735), [#730](https://github.com/d4rken/sdmaid-public/issues/730), [#729](https://github.com/d4rken/sdmaid-public/issues/729)).
@@ -329,7 +329,7 @@
 ### Scheduler
 - Changed: Increased maximum interval to 31 ([#733](https://github.com/d4rken/sdmaid-public/issues/733)).
 
-## SD Maid [v4.6.0] 31.01.2017
+## SD Maid [v4.6.0](https://github.com/d4rken/sdmaid-public/milestone/19?closed=1) 31.01.2017
 ### Core
 - Added: Support for `/data/sdext2`.
 - Added: Support for clutter matching in `/data`.
@@ -372,7 +372,7 @@
 ### Statistics
 - Changed:  Removed labels from chart (due to overlapping) and moved the size to each legend entry ([#699](https://github.com/d4rken/sdmaid-public/issues/699), [#689](https://github.com/d4rken/sdmaid-public/issues/689)).
 
-## SD Maid [v4.5.9] 12.01.2017
+## SD Maid [v4.5.9](https://github.com/d4rken/sdmaid-public/milestone/18?closed=1) 12.01.2017
 ### Core
 - Improved: Translations.
 - Improved: Clutter database ([#684](https://github.com/d4rken/sdmaid-public/issues/684)).
@@ -386,7 +386,7 @@
 ### StorageAnalyzer
 - Improved: Gracefully deal with cases where a file could not be found.
 
-## SD Maid [v4.5.8] 08.01.2017
+## SD Maid [v4.5.8](https://github.com/d4rken/sdmaid-public/milestone/17?closed=1) 08.01.2017
 ### Core
 - Improved: Clutter database.
 - Improved: Updated android support libraries.
@@ -421,7 +421,7 @@
 ### AppControl
 - Fixed: SD Maid crashing after processing an uninstall or app reset.
 
-## SD Maid [v4.5.6] 02.01.2017
+## SD Maid [v4.5.6](https://github.com/d4rken/sdmaid-public/milestone/16?closed=1) 02.01.2017
 ### Core
 - Improved: Updated toybox ([#668](https://github.com/d4rken/sdmaid-public/issues/668)).
 - Improved: Clutter database ([#665](https://github.com/d4rken/sdmaid-public/issues/665) Ty RedMaxKr, [#629](https://github.com/d4rken/sdmaid-public/issues/629), [#664](https://github.com/d4rken/sdmaid-public/issues/664) & [#663](https://github.com/d4rken/sdmaid-public/issues/663) Ty Gitoffthelawn).
@@ -443,7 +443,7 @@
 ### Scheduler
 - Added: If a full reboot attempt via system intent fails we try reboot via command line applet as fallback option ([#662](https://github.com/d4rken/sdmaid-public/issues/662) Ty Yowlen).
 
-## SD Maid [v4.5.5] 24.12.2016
+## SD Maid [v4.5.5](https://github.com/d4rken/sdmaid-public/milestone/15?closed=1) 24.12.2016
 ### Core
 - Added: Support for files of type 'named pipes'.
 - Improved: Detection of running apps that use multiple processes.
@@ -457,7 +457,7 @@
 ### Databases
 - Fixed: SD Maid getting stuck when trying to suspend running apps (using bad PID values) (Ty Ben).
 
-## SD Maid [v4.5.4] 22.12.2016
+## SD Maid [v4.5.4](https://github.com/d4rken/sdmaid-public/milestone/14?closed=1) 22.12.2016
 ### Core
 - Improved: Clutter database.
 - Improved: Translations.
@@ -489,7 +489,7 @@
 ### Core
 - Fixed: Bugtracking issue.
 
-## SD Maid [v4.5.1] 17.12.2016
+## SD Maid [v4.5.1](https://github.com/d4rken/sdmaid-public/milestone/13?closed=1) 17.12.2016
 ### Core
 - Improved: Debug output.
 - Improved: Updated clutterdb.
@@ -526,7 +526,7 @@
 ### SystemCleaner
 - Fixed: Crash when a racecondition lead to division by 0 during progress display.
 
-## SD Maid [v4.5.0] - 12.12.2016
+## SD Maid [v4.5.0](https://github.com/d4rken/sdmaid-public/milestone/12?closed=1) - 12.12.2016
 ### Core
 - Added: Support for locations `data_system_ce` and `data_system_de`.
 - Added: Additional debugging options.
@@ -639,7 +639,7 @@
 - Changed: Default limit reduced from 31 days to 7 days.
 - Changed: Reset statistics again.
 
-## SD Maid [v4.4.0] - 05.11.2016
+## SD Maid [v4.4.0](https://github.com/d4rken/sdmaid-public/milestone/11?closed=1) - 05.11.2016
 ### Core
 - Added: Support for CustomTabs when opening web links ([#576](https://github.com/d4rken/sdmaid-public/issues/576)).
 - Improved: Clutter database ([#569](https://github.com/d4rken/sdmaid-public/issues/569), [#580](https://github.com/d4rken/sdmaid-public/issues/580), [#584](https://github.com/d4rken/sdmaid-public/issues/584), [#585](https://github.com/d4rken/sdmaid-public/issues/585), [#593](https://github.com/d4rken/sdmaid-public/issues/593), [#592](https://github.com/d4rken/sdmaid-public/issues/592)).
@@ -705,7 +705,7 @@
 ### Duplicates
 - Added: Last modification date to items in the details view.
 
-## SD Maid [v4.3.7] - 14.10.2016
+## SD Maid [v4.3.7](https://github.com/d4rken/sdmaid-public/milestone/10?closed=1) - 14.10.2016
 ### Core
 - Added: Dynamic clutter marker for `IQQI` ([#546](https://github.com/d4rken/sdmaid-public/issues/546)).
 - Improved: Clutter database (Ty david082321 [#535](https://github.com/d4rken/sdmaid-public/issues/535) - [#566](https://github.com/d4rken/sdmaid-public/issues/566)).
@@ -728,7 +728,7 @@
 - Fixed: Issue with restoring schedule after reboot to the correct time.
 - Changed: Initial scheduling, will now trigger at the next hour/minute time, then repeat according to interval.
 
-## SD Maid [v4.3.6] - 03.10.2016
+## SD Maid [v4.3.6](https://github.com/d4rken/sdmaid-public/milestone/9?closed=1) - 03.10.2016
 ### Core
 - Improved: Translations.
 - Improved: Clutter database.
@@ -752,7 +752,7 @@
 - Added: Additional fail-safe module based on pathes (Ty Chris).
 - Fixed: A case of false-positives on rooted devices if SD Maid fallsback to a native busybox which segfaults (Ty Chris).
 
-## SD Maid [v4.3.5] - 25.09.2016
+## SD Maid [v4.3.5](https://github.com/d4rken/sdmaid-public/milestone/8?closed=1) - 25.09.2016
 ### Core
 - Fixed: UI related crash when reentering SD Maids UI by downgrading to an older support library (newest version introduced this crash) ([#525](https://github.com/d4rken/sdmaid-public/issues/525)).
 - Fixed: SD Maid trying to use Android 6.0+ code on <6.0 devices, didn't cause a crash but spammed the log and used unnecessary CPU time.
@@ -767,7 +767,7 @@
 - Fixed: Crash when clicking "show" after exporting a shared list of apps.
 - Fixed: Only being to able to share one item.
 
-## SD Maid [v4.3.4] - 24.09.2016
+## SD Maid [v4.3.4](https://github.com/d4rken/sdmaid-public/milestone/7?closed=1) - 24.09.2016
 ### Core
 - Added: SD Maid can now use two different binaries for root/normal actions. This increases device compatibility and makes it less likely that SD Maid or the user has to install a binary into /system.
 - Improved: SD Maid will no longer require a preinstalled system binary on devices that don't have a default `chmod` applet (though this is bad in any case and the user should install a system toybox/busybox to fix their `chmod` applet).
@@ -781,7 +781,7 @@
 - Fixed: Crash when trying to select files in type 'UNKNOWN' locations ([#520](https://github.com/d4rken/sdmaid-public/issues/520)).
 - Fixed: Crash when trying to extract empty files ([#518](https://github.com/d4rken/sdmaid-public/issues/518)).
 
-## SD Maid [v4.3.3] - 21.09.2016
+## SD Maid [v4.3.3](https://github.com/d4rken/sdmaid-public/milestone/6?closed=1) - 21.09.2016
 ### Core
 - Improved: Translations.
 - Improved: Clutter database.
@@ -812,7 +812,7 @@
 ### Storage Analyzer
 - Improved: Browsing already loaded data no longer shows the "Successful" toolbar (it was anoying, wasn't it?).
 
-## SD Maid [v4.3.2] - 10.09.2016
+## SD Maid [v4.3.2](https://github.com/d4rken/sdmaid-public/milestone/5?closed=1) - 10.09.2016
 ### Core
 - Improved: Translations.
 - Improved: Clutter database.
@@ -837,7 +837,7 @@
 - Fixed: Database tool entry always showing something to do.
 - Fixed: Database tool always showing expected sizes for all items, not only those that are still unprocessed.
 
-## SD Maid [v4.3.1] - 07.09.2016
+## SD Maid [v4.3.1](https://github.com/d4rken/sdmaid-public/milestone/4?closed=1) - 07.09.2016
 ### Core
 - Improved: Translations
 - Improved: Clutter database ([#481](https://github.com/d4rken/sdmaid-public/issues/481), [#480](https://github.com/d4rken/sdmaid-public/issues/480), [#479](https://github.com/d4rken/sdmaid-public/issues/479)).
@@ -857,7 +857,7 @@
 - Fixed: Crash when operations were too quick (divide by 0) ([#477](https://github.com/d4rken/sdmaid-public/issues/477)).
 - Fixed: Crash wen pressing the backbutton without loaded data ([#476](https://github.com/d4rken/sdmaid-public/issues/476)).
 
-## SD Maid [v4.3.0] - 02.09.2016 (BETA)
+## SD Maid [v4.3.0](https://github.com/d4rken/sdmaid-public/milestone/1?closed=1) - 02.09.2016 (BETA)
 ### Core
 - Added: Adaptive support for different (core-utils providing) binaries, currently "toybox" and "busybox".
 - Added: Added support for location "/oem" ([#441](https://github.com/d4rken/sdmaid-public/issues/441) Ty randomname1234).
