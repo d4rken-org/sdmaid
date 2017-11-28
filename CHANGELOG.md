@@ -1,8 +1,18 @@
 # Changelog
 
 - Latest production version: v4.8.6(40806), Unlocker v4.0.9(40009)
-- Latest beta version: ~
+- Latest beta version: v4.8.7(40807)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.9.0] TBD (BETA)
+### Core
+- Improved: Rewritten internal shell system. The new shell system improves the performance of all shell using routines, some routines (e.g. SystemCleaner) are up to 50% faster (Ty Mike).
+- Fixed: Failure to kill/cancel processes running with root.
+
+## SD Maid [v4.8.7](https://github.com/d4rken/sdmaid-public/milestone/33) 28.11.2017
+### Core
+- Improved: Updated clutter database.
+- Improved: Updated translations.
 
 ## SD Maid [v4.8.6] 18.11.2017
 ### Core
