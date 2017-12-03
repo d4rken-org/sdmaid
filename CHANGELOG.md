@@ -1,7 +1,7 @@
 # Changelog
 
-- Latest production version: v4.8.6(40806), Unlocker v4.0.9(40009)
-- Latest beta version: v4.8.7(40807)
+- Latest production version: v4.8.7(40807), Unlocker v4.0.9(40009)
+- Latest beta version: ☕
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
 ## SD Maid [v4.9.0](https://forum.xda-developers.com/showpost.php?p=74669914&postcount=3020) 28.11.2017 (BETA)
