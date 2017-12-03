@@ -4,7 +4,7 @@
 - Latest beta version: v4.8.7(40807)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.9.0] TBD (BETA)
+## SD Maid [v4.9.0](https://forum.xda-developers.com/showpost.php?p=74669914&postcount=3020) 28.11.2017 (BETA)
 ### Core
 - Improved: Rewritten internal shell system. The new shell system improves the performance of all shell using routines, some routines (e.g. SystemCleaner) are up to 50% faster (Ty Mike).
 - Fixed: Failure to kill/cancel processes running with root.
