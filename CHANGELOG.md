@@ -1,8 +1,40 @@
 # Changelog
 
 - Latest production version: v4.8.7(40807), Unlocker v4.0.9(40009)
-- Latest beta version: ☕
+- Latest beta version: v4.9.1(40901)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.9.1](https://github.com/d4rken/sdmaid-public/milestone/34) 15.12.2017 (BETA)
+### Core
+- Improved: Updated clutter database.
+- Improved: Updated support libraries which may or may not fix some rare UI issues.
+- Improved: Logic related to enabling pro features after installing the unlocker.
+- Improved: Started migration to a new MVP type UI architecture to make the code cleaner code and allow for better testing. The library I created for this is also open-sourced and available, see[OMMVP](https://github.com/d4rken/ommvplib)).
+- Improved: Updated all used library where available.
+- Improved: On Android 7.0+ secondary external storage permission can now be granted via yes/no dialog (scoped directory access) instead of manual path selection [#1380].
+- Changed: Target/Compile SDK is now finally set to API 27 (Android 8.1), this didn't work correctly previously.
+- Changed: Switched the core file data from using `ctime` (change time of metadata) to `mtime` (change time of file content) [#1285].
+- Fixed: Root detection not working [#1352] with SuperSU and other root types due to migration to [RxShell](https://github.com/d4rken/RxShell) which is finally open-sourced, yay!
+- Fixed: List data not being updated correctly in almost every tool page if the last entry was deleted via details [#1361].
+- Fixed: SAF permission for nested locations (e.g. Android/data) not being available after completing the setup until SD Maids had been restarted [#1296].
+
+### Explorer
+- Changed: "Create filter" is now called "Add to SystemCleaner" to make it more descriptive (#1364).
+
+### AppControl
+- Fixed: Activity shortcuts not working on Android 8.0+ [#1376].
+- Fixed: Not being able to install `*.apk` files on Android 8.0+ [#1313].
+
+### SystemCleaner
+- Fixed: Minimum age not being saved if maximum age was not set for user filters [#1363].
+
+### AppCleaner.
+- Added: `apolloCache`, `.facebook_cache` , FB & FB Messenger [#1159] "videoCache" as hidden cache.
+- Added: Added `*.crdownloads` to Chrome as hidden cache [#1154].
+
+### Scheduler
+- Improved: UI loading feedback.
+- Improved: Options that are not available (require root) are now hidden if there is no root [#1335].
 
 ## SD Maid [v4.9.0](https://forum.xda-developers.com/showpost.php?p=74669914&postcount=3020) 28.11.2017 (BETA)
 ### Core
