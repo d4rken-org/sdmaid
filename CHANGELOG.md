@@ -4,12 +4,12 @@
 - Latest beta version: v4.9.1(40901)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.9.1](https://github.com/d4rken/sdmaid-public/milestone/34) 15.12.2017 (BETA)
+## SD Maid [v4.9.1](https://github.com/d4rken/sdmaid-public/milestone/34?closed=1) 15.12.2017 (BETA)
 ### Core
 - Improved: Updated clutter database.
 - Improved: Updated support libraries which may or may not fix some rare UI issues.
 - Improved: Logic related to enabling pro features after installing the unlocker.
-- Improved: Started migration to a new MVP type UI architecture to make the code cleaner code and allow for better testing. The library I created for this is also open-sourced and available, see[OMMVP](https://github.com/d4rken/ommvplib)).
+- Improved: Started migration to a new MVP type UI architecture to make the code cleaner code and allow for better testing. The library I created for this is also open-sourced and available, see [OMMVP](https://github.com/d4rken/ommvplib)).
 - Improved: Updated all used library where available.
 - Improved: On Android 7.0+ secondary external storage permission can now be granted via yes/no dialog (scoped directory access) instead of manual path selection [#1380].
 - Changed: Target/Compile SDK is now finally set to API 27 (Android 8.1), this didn't work correctly previously.
@@ -20,10 +20,10 @@
 
 ### Explorer
 - Changed: "Create filter" is now called "Add to SystemCleaner" to make it more descriptive (#1364).
+- Fixed: Not being able to install `*.apk` files on Android 8.0+ [#1313].
 
 ### AppControl
 - Fixed: Activity shortcuts not working on Android 8.0+ [#1376].
-- Fixed: Not being able to install `*.apk` files on Android 8.0+ [#1313].
 
 ### SystemCleaner
 - Fixed: Minimum age not being saved if maximum age was not set for user filters [#1363].
