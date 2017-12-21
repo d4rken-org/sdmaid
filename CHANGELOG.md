@@ -1,8 +1,37 @@
 # Changelog
 
 - Latest production version: v4.8.7(40807), Unlocker v4.0.9(40009)
-- Latest beta version: v4.9.1(40901)
+- Latest beta version: v4.9.2(40902)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.9.2](https://github.com/d4rken/sdmaid-public/milestone/35?closed=1) 21.12.2017
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Fixed: Inconsistent list display when deleting the last items [#1361].
+- Fixed: Strings such as SD Maid `PRO` or `BETA` not actually being colored on Android 8.0+.
+- Fixed: A rare crash that could happen when a shell process failed and exited prematurely.
+- Fixed: Crash when granting SAF on permissions and the ROM returns that the action was `OK`, but actually wasn't, and no data is returned.
+- Fixed: Crash when trying to report a clutter entry but the list of installed apps contains an app without a name.
+
+### AppControl
+- Fixed: Crash when creating an `Activity` shortcut and the app has no name.
+
+### SystemCleaner
+- Changed: The thumbnails filter is no longer enabled by default [#1382].
+- Changed: The three different types of thumbnail filters have been merged into one [#1386]
+- Changed: Filter categories generic/specific.
+
+### AppCleaner
+- Improved: Bugreports filter.
+- Improved: if `freeStorageAndNotify` is unavailable, hide it.
+
+### Duplicates
+- Improved: Duplicates scan now skips files when I/O errors occur during checksum calculation instead of aborting [#1389].
+
+### Scheduler
+- Fixed: Crash when opening the Scheduler settings [#1383].
+- Fixed: Crash when restoring the Scheduler page after low memory events [#1387].
 
 ## SD Maid [v4.9.1](https://github.com/d4rken/sdmaid-public/milestone/34?closed=1) 15.12.2017 (BETA)
 ### Core
