@@ -1,13 +1,18 @@
 # Changelog
 
 - Latest production version: v4.8.7(40807), Unlocker v4.0.9(40009)
-- Latest beta version: v4.9.3(40903)
+- Latest beta version: v4.9.4(40904)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.9.4] 25.12.2017
+### Core
+- Improved: Translations.
+- Fixed: Second try at fixing a possible crash when shell processes die prematurely.
 
 ## SD Maid [v4.9.3] 24.12.2017
 ### Core
 - Improved: Translations.
-- Fixed: Possible when a shell process dies prematurely.
+- Fixed: Possible crash when a shell process dies prematurely.
 
 ## SD Maid [v4.9.2](https://github.com/d4rken/sdmaid-public/milestone/35?closed=1) 21.12.2017
 ### Core
