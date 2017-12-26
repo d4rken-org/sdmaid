@@ -1,6 +1,6 @@
 # Changelog
 
-- Latest production version: v4.9.4(40904), Unlocker v4.0.9(40009)
+- Latest production version: v4.9.4(40904), Unlocker v4.2.2(40202)
 - Latest beta version: ~
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
