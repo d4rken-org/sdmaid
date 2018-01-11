@@ -1,8 +1,20 @@
 # Changelog
 
 - Latest production version: v4.9.4(40904), Unlocker v4.2.2(40202)
-- Latest beta version: ~
+- Latest beta version: v4.9.5(40905)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.9.5](https://github.com/d4rken/sdmaid-public/milestone/36?closed=1) 11.01.2018
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Fixed: Second try at fixing a possible crash when shell processes die prematurely.
+
+### SystemCleaner
+- Improved: Thumbnails filter variants of `thumbnails` folders in `<SDCARD>/DCIM`.
+
+### Scheduler
+- Fixed: Resetting the reboot option by opening the ui page.
 
 ## SD Maid [v4.9.4] 25.12.2017
 ### Core
