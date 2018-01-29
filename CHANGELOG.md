@@ -1,8 +1,36 @@
 # Changelog
 
 - Latest production version: v4.9.5(40905), Unlocker v4.2.2(40202)
-- Latest beta version: ☕
+- Latest beta version: v4.10.0(41001)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.0](https://github.com/d4rken/sdmaid-public/milestone/37?closed=1) 29.01.2018
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Internal code changes to improve code testing and make the code more modular. Also some structural changes to progress feedback and internal "workers" for future features.
+- Fixed: Crash related to SD Maids binary setup. SD Maid should no longer try to use root to clear injected binaries if root isn't actually available.
+
+### AppControl
+- Fixed: Entering the screen should no longer trigger a scan automatically.
+
+### SystemCleaner
+- Fixed: The filter for empty dirs should now correctly match empty sub directories of DCIM/Pictures etc.
+
+### StorageAnalyzer
+- Improved: UI performance.
+- Fixed: Layout being cut off when accessiblity options to increase textsize are used. 
+
+### Duplicates
+- Added: Option to reset settings to defaults.
+- Added: Feature "Prune Media Storage" (on by default). Pruning Media Storage means that when SD Maid deletes a duplicate, the system's media storage app is queried for references to the deleted file and if necessary that reference is deleted. This keeps gallery apps from showing stale references.
+- Added: "Automatic" autoselection. SD Maid can now automatically choose the best duplicates to keep based on a set of criteria you can adjust.
+- Improved: Migrated duplicates tool related settings from the general settings file into their own settings file (for future import/export of settings).
+- Improved: User interface. Better use of space and better UI performance on low end devices due to flatter UI layouts.
+- Fixed: Autoselection should no longer lag the UI when running on thousands of files. The UI will stay responsive and the operation can also be canceled.
+- Fixed: Option "Generate previews" now also affects previews of duplicates.
+- Changed: Moved item context options a bit around.
+- Changed: Exclusion of `/Android/data/` is no longer hardcoded and can be modified as part of SD Maids exclusion system.
 
 ## SD Maid [v4.9.5](https://github.com/d4rken/sdmaid-public/milestone/36?closed=1) 11.01.2018
 ### Core
