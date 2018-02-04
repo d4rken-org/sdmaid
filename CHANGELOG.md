@@ -1,8 +1,34 @@
 # Changelog
 
 - Latest production version: v4.9.5(40905), Unlocker v4.2.2(40202)
-- Latest beta version: v4.10.0(41000)
+- Latest beta version: v4.10.1(41001)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.1](https://github.com/d4rken/sdmaid-public/milestone/38?closed=1) 04.02.2018
+### Core
+- Improved: Updated clutter database.
+- Improved: Internal structure to improve testing.
+- Improved: Progressbar performance in all tool pages.
+- Improved: If automatic sdcard permission granting (Android 7.0+) fails because the ROM returns incorrect data (some NOKIA ROMs) SD Maid will automatically fall back to manual selection.
+- Improved: Updated libraries (RxShell to better handle root detection, if `su` binary is unavailable).
+- Fixed: Launch issue on some ROMs.
+- Fixed: Storage access framework permission not being accepted by SD Maid in some circumstances.
+
+### AppCleaner
+- Improved: Filter for bugreporting related files.
+
+### Duplicates
+- Fixed: Added toolbar backarrow navigation.
+- Fixed: Crash when editing autoselection criteria (#1483).
+- Fixed: Crash when rotating the duplicates settings screen (#1484).
+
+### Scheduler
+- Fixed: Crash when rotating the scheduler settings screen.
+
+### QuickAccess
+- Improved: Better layout performance.
+- Improved: Progress and action feedback should feel more responsive.
+- Fixed: Button states sometimes not updating correctly.
 
 ## SD Maid [v4.10.0](https://github.com/d4rken/sdmaid-public/milestone/37?closed=1) 29.01.2018
 ### Core
