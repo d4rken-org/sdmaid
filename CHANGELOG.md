@@ -4,6 +4,22 @@
 - Latest beta version: v4.10.1(41001)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v4.10.2](https://github.com/d4rken/sdmaid-public/milestone/39?closed=1) 22.02.2018
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Internal debug related routines.
+- Improved: Navigation headcard layouting (#1308).
+- Improved: Exclusion manager core code.
+- Improved: Code related to serialization of exclusions/filters and other data.
+- Improved: Updated used 3rd party libraries.
+- Fixed: Issue with I/O operations where SD Maid would crash instead of just displaying an error.
+- Fixed: Crash when root permission are inconsitently granted.
+
+### SystemCleaner
+- Changed: Default exclusion of `.stfolder` from the empty directories filter.
+- Fixed: Crash when opening filter editor.
+
 ## SD Maid [v4.10.1](https://github.com/d4rken/sdmaid-public/milestone/38?closed=1) 04.02.2018
 ### Core
 - Improved: Updated clutter database.
