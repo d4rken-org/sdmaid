@@ -1,8 +1,39 @@
 # Changelog
 
 - Latest production version: v4.9.5(40905), Unlocker v4.2.2(40202)
-- Latest beta version: v4.10.2(41002)
+- Latest beta version: v4.10.3(41003)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.3](https://github.com/d4rken/sdmaid-public/milestone/40?closed=1) 26.02.2018
+### Core
+- Improved: Updated clutter database.
+- Improved: Updated translations.
+- Improved: Bugreporting and error logging.
+- Improved: Small improvements to exclusion storage code.
+- Fixed: Progress indicators not displaying correctly.
+
+### CorpseFinder
+- Improved: Delete task description and confirmation dialogs.
+
+### SystemCleaner
+- Improved: Delete task description and confirmation dialogs.
+
+### AppCleaner
+- Improved: Delete task description and confirmation dialogs.
+
+### Duplicates
+- Improved: Delete task description and confirmation dialogs.
+- Fixed: Autoselection criteria not saving consistently between version upgrades (this will reset it once more) (#1527).
+
+### StorageAnalyzer
+- Improved: If there is a gap in the file tree (file parent missing for unknown reasons) then SD Maid will try to generate the missing parent items (#1479).
+
+### Databases
+- Improved: Delete task description and confirmation dialogs.
+
+### QuickAccess
+- Improved: Confirmation dialog options and displayed information.
+- Fixed: Confirmation dialogs not displaying.
 
 ## SD Maid [v4.10.2](https://github.com/d4rken/sdmaid-public/milestone/39?closed=1) 22.02.2018
 ### Core
