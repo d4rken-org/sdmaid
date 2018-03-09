@@ -1,8 +1,17 @@
 # Changelog
 
 - Latest production version: v4.9.5(40905), Unlocker v4.2.2(40202)
-- Latest beta version: v4.10.3(41003)
+- Latest beta version: v4.10.4(41004)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.4](https://github.com/d4rken/sdmaid-public/milestone/41?closed=1) 09.03.2018
+### Core
+- Improved: Updated clutter database.
+- Improved: Updated translations.
+- Added: Adaptive icon (#1249).
+- Improved: Optimized size of all PNG images used in SD Maid.
+- Fixed: UI racecondition that could lead to a crash when switching activities in SD Maid.
+- Fixed: Various small UI issues.
 
 ## SD Maid [v4.10.3](https://github.com/d4rken/sdmaid-public/milestone/40?closed=1) 26.02.2018
 ### Core
