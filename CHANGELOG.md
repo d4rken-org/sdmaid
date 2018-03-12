@@ -1,8 +1,16 @@
 # Changelog
 
-- Latest production version: v4.9.5(40905), Unlocker v4.2.2(40202)
-- Latest beta version: v4.10.4(41004)
+- Latest production version: v4.10.5(41005), Unlocker v4.2.2(40202)
+- Latest beta version: ~
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.5](https://github.com/d4rken/sdmaid-public/milestone/42?closed=1) 12.03.2018
+### Core
+- Improved: Clutter database.
+- Fixed: Issue related to migrating older exclusions which could lead to a crash when opening SD Maid.
+
+### QuickAccess
+- Fixed: Crash when too quickly launching actions after opening SD Maid. Entries will now be hidden until ready.
 
 ## SD Maid [v4.10.4](https://github.com/d4rken/sdmaid-public/milestone/41?closed=1) 09.03.2018
 ### Core
