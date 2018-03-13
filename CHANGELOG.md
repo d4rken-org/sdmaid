@@ -1,8 +1,12 @@
 # Changelog
 
-- Latest production version: v4.10.5(41005), Unlocker v4.2.2(40202)
+- Latest production version: v4.10.6(41006), Unlocker v4.2.2(40202)
 - Latest beta version: ~
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.6](https://github.com/d4rken/sdmaid-public/milestone/43?closed=1) 13.03.2018
+### Core
+- Fixed: Crash on launching SD Maid if beta v4.10.5 was opened. The cause was an issue related to exclusion format migration. If beta v4.10.5 was opened the exclusions were unfortunately corrupted and had to be reset. Any other upgrade should be fine (#1570).
 
 ## SD Maid [v4.10.5](https://github.com/d4rken/sdmaid-public/milestone/42?closed=1) 12.03.2018
 ### Core
