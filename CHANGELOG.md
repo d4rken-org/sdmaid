@@ -1,8 +1,27 @@
 # Changelog
 
 - Latest production version: v4.10.6(41006), Unlocker v4.2.2(40202)
-- Latest beta version: ~
+- Latest beta version: v4.10.7(41007)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.7](https://github.com/d4rken/sdmaid-public/milestone/44?closed=1) 25.03.2018
+### Core
+- Added: Detection and subsequent display of a warning (instead of a crash), if a device is affected by the "Android 8.0 Instant Apps Issue" (see #1513). 
+- Improved: Clutter database.
+- Improved: Translations.
+- Fixed: Root check not correctly timing out.
+- Fixed: Detection of certain types of root binaries/apps.
+
+### Explorer
+- Improved: If trying to open `/storage/emulated` and insufficient permission are available, SD Maid will automatically navigate to `/storage/emulated/0` (#1493).
+
+### StorageAnalyzer
+- Added: Context menu option "Select All".
+- Fixed: Issue where the UI would not correctly layout if the navigation target is an empty directy.
+
+### QuickAccess
+- Fixed: Help button not working (#1587).
+- Fixed: Bottom action button not switching states correctly if results are empty (#1586).
 
 ## SD Maid [v4.10.6](https://github.com/d4rken/sdmaid-public/milestone/43?closed=1) 13.03.2018
 ### Core
