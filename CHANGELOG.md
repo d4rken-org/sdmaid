@@ -1,8 +1,21 @@
 # Changelog
 
 - Latest production version: v4.10.6(41006), Unlocker v4.2.2(40202)
-- Latest beta version: v4.10.7(41007)
+- Latest beta version: v4.10.8(41008)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.8](https://github.com/d4rken/sdmaid-public/milestone/45?closed=1) 28.03.2018
+### Core
+- Improved: Translations.
+- Improved: Root type identification.
+- Fixed: Crash when upgrading from older SD Maid versions and old exclusions exist that contain the deprecated tag `LASTMODIFIED`.
+
+### AppControl
+- Fixed: Force-stop not working with some types of root.
+- Fixed: Component enabling/disabling not working with root setups other than SuperSU (Ty Einwood).
+
+### Scheduler
+- Fixed: Reboot not correctly working depending on root type.
 
 ## SD Maid [v4.10.7](https://github.com/d4rken/sdmaid-public/milestone/44?closed=1) 25.03.2018
 ### Core
