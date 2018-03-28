@@ -1,8 +1,15 @@
 # Changelog
 
-- Latest production version: v4.10.6(41006), Unlocker v4.2.2(40202)
-- Latest beta version: v4.10.9(41009)
+- Latest production version: v4.10.10(41010), Unlocker v4.2.2(40202)
+- Latest beta version: ~
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.10](https://github.com/d4rken/sdmaid-public/milestone/47?closed=1) 28.03.2018
+### Core
+- Improved: Translations.
+
+### QuickAccess
+- Fixed: "Go-Button" state issues (no canceling).
 
 ## SD Maid [v4.10.9](https://github.com/d4rken/sdmaid-public/milestone/46?closed=1) 28.03.2018
 ### Core
