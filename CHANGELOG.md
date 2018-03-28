@@ -1,8 +1,12 @@
 # Changelog
 
 - Latest production version: v4.10.6(41006), Unlocker v4.2.2(40202)
-- Latest beta version: v4.10.8(41008)
+- Latest beta version: v4.10.9(41009)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.9](https://github.com/d4rken/sdmaid-public/milestone/46?closed=1) 28.03.2018
+### Core
+- Fixed: Crash during setup when the ROM has a faulty (weird?) su binary.
 
 ## SD Maid [v4.10.8](https://github.com/d4rken/sdmaid-public/milestone/45?closed=1) 28.03.2018
 ### Core
