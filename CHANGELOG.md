@@ -4,6 +4,20 @@
 - Latest beta version: ~
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v4.10.11](https://github.com/d4rken/sdmaid-public/milestone/48?closed=1) 11.04.2018
+### Core
+- Improved: Translations.
+- Improved: Updated android support libraries and build tools.
+
+### Overview
+- Fixed: Crash on refresh when root check is disabled (#1624).
+
+### CorpseFinder
+- Added: Clutter report option to the corpse details screen (#1622).
+
+### Databases
+- Changed: Added default exclusion for Telegram (#1542).
+
 ## SD Maid [v4.10.10](https://github.com/d4rken/sdmaid-public/milestone/47?closed=1) 28.03.2018
 ### Core
 - Improved: Translations.
