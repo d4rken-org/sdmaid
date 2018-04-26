@@ -1,8 +1,13 @@
 # Changelog
 
-- Latest production version: [v4.10.11], Unlocker v4.2.2(40202)
-- Latest beta version: ~
+- Latest production version: v4.10.11(41011), Unlocker v4.2.5(40205)
+- Latest beta version: v4.10.12(41012), Unlocker v4.2.6(40206)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.10.12](https://github.com/d4rken/sdmaid-public/milestone/49?closed=1) 26.04.2018
+### Core
+- Improved: Translations.
+- Improved: Added and updated clutter/app definitions.
 
 ## SD Maid [v4.10.11](https://github.com/d4rken/sdmaid-public/milestone/48?closed=1) 11.04.2018
 ### Core
