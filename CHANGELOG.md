@@ -1,13 +1,13 @@
 # Changelog
 
 - Latest production version: v4.10.12(41012), Unlocker v4.2.6(40206)
-- Latest beta version: ᕕ( ᐛ )ᕗ (no beta atm)
+- Latest beta version: v4.10.13(41013)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.10.12](https://github.com/d4rken/sdmaid-public/milestone/49?closed=1) 26.04.2018
+## SD Maid [v4.10.13](https://github.com/d4rken/sdmaid-public/milestone/50?closed=1) 10.05.2018
 ### Core
-- Improved: Translations.
-- Improved: Added and updated clutter/app definitions.
+- Fixed: Crash on Android P DPP2 when initializing due to using reflection on methods that are now blacklisted since DPP2 (#1678).
+- Fixed: Secondary storage permission via storage-access-framework (SAF) not getting mapped (accepted). The internal `StorageMapper` errored out due to reflection that is blacklisted since DPP2 (#1678).
 
 ## SD Maid [v4.10.11](https://github.com/d4rken/sdmaid-public/milestone/48?closed=1) 11.04.2018
 ### Core
