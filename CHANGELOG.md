@@ -9,6 +9,11 @@
 - Fixed: Crash on Android P DPP2 when initializing due to using reflection on methods that are now blacklisted since DPP2 (#1678).
 - Fixed: Secondary storage permission via storage-access-framework (SAF) not getting mapped (accepted). The internal `StorageMapper` errored out due to reflection that is blacklisted since DPP2 (#1678).
 
+## SD Maid [v4.10.12](https://github.com/d4rken/sdmaid-public/milestone/49?closed=1) 26.04.2018
+### Core
+- Improved: Translations.
+- Improved: Added and updated clutter/app definitions.
+
 ## SD Maid [v4.10.11](https://github.com/d4rken/sdmaid-public/milestone/48?closed=1) 11.04.2018
 ### Core
 - Improved: Translations.
