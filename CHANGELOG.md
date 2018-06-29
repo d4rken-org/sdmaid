@@ -1,8 +1,96 @@
 # Changelog
 
-- Latest production version: v4.10.13(41013), Unlocker v4.2.6(40206)
-- Latest beta version: 🐢
+- Latest production version: v4.10.13(41013), Unlocker v4.3.0(40300)
+- Latest beta version: v4.11.0(41100)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.0](https://github.com/d4rken/sdmaid-public/milestone/50?closed=1) 29.06.2018 (BETA)
+### Core
+- Added: An in-app screen to report issues/ideas to GitHub (#1111) that is currently only visible in betas.
+- Added: Dynamic clutter matching for another common dev mistake (`/sdcard/data/user/0`) (#1756).
+- Added: Support for Instant Apps (#1503). Requires root as instant apps are hidden from other apps by the system.
+- Added: Android P permission `FOREGROUND_SERVICE` which is necessary to start a service that runs with just a notification as UI element.
+- Improved: Reverted previous workarounds that have been fixed in newer Android P releases.
+- Improved: Small changes to used sentences and words within the settings UI elements.
+- Improved: Reduced overall UI code related technical debt. Looking at some older code I recognized a few chances to simplify code and reduce side-effects that just weren't obvious to me before 🤷.
+- Improved: More addition ands updates to the clutter database.
+- Improved: Translations (ty!).
+- Improved: Adjusted toolbar titles/subtitles such that the tool-name is always the primary title and the current subsection the subtitle.
+- Improved: The navigation drawer will now flash the scrollbar shortly when opening such that new users know the drawer can be vertically scrolled (#1708).
+- Improved: On rooted devices SD Maid will now also check `/sbin/` for usable binaries (#1694).
+- Improved: App loading performance. All tools now get their app information from a common repository that offers a smart caching mechanism to reduce the amount of overlapping app data we request from the system.
+- Improved: General reduction of technical debt. Overhaul of SD Maids dependency injection.
+- Changed: SD Maids `armed` status is now visible in the hidden debug menu if experimental features are enable (previously restricted to dev builds). Changing this feature puts MOST (NOT ALL) features into a 'DEMO' mode, e.g. no files are actually deleted which can be quite useful for debugging (#1723).
+- Improved: Text readability in various areas (#1663).
+- Improved: Check usage of `https` for websites (#1580).
+- Improved: Increased crash log size in BETA builds.
+- Changed: SD Maid now has a target/compile API level of 28 (Android P), and still a minimum API level of 16 (Android 4.1).
+- Fixed: Service notification message not updating correctly after the initial setup task finishes (#1684).
+- Fixed: Edge case that could lead to SD Maid requesting just by being opened.
+
+### Explorer
+- Improved: Removing bookmarks will now ask for confirmation first (#1385).
+- Improved: When opening files an app chooser should now be shown (#1685).
+- Fixed: Launcher shortcut option not working on Android Oreo and later (#1743).
+- Fixed: Don't allow trying to extract directories (#1761).
+
+### CorpseFinder
+- Fixed: False-positives related to 'Instant Apps' (#1724).
+
+### AppControl
+- Added: Option to reset settings to default (#1762).
+- Added: Instant apps filter option.
+- Added: Reverse sort option (#1656).
+- Added: New Android P permission `REQUEST_DELETE_PACKAGES` which is required on to uninstall apps (#1579).
+- Improved: Scan speed by delaying some information gathering until app details are viewed (#1753).
+- Improved: Messages in confirmation dialoges (#1730).
+- Improved: Refactored main and details UI code to new architecture.
+- Improved: Sorting can now be changed without triggering a task (#1253).
+- Improved: Migrated settings to it's own module (backup is coming... just gotta migrate all tools 😩).
+- Fixed: Launcher shortcut option not working on Android Oreo and later (#1743).
+- Fixed: Scan being triggered just by opening the UI.
+- Removed: `NO_APK` filter option due to being virtually never used with the Android versions that SD Maid is comaptible (this was more of a pre holo thing...).
+
+### SystemCleaner
+- Improved: User filter manager now has a 'select all' option (#1414).
+- Improved: User filters are now sorted by their label to give a consistent order between devices (#1414).
+- Improved: User filter help texts (#1415).
+
+### AppCleaner
+- Added: Removable default exclusion for `WINE` (#1571).
+- Added: A new "Offline Caches" filter (opt-in). Currently only matches very apps. If you know apps that could be added create a ticket on GitHub please!
+- Improved: Hidden caches filter. Expanded the list of potential names folders and added a specific entries for known apps (#1650).
+- Improved: Better icon for the filter options (in the future we could consolidate the options & filters and then make a shortcut to that).
+- Improved: Added exclusion routines VERY early on such that apps that cause the search to slow down to a crawl can be effectively excluded (#1571).
+
+### Duplicates
+- Improved: Various UI elements, e.g. details related to showing the task results.
+- Improved: Finished refactoring the details view to the new UI architecture (the main view was already refactored in 4.10.0).
+
+### StorageAnalyzer
+- Improved: UI code. Refactored existing UI code to new architecture (just like the other tools).
+- Fixed: Scroll position not being remembered (new UI code yay 🙌) (#1300).
+
+### Databases
+- Added: Removable default exclusion for `WINE` (#1571).
+- Added: Sortmodes (#1136).
+- Added: Option to reset settings to defaults.
+- Added: 'Show in Explorer' option.
+- Added: More file and directory types that will be considered when trying to find valid databases that SD Maid can process.
+- Improved: Progress feedback during search.
+- Improved: Various small UI tweaks (icon order, padding and margins).- Improved: Added exclusion routines VERY early on such that apps that cause the search to slow down to a crawl can be effectively excluded (#1571).
+- Improved: Task result messages, try to show how much space was gained.
+- Improved: The resulting list of databases can now also be searched by database name.
+- Improved: Refactored the UI code to use the new architecture (https://github.com/d4rken/mvp-bakery).
+- Improved: When working on databases that have multiple owners, SD Maid should now correctly suspend and resume ALL known owners.
+- Improved: Database settings have been moved into their own module which allows for a reset feature (and future backup functionality).
+- Changed: System apps are no longer included by default, and require opt-in via settings. Potential issue: If the `Skip running apps` option is not checked on a rooted device, it could come to a situation where SD Maid pauses a system process to work on it's database which can make the system unstable until reboot. While this is very rare to occur, SD Maids default settings should prioritize safety. Power users can just enable it via settings (#1562).
+- Fixed: When checking which app owns a database we shouldn't exclude owners that are marked as `COMMON` (which are apps that own folders that have such common names that we can't reasonably use the information for deletion, database operations are different though, so we shouldn't ignore them). 
+- Fixed: An edge cases where SD Maid end up working on a database even if the app, that we think owns the database, is not installed. The issue here is that it's likely that the database is owned by another (unknown) app and we can't skip or pause it then.
+- Fixed: Searching the UI not always returning the expected entries.
+
+### Scheduler
+- Fixed: Side-effect between different toggle buttons (#1669).
 
 ## SD Maid [v4.10.13](https://github.com/d4rken/sdmaid-public/milestone/51?closed=1) 10.05.2018
 ### Core
