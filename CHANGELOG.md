@@ -1,8 +1,33 @@
 # Changelog
 
 - Latest production version: v4.10.13(41013), Unlocker v4.3.0(40300)
-- Latest beta version: v4.11.0(41100)
+- Latest beta version: v4.11.1(41101)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.1](https://github.com/d4rken/sdmaid-public/milestone/52?closed=1) 30.06.2018 (BETA)
+### Core
+- Improved: Translations.
+- Improved: Tweaks to crash related logging.
+- Improved: Coldstart performance (new SD Maid instance to first task running) by fixing an inefficiency that caused the root check to run twice if there was no root available.
+- Fixed: Crash on app launch when running <Android 5.1. A component that was only meant for newer APIs was falsely initialized (#1774)
+- Fixed: Crash when running any tasks with specific progress messages in Thai due to faulty localization (#1777).
+- Fixed: Possible crash when entering advanced settings (#1779).
+- Fixed: Possible crash when opening the app (#1780).
+- Fixed: Possible racecondition that could lead to previously set up applets not being available (#1782).
+
+### AppControl
+- Fixed: Select filters not being restored in the UI when re-entering the page (#1787).
+- Fixed: Permission data not being loaded when entering the detailed app view.
+- Fixed: Possible crash when entering app details (#1775).
+
+### CorpseFinder
+- Fixed: Crash when checking `/data/app*` and a valid corpse exists that belongs to a still installed app (#1773).
+
+### Duplicates
+- Fixed: Crash that could occur when duplicates were deleted, or a new scan is started while an autoselection process is currently running in the UI (#1784).
+
+### Widget
+- Fixed: Crash when creating or canceling creation of a new widget (#1778).
 
 ## SD Maid [v4.11.0](https://github.com/d4rken/sdmaid-public/milestone/50?closed=1) 29.06.2018 (BETA)
 ### Core
