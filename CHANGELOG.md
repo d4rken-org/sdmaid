@@ -1,8 +1,37 @@
 # Changelog
 
 - Latest production version: v4.10.13(41013), Unlocker v4.3.0(40300)
-- Latest beta version: v4.11.1(41101)
+- Latest beta version: v4.11.2
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.2](https://github.com/d4rken/sdmaid-public/milestone/53?closed=1) 03.07.2018 (BETA)
+### Core
+- Improved: Updated translations.
+- Improved: Clutter database.
+- Improved: Internal logging.
+- Improved: Bug report screen (#1803).
+- Removed: Option to supply an email for bug reports due being used so few times and not being helpful enough.
+
+### Searcher
+- Improved: Refactored UI code to new architecture.
+- Improved: Fixed a couple of UI lags.
+- Fixed: Possible crash on rotation.
+
+### AppControl
+- Improved: Handling of apps uninstalled by 3rd parties.
+- Improved: Only show "Show in explorer" for successful APK exports (#1789).
+- Improved: Small tweaks to improve performance (e.g. don't try to create a path if it already exists).
+- Improved: Faster app scan by delaying gathering of export data until actually required.
+- Improved: Faster details loading by using a more efficient way of loading Activity data.
+- Fixed: Crash when uninstalling outside of SD Maid while SD Maid has that apps details page open (#1802).
+- Changed: The `Activity` manager is no longer considered experimental.
+
+### Databases
+- Added: Default exclusion for Samsungs "Galaxy Finder" (#1788).
+- Improved: Sortmode label (#1788).
+
+### Duplicates
+- Fixed: Duplicate word in the delete task's result (#1788).
 
 ## SD Maid [v4.11.1](https://github.com/d4rken/sdmaid-public/milestone/52?closed=1) 30.06.2018 (BETA)
 ### Core
