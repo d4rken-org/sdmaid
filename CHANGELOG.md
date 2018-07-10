@@ -1,8 +1,48 @@
 # Changelog
 
 - Latest production version: v4.10.13(41013), Unlocker v4.3.0(40300)
-- Latest beta version: v4.11.2
+- Latest beta version: v4.11.3
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.3](https://github.com/d4rken/sdmaid-public/milestone/54?closed=1) 10.07.2018 (BETA)
+### Core
+- Improved: Debugging / logging.
+- Improved: Removed/reduced overlapping code between each tools main view and details view.
+- Improved: Various small code improvements, mostly refactoring to make the responsibilities clearer.
+- Improved: Clutter database.
+- Improved Translations.
+- Fixed: Tab-bar in swipeable details screens not jumping to the correct position.
+- Fixed: Crash when deleting the last item/page in tool details screens.
+- Fixed: Multi item selection not canceling on changing the details page.
+- Fixed: Disabled apps not being detected on Android 4.1 (#1823).
+
+### Explorer
+- Fixed: Crash when extracting a corrupted ZIP file (#1847).
+- Fixed: Ownership icons not loading in all circumstances (#1824).
+
+### Searcher
+- Fixed: Crash caused my settings migration.
+
+### CorpseFinder.
+- Improved: Refactored UI code to new architecture.
+- Fixed: When deleting a corpses content, the corpse itself (i.e. the now empty dir) is now staying visible in the UI.
+- Fixed: Theme related packages being detected as corpses on Samsung ROMs (#1813,#1815).
+
+### SystemCleaner
+- Improved: Refactored UI code to new architecture.
+
+### AppCleaner
+- Improved: Refactored UI code to new architecture.
+- Improved: Web cache related filter (#1839, #1840).
+- Improved: Hidden caches filter (#1841).
+- Improved: Analytics filter (#1844, #1845).
+- Improved: Bugreporting files filter (#1816).
+
+### Duplicates
+- Improved: Autoselection performance. Now takes about 1-2 seconds for 1000 clonesets (#1833).
+
+### QuickAccess
+- Changed: Once more, duplicates is now shown by default.
 
 ## SD Maid [v4.11.2](https://github.com/d4rken/sdmaid-public/milestone/53?closed=1) 03.07.2018 (BETA)
 ### Core
