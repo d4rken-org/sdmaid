@@ -1,9 +1,35 @@
 # Changelog
 
 - Latest production version: v4.10.13(41013), Unlocker v4.3.0(40300)
-- Latest beta version: v4.11.3
+- Latest beta version: v4.11.4
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v4.11.4](https://github.com/d4rken/sdmaid-public/milestone/54?closed=1) 20.07.2018
+### Core
+- Added: Option to disable the update check (#253).
+- Improved: Translations.
+- Improved: Clutter database (#1869).
+- Improved: Reduced analytics, data that isn't used doesn't need to be gathered.
+- Improved: Update check code, added support for HTTPS (encrypt all the things!)(#1876, #808).
+- Changed: I've moved SD Maid related services to new servers at [Digital Ocean](https://m.do.co/c/782112f2c46a). Should have no impact on users, but makes the dev happy :).
+
+### Overview
+- Fixed: Calculation of free space showing negative values on some spaces (#1863).
+
+### AppControl
+- Improved: Small improvements to the uninstaller code.
+- Fixed: Crash when trying to export an app that can't be exported (#1868).
+
+### AppCleaner
+- Improved: Hidden caches filter (#1852).
+
+### StorageAnalyzer
+- Fixed: Path copied via breadcrumbs containing extra characters (#1869).
+
+### QuickAccess
+- Changed: I've made the duplicates tool opt-in again due to some valid concerns that were raised. New users would delete their duplicates without checking the details and possible delete files that were duplicated on purpose.
+
+https://m.do.co/c/782112f2c46a
 ## SD Maid [v4.11.3](https://github.com/d4rken/sdmaid-public/milestone/54?closed=1) 10.07.2018 (BETA)
 ### Core
 - Improved: Debugging / logging.
