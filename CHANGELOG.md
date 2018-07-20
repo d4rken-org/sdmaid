@@ -14,7 +14,7 @@
 - Changed: I've moved SD Maid related services to new servers at [Digital Ocean](https://m.do.co/c/782112f2c46a). Should have no impact on users, but makes the dev happy :).
 
 ### Overview
-- Fixed: Calculation of free space showing negative values on some spaces (#1863).
+- Fixed: Calculation of free space showing negative values on some devices (#1863).
 
 ### AppControl
 - Improved: Small improvements to the uninstaller code.
