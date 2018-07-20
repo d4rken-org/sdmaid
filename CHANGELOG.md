@@ -29,7 +29,6 @@
 ### QuickAccess
 - Changed: I've made the duplicates tool opt-in again due to some valid concerns that were raised. New users would delete their duplicates without checking the details and possible delete files that were duplicated on purpose.
 
-https://m.do.co/c/782112f2c46a
 ## SD Maid [v4.11.3](https://github.com/d4rken/sdmaid-public/milestone/54?closed=1) 10.07.2018 (BETA)
 ### Core
 - Improved: Debugging / logging.
