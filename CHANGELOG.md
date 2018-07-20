@@ -4,7 +4,7 @@
 - Latest beta version: v4.11.4
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.11.4](https://github.com/d4rken/sdmaid-public/milestone/54?closed=1) 20.07.2018
+## SD Maid [v4.11.4](https://github.com/d4rken/sdmaid-public/milestone/55?closed=1) 20.07.2018
 ### Core
 - Added: Option to disable the update check (#253).
 - Improved: Translations.
