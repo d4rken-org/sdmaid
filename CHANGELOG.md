@@ -1,8 +1,25 @@
 # Changelog
 
-- Latest production version: v4.10.13(41013), Unlocker v4.3.0(40300)
-- Latest beta version: v4.11.4
+- Latest production version: v4.11.4(41104), Unlocker v4.3.1(40301)
+- Latest beta version: v4.11.5
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.5](https://github.com/d4rken/sdmaid-public/milestone/56?closed=1) 26.07.2018
+### Core
+- Improved: Clutter database.
+- Improved: Settings migration related code, better cold start performance (#1908).
+- Improved: If the main app is open while the root check times out a little hint toast is shown (#1898).
+- Improved: The navigation drawers background color is now the same as each nav item such that if it contains only a few items, that it looks better (#1878).
+- Fixed: Crash on initialization (first task/setup) due to undocumented behavior of some ROMs (e.g. Infinix/TECNO) (#1906).
+- Fixed: File size in details previews being cut off (#1886).
+
+### AppCleaner
+- Improved: Hidden caches filter (ZArchiver) (#1889).
+- Changed: Moved UnityCache related matching from the hidden caches filter to the offline caches filter.
+- Changed: The offline cache filter is now visible without having experimental features enabled (#1887).
+
+### QuickAccess
+- Fixed: Total amount including sizes of tools that are not visible (e.g. duplicates has data but is not shown) (#1908).
 
 ## SD Maid [v4.11.4](https://github.com/d4rken/sdmaid-public/milestone/55?closed=1) 20.07.2018
 ### Core
