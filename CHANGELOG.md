@@ -1,8 +1,28 @@
 # Changelog
 
 - Latest production version: v4.11.5(41105), Unlocker v4.3.1(40301)
-- Latest beta version: ~
+- Latest beta version: v4.11.6(41106)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.6](https://github.com/d4rken/sdmaid-public/milestone/57?closed=1) 07.08.2018
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Updated internal dependencies.
+- Improved: Name display of translators that contributed to SD Maid.
+- Changed: Tried to use emojis for a few easter eggs but not all devices seem to support these :(.
+
+### AppControl
+- Improved: File naming of exported APKs: `Name(PKG)-vCode(vName).apk`.
+
+### AppCleaner
+- Added: Default exclusion for WPS Office font caches (#1914).
+- Improved: Hidden caches matching for KingSoftOffice (#1923).
+- Changed: Matching is now case-insensitive (#1940).
+
+### Databases
+- Added: Default exclusion for a problematic OneDrive database (#1925).
+- Fixed: Size difference always showing 0 (#1926).
 
 ## SD Maid [v4.11.5](https://github.com/d4rken/sdmaid-public/milestone/56?closed=1) 26.07.2018
 ### Core
