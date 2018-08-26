@@ -1,8 +1,19 @@
 # Changelog
 
 - Latest production version: v4.11.6(41106), Unlocker v4.3.1(40301)
-- Latest beta version: ¯\\\_(ツ)_/¯
+- Latest beta version: v4.11.7
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.7](https://github.com/d4rken/sdmaid-public/milestone/58?closed=1) 26.08.2018
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Added: Dynamic clutter matcher for `bmwgroup` (#1891).
+- Added: Default exclusion for MobiSystem's dictionaries (#1953).
+
+### StorageAnalyzer
+- Added: Modification date within an item's details dialog (#1960).
+- Fixed: FAB not updating correctly when selecting items and navigating up (#1959).
 
 ## SD Maid [v4.11.6](https://github.com/d4rken/sdmaid-public/milestone/57?closed=1) 07.08.2018
 ### Core
