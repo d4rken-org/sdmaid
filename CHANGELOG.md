@@ -1,8 +1,19 @@
 # Changelog
 
-- Latest production version: v4.11.7(41107), Unlocker v4.3.1(40301)
-- Latest beta version: ⚖️
+- Latest production version: v4.11.7(41107), Unlocker v4.3.3(40303)
+- Latest beta version: v4.11.8(41108)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.8](https://github.com/d4rken/sdmaid-public/milestone/59?closed=1) 17.09.2018
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+
+### AppCleaner
+- Added: Cache definitions for NaviKing (#1985).
+
+### Databases
+- Added: Default exclusion for WeChat (#1973).
 
 ## SD Maid [v4.11.7](https://github.com/d4rken/sdmaid-public/milestone/58?closed=1) 26.08.2018
 ### Core
