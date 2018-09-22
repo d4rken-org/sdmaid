@@ -1,8 +1,14 @@
 # Changelog
 
 - Latest production version: v4.11.8(41108), Unlocker v4.3.3(40303)
-- Latest beta version: 🤷
+- Latest beta version: v4.11.9(41109)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.9](https://github.com/d4rken/sdmaid-public/milestone/60?closed=1) 22.09.2018
+### Core
+- Improved: Translations
+- Improved: Clutter database & app matching.
+- Improved: Coffee-drinking animation. Less GIF, more vector animation (Ty https://twitter.com/maxpatchs).
 
 ## SD Maid [v4.11.8](https://github.com/d4rken/sdmaid-public/milestone/59?closed=1) 17.09.2018
 ### Core
