@@ -1,8 +1,24 @@
 # Changelog
 
 - Latest production version: v4.11.9(41109), Unlocker v4.3.3(40303)
-- Latest beta version: ヽ(•‿•)ノ
+- Latest beta version: v4.11.10(41110)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.11.10](https://github.com/d4rken/sdmaid-public/milestone/61?closed=1) 30.10.2018
+### Core
+- Improved: Translations
+- Improved: Ownership detection and updated definitions.
+- Fixed: Possible crash when SD Maid is started during an update.
+
+### AppControl
+- Fixed: Possible crash when creating Activity shortcuts.
+
+### SystemCleaner
+- Improved: Long pathes should no longer be cut off when creating user filters (#2055).
+- Improved: Multiline support when editing long pathes in user filters (#2056).
+
+### AppCleaner
+- Fixed: Some exclusions were unnecessarily prevented from being applied. On <= Android 6.0 the `freeStorageAndNotify` trick is used to clear private caches, this technique doesn't support exclusions, so SD Maid prevents exclusions that overlap with the default caches from being applied. This resulted in some edge cases where exclusion are not applied even though they are not affected.
 
 ## SD Maid [v4.11.9](https://github.com/d4rken/sdmaid-public/milestone/60?closed=1) 22.09.2018
 ### Core
