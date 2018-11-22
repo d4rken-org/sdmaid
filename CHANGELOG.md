@@ -1,8 +1,35 @@
 # Changelog
 
 - Latest production version: v4.11.10(41110), Unlocker v4.3.3(40303)
-- Latest beta version: 🎃
+- Latest beta version: v4.12.0 (41200)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.12.0](https://github.com/d4rken/sdmaid-public/milestone/62?closed=1) 22.11.2018
+### Core
+- Improved: Translations.
+- Improved: Clutter database, fresh new app<->file relations.
+- Improved: Pathes in details are no longer in process order, but sorted by path.
+- Fixed: Rejecting the mount applet unnecessarily on systemless ROMs which could lead to SD Maid relinquishing root access (#2110).
+- Removed: Links to SD Maid's G+ due to Google sunsetting the service (#2061).
+- Improved: Internal changes to SD Maid's testing routines.
+
+### Overview
+- Improved: Text is now selectable (#2121).
+- Added: Additional device information (#2105).
+
+### AppCleaner
+- Improved: Hidden caches filter.
+- Improved: WhatsApp filter, added additional folders.
+- Added: WhatsApp 4 Business to the WhatsApp filter.
+- Added: New filter for recycle bin data (#2141).
+- Added: New filter for downloaded game files (#2084).
+- Improved: Added support for Telegram X (#2138).
+
+### Duplicates
+- Added: Default exclusion for Ringtones/, Alarms/ and Notifications/ (#2094).
+
+### Statistics
+- Changed: Increased default retention to 7 days.
 
 ## SD Maid [v4.11.10](https://github.com/d4rken/sdmaid-public/milestone/61?closed=1) 30.10.2018
 ### Core
