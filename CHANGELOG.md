@@ -1,8 +1,27 @@
 # Changelog
 
 - Latest production version: v4.11.10(41110), Unlocker v4.3.3(40303)
-- Latest beta version: v4.12.0 (41200)
+- Latest beta version: v4.12.1 (41201)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.12.1](https://github.com/d4rken/sdmaid-public/milestone/63?closed=1) 27.11.2018
+### Core
+- Improved: New translations, also fixed a few typos.
+- Improved: Clutter database, also added additional dynamic clutter matchers for common directories used by many apps. A dynamic matcher isn't a hardcoded reference but can instead infer ownership without directly knowing an app.
+- Improved: Setup time on rooted devices, reduced the number used root shells.
+
+### Explorer
+- Fixed: "Share" action not working reliably on Android Nougat and newer.
+
+### AppControl
+- Improved: Labels & descriptions.
+- Improved: Loading time, by reducing the number of used root shells.
+- Improved: If the system crashes due to `TransactionTooLargeException` when getting app details, we shouldn't crash, but fail gracefully with an error message.
+- Fixed: Crash when exporting APKs to an invalid path (or one with lacking permission).
+
+### AppCleaner
+- Added: Extra filter for WeChat/Weixin
+- Improved: Hidden caches and bugreporting filter, better matching for WeChat/Weixin.
 
 ## SD Maid [v4.12.0](https://github.com/d4rken/sdmaid-public/milestone/62?closed=1) 22.11.2018
 ### Core
