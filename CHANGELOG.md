@@ -1,8 +1,31 @@
 # Changelog
 
 - Latest production version: v4.11.10(41110), Unlocker v4.3.3(40303)
-- Latest beta version: v4.12.1 (41201)
+- Latest beta version: v4.12.2 (41202)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.12.2](https://github.com/d4rken/sdmaid-public/milestone/64?closed=1) 28.11.2018
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Updated internal sqlite binary to `3250300` (#2042).
+- Improved: Few minor layout tweaks to have nicer paddings/margins-
+
+### Explorer
+- Fixed: CorpseFinder icon tinting.
+	- Red: Corpse is flagged as 'common', meaning it has such a generic name that SD Maid won't make deletion decisions on it, despite knowing an app that owns it.
+	- Orange: Corpse is flagged as 'keeper', meaning there is an app that owns this but marks this item as 'desirable remnant', depending on settings, SD Maid will delete it.
+
+### SystemCleaner
+- Fixed: Log filter deleting Telegram X's settings (#2147).
+
+### AppControl
+- Improved: List item layout for devices with very large fonts.
+- Improved: Layout performance.
+
+### Databases
+- Improved: Updated SD Maid's SQL binary. SQL databases were skipped if they contained features from newer version (e.g. Chrome) (#2042).
+- Fixed: Details not updating when retrying operations on items (#2151).
 
 ## SD Maid [v4.12.1](https://github.com/d4rken/sdmaid-public/milestone/63?closed=1) 27.11.2018
 ### Core
