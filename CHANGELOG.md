@@ -1,8 +1,21 @@
 # Changelog
 
 - Latest production version: v4.11.10(41110), Unlocker v4.3.3(40303)
-- Latest beta version: v4.12.2 (41202)
+- Latest beta version: v4.12.3 (41203)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.12.3](https://github.com/d4rken/sdmaid-public/milestone/65?closed=1) 02.12.2018
+### Core
+- Improved: Clutter database.
+- Improved: Log output for debugging.
+- Improved: Translations.
+- Fixed: Potential crash when updating statistics.
+
+### AppControl
+- Fixed: Potential crash when loading app data and the IPC buffer runs full (android.os.TransactionTooLargeException).
+
+### Databases
+- Fixed: SQlite biniary not working on <= Android 5.1 (#2154).
 
 ## SD Maid [v4.12.2](https://github.com/d4rken/sdmaid-public/milestone/64?closed=1) 28.11.2018
 ### Core
