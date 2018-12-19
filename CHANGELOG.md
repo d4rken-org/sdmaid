@@ -1,8 +1,44 @@
 # Changelog
 
 - Latest production version: v4.12.3(41203), Unlocker v4.3.3(40303)
-- Latest beta version: 🎄
+- Latest beta version: 🎄 v4.13.0(41300)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.13.0](https://github.com/d4rken/sdmaid-public/milestone/66?closed=1) 19.12.2018
+### Core
+- Improved: Clutter database (ty!).
+- Improved: Translations (ty!).
+- Improved: Improved debug logging.
+- Added: Code for future support of purchases outside of Google Play and without unlocker app.
+- Improved: Clutter data generation from SD Maids database. Better handling of apps with multiple definitions.
+- Fixed: Possible crash due to theming when opening SD Maid.
+- Improved: Few internal changes to object instantiation to improve overall architecture and lower memory consumption.
+- Fixed: Possible crash that could occur when viewing tool details while deleting files.
+- Improved: UX flow when clicking "Upgrade", added information about how to restore a purchase as this seems to be most common topic in emails I get.
+- Improved: Automatic app detection for apps using their packagename for multiple directory names (e.g. com/app/pkg).
+- Improved: Public storage on Android is case-insensitive. Clutter matching on public storage now fully understands that leading to more accurate detection with less overhead for multiple definitions.
+- Improved: Overall improvements to filtering of paths with non-english locales/characters.
+
+### Overview
+- Added: Version display to binaries.
+- Improved: SD Maid Pro display to account for alternate methods of unlocking.
+
+### AppControl
+- Fixed: Symlinks will no longer be followed when calculating app estates. This fixes size estimation for apps like Termux that symlink to public storage (#2166).
+- Fixed: The receiver manager should no longer cut off the names (#2197).
+
+### CorpseFinder
+- Fixed: Uninstall watcher not deactivating when using "Reset to defaults" (#2196).
+
+### AppCleaner
+- Improved: The search algorithm can now search deeper. It will now find expendable files in directories that are nested several folders deep. Previously, to keep scan performance acceptable, SD Maid only compared against the top-level folders and if no top-level folder matched our filters we would skip them. I've now reversed this slightly such that we try to search ALL KNOWN clutter paths of apps that are installed and that share their path with a top-level folder. Combined with a few other improvements scan speed should stay about the same, but be much more thorough. This overall change was inspired users who mailed me and with which I worked toegether <3 to improve detection for many Tencent apps (which are quite dirty ಠ_ಠ).
+- Improved: Filter for ads and hidden caches (e.g. WeChat).
+- Improved: Filter for bugreporting related files (e.g. Tencent related apps).
+- Improved: Matching in cases where two apps share the same path but only one app creates expendable files in a subdirectory of that path. Previously files could be missed depending on which app was matched first to a folder.
+- Improved: Matching performance by switching from `contains` to `startsWith` for pre-filtering results. Most comparison are done using regular expressions, but because those are costly, SD Maid does a quick check before that. Previously this was mostly done using `contains` but for comparisons of small strings this could lead to too many false-positive matches and thus trying the expensive regular expression. I've switched a lot of definitions to `startsWith` which is more restrictive in that regard.
+
+### Scheduler
+- Fixed: Scheduler not restoring after updates on Android Oreo+.
 
 ## SD Maid [v4.12.3](https://github.com/d4rken/sdmaid-public/milestone/65?closed=1) 02.12.2018
 ### Core
