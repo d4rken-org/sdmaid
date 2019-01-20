@@ -1,8 +1,22 @@
 # Changelog
 
 - Latest production version: v4.12.3(41203), Unlocker v4.3.3(40303)
-- Latest beta version: 🎄 v4.13.0(41300)
+- Latest beta version: v4.13.1(41301)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.13.1](https://github.com/d4rken/sdmaid-public/milestone/67?closed=1) 20.01.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Debugging/logging.
+- Improved: Added more instructions to help users restore SD Maid Pro.
+- Added: Alternative way of upgrading to SD Maid Pro without Google and without extra app via [apps.darken.eu](https://apps.darken.eu). Currently in beta testing, requires at least SD Maid v4.13.1.
+
+### AppControl
+- Fixed: Potential fix for inconsistent sorting of chinese characters.
+
+### AppCleaner
+- Fixed: Potential fix for inconsistent sorting of chinese characters.
 
 ## SD Maid [v4.13.0](https://github.com/d4rken/sdmaid-public/milestone/66?closed=1) 19.12.2018
 ### Core
