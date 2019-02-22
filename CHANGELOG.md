@@ -1,8 +1,36 @@
 # Changelog
 
 - Latest production version: v4.12.3(41203), Unlocker v4.3.3(40303)
-- Latest beta version: v4.13.1(41301)
+- Latest beta version: v4.13.2(41302)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.13.2](https://github.com/d4rken/sdmaid-public/milestone/68?closed=1) 22.02.2019
+### Core
+- Added: Complete UI for recording debug logs.
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Dependency upgrades.
+- Improved: Debugging information.
+- Fixed: Crash when copy pasting activation key (includes #2303).
+- Fixed: Crash on some Xiaomi devices when killing apps (#2311).
+- Fixed: Crash when attempting to record unlocker related debug data.
+- Fixed: Crash re-entering the upgrade screen after the activity has been vacated from memory.
+
+### AppControl
+- Added: Details screen toolbar shortcut for opening Google Play, opening the system's settings panel and sharing a link to the app on Google Play (but only if the app was installed through Google Play) (#2302).
+- Improved: Activity shortcut creation code.
+- Fixed: Activity shortcut actions showing empty result messages.
+- Fixed: Activity shortcuts not being visible on white backgrounds due to the icon being white, it now has a grey background (#2299).
+- Fixed: It's no longer possible to toggle SD Maid's own receivers and subsequently crash the app (#2303).
+
+### AppCleaner
+- Improved: Hidden caches filter (#2221).
+
+### CorpseFinder
+- Added: Details screen now contains the modification date (#2241).
+
+### StorageAnalyzer
+- Fixed: "Device" bread crumb not reacting to clicks (#2274).
 
 ## SD Maid [v4.13.1](https://github.com/d4rken/sdmaid-public/milestone/67?closed=1) 20.01.2019
 ### Core
