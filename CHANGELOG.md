@@ -1,8 +1,17 @@
 # Changelog
 
 - Latest production version: v4.13.2(41302), Unlocker v4.3.3(40303)
-- Latest beta version: soon(tm)
+- Latest beta version: v4.13.3(41303)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.13.3](https://github.com/d4rken/sdmaid-public/milestone/70?closed=1) 05.03.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Optimized size of all PNGs.
+- Added: Link to discord.
+- Improved: Help screen, added some icons for better identification.
+- Fixed: Crash/Memory leak within the debug menu (long press on settings).
 
 ## SD Maid [v4.13.2](https://github.com/d4rken/sdmaid-public/milestone/68?closed=1) 22.02.2019
 ### Core
