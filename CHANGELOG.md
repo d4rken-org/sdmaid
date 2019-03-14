@@ -1,8 +1,16 @@
 # Changelog
 
-- Latest production version: v4.13.3(41303), Unlocker v4.3.3(40303)
-- Latest beta version: :)
+- Latest production version: v4.13.3(41303), Unlocker v4.3.6(40306)
+- Latest beta version: v4.13.4(41304), Unlocker v4.3.7(40307)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.13.4](https://github.com/d4rken/sdmaid-public/milestone/71?closed=1) 14.03.2019
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Updated internal dependencies.
+- Fixed: Not being able to grant secondary public storage permission via SAF on Android Q (#2379).
+- Fixed: Crash on OPPO devices with Android 7.0 or lower when opening SD Maid.
 
 ## SD Maid [v4.13.3](https://github.com/d4rken/sdmaid-public/milestone/70?closed=1) 05.03.2019
 ### Core
