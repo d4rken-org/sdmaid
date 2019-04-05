@@ -1,8 +1,70 @@
 # Changelog
 
 - Latest production version: v4.13.4(41304), Unlocker v4.3.7(40307)
-- Latest beta version: ^_^
+- Latest beta version: v4.14.0
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.0](https://github.com/d4rken/sdmaid-public/milestone/69?closed=1) 05.04.2019
+### Core
+- Added: Donation options via GPlay IAP.
+- Added: Request for usage stats permission to the setup flow.
+- Added: Advanced settings option to manually trigger the setup flow again without requiring a reset.
+- Added: Minimum unlocker version requirement. SD Maids setup will enforce a minimum unlocker version of v4.3.6.
+- Improved: Complete rework of setup flow, nicer UI, better architecture (to prepare for Android Q changes).
+- Improved: Internal migration to AndroidX libraries.
+- Improved: Debug recorder.
+- Improved: Debugging, added information about current locale and `armed` state.
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Small improvements to the account API.
+- Improved: New update check logic and UI flow, server side changes to simplify infrastructure.
+- Improved: The debug option `armed` now affects the schedulers reboot options too.
+- Changed: "Free version" is now named "Basic version".
+- Fixed: Potential crash when debugging due to a racecondition when trying to print information about active shell threads.
+- Fixed: A case where an error during the base setup could crash the whole app.
+- Fixed: Setup canceling should now reliably allow you to restart the setup again.
+- Fixed: Network requests to Bugsnag.com happening despite user opt-out (#2400).
+- Fixed: Potential crash that could occur when quickly pausing resuming screens that contains previews.
+- Fixed: Fixed issues related to selecting items in a tool's details view and then pausing+resuming the screen.
+- Fixed: Debug log recordings not being resumed after restarting the device and or SD Maid, despite never being stopped.
+
+### Explorer
+- Added: Ability to calculate and compare MD5, SHA1 and SHA256 checksum for files (#1517).
+- Added: Direct sorting within the UI instead of settings.
+- Added: Sort options: Last changed, Size.
+- Added: Option to reverse sort (#994).
+- Added: Copy/Move tasks also add the paths to the clipboard (#1381).
+- Improved: Save directory structure on multiple items are now saved into the same file.
+- Improved: Navigation on Android 8.0 without root, automatically guide the user past `/storage/emulated`.
+- Improved: Result displaying.
+- Improved: Complete UI code rework.
+- Improved: Complete settings code rework.
+- Fixed: Don't allow renaming without changing the name.
+- Fixed: Save directory structure on files should now work too.
+
+### AppControl
+- Improved: Menu labeling
+- Fixed: Crash when uninstalling without root is not possible due to some weird ROM restrictions (`Not allowed to start intent UNINSTALL_PACKAGE`).
+
+### SystemCleaner
+- Fixed: Case where SystemCleaner custom filters could be created without the pro upgrade.
+
+### AppCleaner
+- Added: Accessibility service based cache cleaning for locales `en`,`de`,`cs`,`ru`,`es` (#2396). 
+- Added: Cache cleaning via accessbility service (#1588).
+- Improved: Complete core code rework.
+- Improved: Support for determining inaccessible cache sizes on Android 8.0+.
+- Improved: Depending the Android version an app may have several empty directories inside the default cache directory (1-4x4096Byte). Although the system may show a cache size of "12KB" it won't actually delete this on `Clear Cache`. SD Maid should not show these entries either as deletion attempts will seem to work but the files just resurface on the next scan.
+- Fixed: Inaccurate deletion results in some cases when aborting a deletion task.
+
+### Duplicates
+- Added: Minimum file size option (16 KB by default). Files smaller than this will be excluded. The most common use case is finding larger 500KB+ duplicates of photos. This should reduce cases where the tool pics up duplicate icons or other app assets.
+
+### Scheduler
+- Fixed: The UI hanging (ANR) when reopening SD Maid (cold start) on the scheduler page and setup is required.
+
+### Statistics
+- Changed: Increased the default history limit to 21 days.
 
 ## SD Maid [v4.13.4](https://github.com/d4rken/sdmaid-public/milestone/71?closed=1) 14.03.2019
 ### Core
