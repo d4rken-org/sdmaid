@@ -1,8 +1,58 @@
 # Changelog
 
 - Latest production version: v4.13.4(41304), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.0
+- Latest beta version: v4.14.1
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.1](https://github.com/d4rken/sdmaid-public/milestone/72?closed=1) 16.04.2019
+### Core
+- Added: A debug task to the debug menu that logs the UI tree such that users can record a debug log, run that task, do what SD Maid should do, and then provide me with the log such that I can add support for accessibility service based cache deletion on their ROM+locale.
+- Improved: Debug logging (removed some logging, added some logging).
+- Improved: Updated clutter database.
+- Improved: Updated translations.
+- Improved: Internal settings logic will now make it obvious (via crash) if in some cases setting changes are only reflected in the UI but not persisted.
+- Fixed: Huawei devices not being able to grant storage access if public internal storage is swapped. The ROM doesn't generate direct permission requests in this case and SD Maid will fall back to a manual request (#2468).
+- Fixed: Crash during setup on Android 4.4 devices with secondary storage.
+- Fixed: Possible crash when granting secondary storage permission (racecondition after returning back to SD Maid).
+- Fixed: Possible crash during setup when fast UI interactions brought the steps out of sync.
+- Fixed: Possible crash when quickly aborting the setup while the UI is closing.
+- Fixed: Navigation entries should now no longer show progress from other tools, e.g. AppCleaner was running, but Explorer was also showing activity (from the AppCleaner tool). 
+- Possibly: Fixed a crash when opening SD Maid due to an UI inflation error on < 4.3 ROMs that basically shouldn't be possible, but crash tracking says otherwise.
+- Changed: I've updated the domain SD Maid's analytics server to `matomo.darken.eu` (was `piwik.darken.eu`), same server just a different domain.
+
+### Explorer
+- Improved: Small improvements to result messages (chmod, delete, extract).
+- Improved: Settings related code, deduplicating routines such that there is a single source of truth for settings.
+- Fixed: Crash when opening via shortcut.
+- Fixed: Crash when a task produced no successful results but we tried to scroll them into view anyway...
+- Fixed: Three cases where refreshing the current path under certain circumstances could lead to a crash.
+
+### AppControl
+- Improved: Some ROMs don't allow you to launch arbitrary activities outside an apps main activity, if that's the case we now show an error instead of crashing.
+- Fixed: A crash when determining an apps size and the system gives us some information that is unexpected null.
+
+### SystemCleaner
+- Fixed: Crash when creating editing filters on Meizu devices (ROM bug related to text input).
+
+### AppCleaner
+- Added: Accessibility service based cache deletion for locales `zh` and `ja` on AOSP and similar ROMs.
+- Added: When accessibility based deletion is enabled but the service is not running the details view will now also offer a shortcut to restart the service.
+- Improved: Most filters will now exclude the `.nomedia` file from deletion.
+- Improved: After cache deletion via accessibility service was performed, just resume SD Maid, don't explicitly open the AppCleaners page as you could have started out on the quick access page (#2486).
+- Improved: Small improvements to confirmation dialogs.
+- Improved: If something is not supported by your ROM it will show an error instead of crash now (e.g. no accessibility services on Android TV).
+- Improved: The accessibility cache deletion task looks whether the desired screen is open, then traverses the view tree and filters for the desired target node. The initial routine that waits for the right screen will now timeout quicker and on retry attempt to launch desired screen again (previously we just assumed the first intent launched the screen correctly).
+- Improved: Accessibility service related debug logging, instead of breadth-first, we do depth-first and log the actual UI structure.
+- Fixed: Failing to find the clear cache button on some ROMs due to internal UI differences (#2473).
+- Fixed: A couple of error states that should abort accessibility service based cache cleaning but instead took down the whole app.
+- Fixed: Crash during scanning on unrooted devices if the device has expanded it's internal storage via sdcard and SD Maid was moved to that storage. The path splitting/matching made some assumptions about length that didn't hold true. I actually had tagged it with a TODO, as I thought this case doesn't really occur, well it does ¯\\\_(ツ)_/¯.
+- Fixed: The "include system apps" setting should no longer be ignored.
+- Fixed: Crash when deleting whole a whole apps cache via it's details screen. Due to a racecondition, the UI tried to refresh the page for an app that was no longer part of the dataset.
+- Fixed: When deleting an apps inaccessible cache via the details view it should now no longer be removed from the data set if that deletion failed.
+
+### Scheduler
+- Improved: Scheduler settings code, added reset option.
+- Fixed: Crash when entering settings due to racecondition between multiple initializations (#2466)
 
 ## SD Maid [v4.14.0](https://github.com/d4rken/sdmaid-public/milestone/69?closed=1) 05.04.2019
 ### Core
