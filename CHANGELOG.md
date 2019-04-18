@@ -1,8 +1,21 @@
 # Changelog
 
 - Latest production version: v4.13.4(41304), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.1
+- Latest beta version: v4.14.2 (41402)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.2](https://github.com/d4rken/sdmaid-public/milestone/73?closed=1) 19.04.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Fixed: Potential crash during setup.
+
+### Explorer
+- Fixed: Crash when extracting an empty zip file.
+
+### AppCleaner
+- Improved: Accessibility based cache deletion for Russian locales.
+- Improved: Cache deletion via accessibility service. Should be more resiliant now, more retries, longer timeout. Will still require some optimization, please create issue tickets or mail me.
 
 ## SD Maid [v4.14.1](https://github.com/d4rken/sdmaid-public/milestone/72?closed=1) 16.04.2019
 ### Core
