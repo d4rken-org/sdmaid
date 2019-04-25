@@ -1,8 +1,26 @@
 # Changelog
 
 - Latest production version: v4.13.4(41304), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.2 (41402)
+- Latest beta version: v4.14.3 (41403)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.3](https://github.com/d4rken/sdmaid-public/milestone/74?closed=1) 25.04.2019
+### Core
+- Improved: Clutter database.
+- Improved: Switched to new code shrinker (R8), smaller APK, possibly better performance.
+- Improved: Internal build improvements.
+- Changed: The setup step for usage stats permission can now be skipped as it's only required for a select few features at the moment. Obviously features that depend on it will not work then.
+- Fixed: Some screens that require setup (filter editor, settings) would not correctly wait for SD Maid's setup to complete leading to core objects to not be initialized which could lead to incorrect settings being displayed or crashes(e.g. incomplete system cleaner filter list).
+- Fixed: "Don't show again" option during some setup steps should now correctly display it's state during setup.
+
+### SystemCleaner
+- Improved: Filter manager related code, making it easier to add new features due to better structure, less fragile code.
+
+### AppCleaner
+- Note: Is your locale/ROM not supported yet? See: https://github.com/d4rken/sdmaid-public/issues/2396
+- Improved: ACS based cache cleaning for german locales (#2503).
+- Fixed: Accessibility (ACS) based cache deletion hanging on disabled packages (Ty Aleksandr).
+- Fixed: ACS based deletion routine being triggered by the scheduler.
 
 ## SD Maid [v4.14.2](https://github.com/d4rken/sdmaid-public/milestone/73?closed=1) 19.04.2019
 ### Core
