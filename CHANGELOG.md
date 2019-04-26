@@ -1,8 +1,20 @@
 # Changelog
 
 - Latest production version: v4.13.4(41304), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.3 (41403)
+- Latest beta version: v4.14.4 (41404)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.4](https://github.com/d4rken/sdmaid-public/milestone/74?closed=1) 26.04.2019
+### Core
+- Improved: Translations.
+- Fixed: Crash during setup if SAF permission granting failed or was aborted by the user.
+- Fixed: Crash during core initialization on Android 4.1 to 4.3 due to bug in new code shrinker (#2514).
+- Fixed: Storage labels being empty in some cases.
+
+### AppCleaner
+- Note: Is your locale/ROM not supported yet? See: https://github.com/d4rken/sdmaid-public/issues/2396
+- Improved: Added ACS based deletion support for locale `pt`.
+- Changed: ACS based deletion will no longer abort batch actions if clearing one app fails. It will still abort if your ROM/locale is not supported.
 
 ## SD Maid [v4.14.3](https://github.com/d4rken/sdmaid-public/milestone/74?closed=1) 25.04.2019
 ### Core
