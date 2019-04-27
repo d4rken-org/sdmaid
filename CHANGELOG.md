@@ -1,8 +1,23 @@
 # Changelog
 
 - Latest production version: v4.13.4(41304), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.4 (41404)
+- Latest beta version: v4.14.5 (41405)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.5](https://github.com/d4rken/sdmaid-public/milestone/75?closed=1) 27.04.2019
+### Core
+- Improved: Translations (new ones, old ones, removed some, fixed some).
+- Improved: Updated clutter database
+- Removed: Some extra crash tracking during setup, the issue it targeted was fixed.
+
+### AppCleaner
+- Note: Is your locale/ROM not supported yet? See: https://github.com/d4rken/sdmaid-public/issues/2396
+- Added: Option to specify a minimum cache size (current default: 64KB).
+- Improved: ACS based deletion failures due to `Clear cache` button disabled will now count as success. This can happen when the cache is already empty but SD Maid is worked with stale information (information via usagestats is not always in sync).
+
+### Duplicates
+- Improved: Option for specifying the minimum file size.
+- Changed: Raised the default minimum size for files to 36KB.
 
 ## SD Maid [v4.14.4](https://github.com/d4rken/sdmaid-public/milestone/74?closed=1) 26.04.2019
 ### Core
