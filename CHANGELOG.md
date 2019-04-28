@@ -1,10 +1,21 @@
 # Changelog
 
 - Latest production version: v4.13.4(41304), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.5 (41405)
+- Latest beta version: v4.14.6 (41406)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.14.5](https://github.com/d4rken/sdmaid-public/milestone/75?closed=1) 27.04.2019
+## SD Maid [v4.14.6](https://github.com/d4rken/sdmaid-public/milestone/77?closed=1) 28.04.2019
+### Core
+- Improved: Translations.
+- Improved: Small UI improvements to the setup screens.
+
+### QuickAccess
+- Improved: Small UI improvements (animations and cleaner code).
+
+### AppCleaner
+- Improved: ACS based deletion, added support for locales ID,HI,IT,UK,FR,TR,KR,PL,VI,EL,NL,HU (#2396).
+
+## SD Maid [v4.14.5](https://github.com/d4rken/sdmaid-public/milestone/76?closed=1) 27.04.2019
 ### Core
 - Improved: Translations (new ones, old ones, removed some, fixed some).
 - Improved: Updated clutter database
@@ -19,7 +30,7 @@
 - Improved: Option for specifying the minimum file size.
 - Changed: Raised the default minimum size for files to 36KB.
 
-## SD Maid [v4.14.4](https://github.com/d4rken/sdmaid-public/milestone/74?closed=1) 26.04.2019
+## SD Maid [v4.14.4](https://github.com/d4rken/sdmaid-public/milestone/75?closed=1) 26.04.2019
 ### Core
 - Improved: Translations.
 - Fixed: Crash during setup if SAF permission granting failed or was aborted by the user.
