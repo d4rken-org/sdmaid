@@ -1,8 +1,18 @@
 # Changelog
 
-- Latest production version: v4.14.6 (41406), Unlocker v4.3.7(40307)
+- Latest production version: v4.14.7 (41407), Unlocker v4.3.7(40307)
 - Latest beta version: 🍰
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.7](https://github.com/d4rken/sdmaid-public/milestone/78?closed=1) 02.05.2019
+### Core
+- Improved: Translations.
+- Improved: Dependency updates.
+- Improved: Added update button the setup step that is displayed when the unlocker is outdated.
+- Fixed: Potential crash when trying to grant secondary storage access.
+
+### QuickAccess
+- Removed: Coffee drinking animation from quick access due to issues with some older Android devices.
 
 ## SD Maid [v4.14.6](https://github.com/d4rken/sdmaid-public/milestone/77?closed=1) 28.04.2019
 ### Core
