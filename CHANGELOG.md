@@ -30,7 +30,11 @@
 - Improved: Translations (new ones, old ones, removed some, fixed some).
 - Improved: Updated clutter database
 - Removed: Some extra crash tracking during setup, the issue it targeted was fixed.
-
+<!-- PayPal BEGIN -->
+  <script>
+      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','e198feb9-8846-451b-bc19-47c96532d79e');
+    </script>
+  <!-- PayPal END -->
 ### AppCleaner
 - Note: Is your locale/ROM not supported yet? See: https://github.com/d4rken/sdmaid-public/issues/2396
 - Added: Option to specify a minimum cache size (current default: 64KB).
@@ -60,7 +64,11 @@
 - Changed: The setup step for usage stats permission can now be skipped as it's only required for a select few features at the moment. Obviously features that depend on it will not work then.
 - Fixed: Some screens that require setup (filter editor, settings) would not correctly wait for SD Maid's setup to complete leading to core objects to not be initialized which could lead to incorrect settings being displayed or crashes(e.g. incomplete system cleaner filter list).
 - Fixed: "Don't show again" option during some setup steps should now correctly display it's state during setup.
-
+<!-- PayPal BEGIN -->
+  <script>
+      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','e198feb9-8846-451b-bc19-47c96532d79e');
+    </script>
+  <!-- PayPal END -->
 ### SystemCleaner
 - Improved: Filter manager related code, making it easier to add new features due to better structure, less fragile code.
 
@@ -109,7 +117,11 @@
 ### AppControl
 - Improved: Some ROMs don't allow you to launch arbitrary activities outside an apps main activity, if that's the case we now show an error instead of crashing.
 - Fixed: A crash when determining an apps size and the system gives us some information that is unexpected null.
-
+<!-- PayPal BEGIN -->
+  <script>
+      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','e198feb9-8846-451b-bc19-47c96532d79e');
+    </script>
+  <!-- PayPal END -->
 ### SystemCleaner
 - Fixed: Crash when creating editing filters on Meizu devices (ROM bug related to text input).
 
@@ -325,7 +337,11 @@
 ### Databases
 - Improved: Updated SD Maid's SQL binary. SQL databases were skipped if they contained features from newer version (e.g. Chrome) (#2042).
 - Fixed: Details not updating when retrying operations on items (#2151).
-
+<!-- PayPal BEGIN -->
+  <script>
+      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','e198feb9-8846-451b-bc19-47c96532d79e');
+    </script>
+  <!-- PayPal END -->
 ## SD Maid [v4.12.1](https://github.com/d4rken/sdmaid-public/milestone/63?closed=1) 27.11.2018
 ### Core
 - Improved: New translations, also fixed a few typos.
@@ -465,7 +481,11 @@
 
 ### Overview
 - Fixed: Calculation of free space showing negative values on some devices (#1863).
-
+<!-- PayPal BEGIN -->
+  <script>
+      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','e198feb9-8846-451b-bc19-47c96532d79e');
+    </script>
+  <!-- PayPal END -->
 ### AppControl
 - Improved: Small improvements to the uninstaller code.
 - Fixed: Crash when trying to export an app that can't be exported (#1868).
@@ -1547,7 +1567,11 @@
 ### Scheduler
 - Added: Option to reboot the device after scheduler action complete.
 - Improved: Layout padding and tap behavior.
-
+<!-- PayPal BEGIN -->
+  <script>
+      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','e198feb9-8846-451b-bc19-47c96532d79e');
+    </script>
+  <!-- PayPal END -->
 ### Exclusions
 - Added: Options to filter the list by type of exclusion ([#600](https://github.com/d4rken/sdmaid-public/issues/600)).
 - Improved: Exclusions are now sorted by their last modification time ([#600](https://github.com/d4rken/sdmaid-public/issues/600)).
