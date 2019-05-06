@@ -1,0 +1,9 @@
+Reporting-MTA: dns; googlemail.com
+Arrival-Date: Wed, 03 Apr 2019 14:43:01 -0700 (PDT)
+X-Original-Message-ID: <0000000000004f07fb0585a7235c@google.com>
+
+Final-Recipient: rfc822; letters@medium.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp; The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser t6sor6783329ljj.15 - gsmtp
+Last-Attempt-Date: Wed, 03 Apr 2019 14:43:02 -0700 (PDT)

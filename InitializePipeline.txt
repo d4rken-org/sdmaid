@@ -1,0 +1,949 @@
+Begin evaluating template '/azure-pipelines.yml'
+Begin load: stepsTemplateReference
+Begin evaluating template '/build/azure-pipelines/win32/continuous-build-win32.yml'
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Install Dependencies'
+Result: Object
+Evaluating: value['powershell']
+Result: 'yarn
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Download Electron'
+Result: Object
+Evaluating: value['powershell']
+Result: 'yarn gulp electron
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['6200'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair[''262')
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Hygiene Checks'
+Result: Object
+Evaluating: value['powershell']
+Result: 'yarn gulp hygiene
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Monaco Editor Checks'
+Result: Object
+Evaluating: value['powershell']
+Result: 'yarn monaco-compile-check
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Strict Null Checks'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn strict-null-check
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Compile Sources'
+Result: Object
+Evaluating: value['powershell']
+Result: 'yarn compile
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Download Built-in Extensions'
+Result: Object
+Evaluating: value['powershell']
+Result: 'yarn download-builtin-extensions
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Unit Tests'
+Result: Object
+Evaluating: value['powershell']
+Result: '.\scripts\test.bat --tfs "Unit Tests"
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('powershell', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Integration Tests'
+Result: Object
+Evaluating: value['powershell']
+Result: '.\scripts\test-integration.bat --tfs "Integration Tests"
+'
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('powershell', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+Evaluating: in(pair['key'], 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Expanded: in('displayName', 'errorActionPreference', 'failOnStderr', 'ignoreLASTEXITCODE', 'workingDirectory')
+Result: False
+End transform: step
+Begin transform: stepsTemplate
+Evaluating: value['steps']
+Expanded: Object
+Result: True
+Evaluating: value['steps']
+Result: Object
+End transform: stepsTemplate
+Finished evaluating template '/build/azure-pipelines/win32/continuous-build-win32.yml'
+End load: stepsTemplateReference
+Begin load: stepsTemplateReference
+Begin evaluating template '/build/azure-pipelines/linux/continuous-build-linux.yml'
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: 8949228154823586921
+Result: Object
+Evaluating: value['script']
+Result: 'set -e
+sudo apt-get update
+sudo apt-get install -y libxkbfile-dev pkg-config libsecret-1-dev libxss1 dbus xvfb libgtk-3-0
+sudo cp build/azure-pipelines/linux/xvfb.init /etc/init.d/xvfb
+sudo chmod +x /etc/init.d/xvfb
+sudo update-rc.d xvfb defaults
+sudo service xvfb start
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Install Dependencies'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Download Electron'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn gulp electron-x64
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Hygiene Checks'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn gulp hygiene
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Monaco Editor Checks'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn monaco-compile-check
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Strict Null Checks'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn strict-null-check
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Compile Sources'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn compile
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Download Built-in Extensions'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn download-builtin-extensions
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Unit Tests'
+Result: Object
+Evaluating: value['script']
+Result: 'DISPLAY=:10 ./scripts/test.sh --tfs "Unit Tests"
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: stepsTemplate
+Evaluating: value['steps']
+Expanded: Object
+Result: True
+Evaluating: value['steps']
+Result: Object
+End transform: stepsTemplate
+Finished evaluating template '/build/azure-pipelines/linux/continuous-build-linux.yml'
+End load: stepsTemplateReference
+Begin load: stepsTemplateReference
+Begin evaluating template '/build/azure-pipelines/darwin/continuous-build-darwin.yml'
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Install Dependencies'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Download Electron'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn gulp electron-x64
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Hygiene Checks'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn gulp hygiene
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Monaco Editor Checks'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn monaco-compile-check
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Strict Null Checks'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn strict-null-check
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Compile Sources'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn compile
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Download Built-in Extensions'
+Result: Object
+Evaluating: value['script']
+Result: 'yarn download-builtin-extensions
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Unit Tests'
+Result: Object
+Evaluating: value['script']
+Result: './scripts/test.sh --tfs "Unit Tests"
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: step
+Evaluating: transform('stepToTaskBaseProperties', value)
+Evaluating: arg0
+Result: Object
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('script', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: False
+Evaluating: in(pair['key'], 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Expanded: in('displayName', 'condition', 'continueOnError', 'displayName', 'enabled', 'env', 'name', 'timeoutInMinutes')
+Result: True
+Evaluating: pair['key']
+Result: 'displayName'
+Evaluating: pair['value']
+Result: 'Run Integration Tests'
+Result: Object
+Evaluating: value['script']
+Result: './scripts/test-integration.sh --tfs "Integration Tests"
+'
+Evaluating: value['failOnStderr']
+Expanded: Null
+Result: False
+Evaluating: value['workingDirectory']
+Expanded: Null
+Result: False
+End transform: step
+Begin transform: stepsTemplate
+Evaluating: value['steps']
+Expanded: Object
+Result: True
+Evaluating: value['steps']
+Result: Object
+End transform: stepsTemplate
+Finished evaluating template '/build/azure-pipelines/darwin/continuous-build-darwin.yml'
+End load: stepsTemplateReference
+Begin transform: pipeline
+Evaluating: value
+Result: Object
+Evaluating: ne(pair['key'], 'jobs')
+Expanded: ne('jobs', 'jobs')
+Result: False
+Evaluating: eq(pair['key'], 'jobs')
+Expanded: eq('jobs', 'jobs')
+Result: True
+Evaluating: value['jobs']
+Result: Object
+End transform: pipeline
+Finished evaluating template '/azure-pipelines.yml'
+********************************************************************************
+Template and static variable resolution complete. Final runtime YAML document:
+stages:
+- stage: __default
+  jobs:
+  - job: Windows
+    pool:
+      vmImage: VS2017-Win2016
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: 10.15.1
+    - task: geeklearningio.gl-vsts-tasks-yarn.yarn-installer-task.YarnInstaller@2
+      inputs:
+        versionSpec: 1.10.1
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: 2.x
+        addToPath: true
+    - task: PowerShell@2
+      displayName: Install Dependencies
+      inputs:
+        targetType: inline
+        script: >
+          yarn
+    - task: PowerShell@2
+      displayName: Download Electron
+      inputs:
+        targetType: inline
+        script: >
+          yarn gulp electron
+    - task: PowerShell@2
+      displayName: Run Hygiene Checks
+      inputs:
+        targetType: inline
+        script: >
+          yarn gulp hygiene
+    - task: PowerShell@2
+      displayName: Run Monaco Editor Checks
+      inputs:
+        targetType: inline
+        script: >
+          yarn monaco-compile-check
+    - task: CmdLine@2
+      displayName: Run Strict Null Checks
+      inputs:
+        script: >
+          yarn strict-null-check
+    - task: PowerShell@2
+      displayName: Compile Sources
+      inputs:
+        targetType: inline
+        script: >
+          yarn compile
+    - task: PowerShell@2
+      displayName: Download Built-in Extensions
+      inputs:
+        targetType: inline
+        script: >
+          yarn download-builtin-extensions
+    - task: PowerShell@2
+      displayName: Run Unit Tests
+      inputs:
+        targetType: inline
+        script: >
+          .\scripts\test.bat --tfs "Unit Tests"
+    - task: PowerShell@2
+      displayName: Run Integration Tests
+      inputs:
+        targetType: inline
+        script: >
+          .\scripts\test-integration.bat --tfs "Integration Tests"
+    - task: PublishTestResults@2
+      displayName: Publish Tests Results
+      inputs:
+        testResultsFiles: '*-results.xml'
+        searchFolder: $(Build.ArtifactStagingDirectory)/test-results
+      condition: succeededOrFailed()
+  - job: Linux
+    pool:
+      vmImage: Ubuntu-16.04
+    steps:
+    - task: CmdLine@2
+      inputs:
+        script: >
+          set -e
+
+          sudo apt-get update
+
+          sudo apt-get install -y libxkbfile-dev pkg-config libsecret-1-dev libxss1 dbus xvfb libgtk-3-0
+
+          sudo cp build/azure-pipelines/linux/xvfb.init /etc/init.d/xvfb
+
+          sudo chmod +x /etc/init.d/xvfb
+
+          sudo update-rc.d xvfb defaults
+
+          sudo service xvfb start
+    - task: NodeTool@0
+      inputs:
+        versionSpec: 10.15.1
+    - task: geeklearningio.gl-vsts-tasks-yarn.yarn-installer-task.YarnInstaller@2
+      inputs:
+        versionSpec: 1.10.1
+    - task: CmdLine@2
+      displayName: Install Dependencies
+      inputs:
+        script: >
+          yarn
+    - task: CmdLine@2
+      displayName: Download Electron
+      inputs:
+        script: >
+          yarn gulp electron-x64
+    - task: CmdLine@2
+      displayName: Run Hygiene Checks
+      inputs:
+        script: >
+          yarn gulp hygiene
+    - task: CmdLine@2
+      displayName: Run Monaco Editor Checks
+      inputs:
+        script: >
+          yarn monaco-compile-check
+    - task: CmdLine@2
+      displayName: Run Strict Null Checks
+      inputs:
+        script: >
+          yarn strict-null-check
+    - task: CmdLine@2
+      displayName: Compile Sources
+      inputs:
+        script: >
+          yarn compile
+    - task: CmdLine@2
+      displayName: Download Built-in Extensions
+      inputs:
+        script: >
+          yarn download-builtin-extensions
+    - task: CmdLine@2
+      displayName: Run Unit Tests
+      inputs:
+        script: >
+          DISPLAY=:10 ./scripts/test.sh --tfs "Unit Tests"
+    - task: PublishTestResults@2
+      displayName: Publish Tests Results
+      inputs:
+        testResultsFiles: '*-results.xml'
+        searchFolder: $(Build.ArtifactStagingDirectory)/test-results
+      condition: succeededOrFailed()
+  - job: macOS
+    pool:
+      vmImage: macOS 10.13
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: 10.15.1
+    - task: geeklearningio.gl-vsts-tasks-yarn.yarn-installer-task.YarnInstaller@2
+      inputs:
+        versionSpec: 1.10.1
+    - task: CmdLine@2
+      displayName: Install Dependencies
+      inputs:
+        script: >
+          yarn
+    - task: CmdLine@2
+      displayName: Download Electron
+      inputs:
+        script: >
+          yarn gulp electron-x64
+    - task: CmdLine@2
+      displayName: Run Hygiene Checks
+      inputs:
+        script: >
+          yarn gulp hygiene
+    - task: CmdLine@2
+      displayName: Run Monaco Editor Checks
+      inputs:
+        script: >
+          yarn monaco-compile-check
+    - task: CmdLine@2
+      displayName: Run Strict Null Checks
+      inputs:
+        script: >
+          yarn strict-null-check
+    - task: CmdLine@2
+      displayName: Compile Sources
+      inputs:
+        script: >
+          yarn compile
+    - task: CmdLine@2
+      displayName: Download Built-in Extensions
+      inputs:
+        script: >
+          yarn download-builtin-extensions
+    - task: CmdLine@2
+      displayName: Run Unit Tests
+      inputs:
+        script: >
+          ./scripts/test.sh --tfs "Unit Tests"
+    - task: CmdLine@2
+      displayName: Run Integration Tests
+      inputs:
+        script: >
+          ./scripts/test-integration.sh --tfs "Integration Tests"
+    - task: PublishTestResults@2
+      displayName: Publish Tests Results
+      inputs:
+        testResultsFiles: '*-results.xml'
+        searchFolder: $(Build.ArtifactStagingDirectory)/test-results
+      condition: succeededOrFailed()
+
