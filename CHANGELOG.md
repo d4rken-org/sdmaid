@@ -1,8 +1,21 @@
 # Changelog
 
 - Latest production version: v4.14.7 (41407), Unlocker v4.3.7(40307)
-- Latest beta version: 🍰
+- Latest beta version: v4.14.8 (41408)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.7](https://github.com/d4rken/sdmaid-public/milestone/79?closed=1) 12.05.2019
+### Core
+- Improved: Updated clutter database.
+- Fixed: Navigation entries hanging when displaying progress.
+- Fixed: Overlapping text between upgrade/donate/share actions in the navigations header card (#2534).
+
+### Searcher
+- Fixed: Wrong icon and color being displayed on the floating action button (#2535).
+
+### AppCleaner
+- Improved: ACS based deletion for locales `it`, `es` (#2396, #2542).
+- Improved: Hidden cache and bug reporting filter.
 
 ## SD Maid [v4.14.7](https://github.com/d4rken/sdmaid-public/milestone/78?closed=1) 02.05.2019
 ### Core
