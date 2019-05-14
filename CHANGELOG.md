@@ -1,10 +1,27 @@
 # Changelog
 
 - Latest production version: v4.14.7 (41407), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.8 (41408)
+- Latest beta version: v4.14.9 (41409)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.14.7](https://github.com/d4rken/sdmaid-public/milestone/79?closed=1) 12.05.2019
+## SD Maid [v4.14.9](https://github.com/d4rken/sdmaid-public/milestone/80?closed=1) 14.05.2019
+### Core
+- Improved: Clutter db.
+- Improved: Translations
+- Improved: Rewritten navigation drawer related code, more consistent progress, fewer used resources. SD Maid now start faster too.
+- Improved: Lags during SD Maid startup when the unlocker app is installed.
+- Fixed: Double tap to exit not resetting SD Maid, canceling tasks and clearing in memory objets (#2567).
+
+### Overview
+- Fixed: Wrong label for upgrades via apps.darken.eu (#2570).
+
+### Explorer
+- Fixed: Bookmarks being cut off.
+
+### AppCleaner
+- Improved: When SD Maid can't find the initial root window, e.g. due to the notification drawer being expanded, SD Maid will attempt to close it (#2565).
+
+## SD Maid [v4.14.8](https://github.com/d4rken/sdmaid-public/milestone/79?closed=1) 12.05.2019
 ### Core
 - Improved: Updated clutter database.
 - Fixed: Navigation entries hanging when displaying progress.
