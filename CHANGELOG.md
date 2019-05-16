@@ -1,8 +1,27 @@
 # Changelog
 
 - Latest production version: v4.14.7 (41407), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.9 (41409)
+- Latest beta version: v4.14.10 (41410)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.10](https://github.com/d4rken/sdmaid-public/milestone/81?closed=1) 16.05.2019
+### Core
+- Improved: Clutter database.
+- Improved: Various small UI tweaks, some label and text changes.
+- Fixed: Navigation drawer opening when switching pages via QuickAccess (#2567)
+- Fixed: In some cases the setup routine did not abort SD Maid's start sequence if it was exited via back button.
+
+### QuickAccess
+- Improved: The navigation toggle animation now respects the animation on/off setting (#2583).
+
+### AppControl
+- Improved: List search and filtering logic.
+- Fixed: Being stuck on an empty list after filtering, then pausing/resuming the app.
+- Fixed: App entries being sorted wrong after updating their data (e.g. scanning size) (#2537).
+
+### AppCleaner
+- Improved: Made the ACS cleaning routine a bit more resiliant. Better timings and one more case where SD Maid will retry and attempt to dismiss system dialogs that may be interfering (#2565).
+- Improved: Hidden caches filter (#2577).
 
 ## SD Maid [v4.14.9](https://github.com/d4rken/sdmaid-public/milestone/80?closed=1) 14.05.2019
 ### Core
