@@ -1,8 +1,29 @@
 # Changelog
 
 - Latest production version: v4.14.7 (41407), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.10 (41410)
+- Latest beta version: v4.14.11 (41411)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.11](https://github.com/d4rken/sdmaid-public/milestone/82?closed=1) 17.05.2019
+### Core
+- Improved: Better support  for different toybox/busybox setups. SD Maid can now utilize applets that are built into the shell, e.g. the `test` applet.
+- Improved: Buildscript updates.
+- Improved: Clutter db.
+- Improved: Translations.
+- Improved: Small internal changes related to Android Q support (work in progress).
+- Fixed: If the system's file picker crashes when attempting to grant storage access, SD Maid's setup should now be able to be continued instead of the setup window vanishing and SD Maid being stuck in setup.
+- Fixed: A couple of situations that could lead to a crash during SD Maids when pausing/resuming SD Maid during the setup screens.
+
+### QuickAccess
+- Improved: Readability of the "freeable space" prediction text on the main launch button (#2536).
+
+### Explorer
+- Fixed: The UI allowing you to try and create duplicate bookmarks (#2478).
+- Fixed: In consistent states being reached by manually trying to browse to non-canonical pathes (#2510).
+
+### AppCleaner
+- Improved: Hidden caches and bug reporting filter (#2524).
+- Improved: Integrated TelegramX into the existing Telegram filter (#2511).
 
 ## SD Maid [v4.14.10](https://github.com/d4rken/sdmaid-public/milestone/81?closed=1) 16.05.2019
 ### Core
