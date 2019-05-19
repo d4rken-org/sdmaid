@@ -1,8 +1,29 @@
 # Changelog
 
 - Latest production version: v4.14.7 (41407), Unlocker v4.3.7(40307)
-- Latest beta version: v4.14.11 (41411)
+- Latest beta version: v4.14.12 (41412)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.12](https://github.com/d4rken/sdmaid-public/milestone/83?closed=1) 19.05.2019
+### Core
+- Improved: Clutter database and added new dynamic markers for tencent related apps.
+- Improved: Internal dependencies.
+- Improved: Translations.
+- Fixed: Possible hang during app initialization/opening related to the IAP lib trying some weird file access.
+
+### Explorer
+- Fixed: Floating action button sometimes not updating correctly and staying blank (#2594).
+
+### AppControl
+- Fixed: Potential UI crash related to searching/filtering the list and refreshing it.
+
+#### AppCleaner
+- Improved: Added support for Korean `ko` to ACS based deletion.
+- Improved: WebView cache filter (#2513).
+- Improved: Bugreporting filter (`.logTmp`).
+
+### Databases
+- Fixed: Crash when the internal sqlite binary can't be used and SD Maid tried alternative setups.
 
 ## SD Maid [v4.14.11](https://github.com/d4rken/sdmaid-public/milestone/82?closed=1) 17.05.2019
 ### Core
