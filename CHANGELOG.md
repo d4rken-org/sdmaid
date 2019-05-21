@@ -1,8 +1,23 @@
 # Changelog
 
-- Latest production version: v4.14.12 (41412), Unlocker v4.3.7(40307)
+- Latest production version: v4.14.13 (41413), Unlocker v4.3.7(40307)
 - Latest beta version: 🍓
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.13](https://github.com/d4rken/sdmaid-public/milestone/84?closed=1) 21.05.2019
+### Core
+- Improved: Translations
+- Fixed: Being unable to grant secondary storage access on Android 5.0 to 6.0 due immediate default to `Unsuccessful` state (reason for this hotfix update).
+- Improved: Bad UI margins on devices with large font settings and scaled up resolution (Statistics UI).
+- Improved: Coffee drinking on small screens.
+
+### Overview
+- Improved: Bad UI margins on devices with large font settings and scaled up resolution.
+
+### AppCleaner
+- Added: ACS based deletion support for traditional Chinese (#2600).
+- Improved: ACS deletion routine's canceling behavior, faster canceling, less UI lag.
+- Improved: ACS based deletion on small screens. If the desired element is not visible SD Maid will scroll the screen and keep on looking (#2598).
 
 ## SD Maid [v4.14.12](https://github.com/d4rken/sdmaid-public/milestone/83?closed=1) 19.05.2019
 ### Core
