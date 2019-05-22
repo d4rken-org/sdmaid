@@ -1,0 +1,7 @@
+2019-02-23T07:46:22.8042408Z ##[section]Starting: Prepare job Windows
+2019-02-23T07:46:22.9136462Z ContinueOnError: False
+2019-02-23T07:46:22.9136462Z TimeoutInMinutes: 60
+2019-02-23T07:46:22.9136462Z CancelTimeoutInMinutes: 5
+2019-02-23T07:46:22.9136462Z Execution:
+2019-02-23T07:46:22.9136462Z   MaxConcurrency: 1
+2019-02-23T07:46:22.9293518Z ##[section]Finishing: Prepare job Windows

@@ -1,0 +1,7 @@
+2019-02-23T07:46:23.7263550Z ##[section]Starting: Prepare job macOS
+2019-02-23T07:46:23.7888651Z ContinueOnError: False
+2019-02-23T07:46:23.7888651Z TimeoutInMinutes: 60
+2019-02-23T07:46:23.7888651Z CancelTimeoutInMinutes: 5
+2019-02-23T07:46:23.7888651Z Execution:
+2019-02-23T07:46:23.7888651Z   MaxConcurrency: 1
+2019-02-23T07:46:23.7888651Z ##[section]Finishing: Prepare job macOS
