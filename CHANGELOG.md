@@ -1,8 +1,16 @@
 # Changelog
 
-- Latest production version: v4.14.13 (41413), Unlocker v4.3.7(40307)
-- Latest beta version: 🍓
+- Latest production version: v4.14.14 (41414), Unlocker v4.3.7(40307)
+- Latest beta version: 🌞
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.14](https://github.com/d4rken/sdmaid-public/milestone/85?closed=1) 24.05.2019
+### Core
+- Improved: Translations.
+- Fixed: Duplicate notification channel name.
+
+### AppCleaner
+- Improved: Speed of deletion via accessibility service. A fix in v4.14.13 caused a regression that lead to SD Maid working on stale data when trying to click the `Clear cache` button.
 
 ## SD Maid [v4.14.13](https://github.com/d4rken/sdmaid-public/milestone/84?closed=1) 21.05.2019
 ### Core
