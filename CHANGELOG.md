@@ -1,8 +1,17 @@
 # Changelog
 
 - Latest production version: v4.14.14 (41414), Unlocker v4.3.7(40307)
-- Latest beta version: 🌞
+- Latest beta version: v4.14.15 (41415)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.15](https://github.com/d4rken/sdmaid-public/milestone/86?closed=1) 29.05.2019
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Code related to checking for SD Maid's "Pro" state. Memory consumption should be lower and more resources will be released when SD Maid is closed or put into the background. I also fixed a few cases where SD Maid had to be restarted to recognize the upgrade.
+- Fixed: Not being able to grant secondary storage access via SAF on Android Q.
+- Fixed: A few cases of bad settings label.
+- Fixed: SD Maid being stuck in setup if the setup Activity is being dismissed by someone else than SD Maid (e.g. the system, due to another 3rd party app crash).
 
 ## SD Maid [v4.14.14](https://github.com/d4rken/sdmaid-public/milestone/85?closed=1) 24.05.2019
 ### Core
