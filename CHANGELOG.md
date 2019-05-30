@@ -1,7 +1,18 @@
 # Changelog
 - Latest production version: v4.14.14 (41414), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.16 (41416)
+- Latest beta version: v4.14.17 (41417)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.17](https://github.com/d4rken/sdmaid-public/milestone/88?closed=1) 30.05.2019
+### Core
+- Improved: Clutter db. Added new entries and removed duplicate definitions.
+- Improved: Further reduced UI lag and resource consumption when opening SD Maid.
+- Fixed: Flickering headercard in the navigation drawer.
+- Fixed: Widget missing / not being available in SD Maid Pro.
+- Fixed: Icon shortcuts not being available in SD Maid Pro.
+
+### AppCleaner
+- Added: Samsung Bixby related log files to the bugreporting filter (#2631,#2632).
 
 ## SD Maid [v4.14.16](https://github.com/d4rken/sdmaid-public/milestone/87?closed=1) 29.05.2019
 ### Core
