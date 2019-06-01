@@ -1,5 +1,6 @@
 # SD Maid
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cd0fe8f37e51470ab6d88ee6d214d5bb)](https://app.codacy.com/app/surachaippy/sdmaid-public?utm_source=github.com&utm_medium=referral&utm_content=surachai35/sdmaid-public&utm_campaign=Badge_Grade_Dashboard)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/sdmaid/localized.svg)](https://crowdin.com/project/sdmaid)
 
 SD Maid is an Android app that helps you manage files and apps.
