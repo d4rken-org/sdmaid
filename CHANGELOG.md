@@ -1,7 +1,19 @@
 # Changelog
 - Latest production version: v4.14.14 (41414), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.17 (41417)
+- Latest beta version: v4.14.18 (41418)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.18](https://github.com/d4rken/sdmaid-public/milestone/89?closed=1) 04.06.2019
+### Core
+- Improved: Updated clutter db.
+- Improved: Updated translations.
+- Improved: Internal changes related to when SD Maid initializes and updates UI elements upon visiting a new page. I moved the code to initialize earlier which should fix a few cases where users first see placeholders which are then updated in a blink.
+
+### AppCleaner
+- Improved: ACS based deletion should now work correctly on additional Spanish ROMs.
+
+### Scheduler
+- Improved: UI code. The countdown should now update more consistently. Fixed a case where the scheduler still asked for SD Maid Pro despite already having upgraded.
 
 ## SD Maid [v4.14.17](https://github.com/d4rken/sdmaid-public/milestone/88?closed=1) 30.05.2019
 ### Core
