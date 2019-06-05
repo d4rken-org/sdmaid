@@ -1,7 +1,20 @@
 # Changelog
 - Latest production version: v4.14.14 (41414), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.18 (41418)
+- Latest beta version: v4.14.19 (41419)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.19](https://github.com/d4rken/sdmaid-public/milestone/90?closed=1) 05.06.2019
+### Core
+- Improved: Updated clutter db.
+- Improved: Added dynamic clutter matching for `.backups` (Helpshift SDK related files).
+- Added: Debug option to remove apps.darken.eu accounts without wiping SD Maid's data (#2637).
+- Fixed: Crash when opening detail subscreens (e.g. AppControl -> App or AppCleaner -> Details), then leaving SD Maid, getting into a low memory situation and returning to SD Maid.
+
+### AppCleaner
+- Improved: ACS based cleaning should now work on Android Q (at least the english locales).
+- Improved: Filter for advertising related files, added a bunch of tencent related definitions (#2648).
+- Fixed: Potential crash when canceling cleaning via ACS.
+- Fixed: Potential crash when SD Maid failed to clean a specific app via ACS, and the retry mechanism got very unlucky with the global timeout.
 
 ## SD Maid [v4.14.18](https://github.com/d4rken/sdmaid-public/milestone/89?closed=1) 04.06.2019
 ### Core
