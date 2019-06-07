@@ -1,7 +1,20 @@
 # Changelog
 - Latest production version: v4.14.14 (41414), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.19 (41419)
+- Latest beta version: v4.14.20 (41420)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.20](https://github.com/d4rken/sdmaid-public/milestone/91?closed=1) 07.06.2019
+### Core
+- Improved: Clutter database.
+- Improved: Added direct github link to the issue reporting screen (#2301).
+- Fixed: Possible crash when pausing and resuming SD Maid at various moments, e.g. during setup or when switching between main screens.
+- Fixed: Secondary storage not being initialized correctly when SD Maids setup is launched by any other means than starting a scan task (#2634).
+- Fixed: Language switcher not working correctly on some ROMs (#2669).
+
+### AppCleaner
+- Improved: Recycle bins filter, added the OnePlus gallery recyclebin (#2660).
+- Improved: ACS based deletion on Android Q. Incompatible apps are now skipped automatically instead of stalling the routine until timeout (#2659).
+- Improved: Querying for hidden caches should now return more accurate sizes when scanning again directly after deletion.
 
 ## SD Maid [v4.14.19](https://github.com/d4rken/sdmaid-public/milestone/90?closed=1) 05.06.2019
 ### Core
