@@ -1,7 +1,20 @@
 # Changelog
 - Latest production version: v4.14.14 (41414), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.20 (41420)
+- Latest beta version: v4.14.21 (41421)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.21](https://github.com/d4rken/sdmaid-public/milestone/92?closed=1) 09.06.2019
+### Core
+- Improved: Clutter database.
+- Fixed: Potential crash if SD Maid is put into the background for longer durations during the setup steps.
+
+### CorpseFinder
+- Improved: Matching of ownership on default folders (e.g. `Android/data`). Uninstall watcher should now suggest default folders for deletion if left behind on uninstall (#2672).
+- Fixed: UninstallWatcher on Android Q. Android Q blocks popups from background. I replaced the popup with an interactive notification (#2672).
+
+### AppCleaner
+- Improved: ACS based cache deletion on french ROMs.
+- Fixed: Matching did not work when SD Maid's option to enforce language is used and differs from the system language (#2407).
 
 ## SD Maid [v4.14.20](https://github.com/d4rken/sdmaid-public/milestone/91?closed=1) 07.06.2019
 ### Core
