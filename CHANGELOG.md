@@ -1,7 +1,18 @@
 # Changelog
 - Latest production version: v4.14.14 (41414), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.21 (41421)
+- Latest beta version: v4.14.22 (41422)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.22](https://github.com/d4rken/sdmaid-public/milestone/93?closed=1) 10.06.2019
+### Core
+- Improved: Clutter database.
+- Improved: Debugging output, more infos about device and app locales.
+- Fixed: Potential crash during primary storage setup on Android 6.X.
+
+### AppCleaner
+- Improved: ACS based deletion on vietnamese ROMs.
+- Changed: I've removed an internal minimum cache size for unrooted devices. While there is a public minimum cache size setting, there was also an internal minimum that was only in effect when the AppCleaner ran without root. The limit ranged from 12KB to 48KB, depending on your Android version. It's purpose was to exclude apps whose cache only consists of empty default folders (e.g. `files` or `cache`) that are (re)created by the system. Without a limit you'd always have results with apps having a few KBs of cache. I don't recommend setting the limit to 0KB, nonetheless if you want to, it now works as expected without root.
+- Changed: To account for above mentioned changes I've raised the default minimum cache size in the settings to 48KB.
 
 ## SD Maid [v4.14.21](https://github.com/d4rken/sdmaid-public/milestone/92?closed=1) 09.06.2019
 ### Core
