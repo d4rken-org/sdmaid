@@ -1,7 +1,14 @@
 # Changelog
 - Latest production version: v4.14.22 (41422), Unlocker v4.3.8(40308)
-- Latest beta version: 🍪
+- Latest beta version: v4.14.23 (41423)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.23](https://github.com/d4rken/sdmaid-public/milestone/94?closed=1) 16.06.2019
+### Core
+- Improved: Clutter database.
+
+### CorpseFinder
+- Fixed: UninstallWatcher displaying if no corpses related to the uninstalled apps were found (#2708).
 
 ## SD Maid [v4.14.22](https://github.com/d4rken/sdmaid-public/milestone/93?closed=1) 10.06.2019
 ### Core
