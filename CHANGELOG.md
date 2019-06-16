@@ -10,6 +10,9 @@
 ### CorpseFinder
 - Fixed: UninstallWatcher displaying if no corpses related to the uninstalled apps were found (#2708).
 
+### AppCleaner
+- Improved: ACS based deletion on Nokia ROMs (#2695).
+
 ## SD Maid [v4.14.22](https://github.com/d4rken/sdmaid-public/milestone/93?closed=1) 10.06.2019
 ### Core
 - Improved: Clutter database.
