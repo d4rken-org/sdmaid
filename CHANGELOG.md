@@ -1,7 +1,29 @@
 # Changelog
 - Latest production version: v4.14.22 (41422), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.23 (41423)
+- Latest beta version: v4.14.24 (41424)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.24](https://github.com/d4rken/sdmaid-public/milestone/95?closed=1) 24.06.2019
+### Core
+- Added: Round icon for Android 7.1 devices (#2705).
+- Improved: Clutter database.
+- Improved: Lists with search views now collapse the keyboard when selecting list items.
+- Improved: Optimized internal images to reduce app size a bit.
+- Fixed: On Android TV, if we can't open the system's screen for usage stats permission directly, the general app settings screen will be shown (#2559).
+- Fixed: Selected list items should no longer be unselected when filtering the list with a search phrase and rotating the device.
+- Changed: The donation button within the navigation header will only show after a certain amount of time passed / app used.
+- Changed: If either type of donation is bought, the button in the navigation header will no longer be displayed. Users who want to purchase additional donations (<3 ty) can do so from within the settings menu, the toolbar has a permanent donation button.
+
+### CorpseFinder
+- Fixed: Root only settings being clickable after resetting the CorpseFinder settings (#2697).
+
+### SystemCleaner
+- Improved: .log file should no longer show duplicate results due to overlap between private and public storage (#961).
+- Improved: Added restrictions to exclude certain .log files that could cause issues when deleted (e.g. indexdb).
+
+### Duplicates
+- Improved: To prevent issues with performance and checksuming very small files, there is now an enforced minimum size of 1024B (#2737).
+- Fixed: Internal selection not being cleared when the multiselection action mode is finished (#2512).
 
 ## SD Maid [v4.14.23](https://github.com/d4rken/sdmaid-public/milestone/94?closed=1) 16.06.2019
 ### Core
