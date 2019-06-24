@@ -30,7 +30,7 @@
 - Improved: Clutter database.
 
 ### CorpseFinder
-- Fixed: UninstallWatcher displaying if no corpses related to the uninstalled apps were found (#2708).
+- Fixed: UninstallWatcher displaying a notification even if no corpses related to the uninstalled apps were found (#2708).
 
 ### AppCleaner
 - Improved: ACS based deletion on Nokia ROMs (#2695).
