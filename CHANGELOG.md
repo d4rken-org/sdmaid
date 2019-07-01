@@ -1,7 +1,14 @@
 # Changelog
 - Latest production version: v4.14.22 (41422), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.24 (41424)
+- Latest beta version: v4.14.25 (41425)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.25](https://github.com/d4rken/sdmaid-public/milestone/96?closed=1) 01.07.2019
+### Core
+- Improved: Clutter database.
+- Improved: Updated translations.
+- Fixed: Adaptive icon not working on Android 8+.
+- Fixed: Donation icon showing in all settings toolbars (#2749).
 
 ## SD Maid [v4.14.24](https://github.com/d4rken/sdmaid-public/milestone/95?closed=1) 24.06.2019
 ### Core
