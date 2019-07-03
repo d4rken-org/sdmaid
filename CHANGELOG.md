@@ -3,7 +3,7 @@
 - Latest beta version: v4.14.27 (41427)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.14.27] 03.07.2019
+## SD Maid v4.14.27 03.07.2019
 ### Core
 - Fixed: Crash on start due to code (related to shortcuts) being initialized that isn't available on Android versions older than 7.1.
 
