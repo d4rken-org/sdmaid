@@ -1,7 +1,11 @@
 # Changelog
 - Latest production version: v4.14.22 (41422), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.26 (41426)
+- Latest beta version: v4.14.27 (41427)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.27] 03.07.2019
+### Core
+- Fixed: Crash on start due to code (related to shortcuts) being initialized that isn't available on Android versions older than 7.1.
 
 ## SD Maid [v4.14.26](https://github.com/d4rken/sdmaid-public/milestone/97?closed=1) 03.07.2019
 ### Core
