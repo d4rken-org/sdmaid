@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version: v4.14.22 (41422), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.25 (41425)
+- Latest beta version: v4.14.26 (41426)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.26](https://github.com/d4rken/sdmaid-public/milestone/97?closed=1) 03.07.2019
+### Core
+- Fixed: Multiple possible crashes when going through the setup flow that were all related to weird situations when resuming the UI (not all ROMs behaved as expected ಠ_ಠ Huawei).
+- Fixed: Potential crash fix for a few Android 5.X to 6.X ROMs related to trying to use newer APIs.
+
+### Explorer
+- Fixed: Crash on a few Android 7.0 ROMs related to using the clipboard.
+- Fixed: Crash when failing to extract an archive and SD Maid was unable to obtain any archive path to display in the error message.
+- Fixed: Crash when using the backbutton before the UI data was loaded.
+
+### AppCleaner
+- Added: Support for Slovak (`sl_*`) to ACS based deletion.
+
+### StorageAnalyzer
+- Fixed: Crash when the UI tried to update while items were being removed (likely a pause/resume interaction).
 
 ## SD Maid [v4.14.25](https://github.com/d4rken/sdmaid-public/milestone/96?closed=1) 01.07.2019
 ### Core
