@@ -1,7 +1,22 @@
 # Changelog
 - Latest production version: v4.14.27 (41427), Unlocker v4.3.8(40308)
-- Latest beta version: 🍓
+- Latest beta version: v4.14.28 (41428)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.28](https://github.com/d4rken/sdmaid-public/milestone/97?closed=1) 12.07.2019
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Fixed: QuickAccess sometimes displaying "Requires SD Maid Pro" although SD Maid was already upgraded to `Pro` (#2781).
+- Fixed: Incorrectly displayed (warped) progressbar (#2771).
+
+### SystemCleaner
+- Improved: Filter UI, added scrollers (#2246).
+- Improved: Empty directories filter, support for nested empty directories. SD Maid will do recursive passes on directories that are readable through the JAVA File api (that don't require root or the SAF). If the directory contains ONLY other directories, and all directories are readable (no surpises) and no exclusions are matched, then the whole nested directory tree will be considered empty (#201).
+
+### AppCleaner
+- Added: ACS based deletion support for MIUI ROMs (tested on v10.x). Currently only supports `en_*` locales, if you want support for your locale, make a ticket ;). Huge shoutout to Jeff who helped me debug this (#2783).
+- Improved: Support for ACS based deletion on Italian ROMs (#2780).
 
 ## SD Maid v4.14.27 03.07.2019
 ### Core
