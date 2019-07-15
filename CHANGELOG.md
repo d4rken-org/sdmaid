@@ -1,9 +1,23 @@
 # Changelog
 - Latest production version: v4.14.27 (41427), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.28 (41428)
+- Latest beta version: v4.14.29 (41429)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.14.28](https://github.com/d4rken/sdmaid-public/milestone/97?closed=1) 12.07.2019
+## SD Maid [v4.14.29](https://github.com/d4rken/sdmaid-public/milestone/99?closed=1) 15.07.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: A few types of errors with low impact will no longer crash SD Maid but instead just be silently logged.
+
+### SystemCleaner
+- Fixed: False positives within the empty directory filter due a bug introduced with the support for nested empty directories in v4.14.28.
+
+### AppCleaner
+- Improved: Advertisement filter.
+- Improved: Small improvements to ACS based deletion speed.
+- Improved: Better support for cache deletion via ACS on MIUI ROMs. Support for 38! additional locales (Thanks Jeff!) (#2802).
+
+## SD Maid [v4.14.28](https://github.com/d4rken/sdmaid-public/milestone/98?closed=1) 12.07.2019
 ### Core
 - Improved: Clutter database.
 - Improved: Translations.
