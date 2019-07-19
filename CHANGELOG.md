@@ -1,7 +1,23 @@
 # Changelog
-- Latest production version: v4.14.27 (41427), Unlocker v4.3.8(40308)
-- Latest beta version: v4.14.29 (41429), Unlocker v4.3.9(40309)
+- Latest production version: v4.14.27 (41427), Unlocker v4.3.9(40309)
+- Latest beta version: v4.14.30 (41430)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.30](https://github.com/d4rken/sdmaid-public/milestone/100?closed=1) 19.07.2019
+### Core
+- Improved: Clutter database.
+- Improved: Error logging.
+- Improved: When debugging the accessibility service you can now long press it to change it's position.
+- Fixed: A possibly UI crash when canceling the setup by going backwards.
+- Fixed: UI crash during setup, when granting usage stats permission, on Huawei devices @ Android 8/9
+- Fixed: Debug log hanging the UI at the end due to file being compressed on the wrong thread.
+
+### Explorer
+- Improved: When which icons will be displayed. This basically removes a few cases of multiple icons being cycled through if it is not actually any information to the user. In Detail: Icons for owners flagged as `CUSTODIAN` (e.g. "Android" for all default dirs on AOSP such as `Download/`) will only be shown when there is no other "normal" owner for that item (#2816).
+
+### AppCleaner
+- Improved: ACS based deletion on MIUI ROMs, additional locales (#2816).
+- Improved: Added tracking for ACS failures due to missing locale support to find out if there are languages that need support but no one has spoken up yet.
 
 ## SD Maid [v4.14.29](https://github.com/d4rken/sdmaid-public/milestone/99?closed=1) 15.07.2019
 ### Core
