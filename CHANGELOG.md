@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version: v4.14.30 (41430), Unlocker v4.3.9(40309)
-- Latest beta version: 🌞
+- Latest beta version: v4.14.31 (41431)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.31](https://github.com/d4rken/sdmaid-public/milestone/101?closed=1) 29.07.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Added an additional trigger for the unlocker check to fix a few cases where SD Maid was not notified of the unlocker install and would have to be restarted to notice it.
+
+### Explorer
+- Fixed: Navigation menu not dismissing when launching via shortcut.
+
+### AppControl
+- Fixed: Navigation menu not dismissing when launching via shortcut.
+
+### AppCleaner
+- Improved: ACS based deletion support (on AOSP or similar ROMs) for Serbian, Italian, Thai, Malay, Finnish, Arabic and Hebrew (#2847).
+- Improved: Filter for bugreporting related files.
 
 ## SD Maid [v4.14.30](https://github.com/d4rken/sdmaid-public/milestone/100?closed=1) 19.07.2019
 ### Core
