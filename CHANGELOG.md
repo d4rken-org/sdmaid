@@ -1,7 +1,15 @@
 # Changelog
 - Latest production version: v4.14.31 (41431), Unlocker v4.3.9(40309)
-- Latest beta version: 🐈
+- Latest beta version: v4.14.32 (41432)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.32](https://github.com/d4rken/sdmaid-public/milestone/102?closed=1) 07.08.2019 🐈
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+
+### StorageAnalyzer
+- Fixed: Long "sorting" duration. The calculation for sorting were done on the whole tree, now they are scoped correctly. I've also added a small caching mechanism that should make browsing a little bit faster.
 
 ## SD Maid [v4.14.31](https://github.com/d4rken/sdmaid-public/milestone/101?closed=1) 29.07.2019
 ### Core
