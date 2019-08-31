@@ -1,7 +1,21 @@
 # Changelog
 - Latest production version: v4.14.32 (41432), Unlocker v4.3.9(40309)
-- Latest beta version: 🐈
+- Latest beta version: v4.14.33 (41433)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.33](https://github.com/d4rken/sdmaid-public/milestone/103?closed=1) 01.09.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Fixed: Applet setup preventing root access on Android Q/10. System-less root related changes caused SD Maid's mount applet test to fail the root test (#2903).
+- Fixed: Possible issue when starting a debug recording that could cause some modules to not react to the debug mode change.
+
+### AppCleaner
+- Improved: Added ACS based deletion support for Norwegian.
+- Improved: Hidden cache deletion (#2849, #2842).
+
+# Storage Analyzer
+- Fixed: Crash when trying to browse symlinks (removed symlinks) (#2901).
 
 ## SD Maid [v4.14.32](https://github.com/d4rken/sdmaid-public/milestone/102?closed=1) 07.08.2019 
 ### Core
