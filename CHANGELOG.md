@@ -1,7 +1,27 @@
 # Changelog
 - Latest production version: v4.14.32 (41432), Unlocker v4.3.9(40309)
-- Latest beta version: v4.14.33 (41433)
+- Latest beta version: v4.14.35 (41435)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.35](https://github.com/d4rken/sdmaid-public/milestone/105?closed=1) 19.09.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Fixed: A couple of cases where SD Maid would crash if the device unexpectedly does not have certain Activities/Apps.
+
+### Explorer
+- Fixed: Possible crash when extracting archives and permissions are missing.
+
+### AppCleaner
+- Improved: Support for ACS (accessibility) based cache clearing on Android 10. Language support should have parity with previous Android versions.
+
+## SD Maid [v4.14.34](https://github.com/d4rken/sdmaid-public/milestone/104?closed=1) 13.09.2019
+### Core
+- Improved: Clutter database.
+- Improved: Debug output.
+
+### AppCleaner
+- Added: Initial Android 10 support for ACS based cache cleaning.
 
 ## SD Maid [v4.14.33](https://github.com/d4rken/sdmaid-public/milestone/103?closed=1) 01.09.2019
 ### Core
