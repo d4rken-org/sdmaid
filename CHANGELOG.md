@@ -1,7 +1,24 @@
 # Changelog
 - Latest production version: v4.14.35 (41435), Unlocker v4.3.9(40309)
-- Latest beta version: 🌼
+- Latest beta version: v4.14.36 (41436)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.36](https://github.com/d4rken/sdmaid-public/milestone/106?closed=1) 03.10.2019
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: Animation performance.
+- Improved: Updated internal dependencies.
+- Fixed: Crash/failure during applet setup. If the default test (unrooted) for the mount applet failed SD Maid would either crash or not try any fallback options.
+
+### AppCleaner
+- Improved: Hidden caches and bug reporting filter.
+- Improved: ACS based cache deletion support on Android 9 and 10, added locales et,ro,hr,bn,lv (#2979,#2978).
+- Fixed: ACS based deletion for Serbian.
+
+### StorageAnalyzer
+- Fixed: Refreshing on existing data resetting item sizes to -1 (#2964).
+- Fixed: Crash on refreshing data that contains symbolic links. No longer following symbolic links.
 
 ## SD Maid [v4.14.35](https://github.com/d4rken/sdmaid-public/milestone/105?closed=1) 19.09.2019
 ### Core
