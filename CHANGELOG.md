@@ -1,7 +1,20 @@
 # Changelog
 - Latest production version: v4.14.35 (41435), Unlocker v4.3.9(40309)
-- Latest beta version: v4.14.36 (41436)
+- Latest beta version: v4.14.37 (41437)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.37](https://github.com/d4rken/sdmaid-public/milestone/107?closed=1) 08.10.2019
+### Core
+- Improved: Clutter database.
+
+### CorpseFinder
+- Fixed: False positive matching `trichromelibrary` on rooted Android 10 devices (#2987).
+
+### SystemCleaner
+- Fixed: Crashing when importing an invalid user filter instead of just showing an error.
+
+### Statistics
+- Fixed: Crash on entering task result details.
 
 ## SD Maid [v4.14.36](https://github.com/d4rken/sdmaid-public/milestone/106?closed=1) 03.10.2019
 ### Core
