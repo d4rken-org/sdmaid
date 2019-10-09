@@ -1,7 +1,22 @@
 # Changelog
 - Latest production version: v4.14.35 (41435), Unlocker v4.3.9(40309)
-- Latest beta version: v4.14.37 (41437)
+- Latest beta version: v4.14.38 (41438)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.38](https://github.com/d4rken/sdmaid-public/milestone/108?closed=1) 09.10.2019
+### Core
+- Added: Support for detecting installed library packages.
+- Improved: Clutter database.
+- Fixed: Fixed various instances of UI code where some context options were shown despite this not being supported for the currently selected entries.
+
+### AppControl
+- Improved: Small UI improvements to hide UI elements that are not supported for the current package type (necessary due to now also showing system library packages).
+
+### CorpseFinder
+- Improved: Reverted previous fix for `trichromelibrary` in favor of dynamic matching against installed library packages.
+
+### Statistics
+- Fixed: A few possible crashes when leaving the screen.
 
 ## SD Maid [v4.14.37](https://github.com/d4rken/sdmaid-public/milestone/107?closed=1) 08.10.2019
 ### Core
