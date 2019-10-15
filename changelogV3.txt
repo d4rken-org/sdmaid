@@ -1,3 +1,19 @@
+########## v3.1.5.4(391) #########
+@General
+- Improved: Clutter database.
+
+########## v3.1.5.3(390) #########
+@General
+- Improved: Clutter database.
+
+########## v3.1.5.2(389) #########
+@CorpseFinder
+- Fixed: [Backport from v4] A few cases of false positive results if the install number appendix for an app is bigger than a single digit (#394 Ty ew@XDA).
+
+########## v3.1.5.1(388) #########
+@General
+- Improved: Clutter database.
+
 ########## v3.1.5.0(387) #########
 @General
 - Improved: Clutter database.
@@ -560,3 +576,868 @@
 @Databases
 - Changed: Apps are now killed before their database is being worked on (#152)
 - Changed: Databases whose owner can not be determined are now excluded
+
+########## v3.0.4.0(340) #########
+@Common
+- Updated translations (added indonesian)
+- Updated cache DB
+- Updated app DB
+
+########## v3.0.3.9(339) #########
+@Common
+- Updated translations (added arabic)
+- Updated clutterDB (Ty @ Markus & David for some really good reports)
+- Fixed crash when rotating settings screen while loading
+- A few little UI changes
+- Fixed dialog title of the location picker for the Biggest tool 
+@AppCleaner
+- Prevent single cleaning if the result is already sure to be "0B freed"
+@SystemCleaner
+- Fixed issue with "Dr.Web" app (Ty @ Sergey Bugrov)
+@Scheduler
+- Fixed "Run Now" not working correctly
+
+########## v3.0.3.8(338) #########
+@Common
+- Updated clutterDB
+- Fixed not being able to select multiple targets on different hierarchy levels in the settings (Thx @ JT)
+- Items in the settings selection dialogs now show the full path
+- Fixed empty space on top of selection dialog
+
+########## v3.0.3.7(337) #########
+@Common
+- Updated translations
+- Updated app definitions (clutterDB)
+- Updated cache definitions (hcDB)
+- Fixed crash when entering settings
+- SD Maid will now be forced to crash for safety reason when the database could not be loaded
+@AppControl
+- Changed default sort mode to "Last Update"
+
+########## v3.0.3.6(336) #########
+@Common
+- Updated translations
+- Updated clutterDB
+- Some UI factoring to make future improvements easier
+- Reduced UI memory use and tweaked state change when switching between pages
+- Fixed layout issues when leaving/entering working states
+- Tweaked the progressbar
+- Changed movie icon
+- Improved storage detection for devices with variable primary internal/external storage
+- Fixed clutter reporter location detection for certain sd-card paths
+- Another attempted fix for a random UI crash i can't seem to fix so far
+@Explorer
+- Fixed crash due to method only being available in API16+
+@CorpseFinder
+- Fixed a crash when deleting items
+
+########## v3.0.3.5(335) #########
+@Common
+- Updated translations
+- Updated clutterDB
+- Fixed display timing out in some app sections
+- Fixed rate me bar never showing
+- Fixed a couple of rare UI crashes
+- SD Maid no longer excludes itself from the CorpseFinder
+- Various small UI tweaks to improve looks and performance
+- Settings that can select paths now display the current one
+- Improved binary setup on unrooted devices to support more edge cases
+- Added some compatibility code for Android L
+- Fixed kinda random crash in cases where the PackageManager threw an TransactionTooLargeException
+- Introduced a new internal "custodian" flag to deal with issues of files/folders with multiple owners
+@Explorer
+- Cache items are now marked with a green corner containing the AppCleaner symbol
+- Added "Copy path" to the options when clicking a file
+@AppControl
+- Improved scanning speed by reducing necessary directory traversal
+- Attempt to fix list position not being remembered
+- Changed icons
+@AppCleaner
+- Now cleans additional hand-picked cache folders
+- Added new global definitions to target additional caches
+- Attempt to fix issue when resuming SD Maid and an action finishes
+@Databases
+- Fixed bug where nothing was done on devices where the internal binary did not work
+
+########## v3.0.3.4(334) #########
+@Common
+- Updated translations
+- Updated clutterDB
+- Fixed rare crash when building previews
+- Fixed a crash when aborting deletions
+- Preselect Overview once again
+@Scheduler
+- Fixed Scheduler triggering after reboots
+- Improved UI
+
+########## v3.0.3.3(333) #########
+@Common
+- Updated clutterDB
+- Updated languages
+- Fixed crash during menu opening on slower (mostly GB) devices
+- Reordered startup routines
+- Switched busybox and root check to be on demand to reduce loading time on SD Maids initial start
+- Root check and busybox init will now happen when the first task is started, but before it executes
+- Fixed crash when finishing deletion operations due to failing threadlock
+- Tweaked start speed
+- Updated discrete-app-rate library
+
+########## v3.0.3.2(332) #########
+@Common
+- Updated clutterDB and languages
+- Optimized in-app graphics
+- Fixed issue where a task displayed "Canceling..." forever even though it actually was canceled
+- Added "SD Maid Pro" link into global menu on as replacement for the news dialog (ty Perka)
+- Updated translations
+@CorpseFinder
+- Fixed false positives when multiple apps had different keeper states for the same path
+
+########## v3.0.3.1(331) #########
+@Common
+- Improved startup after low memory situations
+- Fixed issues with the physical menu button on older devices
+- Fixed crash due to API issue on GB devices
+- Fixed crash on LGE devices running 4.1.2 due to a bug in Android
+- Added permission CLEAR_APP_CACHE for obvious reasons (more thorough cleaning in AppCleaner on unrooted devices)
+- Added permission GET_PACKAGE_SIZE for more accurate size display in AppControl and AppCleaner
+@AppControl
+- Fixed inaccurate appsize on unrooted devices
+@CorpseFinder
+- Improved results on older Galaxy S I devices
+- Fixed issues (due to wider scans since v3.0.3.0) in /data/app by teaching SDM about LPs dex injection (technically not false positives). I hesitated but SDM's accuracy is the more important goal. Remember pirates, if you won't buy apps, good apps will perish and if you can't buy apps, at least give a good review!
+@AppCleaner
+- Vastly improved cache cleaning for unrooted devices
+- Clicking the icon now opens the app details page of the system
+@Scheduler
+- Tweaked layout slightly, still ugly though, sorry work in progress :(
+
+########## v3.0.3.0(330) #########
+@Common
+- Updated languages
+- Added new apps to clutter database (Ty @ Markus B. for a lot of very solid reports)
+- Fixed possible startup crash
+- Fixed possible crash when canceling a deletion
+- Fixed inconsistency in the title when being switched from one feature to another
+- Long pressing a breadcrump in the path navigation bar now copies the path
+- Improved performance of file ownership research
+- Fixed size freed by deletion sometimes being lower then what was actually freed (Ty @ MikeL)
+- Merged CorpseFinders algorithms with the algorithms responsible for owner research (Explorer) to reduce duplicate code and improve consistency across features
+- Added owner research for /data/app-lib
+- The KitKat external sdcard deletion trick is now used as last resort without experimental mode on
+- Fixed startup crash due to android bug on some 4.1.2 LGE ROMs and 4.2.2 Samsung ROMs
+- Rearranged menu entries, if the navigation drawer is open, you see the global menu, while when it's closed it will display only menu items specific to that tool
+- SD Maid now forgets it's root state if backbutton or exit entry is used to exit the app, due to the system caching SD Maid it could previously lead to issues
+- Improved search boxes a bit, added icons and a clear button
+- Added settings entry that takes you to a guide/help document
+- Removed the news dialog, it was just nagging at this point, will evaluate better options
+- Added a little banner that asks you to rate SD Maid using the discreet-app-rate library
+- Moved the changelog button from actionbar to settings
+@Explorer
+- File/Folder ownership should now reflect the CorpseFinders result more accurately
+- Added owner research support for apk and dalvik files
+@Searcher
+- Fixed cross copying/cutting files to paste with the Explorer
+@CorpseFinder
+- Rewrote all routines to reduce duplicate code, merged algorithms.
+- Improved APK and APPLIB corpse scan
+- Improved speed and thoroughness of apk and dalvik scan
+@AppControl
+- Fixed reset being visible in batchmode on unrooted devices (doesn't work without root)
+@SystemCleaner
+- Added filter for device process statistics [EXPERIMENTAL]
+- Added filter for network (data usage) statistics [EXPERIMENTAL]
+- Added filter for /data/local/tmp [EXPERIMENTAL]
+- Fixed crash when rotating the filter manager twice (Ty @ MikeL)
+@AppCleaner
+- Added a minimum cache age setting, can now specify to only delete cache items that are older than x days
+- Tweaked line layout
+@Duplicates
+- Fixed size summary always being 0
+@Scheduler
+- Fixed schedule being reset on reboot (#141)
+
+########## v3.0.2.9(329) #########
+@Common
+- Various small UI tweaks (#119)
+- Updated translations
+- Updated clutterDB
+- The exit entry in the menu now cancels all operations and removes SD Maid from memory
+- Fixed a few random UI crashes
+- New back-button UX
+- Added permission request for WRITE_MEDIA_STORAGE which is necessary on some 4.4 devices for external sdcard access, even though apps normally can't obtain it (no harm in trying)
+- If root is granted SD Maid will try to use it to fulfill the (normally ignored) request for the WRITE_MEDIA_STORAGE permission
+- Added workaround for KITKAT external sdcard limitations to all features [EXPERIMENTAL] (Thanks to tliebeck@XDA for his work on the issue) (#108)
+- Added small easter-egg (#88)
+- Fixed freed size calculation issue for 2GB+ files
+@Explorer
+- Deletions no longer triggers automatic refresh
+- The displayed context actions should now better adapt to what is possible, depending on device status and path
+- Added option to trigger media scan for selected items (#99)
+- Fixed size calculation issue with 2GB+ items
+@CorpseFinder
+- Fixed uninstall-watcher wrongly triggering for app updates (#144)
+- Improved handling of restricted locations
+- Support for "app-lib" corpses (See settings) (#112)
+- Support for "obb" corpses (See settings) (#138)
+- Now displays the type as well as keeper state (red type tag)
+@AppControl
+- Exported apk files are now tagged with their current versionCode
+- Now remembers list position after uninstalling an app
+- Export destination picker is now simpler (stored location may have been reset)
+- Fixed bug where the uninstall cleanup wasted time
+- Fixed uninstall cleanup unnecessarily failing due to available root not being used
+@SystemCleaner
+- Added ".TemporaryItems" to MacOS Junk filter
+- Improved handling of restricted locations
+@Duplicates
+- Now makes use of root if necessary (e.g. 4.4 external sdcard restrictions)
+- Improved handling of restricted locations
+@Biggest
+- Changed search locations dialog
+- Search location has been reset to default
+@Databases
+- Added option to follow symbolic links
+- Now follows symlinks
+
+########## v3.0.2.8(328) #########
+@Common
+- Updated languages
+- Updated clutterDB
+- Improved filesystem detection
+@Explorer
+- Should now be able to remount ROOTFS
+- More accurate used/size and filesystem type display
+
+########## v3.0.2.7(327) #########
+@Common
+- Updated clutterDB with new definitions
+- Updated languages
+- Tweaked bug reporting setting to always allow the user to toggle it
+@Duplicates
+- Fixed batch deletion not correctly updating available options
+- Clearer summary message
+
+########## v3.0.2.6(326) #########
+@Common
+- Updated and added new languages
+- Updated clutterDB
+- Trying flag START_NOT_STICKY for the service to prevent the system from unnecessarily restarting it (SD Maid being granted root out of no where) after a low memory situation
+- Fixed mount-point options detection for some devices
+- Automatic remounting is smarter now and dynamically detects read-only targets
+- Trying android:largeHeap=true to help SD Maid handle 500+ apps and tens of thousands of files
+@Explorer
+- Fixed possible crash on back-button press
+- Added option to create an empty file
+- Fixed remounting issue with sub-directories
+@AppControl
+- Reduced memory use to combat "out of memory" crashes, should be able to handle more now
+- Fixed inconsistent icon between single/batch mode
+- Fixed apk export for /mnt/asec on rooted devices
+- Export will no longer be displayed on unrooted devices if it is not possible
+- The action "Delete app but keep data" is being deprecated and is now hidden as EXPERIMENTAL, if you have a good use case for this action that i'm unaware of, send me a mail
+@CorpseFinder
+- Fixed report dialog behaving weirdly
+@AppCleaner
+- Added duplicate check
+@Duplicates
+- Fixed crash due to endless recursion under some circumstances when using auto-selection
+@Biggest
+- Fixed possible crash on back-button press
+@Scheduler
+- Fixed Scheduler UI default states again
+
+########## v3.0.2.5(325) #########
+@Common
+- Language updates & new app entries in the clutterDB
+- Fixed two rare startup crashs
+- Fixed issue causing the back button to fire twice on a single press
+- Some changes to improve list scrolling
+- Fixed crash due to some installed apps supplying HUGE icons
+@AppControl
+- Reset is now available when selecting multiple apps
+@CorpseFinder
+- Fixed default watcher state displaying enabled when in code it was not enabled
+- Fixed uninstall watcher buttons in the notifcation not working when SD Maid was not in memory
+@SystemCleaner
+- Fixed crash when displaying deletion results
+@Biggest
+- Implemented backbutton behavior similar to the Explorer
+- Small UI improvements
+
+########## v3.0.2.4(324) #########
+@Common
+- Updated translations
+- Updated clutterDB
+- Fixed LFS issue with the new busybox (Thanks to John Buchanan)
+- Removed a few currently unused busybox applets to decrease size
+
+########## v3.0.2.3(323) #########
+@Common
+- Updated translations
+- Updated clutterDB
+- Added dialog in the settings that shows the "translators" field
+@Explorer
+- Back button takes you one dir up now
+@AppCleaner
+- Fixed excludes for root files not working (Thanks to Mike L)
+@Databases
+- Icons, yaaay :)!
+
+########## v3.0.2.2(322) #########
+@Common
+- Updated clutterDB
+- Updated languages
+- Improved binary setup
+- Fixed once again a busybox (knox related) issue on samsung devices
+- Fixed crash on the unlikely event of a null log message
+- When the progress max is 1, all features now show an indeterminate progress indicator
+- Explicitly defined implicit permission "android.permission.READ_EXTERNAL_STORAGE"
+- Updated busyboxes for all architectures (1.19.3 -> 1.22.1)
+- Fixed crash on startup (Network on main thread when setup failed)
+@Overview
+- Added info item for the sqlite binary
+@Explorer
+- Fixed bugs that caused SD Maid to try operations on files/directories without root when they required root
+- Fixed unnecessarily using root when browsing public directories
+@Searcher
+- Searching requires an input of minimum 2 characters now
+@AppControl
+- Fixed notification progress
+@SystemCleaner
+- Fixed not being able to exclude sub items
+@AppCleaner
+- Now uses internal image cache for icons too (saves memory)
+- Fixed not being able to exclude sub items
+- Can now deal with external sdcard restrictions on rooted devices (#108)
+@Scheduler
+- Fixed default state of checkboxes not being correctly reflected in the UI
+
+########## v3.0.2.1(321) #########
+@Common
+- Updated translations
+- Updated clutterDB
+- Added new busybox fallback stage to deal with new root restrictions in upcoming android versions
+- Fixed SD Maid not detecting the private app storage on some devices (Thanks to Sergei Sporik reporting this issue and helping me troubleshoot it)
+- Fixed crash when loading images due concurrency issue
+- Changed datastructures backing the ImageCache to improve performance
+@Explorer
+- Fixed bug not being able to copy from /storage/emulated/legacy to a directory that requires root
+@Scheduler
+- Fixed Scheduler deactivating after swiping SD Maid away from the recent tasks list
+- Tweaked UI
+- Fixed a few issues that should improve reliability
+
+########## v3.0.2.0(320) #########
+@Common
+- Updated clutterDB
+- Updated languages
+- I've redesigned the coffee steam. I'm shocked that some thought it's a beard and then didn't want SD Maid to clean their device anymore, wtf. It's STEAM from HOT COFFEE. :-|
+- SD Maid now slightly lowers the worker priority when the UI is closed and raises it again when the UI is opened again
+- Lowered the priority of preview generation and batched ListView notifications to make scrolling smoother
+- Fixed bug that caused .apk previews to flicker if the icon was unusually huge in size
+- Reduced memory use of .apk previews by downsampling icons to match the display density better
+- Possible fix a race-condition crash between ListView and onDestroyView
+- Fixed race-condition crash when opening/closing SD Maid and interacting with the navigation drawer
+@Explorer
+- Fixed not being able to delete items in /system
+- In landscape mode the owners name of a corpse is now displayed
+- Recursive permission setting is no longer possible for files
+- To reduce spam, reporting of files/folder has been deactivated unless a bugreport email has been entered
+- Fixed SuperUser copy/move issue (#90)
+@AppControl
+- Added CAB option to 'Select all'
+- Improved canceling behavior
+- Tweaked UI behavior after executing actions and restoring the list
+- Trying new caching system for app icons, should reduce memory usage and reduce lag
+@SystemCleaner
+- Filtereditor now prevents empty criteria entries
+@Duplicates
+- Fixed excludes not being filled in when used through item context menu
+
+########## v3.0.1.9(319) #########
+@Common
+- Updated languages
+- Updated clutterDB
+- Fixed busybox setup issue on some kernels due to ECHILD error
+@AppControl
+- Fixed crash when resuming while Details or Autostart dialog was open
+- Fixed freed space through uninstalling an app being counted twice
+@SystemCleaner
+- Correct summarized size that is displayed after scanning
+
+########## v3.0.1.8(318) #########
+@Common
+- Fixed crash on initialization
+- Improved busybox setup routine
+@AppControl
+- Fixed apk export not working
+
+########## v3.0.1.7(317) #########
+@Common
+- Tweaked busybox setup
+- Better logging
+- Added missing dialog after failed busybox detection/setup
+- Updated translations
+- Updated clutterDB
+- Increased rootcheck timeout to 20s
+@AppControl
+- Fixed default sorting mode not correlating with what the settings displayed
+
+########## v3.0.1.6(316) #########
+@Common
+- Updated translations
+- Updated clutterDB
+- Removed BETA text
+- Added white notification icon to fit Android design guidelines
+@OverView
+- Fixed UI issue, view recycling issue
+- Fixed possible NPE in 3rd party library
+@AppControl
+- Fixed not being able to delete system apps
+@CorpseFinder
+- Added safeguard against unknown ART complications
+- Improved dex/odex scan
+@Duplicates
+- Fixed crash in the autoselection dialog
+- Fixed deletion not canceling correctly
+
+########## v3.0.1.5(315) #########
+@Common
+- Updated languages
+- Updated clutterDB
+- Fixed possible crash when changing device configuration and using the mini browser in the settings
+- Fixed a crash when finishing an operation and simultaneously SD Maid was opened or closed
+- Fixed a crash when finishing or canceling a reading operation (crash report was from AppControl) by fixing synchronization
+- Root check now times out after a total of 30sec, (15 sec per check)
+- Prepared crash reporting for future release canidate
+@Explorer
+- Fixed size dialog not displaying when the size is 0
+@AppControl
+- Fixed a crash when trying to start an app that does not supply a valid launch intent
+@SystemCleaner
+- Added small toast to show OK and failed delete operations
+@Duplicates
+- Completely rewritten engine; Harder, Better, Faster, Stronger
+- Fixed collision issue (#89)
+
+########## v3.0.1.4(314) #########
+@Common
+- Don't show disclaimer on orientation change, only on first launch
+- Updated clutterDB
+- Fixed a memory leak in SD Maids basic file class, this basicly shaves ~20% memory use of any feature that uses file lists (which is most of them)
+- Fixed freed blockcount*blocksize instead of item size being displayed after deletions
+- Fixed possible crash on resuming SD Maid
+@Explorer
+- Fixed possible crash when report dialog generated the app list
+@AppControl
+- Fixed crash when uninstalling an app without root
+- Fixed size stats not being update on app uninstall
+@SystemCleaner
+- Added coloring to the filters
+
+########## v3.0.1.3(313) #########
+@Common
+- Reduced memory usage during reading/deletion operations
+- Improved deletion process: smoother, less root requests, better cancellation
+- Cleaned and improved log output
+@Explorer
+- Fixed issues when dealing with read only partitions (i.e. /system , /cust)
+- Fixed hang after changing permissions on many items
+- Fixed hang after calculating size on many items
+- Selection is now also restored after changing permissions
+- Fixed statistics being updates with twice the actual amount
+@AppControl
+- Fixed some privata app data directories not being acknowledged
+- Improved handling of private and public app data directories
+@SystemCleaner
+- Massive changes to the SystemCleaners search engine deal with consistency issues between SuperUser apps
+- Switched from black-listing to whit- listing search locations, this fixes compatibility issues with unknown devices and improves speed
+- Refactored and optimized filtering routine (up to 50% speed increase)
+- Added display for items filtered per second 
+- Improved matching with certain sdcard constellations
+@AppCleaner
+- Fixed size calculation issues
+- Fixed deletion issues with certain SuperUser apps
+@Duplicates
+- Reduced memory use
+- Improved failsafe checking speed
+- Better progress feedback
+
+########## v3.0.1.2(312) #########
+@Common
+- Updated clutterDB
+- Updated translations
+- Fixed ownership detection of /Android/obb/ items
+- Added a "Requires Pro" tag on App launch to fitting features
+- Reporting clutter without choosing an owner requires an entered email and at least 10 characters in the comments field
+- Fixed a few bad looking UI issues
+@Scheduler
+- Added "Run now" menu entry [EXPERIMENTAL]
+@Explorer
+- Fixed hang after pasting huge amounts of items (400+)
+- Improved progress feedback
+- Fixed a few menu issues when switching between layouts
+@AppControl
+- Fixed crash while in actionmode and filtering at the same time, now filtering automaticly exits the actionmode
+- Entering the actionmode hides the filter field and vice versa
+- Fixed "obb" directories not being included
+@AppCleaner
+- Fixed operations triggered through the Scheduler not exiting their working state.
+@Duplicates
+- Added input field to filter current results
+- Added additional safeguard due to more complex UI (filtering), should for some reason the user be able to select all clones in the UI, the DuplicatesWorker will refuse to delete them. 
+@Biggest
+- Now also displays the children count
+- Fixed a few UI issues
+
+########## v3.0.1.1(311) #########
+@Common
+- Reset update flag on version change, not only after the next change
+- Improved performance when dealing with large number of files
+@Searcher
+- Now uses RAM instead of disk space during operation
+- Can now also search for directories
+- When opening a Searcher item in the Explorer, and that item is a file, it will automaticly scroll to the correct position
+@AppCleaner
+- Fixed thread deadlock in workers using the HybridStreamer class
+- Fixed canceling operation not working during deadlock
+
+########## v3.0.1.0(310) #########
+@ClutterDB
+- Updated database
+- Fixed algorithm trying to looking up basepaths
+@Corpsefinder
+- Improved results with external sdcards
+- Fixed "Hide keepers" setting having no effect
+- Fixed bug causing false positives on devices with external sdcards, due to original search argument being included in results
+
+########## v3.0.0.9(309) #########
+@Common
+- Updated languages
+- Updated clutterDB
+- Improved storage detection
+- Added specific USB based storage detection
+- Fixed animation not working on non KitKat devices
+- Tweaked various layouts layout
+- Fixed PreviewLoader crashing on devices that return a memory class of 0 (wtf?)
+- Fixed threading crash caused by operations being launched twice
+- Lots of small "behind the scenes" code improvements for better performance and less memory use
+- HybridBrowsers(File dialogs in the settings) try to avoid using root now
+- Optimized all png graphics further
+@ClutterDB
+- Fixed issues detecting ownership on external sdcards
+- Improved performance
+- Added workarounds for SuperUser (Koush's / CM based ROMs) pathing bug
+- Improved detection of location type PUBLIC_DATA/SDCARD
+@Explorer
+- If an item is owned by multiple applications, the icons will cycle (2s per icon)
+- Improved detection of nested items (i.e. gameloft/XXXX and gameloft/YYYY)
+- Hide ownership icons in currently unsupported locations
+- If the permissions allow it, root is now avoided, this improves speed and circumvents SuperUsers (Koush's / CM based ROMs) pathing bug
+- Fix renaming collision check not triggering when target was a directory
+@AppControl
+- Improved scanning performance and fixed possible crash due to unnecessary threads being spawned
+@CorpseFinder
+- Tries to avoid using root now if possible
+- Filters in the Settings now show the colors used in the UI
+@AppCleaner
+- Fixed issue not detecting app caches on nested external sdcards
+- Improved scanning performance
+@Biggest
+- Fixed navigation not working under certain conditions
+- Fixed crash on leaving this feature and/or going to home screen
+@Databases
+- Fixed another crash on canceling a scan
+- Changed result display, prevented being able to call optimize on results again repeatedly even if nothing changes
+@LastModified
+- Tries to avoid using root now if possible
+
+########## v3.0.0.8(308) #########
+@Common
+- Updated languages
+- Enabling debug mode now immediately takes effect
+- SD Maid now tries to the used VM (Dalvik/Art), this is not used yet, but SD Maid might have to deal with VM specific issues in the future so I'm testing the check for it already
+- Increased debugoutput when deleting items when DEBUG_MODE is on
+- Updated HoloGraphLibrary
+- Was a bit creative and added a working animation :-)
+- Optimized all used PNGs
+- Removed a unused resources
+- Readded email button to settings, auto inserts the devices stats uuid
+- Fixed a bug could cause a read directory to be add to it's content
+- Improved UI performance
+- Updated clutterDB
+- Starting on the overview page by default now, but it doesn't autoload anymore
+@Statistics(External)
+- The runtime visible in the overview is now also getting transmitted, this will help me to implement a correct runtime detection
+- The current ISO language code of your device so that translations can be prioritized
+@Overview
+- Fixed crash on first launch on slower devices due to a race condition
+- Added VM Type to the device dialog (opens when you click the icon)
+- Added an entry that shows update availability
+- The NoRoot dialog now has a button that takes you directly to a Google search for "root YOUR_DEVICE"
+@Explorer
+- Fixed several crashes related to aborting an operation
+- Rewrote copy/move/delete code, more speed, less SU calls, better progress feedback \o/
+- Fixed entering a directory with lots of files not reacting to cancel
+- Improved browsing speed by a factor of 9 when owner research is turned on
+@AppControl
+- Removed dependency on XOM xml library due being replaced by API8 calls
+- Fixed frozen app detection on some ROMs (Thanks to vibes340 for his help tracking this down)
+- Previous scroll positions are now restored where it makes sense
+- Changed the action listing from squares into a vertical list
+- Hide actions that are not possible instead of showing them disabled
+- Added action "Kill application" app entry
+- Added action "Kill application" to the CAB when selecting multiple entries
+@CorpseFinder
+- Improved DEX/ODEX filter to better deal with ART-VM related files
+- Improved DEX/ODEX filter to find additional files on CM based ROMs
+- If possible root will no longer be used when deleting files that are user readable/writeable
+@SystemCleaner
+- Made general thumbnail filter less strict by removing extension requirement, but added a size requirement
+@Databases
+- Fixed crash when sometimes canceling the VACUUM operation
+
+########## v3.0.0.7(307) #########
+@Common
+- Changed root test timing
+- Notifications of not running actions are now removed when entering SD Maid
+- When SD Maid is swiped from the systems recent task view, it exits, shutsdown the service and removes all notifications
+- Added stats reporting see (see also https://plus.google.com/u/0/b/116634499773478773276/116634499773478773276/posts/G67goqQisUw )
+@Overview
+- Changed icon coloring
+@Explorer
+- Added possibility to report a file/folder by clicking the owner icon on the right (see also https://plus.google.com/b/116634499773478773276/116634499773478773276/posts/9p9W3bGmvEg )
+@AppControl
+- Fixed orientation change crash when the AutostartToggle dialog was open
+- Fixed autostart tag being grey if there was a mix of activated/deactivated autostart receivers
+@CorpseFinder
+- Added option to report false positives through the context menu (see also https://plus.google.com/b/116634499773478773276/116634499773478773276/posts/9p9W3bGmvEg )
+@Biggest
+- Fixed broken navigation
+@Databases
+- Fixed optimization doing less than was possible due to not utilizing root when it was available.
+- Fixed inconsistent info dialog texts and translations
+@Scheduler
+- Update scheduler options each time a checkbox is toggled, not only when the time is set
+
+########## v3.0.0.6(306) #########
+@Common
+- Updated languages
+- Fixed typos
+- Updated clutterDB
+- Added detection for external sdcard (/storage/external_SD) of more LG devices such as the LG L9 II
+- Fixed crash in the path chooser dialog that is used in the settings when rotating the device twice
+- Added advanced setting to change SD Maids multithreading behavior
+- Added link in settings to the issue tracker, activates when you enter an email for the bugreports
+@Excludes
+- Fixed another crash on empty tags, it is recommended to reinstall SD Maid if you experienced this before.
+@Overview
+- Fixed crash on loading on API10 devices
+@Explorer
+- Fixed crash when autoscrolling after executing features on API10 devices
+@AppControl
+- Added setting to choose app export destination
+- Added new folder button to export destination chooser
+- AppControl will now no longer remove directories marked as "KEEPER" when removing apps (i.e. Backup Folders), added a setting to enable this again
+- Changed a few confusing dialog messages
+@Duplicates
+- Display which file the checksum is being calculated for
+@Biggest
+- When switching to the explorer it now scrolls to the pressed item
+@LastModified
+- Fixed a bug that caused it to return no results when the setting "only Files" was checked
+- When switching to the explorer it now scrolls to the pressed item
+
+########## v3.0.0.5(305) #########
+@Common
+- Updated languages
+- Fixed various small UI inconsistencies
+- Fixed back button not working outside of tablet mode
+- The info message in the navigation now scrolls horizontally when necessary and the item is selected
+- Fixed exclude entries not showing their tags in the overview
+- Fixed navigation not correctly retaining its state after rotation
+- Most features should now display the selection count in the CAB
+@Excludes
+- Prevented the user from creating empty excludes
+- Fixed when loading/saving excludes with no tags
+- Excludes with no tags are now default tagged as GLOBAL
+@Explorer
+- Removed "Done" status message after operations finished, displaying the path again is more suitable
+- Where it is useful, operations now remember their scroll position
+- The selection now persists when calculating size or pasting items
+- Fixed clipboard count not being correct displayed
+- Added CAB action that creates a SystemCleaner filter for the selected item(s) [PRO]
+@CorpseFinder
+- Updated database
+@SystemCleaner
+- Fixed .log filter only picking up log files that require root
+- Added exclude for /cache/recovery/last_log as it breaks some applications way of detecting recovery types
+- Excluded /cache/ from general .log filter in case of overlap
+- Moved Empty directory filter to last position so during scan it will not steal matches from other filters
+- Added new default filter "Miscellaneous"
+- Updated "Advertisement files" filter
+@AppCleaner
+- Removed "Count" sort as it served no good purpose
+@Scheduler
+- Fixed charger condition not being correctly met
+@Statistics
+- Removed "Total files counter" as it was just not accurate, will have to replace this whole section with something cooler in an update
+
+########## v3.0.0.4(304) #########
+@Common
+- Updated languages and added new ones
+- Fixed various settings being ignored due to previous settings refactoring
+- Refactored a few settings and added more icons
+- Improved busybox and sqlite3 binary setup
+- Restarting SD Maid after installing the Unlocker should no longer be necessary
+- Result notifications from the worker can now be made non persistent through settings
+- Fixed a few crashes on start/resuming SD Maid due to race condition between service and fragment
+- Fixed a crash in GlobalSettings for a devices
+- Fixed various crashes when updating lists
+- Improved various smaller UI elements
+- Updated android support library
+- Build against 4.4 SDK
+- Added new exclude system based on tags, allows creating excludes for sub features (EXCLUDES HAVE BEEN RESET!)
+- Removed double tap to exit for now
+@Explorer
+- Fixed 'Change permission' not working correctly
+- Changed change permission to be non-intrusive ignoring unknown flags
+- Removed "Send to" option for files only readable with root
+@AppControl
+- Apps that have autostart items, but where none is enabled, now display a greyed out AUTOSTART tag
+@CorpseFinder
+- Added notification when an app is uninstalled that allows you to run the CorpseFinder (see settings) [Pro]
+@SystemCleaner
+- New default filter 'Advertisement files', will be expanded further in the future
+- Fixed canceling not working
+@Databases (formerly Optimize DBs)
+- Added support for MIPS and X86 processors
+- Updated sqlite3 binary
+- Only show items with size difference after optimizing
+- Fixed searchpaths not being acknowledged
+- Fixed canceling not working
+- Fixed possible hang on huawei devices
+
+########## v3.0.0.3(303) #########
+@Common
+- Updated and added languages
+- Added checkbox for debugmode output again
+- Fixed bad toastmsg in follow dialog
+- Updated clutter database
+- Removed now unused navigation code for expandable items, should reduce memory foot print
+- Fixed a few layout issues
+- Added permission android.permission.VIBRATE, to fix an bug in Android when using notifications
+@Explorer
+- New The explorer will now try to determine the ownership of a file/directory and display it's app icon
+@AppControl
+- Improved app size estimates
+@CorpseFinder
+- Added support for app directories in private data storage that are not following naming conventions
+- Fixed a rare but really nasty bug that caused a lot of false positives, which Mike L had the fortune to discover the hard way
+- Fixed bug that caused corpses to be missed due to case sensitivity of packagenames
+@AppCleaner
+- Fixed Excludes not being honored by subfiles that required root to be read
+- Slightly better performance
+- Checks more possible locations now by using SD Maids ClutterDB
+@SystemCleaner
+- Added ".fseventsd" to MacOS junk file filter
+- New general thumbnails filter
+- Improved specific Android Gallery app thumbnails filter
+- Added new default filter for .Trash linux files
+- Removed CustomFilter restriction that enforced isEmpty when isDirectory was checked, this effectively allows custom filters to recursive deletion now (BE CAREFUL!)
+
+########## v3.0.0.2(302) #########
+@Common
+- Updated languages
+- Added ukrainian language
+- Made a few missed texts translatable
+- A few possible fixes for random crashes that i can't reproduce
+@Overview
+- Fixed an crash when the app was in the background during updating the display
+@Explorer
+- Fixed crash
+@LastModified
+- Fixed wrong explanation
+@SystemCleaner
+- Fixed filters not saving
+
+########## v3.0.0.1(301) #########
+@Common
+- Raised target API to 19, SD Maid v3 now targets 2.3.3 - 4.4
+- Smarter check to see if busybox is set up correctly
+- Fixed random crash when changing orientation or app focus
+- Fixed crash when the FileBrowser(Not explorer) was working in the background
+- Fixed using the stock icon in notifications
+- Refactored the settings
+- Readded new translations: Russian, Serbian and portuguese (brazil)
+- Fixed a few settings not working
+@AppControl
+- Fixed crash on changing orientation while the autostart toggle dialog was open
+@SystemCleaner
+- Fixed FilterManager crash
+- Fixed crash doing scanning due to low memory
+- Moved filter creation into a dialog, should now also save more reliably
+@Scheduler
+- Fixed crash when using the battery condition
+
+########## v3.0.0.0(300) #########
+@Common
+- Completely redone architecture and UI (300+ commits)!
+- Cleaned up strings and translations
+- Where reasonable, operations are cancelable now
+- Added crash reporting tool ACRA
+- Added android.permission.INTERNET to use crash reporting tool ACRA
+- Added Scheduling
+- Added android.permission.RECEIVE_BOOT_COMPLETED which is necessary to reinstate scheduling after reboots
+- Actions can now run in parallel (See Advanced Settings)
+- Removed ActionBarSherlock in favor of ActionBarCompat (@support.v7)
+- Previews are now also generated for app icons
+- New app icon (Thanks to user Blazing King for his help and inspiration)
+- Better partition detection for unknown devices
+@Overview
+- Startpage is now the Overview page
+- Added a set of infos to give a good overview over the device
+- Certain info icons are clickable to displaz extra information
+- More partition details
+@Explorer
+- Removed custom coloring option for now ( might reintroduce later with a color picker)
+- New navigation bar
+- Current path display now has clickable parent folders
+- Use the 'Zoom out' gesture to leave the current directory
+- Added showing and handling of symbolic links
+- Will automaticly remount /system if necessary
+- Now displays information about the current location
+@Searcher
+- Can now copy/cut multiple files to explorer [Pro]
+- Start search through enter button on keyboard
+- Disabled searching with empty inputs
+@AppControl
+- Now automatically calculates size to it's best ability (clutterDB,root?)
+- Default sort mode is now sort by size
+- Now uses ClutterDB to identify additional SDCard directories 
+- Now can enabled/disable autostart components (root)
+- Now can export apks
+@CorpseFinder
+- Now employs ClutterDB to detect false positives (PUBLIC_DATA_REBELL), contact me if you found one (I'm looking at you fancywidgets... >:-/ )
+@SystemCleaner
+- Reworked filtersystem, hopefully it's a bit simpler to create custom filters now.
+@AppCleaner
+- Now use the ClutterDB to identify more cache directories
+@Duplicates
+- Formerly known as DuplicateFinder
+- Custom search paths can be specified in the options
+- Highlights can't be turned off anymore (did anyone really turn this off?)
+@Biggest
+- I'm new and was formerly the 'BiggestFiles' feature
+@Optimize DBs
+- Executing the SQLite command VACUUM now has its own section
+- DBs are now listed and can have commands executed similar to what the other tools offer
+@Last modified
+- Has its own window now
+- More settings, path, timeframe
+@Misc
+- Exported some features, others removed for now
+@Scheduler [Pro]
+- Stop calling me, I'm here!
+- Added notification
+- Added conditions
