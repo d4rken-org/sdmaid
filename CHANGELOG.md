@@ -1,7 +1,21 @@
 # Changelog
 - Latest production version: v4.14.38 (41438), Unlocker v4.3.9(40309)
-- Latest beta version: 🤷
+- Latest beta version: v4.14.39(41439)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.14.39](https://github.com/d4rken/sdmaid-public/milestone/109?closed=1) 31.10.2019
+### Core
+- Improved: Updated internal dependencies (fixes a couple of rare issues).
+- Improved: Clutter database.
+- Improved: Translations.
+- Fixed: Coffee drinking animation causing a crash one some devices.
+- Fixed: Improved unlocker checking, potentially fixing an issue where SD Maid wouldn't recognize the unlocker until reboot.
+
+### AppCleaner
+- Added: Initial support for ACS based cache deletion on Realme ROMs.
+- Improved: ACS based cache deletion on Samsung OneUI 1.0/2.0.
+- Improved: Improved bug reporting files filter (#3042).
+- Improved: ACS based cache deletion will now try older (API) matching variants, i.e. if you have Android 10 but there is no specific language definition, it will try the definitions from Android 4.1 to 9.
 
 ## SD Maid [v4.14.38](https://github.com/d4rken/sdmaid-public/milestone/108?closed=1) 09.10.2019
 ### Core
