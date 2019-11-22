@@ -1,7 +1,42 @@
 # Changelog
 - Latest production version: v4.14.39(41439), Unlocker v4.3.9(40309)
-- Latest beta version: 👻
+- Latest beta version: v4.15.0(41500)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.0](https://github.com/d4rken/sdmaid-public/milestone/110?closed=1) 22.11.2019
+### Core
+- Added: Support for upgrading to SD Maid Pro via in-app purchase.
+- Improved: Translations.
+- Improved: Clutter database.
+- Improved: UI and core logic related to upgrading to SD Maid Pro, better error handling.
+- Improved: Internal dependency updates to data serialization and bug tracking.
+- Improved: Slightly better app start performance due to better navigation related code. 
+- Fixed: SD Maid not recognizing the unlocker until reboot in some cases.
+- Fixed: Work around for ROM bug on some Samsung Galaxy/Note 8 custom ROMs if on Android 9 or lower. Caused a crash when loading data about installed apps via `PackageManager.getSharedLibraries(...)` (#3100).
+- Fixed: Debug logs not containing the install ID.
+- Changed: Hidden the hide unlocker behavior on Android 10 due to no longer being possible (#2972).
+
+### Explorer
+- Improved: Now displaying more size digits, but only showing both allocated and actual file size if the difference is larger than 5% or the file size is smaller than 4096 byte (#3112).
+
+### AppControl
+- Added: Filter option for library packages (#3104).
+- Improved: No longer showing "Go to Google Play" or "Show System Settings" buttons in app details, if unavailable (e.g. for library packages) (#3104).
+- Improved: Details such as install/update date are now hidden if unavailable for specific package type (e.g. instant/library types).
+
+### SystemCleaner
+- Added: Added option to toggle custom filter sorting between last modification date and name (#2772).
+- Added: Custom filters without description text will display their last modification date.
+- Changed: Custom filters are now sorted by date by default (#2772).
+
+### AppCleaner
+- Improved: ACS based cache deletion on Realme ROMs (#3040).
+- Improved: ACS based cache deletion on AOSP ROMs for `zh-TW`.
+- Improved: ACS based cache deletion on Samsung (Android 9) ROMs for `zh-TW-hanT`.
+- Improved: ACS based cache deletion on Huawei (Android 10) ROMs for `de_DE`.
+
+### Statistics
+- Fixed: Overlapping chart text (#1187).
 
 ## SD Maid [v4.14.39](https://github.com/d4rken/sdmaid-public/milestone/109?closed=1) 31.10.2019
 ### Core
