@@ -21,7 +21,7 @@
 
 ### AppCleaner
 - Added: ACS based cache deletion support for MIUI v11+.
-- Improved: Added orkaround for apps with large caches on slow devices. Previously, if the system's details screen for an app was displaying "Calculating sizes..." SD Maid could treat this as successful deletion as there is also an edge case where the system tells SD Maid there is cache, but the "Clear cache" button is disabled as there isn't actually any cache (see #2517). Now SD Maid will backtrack and scan the UI hierarchy from a few levels up again and if all buttons are disabled, wait a bit, then try again (#3121).
+- Improved: Added workaround for apps with large caches on slow devices. Previously, if the system's details screen for an app was displaying "Calculating sizes...", SD Maid could treat this as successful deletion as there is also an edge case where the system tells SD Maid there is cache, but the "Clear cache" button is disabled as there isn't actually any cache (see #2517). Now SD Maid will backtrack and scan the UI hierarchy from a few levels up again and if all buttons are disabled, wait a bit, then try again (#3121).
 - Improved: ACS based cache deletion on Samsung OneUI 1.1 for Dutch.
 - Improved: ACS based cache deletion, faster UI crawling, better error handling.
 - Improved: Bug reporting filter (#3116).
