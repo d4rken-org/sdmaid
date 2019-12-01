@@ -1,7 +1,30 @@
 # Changelog
 - Latest production version: v4.14.39(41439), Unlocker v4.3.9(40309)
-- Latest beta version: v4.15.0(41500)
+- Latest beta version: v4.15.1(41501)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.1](https://github.com/d4rken/sdmaid-public/milestone/111?closed=1) 01.12.2019
+### Core
+- Improved: Clutter database.
+- Improved: Setup layout. Permission setup should now longer awkwardly cut the text into the next line.
+- Improved: Upgrade dialog, additional information about Google Play Family Library.
+- Changed: The option to manually show the "Upgrade to Pro" from debug menu to general settings.
+- Removed: Some bug tracking towards Google Play services related issues that is no longer necessary.
+- Fixed: Crash when opening the upgrade window.
+- Fixed: Crash when opening settings details and rotating the device.
+
+### Overview
+- Removed: SELinux Status on Android 6.0+ due to being unreliable without triggering root checks everytime (#2298).
+
+### AppControl
+- Fixed: Crash when viewing details and configuration changes (e.g. device rotation) happen.
+
+### AppCleaner
+- Added: ACS based cache deletion support for MIUI v11+.
+- Improved: Added orkaround for apps with large caches on slow devices. Previously, if the system's details screen for an app was displaying "Calculating sizes..." SD Maid could treat this as successful deletion as there is also an edge case where the system tells SD Maid there is cache, but the "Clear cache" button is disabled as there isn't actually any cache (see #2517). Now SD Maid will backtrack and scan the UI hierarchy from a few levels up again and if all buttons are disabled, wait a bit, then try again (#3121).
+- Improved: ACS based cache deletion on Samsung OneUI 1.1 for Dutch.
+- Improved: ACS based cache deletion, faster UI crawling, better error handling.
+- Improved: Bug reporting filter (#3116).
 
 ## SD Maid [v4.15.0](https://github.com/d4rken/sdmaid-public/milestone/110?closed=1) 22.11.2019
 ### Core
