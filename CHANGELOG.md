@@ -1,7 +1,17 @@
 # Changelog
 - Latest production version: v4.14.39(41439), Unlocker v4.3.9(40309)
-- Latest beta version: v4.15.1(41501)
+- Latest beta version: v4.15.2(41502)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.2](https://github.com/d4rken/sdmaid-public/milestone/111?closed=1) 02.12.2019
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Fixed: UI Crash on various screens affecting some users.
+- Fixed: Possible crash when visiting the general settings page.
+
+### AppControl
+- Added: Support for exporting apps with split APKs (#2876).
 
 ## SD Maid [v4.15.1](https://github.com/d4rken/sdmaid-public/milestone/111?closed=1) 01.12.2019
 ### Core
