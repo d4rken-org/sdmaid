@@ -3,13 +3,13 @@
 - Latest beta version: 🎄
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v4.15.4](https://github.com/d4rken/sdmaid-public/milestone/113?closed=1) 13.12.2019
+## SD Maid [v4.15.4](https://github.com/d4rken/sdmaid-public/milestone/114?closed=1) 13.12.2019
 ### Core
 - Improved: Clutter database.
 - Fixed: Not being able to press end when manually entering the access key from apps.darken.eu.
 - Fixed: Crash when entering general settings due to an unknown locale code being encountered while loading language related data.
 
-## SD Maid [v4.15.3](https://github.com/d4rken/sdmaid-public/milestone/112?closed=1) 09.12.2019
+## SD Maid [v4.15.3](https://github.com/d4rken/sdmaid-public/milestone/113?closed=1) 09.12.2019
 ### Core
 - Improved: Clutter database.
 
