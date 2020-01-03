@@ -1,7 +1,26 @@
 # Changelog
 - Latest production version: v4.15.4(41504), Unlocker v4.3.9(40309)
-- Latest beta version: 🎄
+- Latest beta version: v4.15.5(41505)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.5](https://github.com/d4rken/sdmaid-public/milestone/115?closed=1) 03.01.2020
+### Core
+- Improved: ClutterDB.
+- Improved: Translations.
+- Improved: Clutter reporter UI.
+
+### Explorer
+- Added: Media store pruning. SD Maid will check and remove any stale references to the file/folder within Android's media store database. On by default, can be disabled via settings (#3010).
+
+### AppCleaner
+- Added: ACS support for ColorOS 3.2.
+- Added: Unity analytics to the analytics filter (#3181).
+- Improved: ACS matching for `ru` on API29 (AOSP).
+- Improved: ACS matching for `zh` (traditional) API28 (AOSP).
+- Improved: Better handling of situations where the system is still calculating app sizes. SD Maid will now back off and retry with incrasing delay.
+
+### Scheduler
+- Fixed: Execution being skipped if checking for SD Maid Pro takes too long (#3210).
 
 ## SD Maid [v4.15.4](https://github.com/d4rken/sdmaid-public/milestone/114?closed=1) 13.12.2019
 ### Core
