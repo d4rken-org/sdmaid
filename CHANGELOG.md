@@ -25,7 +25,7 @@
 ## SD Maid [v4.15.4](https://github.com/d4rken/sdmaid-public/milestone/114?closed=1) 13.12.2019
 ### Core
 - Improved: Clutter database.
-- Fixed: Not being able to press end when manually entering the access key from apps.darken.eu.
+- Fixed: Not being able to press send when manually entering the access key from apps.darken.eu.
 - Fixed: Crash when entering general settings due to an unknown locale code being encountered while loading language related data.
 
 ## SD Maid [v4.15.3](https://github.com/d4rken/sdmaid-public/milestone/113?closed=1) 09.12.2019
