@@ -1,7 +1,22 @@
 # Changelog
-- Latest production version: v4.15.6(41506), Unlocker v4.3.9(40309)
-- Latest beta version: 🐕
+- Latest production version: v4.15.6(41506), Unlocker v4.4.0(40400)
+- Latest beta version: v4.15.7(41507), Unlocker v4.4.1(40401)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.7](https://github.com/d4rken/sdmaid-public/milestone/117?closed=1) 01.03.2020
+### Core
+- Improved: ClutterDB.
+- Improved: Translations.
+- Improved: Internal dependency updates.
+- Changed: Relaxed the criteria when checking for a functional mount-applet on Android 8 to increase compatibility (#3325).
+- Fixed: Crash when trying to report clutter and pausing/resuming the screen.
+- Fixed: Storage permission not being grantable during setup on small screens (#3287).
+
+### AppControl
+- Fixed: Activity shortcuts overwriting each other in some cases (#3304).
+
+### AppCleaner
+- Improved: Hidden caches filter.
 
 ## SD Maid [v4.15.6](https://github.com/d4rken/sdmaid-public/milestone/116?closed=1) 27.01.2020
 ### Core
