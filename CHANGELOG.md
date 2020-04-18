@@ -1,7 +1,32 @@
 # Changelog
 - Latest production version: v4.15.8(41508), Unlocker v4.4.1(40401)
-- Latest beta version: .
+- Latest beta version: v4.15.9(41509)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.9](https://github.com/d4rken/sdmaid-public/milestone/119?closed=1) 18.04.2020
+### Core
+- Improved: ClutterDB.
+- Improved: Translations.
+- Improved: Internal dependency updates.
+- Improved: Upgrade check related to IAPs.
+
+### CorpseFinder
+- Added: Matching for malware related files (`com.mufc.*`).
+
+### AppCleaner
+- Improved: Trashbin folder, added Meizu gallery (#3366).
+- Improved: Added eStrongs Explorer related files  to hidden caches filter (#3341).
+- Improved: Moved `UnityCache` matching to the games files filter.
+- Improved: Adjusted debug output, a little bit, more a little bit less, just right :).
+- Improved: ACS based cache cleaning on EMUI10 (`it`) and Android Go 8.1 (`ru`) (#3424,#3425).
+- Improved: ACS based cache cleaning on MIUI, in debug scenarios, disarming SD Maid should now not cause SD Maid to get stuck.
+- Improved: ACS based cache cleaning on Meizu devices.
+- Improved: Added hardexclusion for `com.eltechs.ed` from the scan due to huge scan slow down (hundreds of thousands of files) (#3387).
+- Fixed: Manufactor matching for "Meizu" devices.
+- Fixed: Hidden caches filter containg `.trash`, moved to the trash filter (#3404).
+
+### Databases
+- Improved: Excluded Evernote DB from optimization due to issues (exclusion can be manually removed).
 
 ## SD Maid [v4.15.8](https://github.com/d4rken/sdmaid-public/milestone/118?closed=1) 09.03.2020
 ### Core
