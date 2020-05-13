@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version: v4.15.8(41508), Unlocker v4.4.1(40401)
-- Latest beta version: v4.15.9(41509)
+- Latest beta version: v4.15.10(41510)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.10](https://github.com/d4rken/sdmaid-public/milestone/120?closed=1) 13.05.2020
+### Core
+- Improved: Lot's of ClutterDB updates (Thx @programmist87)!
+- Improved: Translations.
+- Improved: Internal build changes to allow building a separate version that can be published on the Huawei App Gallery.
+
+### Explorer
+- Fixed: Color for "common" corpses not matching the documentation (#3479).
+
+### AppCleaner
+- Improved: Hidden caches filter.
+- Improved: Bug reporting filter.
+
+### QuickAccess
+- Improved: Tweaked display of total size (#3441).
 
 ## SD Maid [v4.15.9](https://github.com/d4rken/sdmaid-public/milestone/119?closed=1) 18.04.2020
 ### Core
