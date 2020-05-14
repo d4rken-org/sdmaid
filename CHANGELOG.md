@@ -1,7 +1,11 @@
 # Changelog
 - Latest production version: v4.15.8(41508), Unlocker v4.4.1(40401)
-- Latest beta version: v4.15.10(41510)
+- Latest beta version: v4.15.11(41511)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.11](~) 14.05.2020
+### Core
+- Fixed: Crash when trying to switch pages in SD Maid.
 
 ## SD Maid [v4.15.10](https://github.com/d4rken/sdmaid-public/milestone/120?closed=1) 13.05.2020
 ### Core
