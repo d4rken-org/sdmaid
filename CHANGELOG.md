@@ -153,7 +153,7 @@
 - Improved: Slightly better app start performance due to better navigation related code. 
 - Fixed: SD Maid not recognizing the unlocker until reboot in some cases.
 - Fixed: Work around for ROM bug on some Samsung Galaxy/Note 8 custom ROMs if on Android 9 or lower. Caused a crash when loading data about installed apps via `PackageManager.getSharedLibraries(...)` (#3100).
-- Fixed: Debug logs not containing the install ID.
+- Fixed: Debug logscontaining the install ID.
 - Changed: Hidden the hide unlocker behavior on Android 10 due to no longer being possible (#2972).
 
 ### Explorer
