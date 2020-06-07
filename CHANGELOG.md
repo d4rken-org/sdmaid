@@ -1,7 +1,24 @@
 # Changelog
 - Latest production version: v4.15.8(41508), Unlocker v4.4.1(40401)
-- Latest beta version: v4.15.11(41511)
+- Latest beta version: v4.15.12(41512)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.12](https://github.com/d4rken/sdmaid-public/milestone/121?closed=1) 07.06.2020
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: IAP related debug output.
+- Fixed: Crash on rotation within the clutter reporting screen.
+- Fixed: Donate options crashing on Huawei builds due to missing GPLay services.
+- Fixed: Crash on custom ROMs with GPlay service stubs.
+
+### QuickAccess
+- Improved: Fixed summary info text on the bottom button bar being cut off when using larger fonts (#3560).
+
+### AppCleaner
+- Improved: Filter for hidden-caches and bugreporting related files (#3570).
+- Improved: ACS based cache deletion on Huawei and LGE devices (locales `en` and `ru`) (#3577,#3576).
+- Fixed: Overflow menu being non-responsive after returning from a subscreen and clearing the search field (#3477).
 
 ## SD Maid [v4.15.11](~) 14.05.2020
 ### Core
