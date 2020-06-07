@@ -15,10 +15,12 @@
 ### QuickAccess
 - Improved: Fixed summary info text on the bottom button bar being cut off when using larger fonts (#3560).
 
+### AppControl
+- Fixed: Overflow menu being non-responsive after returning from a subscreen and clearing the search field (#3477).
+
 ### AppCleaner
 - Improved: Filter for hidden-caches and bugreporting related files (#3570).
 - Improved: ACS based cache deletion on Huawei and LGE devices (locales `en` and `ru`) (#3577,#3576).
-- Fixed: Overflow menu being non-responsive after returning from a subscreen and clearing the search field (#3477).
 
 ## SD Maid [v4.15.11](~) 14.05.2020
 ### Core
