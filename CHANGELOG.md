@@ -1,7 +1,25 @@
 # Changelog
 - Latest production version: v4.15.12(41512), Unlocker v4.4.1(40401)
-- Latest beta version: :)
+- Latest beta version: v4.15.13(41513)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.13](https://github.com/d4rken/sdmaid-public/milestone/122?closed=1) 10.07.2020
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Fixed: Crash if 3rd party apps launched a random SD Maid activity.
+
+### AppCleaner
+- Improved: Hidden caches filter.
+- Improved: Advertisement files filter.
+- Improved: Trash files filter.
+- Improved: Offline files filter.
+- Improved: Logging to easier debug future ACS related issues (#3578).
+- Fixed: ACS matching on Meizu (flyme) devices (##3273).
+- Fixed: ACS matching should no longer fails on devices running custom ROMs (i.e. MIUI device with LOS) (#3652).
+- Fixed: ACS matching on MIUI 12.
+- Fixed: ACS matching on Alcatel devices Running Android 10.
+- Fixed: ACS matching on ColorOS ROMs based on Android P.
 
 ## SD Maid [v4.15.12](https://github.com/d4rken/sdmaid-public/milestone/121?closed=1) 07.06.2020
 ### Core
