@@ -15,7 +15,7 @@
 - Improved: Trash files filter.
 - Improved: Offline files filter.
 - Improved: Logging to easier debug future ACS related issues (#3578).
-- Fixed: ACS matching on Meizu (flyme) devices (##3273).
+- Fixed: ACS matching on Meizu (flyme) devices (#3273).
 - Fixed: ACS matching should no longer fails on devices running custom ROMs (i.e. MIUI device with LOS) (#3652).
 - Fixed: ACS matching on MIUI 12.
 - Fixed: ACS matching on Alcatel devices Running Android 10.
