@@ -9,6 +9,7 @@
 - Improved: Translations.
 - Fixed: Crash on ROMs with abnormal wakelock behavior that could lead to a crash.
 - Fixed: Potential crash on MIUI ROMs (#3668).
+- Fixed: SDCard detection on Huawei AppGallery builds (`v4.##.##h`).
 
 ### CorpseFinder
 - Fixed: Exclusions on nested files (i.e. on child `corpse/parent/child`), not working due to the parent folder not being excluded too (#3654).
