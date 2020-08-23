@@ -1,7 +1,27 @@
 # Changelog
 - Latest production version: v4.15.13(41513), Unlocker v4.4.1(40401)
-- Latest beta version: ~
+- Latest beta version: v4.15.14(41514)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v4.15.14](https://github.com/d4rken/sdmaid-public/milestone/124?closed=1) 23.08.2020
+### Core
+- Improved: Clutter database (TY @programmist87).
+- Improved: Translations.
+- Fixed: Crash on ROMs with abnormal wakelock behavior that could lead to a crash.
+- Fixed: Potential crash on MIUI ROMs (#3668).
+
+### CorpseFinder
+- Fixed: Exclusions on nested files (i.e. on child `corpse/parent/child`), not working due to the parent folder not being excluded too (#3654).
+
+### Searcher
+- Fixed: Potential fix for swipe input not working correctly in the search input field (#3699).
+
+### AppCleaner
+- Added: Vivio device specific support (#3670).
+- Improved: Hidden caches, bug reporting and advertisement filters (#3809, #3756)(TY @programmist87).
+- Improved: Debugging support for the accessibility service to make it easier to improve support.
+- Improved: Support for ColorOS on Android 10 (#3666).
+- Fixed: Added workaround for some ROMs where the accessibility service could crash because SD Maid was not correctly initialized by the system.
 
 ## SD Maid [v4.15.13](https://github.com/d4rken/sdmaid-public/milestone/122?closed=1) 10.07.2020
 ### Core
