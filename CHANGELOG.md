@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version: v4.15.15(41515), Unlocker v4.4.1(40401)
-- Latest beta version: 🤗
+- Latest beta version: v5.0.0(50000)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.0.0](https://github.com/d4rken/sdmaid-public/milestone/123?closed=1) 27.09.2020
+### Core
+- Improved: General dependency updates.
+- Improved: Update clutter database.
+- Improved: Translations.
+- Improved: Fixed minor UI issues.
+- Changed: Android minApiLevel from 16(4.1) to 21 (5.0). This means that the latest version for Android 4.1 to 4.4 is SD Maid v4.15.15.
+- Changed: Raised target API level to 29(Android 10) to improve compatbility with Android 10.
+
+### CorpseFinder
+- Fixed: Crash when using nested exclusions (#3952).
+
+### AppCleaner
+- Improved: Updated filters for hidden cache, recycle bins files and bug reporting files.
+- Fixed: ACS Matching on Android 11 Pixel devices (#3939).
 
 ## SD Maid [v4.15.15](https://github.com/d4rken/sdmaid-public/milestone/125?closed=1) 23.08.2020
 ### Core
