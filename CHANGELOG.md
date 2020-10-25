@@ -1,7 +1,32 @@
 # Changelog
 - Latest production version: v4.15.15(41515), Unlocker v4.4.1(40401)
-- Latest beta version: v5.0.0(50000)
+- Latest beta version: v5.0.1(50001)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.0.1](https://github.com/d4rken/sdmaid-public/milestone/127?closed=1) 27.09.2020
+### Core
+- Improved: Update clutter database (Ty u/Ingood5 on GitHub).
+- Improved: Fixed minor UI issues.
+- Improved: Added accessibility service setup to setup flow, can be skipped. If the accessibility service and usage stats permission are enabled, AppCleaner will automatically enable the features that use it, unless explicitly disabled (i.e. not on default values).
+- Fixed: Crash when trying to detect file ownership in some scenarios on rooted Android 11 devices.
+
+### Explorer
+- Fixed: Wrong message being used for the force media scan result (4096).
+
+### AppControl
+- Fixed: Task result snackbars and dialogs being shown inconsistently (#4158).
+
+### CorpseFinder
+- Fixed: Crash when using nested exclusions (#3952).
+
+### SystemCleaner
+- Fixed: Filter order being inconsistent (now sorted by title, #3862).
+- Fixed: Filter export sometimes not showing a result message (#4092).
+
+### AppCleaner
+- Added: ACS support for polish Samsung Android 10 ROMs (#4124).
+- Improved: Updated filters for hidden cache, recycle bins files and bug reporting files.
+- Fixed: ACS Matching on Android 11 Asus devices (#4046).
 
 ## SD Maid [v5.0.0](https://github.com/d4rken/sdmaid-public/milestone/123?closed=1) 27.09.2020
 ### Core
