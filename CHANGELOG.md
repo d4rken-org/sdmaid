@@ -1,9 +1,22 @@
 # Changelog
 - Latest production version: v4.15.15(41515), Unlocker v4.4.1(40401)
-- Latest beta version: v5.0.1(50001)
+- Latest beta version: v5.0.2(50002)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v5.0.1](https://github.com/d4rken/sdmaid-public/milestone/127?closed=1) 27.09.2020
+## SD Maid [v5.0.2](https://github.com/d4rken/sdmaid-public/milestone/128?closed=1) 08.11.2020
+### Core
+- Improved: Translations.
+- Improved: Clutter database (Ty u/Ingood5 & u/adsakeme on GitHub).
+- Changed: Because it was apparently not obvious enough, the "permanently skip" option in the initial setup will now pop-open once.
+
+### AppCleaner
+- Improved: Hidden caches filters.
+- Improved: Advertisements filter.
+- Improved: Better ACS compatibility with OPPO devices (#3864).
+- Improved: Matching for Polish on Samsung API 29+ ROMs.
+- Fixed: A bug where SD Maid would not correctly try all available fallback mechanisms for some language & ROM combinations when using the accessibility service.
+
+## SD Maid [v5.0.1](https://github.com/d4rken/sdmaid-public/milestone/127?closed=1) 25.10.2020
 ### Core
 - Improved: Update clutter database (Ty u/Ingood5 on GitHub).
 - Improved: Fixed minor UI issues.
