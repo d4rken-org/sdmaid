@@ -1,7 +1,12 @@
 # Changelog
 - Latest production version: v4.15.15(41515), Unlocker v4.4.1(40401)
-- Latest beta version: v5.0.2(50002)
+- Latest beta version: v5.0.3(50003)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.0.3](https://github.com/d4rken/sdmaid-public/milestone/129?closed=1) 15.11.2020
+### Core
+- Improved: Translations.
+- Changed: Removed the ACS Permission step from the onboarding setup.
 
 ## SD Maid [v5.0.2](https://github.com/d4rken/sdmaid-public/milestone/128?closed=1) 08.11.2020
 ### Core
