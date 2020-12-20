@@ -1,7 +1,19 @@
 # Changelog
 - Latest production version: v5.0.3(50003), Unlocker v4.4.1(40401)
-- Latest beta version: 😷
+- Latest beta version: v5.0.4(50004) 😷
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.0.4](https://github.com/d4rken/sdmaid-public/milestone/130?closed=1) 20.12.2020
+### Core
+- Improved: Translations.
+- Improved: Clutter database. So many new entries! (Ty u/Ingood5).
+
+### AppCleaner
+- Improved: Updated advertisement filter.
+- Improved: Updated hidden caches filter.
+- Improved: Updated trashbin filter.
+- Improved: Changes to bug reporting to make it easier to support more devices and languages.
+- Fixed: ACS matching for Polish on Samsung devices with Android 9.
 
 ## SD Maid [v5.0.3](https://github.com/d4rken/sdmaid-public/milestone/129?closed=1) 15.11.2020
 ### Core
