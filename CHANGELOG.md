@@ -1,7 +1,13 @@
 # Changelog
 - Latest production version: v5.0.3(50003), Unlocker v4.4.1(40401)
-- Latest beta version: v5.0.4(50004) 😷
+- Latest beta version: v5.0.5(50005) 😷
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.0.5](https://github.com/d4rken/sdmaid-public/milestone/131?closed=1) 20.12.2020
+### AppCleaner
+- Improved: Compatibility with colorOS ROMs (API28, Italian).
+- Improved: Debugging options to easier add support for new ROMs & languages.
+
 
 ## SD Maid [v5.0.4](https://github.com/d4rken/sdmaid-public/milestone/130?closed=1) 20.12.2020
 ### Core
