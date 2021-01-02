@@ -1,7 +1,24 @@
 # Changelog
 - Latest production version: v5.0.6(50006), Unlocker v4.4.1(40401)
-- Latest beta version:🎄 Happy Holidays 🎄
+- Latest beta version:v5.0.7(50007)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.0.7](https://github.com/d4rken/sdmaid-public/milestone/133?closed=1) 02.01.2021
+### Core
+- Improved: Clutter database.
+
+### SystemCleaner
+- Improved: Use root if available to scan `Android/data` on Android 11+ (#4483).
+- Changed: Obsolete APK filter description to indicate that APKs with lower or EQUAL version are deleted (#4485).
+
+### AppCleaner
+- Added: ACS Support for Vivio Android 10+ ROMs (#4487).
+- Improved: ACS Support for locales `th,is,ka,bs` on Samsung API 29+.
+- Improved: ACS Support for LANIX Android 7.0 ROMs.
+- Improved: ACS Support for OPPO Roms with API28+, locale: `jp,ru,th,pl,ka,ar,es,tr,fr,vi`.
+- Improved: ACS Support for LGE API29+ ROMs, locale `eu`.
+- Improved: ACS Support for MIUI 11 ROMs on Android 8.0+.
+- Improved: ACS Support for ColorOS API28+ locales `ms`.
 
 ## SD Maid [v5.0.6](https://github.com/d4rken/sdmaid-public/milestone/132?closed=1) 24.12.2020
 ### AppCleaner
