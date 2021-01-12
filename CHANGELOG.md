@@ -15,10 +15,9 @@
 - Added: ACS Support for Vivio Android 10+ ROMs (#4487).
 - Improved: ACS Support for locales `th,is,ka,bs` on Samsung API 29+.
 - Improved: ACS Support for LANIX Android 7.0 ROMs.
-- Improved: ACS Support for OPPO Roms with API28+, locale: `jp,ru,th,pl,ka,ar,es,tr,fr,vi`.
 - Improved: ACS Support for LGE API29+ ROMs, locale `eu`.
 - Improved: ACS Support for MIUI 11 ROMs on Android 8.0+.
-- Improved: ACS Support for ColorOS API28+ locales `ms`.
+- Improved: ACS Support for ColorOS API28+ locales `jp,ru,th,pl,ka,ar,es,tr,fr,vi,ms`.
 
 ## SD Maid [v5.0.6](https://github.com/d4rken/sdmaid-public/milestone/132?closed=1) 24.12.2020
 ### AppCleaner
