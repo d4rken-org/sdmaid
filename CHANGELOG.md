@@ -1,7 +1,21 @@
 # Changelog
 - Latest production version: v5.0.7(50007), Unlocker v4.4.1(40401)
-- Latest beta version: 😷
+- Latest beta version: v5.0.8(50008)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.0.8](https://github.com/d4rken/sdmaid-public/milestone/134?closed=1) 17.01.2021
+### Core
+- Improved: Clutter database.
+
+### AppCleaner
+- Added: Preliminary support for ACS based cache deletion on Android TV devices (#4149).
+- Improved: ACS matching on AOSP ROMs for locales `pa,az`.
+- Improved: ACS matching on ColorOS ROMs for locales `th,ja`.
+- Improved: ACS matching on MIUI ROMs for locales `sl,ms,hr,ro,sk,th,lo`.
+- Improved: ACS matching on RealMe ROMs for locales `de,fil`.
+- Improved: ACS matching on LGE ROMs for locale `pt`.
+- Fixed: Issues with ACS matching on Vivo ROMs (#4487).
+- Fixed: Some cases of ACS fallback routines not triggering on AOSP ROMs.
 
 ## SD Maid [v5.0.7](https://github.com/d4rken/sdmaid-public/milestone/133?closed=1) 02.01.2021
 ### Core
