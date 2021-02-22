@@ -1,7 +1,12 @@
 # Changelog
 - Latest production version: v5.0.8(50008), Unlocker v4.4.1(40401)
-- Latest beta version: v5.0.10(50010)
+- Latest beta version: v5.0.11(50011)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+
+## SD Maid [v5.0.11](https://github.com/d4rken/sdmaid-public/milestone/137?closed=1) 22.02.2022
+### Core
+- Fixed: Crash to due invalid clutter database data.
 
 ## SD Maid [v5.0.10](https://github.com/d4rken/sdmaid-public/milestone/137?closed=1) 22.02.2022
 ### Core
