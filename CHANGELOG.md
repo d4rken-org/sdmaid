@@ -1,14 +1,32 @@
 # Changelog
-- Latest production version: v5.0.8(50008), Unlocker v4.4.1(40401)
-- Latest beta version: v5.0.11(50011)
+- Latest production version: v5.0.11(50011), Unlocker v4.4.1(40401)
+- Latest beta version: v5.1.0(50100)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid [v5.1.0](https://github.com/d4rken/sdmaid-public/milestone/136?closed=1) 01.03.2021
+### Core
+- Improved: Clutter database.
+- Improved: Improved data access on Android 11 (#4571), extended setup to include selecting an SAF path for primary storage.
 
-## SD Maid [v5.0.11](https://github.com/d4rken/sdmaid-public/milestone/137?closed=1) 22.02.2022
+### Explorer
+- Improved: Preliminary access to `Android/data` on Android 11, read/delete should work, copy/move not yet.
+
+### CorpseFinder
+- Improved: Access to `Android/data` on Android 11.
+
+### SystemCleaner
+- Improved: Access to `Android/data` on Android 11.
+
+### AppCleaner
+- Improved: Bug reporting filter.
+- Improved: ACS matching for Korean on LGE & AOSP ROMs.
+- Improved: Access to `Android/data` on Android 11.
+
+## SD Maid [v5.0.11](https://github.com/d4rken/sdmaid-public/milestone/137?closed=1) 22.02.2021
 ### Core
 - Fixed: Crash to due invalid clutter database data.
 
-## SD Maid [v5.0.10](https://github.com/d4rken/sdmaid-public/milestone/137?closed=1) 22.02.2022
+## SD Maid [v5.0.10](https://github.com/d4rken/sdmaid-public/milestone/137?closed=1) 22.02.2021
 ### Core
 - Improved: Clutter database (🍰).
 - Improved: Translations (☕).
