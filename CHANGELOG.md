@@ -1,7 +1,22 @@
 # Changelog
-- Latest production version: v5.0.11(50011), Unlocker v4.4.1(40401)
-- Latest beta version: v5.1.0(50100)
+- Latest production version:  v5.1.0(50100), Unlocker v4.4.1(40401)
+- Latest beta version: v5.1.1(50101)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.1.1](https://github.com/d4rken/sdmaid-public/milestone/138?closed=1) 26.04.2021
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: Internal storage detection.
+
+### Explorer
+- Improved: Extracting zip files.
+
+### AppCleaner
+- Improved: Hidden caches filter.
+- Improved: Trashbin filter.
+- Improved: Bugreporting filter.
+- Improved: ACS matching on Samsung, Vivo and ColorOS ROMs.
 
 ## SD Maid [v5.1.0](https://github.com/d4rken/sdmaid-public/milestone/136?closed=1) 01.03.2021
 ### Core
