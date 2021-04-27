@@ -1,7 +1,11 @@
 # Changelog
 - Latest production version:  v5.1.0(50100), Unlocker v4.4.1(40401)
-- Latest beta version: v5.1.1(50101)
+- Latest beta version: v5.1.2(50102)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.1.2](https://github.com/d4rken/sdmaid-public/milestone/139?closed=1) 27.04.2021
+### Core
+- Fixed: Crash during storage detection on certain ROMs. Previous changes allowed for duplicate sdcard storage elements which got caught during later validiation (as it should be) and lead to a crash.
 
 ## SD Maid [v5.1.1](https://github.com/d4rken/sdmaid-public/milestone/138?closed=1) 26.04.2021
 ### Core
