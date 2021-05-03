@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version:  v5.1.2(50102), Unlocker v4.4.1(40401)
-- Latest beta version: ~
+- Latest beta version: v5.1.4(50104)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.1.4 03.05.2021
+### Core
+- Improved: Translations.
+
+## SD Maid v5.1.3 02.05.2021
+### Core
+- Improved: Added additional instructions to SAF setup, to help with selecting the right paths.
+- Fixed: Crash on certain root setups when SD Maid attempts to find a way to get a running binary that work with root.
+- Fixed: Issue with error reporting not being correctly setup on some devices.
+
+### QuickAccess
+- Improved: AppCleaner deletion will suggest enabling ACS if necessary.
+ 
+### AppCleaner
+- Improved: ACS matching Samsung, Android 11, locale "cs".
 
 ## SD Maid [v5.1.2](https://github.com/d4rken/sdmaid-public/milestone/139?closed=1) 27.04.2021
 ### Core
