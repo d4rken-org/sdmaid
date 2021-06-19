@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version: v5.1.4(50104), Unlocker v4.4.1(40401)
-- Latest beta version: 😷
+- Latest beta version: v5.1.5(50105)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.1.5]((https://github.com/d4rken/sdmaid-public/milestone/140?closed=1) ) 19.06.2021
+### Core
+- Improved: Translations.
+- Improved: Clutterd database.
+- Improved: Internal refactoring.
+
+### Explorer
+- Fixed: Crash on Android 11 when trying to view `Android/data` via SAF and file permissions couldn't be read (#4899).
+
+### AppCleaner
+- Improved: Color ACS matching on Android 8.1 (#4817).
+- Improved: `ar` locale mapping on OnePlus devices on Android 11 (#4812).
+- Improved: Hidden caches, recyclebin and bug reporting filter (#4804,#4802).
+- Improved: ACS matching on Samsung devices with Android 11.
+- Improved: WhatsApp related filters support `Android/media` now (#4910).
 
 ## SD Maid v5.1.4 03.05.2021
 ### Core
