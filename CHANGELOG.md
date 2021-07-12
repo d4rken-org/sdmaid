@@ -1,9 +1,18 @@
 # Changelog
 - Latest production version: v5.1.5(50105), Unlocker v4.4.1(40401)
-- Latest beta version: 💉
+- Latest beta version: v5.1.6(50106)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v5.1.5]((https://github.com/d4rken/sdmaid-public/milestone/140?closed=1) ) 19.06.2021
+## SD Maid [v5.1.6](https://github.com/d4rken/sdmaid-public/milestone/141?closed=1) 19.06.2021
+### Core
+- Improved: Translations.
+- Improved: Initial setup flow, removed a few annoying quirks and improved the layouts.
+- Improved: Storage-Access-Framework (SAF) path reading performance (#4886).
+
+### AppCleaner
+- Improved: ACS Matching on ColorOS (#4939).
+
+## SD Maid [v5.1.5](https://github.com/d4rken/sdmaid-public/milestone/140?closed=1) 19.06.2021
 ### Core
 - Improved: Translations.
 - Improved: Clutterd database.
