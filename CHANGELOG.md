@@ -1,7 +1,22 @@
 # Changelog
 - Latest production version: v5.1.6(50106), Unlocker v4.4.1(40401)
-- Latest beta version: ∞
+- Latest beta version: v5.1.7(50107)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.1.7](https://github.com/d4rken/sdmaid-public/milestone/142?closed=1) 10.08.2021
+### Core
+- Added: Support for SAF based file preview generation.
+- Improved: Clutter database.
+- Improved: When using apps.darken.eu, show a more specific error message if the device quota is reached.
+- Fixed: Issue with analytics sometimes causing a crash on low storage devices.
+- Fixed: SAF based deletion sometimes failing for no good reason (system said SD Maid can not delete the fail, but if actually trying it, it works).
+- Fixed: SAF based deletion always saying 0 bytes deleted.
+
+### AppCleaner
+- Improved: ACS based cache deletion for Android 11+ Samsung ROMs in all languages (ty @JeffHorinzon)
+- Improved: WhatsApp Send/Receive/Backup matching.
+- Improved: Added a forced refresh as fallback behavior for cases where the initial system data is empty for some reason on some ROMs.
+- Fixed: ACS based deletion on Samsung devices.
 
 ## SD Maid [v5.1.6](https://github.com/d4rken/sdmaid-public/milestone/141?closed=1) 19.06.2021
 ### Core
