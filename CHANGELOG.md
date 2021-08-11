@@ -1,7 +1,11 @@
 # Changelog
 - Latest production version: v5.1.6(50106), Unlocker v4.4.1(40401)
-- Latest beta version: v5.1.7(50107)
+- Latest beta version: v5.1.8(50108)
 - Legacy versions: [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.1.8](https://github.com/d4rken/sdmaid-public/milestone/143?closed=1) 11.08.2021
+### Explorer
+- Fixed: Crash due to faulty parcel creation when opening clutter reporter.
 
 ## SD Maid [v5.1.7](https://github.com/d4rken/sdmaid-public/milestone/142?closed=1) 10.08.2021
 ### Core
