@@ -1,7 +1,19 @@
 # Changelog
-- Latest production version: v5.1.6(50106), Unlocker v4.4.1(40401)
-- Latest beta version: v5.1.8(50108)
+- Latest production version: v5.1.8(50108), Unlocker v4.4.1(40401)
+- Latest beta version: v5.1.9(50109)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.1.9](https://github.com/d4rken/sdmaid-public/milestone/144?closed=1) 30.08.2021
+### Core
+- Improved: Updated translations.
+- Improved: Updated clutter database.
+
+### Explorer
+- Fixed: Crash when scanning directy and owner research is not enabled.
+
+### AppCleaner
+- Added: Experimental option to specify a custom ACS sequence of labels for SD Maid to click.
+- Improved: Compatibility with different ROMs and languages.
 
 ## SD Maid [v5.1.8](https://github.com/d4rken/sdmaid-public/milestone/143?closed=1) 11.08.2021
 ### Explorer
