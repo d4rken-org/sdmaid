@@ -9,7 +9,7 @@
 - Improved: Updated clutter database.
 
 ### Explorer
-- Fixed: Crash when scanning directy and owner research is not enabled.
+- Fixed: Crash when scanning directory and owner research is not enabled.
 
 ### AppCleaner
 - Added: Experimental option to specify a custom ACS sequence of labels for SD Maid to click.
