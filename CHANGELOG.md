@@ -29,7 +29,7 @@
 - Fixed: SAF based deletion always saying 0 bytes deleted.
 
 ### AppCleaner
-- Improved: ACS based cache deletion for Android 11+ Samsung ROMs in all languages (ty @JeffHorinzon)
+- Improved: ACS based cache deletion for Android 11+ Samsung ROMs in all languages (ty @spiritETG)
 - Improved: WhatsApp Send/Receive/Backup matching.
 - Improved: Added a forced refresh as fallback behavior for cases where the initial system data is empty for some reason on some ROMs.
 - Fixed: ACS based deletion on Samsung devices.
