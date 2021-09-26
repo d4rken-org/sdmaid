@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version: v5.1.9(50109), Unlocker v4.4.1(40401)
-- Latest beta version: 🏄
+- Latest beta version: v5.1.10(50110
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.1.10](https://github.com/d4rken/sdmaid-public/milestone/145?closed=1) 26.09.2021
+### Core
+- Improved: Updated translations.
+- Improved: Updated clutter database.
+- Improved: Update In-App-Purchase to improve synchronization.
+- Fixed: Screen staying when SD Maid is not working (#4962).
+
+### AppCleaner
+- Improved: ACS Matching for RealMe ROMs.
+- Improved: Hidden caches filter.
+- Improved: Default exclusion for system apps that can't be cleared via ACS on Android 11 (#5077).
+
+### StorageAnalyzer
+- Improved: Compatibility with unrooted Android 11 devices.
+- Fixed: Failure to read `Android/*` subdirectories via SAF resulting in incorrect sizes.
 
 ## SD Maid [v5.1.9](https://github.com/d4rken/sdmaid-public/milestone/144?closed=1) 30.08.2021
 ### Core
