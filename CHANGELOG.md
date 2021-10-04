@@ -1,7 +1,18 @@
 # Changelog
-- Latest production version: v5.1.9(50109), Unlocker v4.4.1(40401)
-- Latest beta version: v5.1.10(50110
+- Latest production version: v5.1.10(50110), Unlocker v4.4.1(40401)
+- Latest beta version: v5.2.0(50200)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.2.0](https://github.com/d4rken/sdmaid-public/milestone/146?closed=1) 04.10.2021
+### Core
+- Improved: In-app purchase handling.
+- Improved: Updated a few dependencies.
+- Fixed: Navigation drawer somtimes not reflecting pro status.
+- Fixed: A few random crashes on app launch related to async background checks for IAPs.
+
+### AppControl
+- Added: New feature `Custom action`. You can input labels in AppControl settings, and then execute `Custom action` on one or more selected apps. Example: Input the labels `Disable` + `Disable app` and use it to batch disable multiple apps ([Demo Video](https://www.youtube.com/watch?v=4aR7H3Cihk8)).
+- Improved: Reworked some internal structures related to initating the AppControl tool.
 
 ## SD Maid [v5.1.10](https://github.com/d4rken/sdmaid-public/milestone/145?closed=1) 26.09.2021
 ### Core
