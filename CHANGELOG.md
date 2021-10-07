@@ -1,9 +1,27 @@
 # Changelog
 - Latest production version: v5.1.10(50110), Unlocker v4.4.1(40401)
-- Latest beta version: v5.2.1(50201)
+- Latest beta version: v5.2.2(50202)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v5.2.1](https://github.com/d4rken/sdmaid-public/milestone/147?closed=1) 04.10.2021
+## SD Maid [v5.2.2](https://github.com/d4rken/sdmaid-public/milestone/148?closed=1) 07.10.2021
+### Core
+- Improved: Logging for various tools.
+- Changed: Display language labels in their own language (#4823).
+- Fixed: Crash when donating a coffee.
+
+### Explorer
+- Improved: Checksum dialog now also shows file path (#4836).
+- Fixed: Checksum dialog not closing action mode (#4837).
+- Fixed: Checksum dialog showing multiple times when SD Maid is paused/resumed (#4838).
+
+### Searcher
+- Fixed: find/grep search terms being stored inconsitently, now happens after pressing search (#4772).
+
+### SystemCleaner
+- Improved: Ownership for exported filters is now correctly display (#4504).
+- Fixed: Missing feedback when importing custom filters (#4092).
+
+## SD Maid [v5.2.1](https://github.com/d4rken/sdmaid-public/milestone/147?closed=1) 05.10.2021
 ### Core
 - Improved: Translations.
 - Fixed: Background crash on devices without Google Play services.
