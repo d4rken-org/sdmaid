@@ -3,7 +3,7 @@
 - Latest beta version: v5.3.0(50300)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v5.3.0](https://github.com/d4rken/sdmaid-public/milestone/126?closed=1) 07.10.2021
+## SD Maid [v5.3.0](https://github.com/d4rken/sdmaid-public/milestone/126?closed=1) 26.10.2021
 ### Core
 - Added: SAF based read-access for secondary storages on Android 5-10. Previously SD Maid could only support a secondary storage if readable through normal Java-file access, where SAF access was only required for write/delete actions. Now SD Maid supports storages that are just readable using the storage access framework (SAF).
 - Improved: Translations.
