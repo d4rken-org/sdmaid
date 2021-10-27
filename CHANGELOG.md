@@ -1,7 +1,23 @@
 # Changelog
 - Latest production version: v5.2.2(50202), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.0(50300)
+- Latest beta version: v5.3.1(50301)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.1](https://github.com/d4rken/sdmaid-public/milestone/149?closed=1) 27.10.2021
+### Core
+- Improved: Error logging for SAF file reading.
+- Improved: Translations.
+- Fixed: Crash during setup wizard due to some devices not supporting the standard AOSP activity intent `Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION` (!?).
+- Fixed: Fixed crash on storage initialization. NPE on some ROMs where SD Maid tried to read ids and labels for storages from the system API via reflection.
+
+### AppCleaner
+- Improved: Offline cache filter (vlc subtitles) (#5052).
+
+### StorageAnalyzer
+- Fixed: Crash when trying to the storage index/home view (NPE due to bad case switch between normal file items and the home item representing all storages).
+
+### Duplicates
+- Fixed: Crash when trying to calculate the checksum for a deleted file (could happen when multiple SD Maid tools are run simultaneously.
 
 ## SD Maid [v5.3.0](https://github.com/d4rken/sdmaid-public/milestone/126?closed=1) 26.10.2021
 ### Core
