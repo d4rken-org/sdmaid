@@ -1,7 +1,21 @@
 # Changelog
 - Latest production version: v5.2.2(50202), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.1(50301)
+- Latest beta version: v5.3.2(50302)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.2](https://github.com/d4rken/sdmaid-public/milestone/150?closed=1) 31.10.2021
+### Core
+- Improved: Translations.
+- Improved: Error logging.
+- Fixed: Storage detection failing on Android TV devices with Android 11.
+- Fixed: Reading public storage on rooted Android 11+ devices. Root is now utilized to read `Android/data|obb`.
+
+### AppCleaner
+- Improved: ACS matching for Samsung devices.
+- Fixed: ColorOS ROMs not being detected in some cases.
+
+### StorageAnalyzer
+- Fixed: Crash when scanning secondary public storages on some Android 11 ROMs.
 
 ## SD Maid [v5.3.1](https://github.com/d4rken/sdmaid-public/milestone/149?closed=1) 27.10.2021
 ### Core
