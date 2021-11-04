@@ -1,7 +1,19 @@
 # Changelog
 - Latest production version: v5.2.2(50202), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.3(50303)
+- Latest beta version: v5.3.4(50304)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.4](https://github.com/d4rken/sdmaid-public/milestone/152?closed=1) 04.11.2021
+### Core
+- Improved: Translations.
+- Fixed: Read access determination code erroneously returning `NORMAL` on some rooted ROMs for locations such as `/data` (SD Maid should always use root permission for `/data` if available).
+
+### AppCleaner
+- Added: New filter for `code_cache` folders.
+- Improved: ACS matching for Samsung & OnePlus ROMs.
+
+### StorageAnalyzer
+- Fixed: Lookup of `/data` not using root on some rooted ROMs.
 
 ## SD Maid [v5.3.3](https://github.com/d4rken/sdmaid-public/milestone/151?closed=1) 01.11.2021
 ### Core
