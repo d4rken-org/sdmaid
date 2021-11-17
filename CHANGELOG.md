@@ -1,7 +1,25 @@
 # Changelog
 - Latest production version: v5.3.5(50305), Unlocker v4.4.1(40401)
-- Latest beta version: 👻
+- Latest beta version: v5.3.6(50306)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.6](https://github.com/d4rken/sdmaid-public/milestone/154?closed=1) 17.11.2021
+### Core
+- Added: Restored access to `Android/data` on Android 11 & 12 (#5183).
+- Improved: Fixed files on sdcard not being deletable on some ROMs due to storage write access detection defaulting to `NORMAL` instead of using `SAF` during write check, but not read check (#5179).
+- Improved: Translations.
+- Improved: Scan speed by optimizing root check.
+- Improved: SAF permission setup should be simpler now on Android 9,10,11 and 12. Window should open on the correct path.
+- Improved: File crawling performance when using SAF access.
+
+### SystemCleaner
+- Improved: ANR filter.
+
+### QuickAccess
+- Improved: Hint to enable accessibility service now also shows when using the button bar at the bottom (#5178).
+
+### StorageAnalyzer
+- Improved: Scan on Android 11 & 12, inclusion of `Android/data`. Note that `Android/obb` is currently not supported on Android 11 & 12.
 
 ## SD Maid [v5.3.5](https://github.com/d4rken/sdmaid-public/milestone/153?closed=1) 06.11.2021
 ### Core
