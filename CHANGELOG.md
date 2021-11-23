@@ -1,7 +1,18 @@
 # Changelog
 - Latest production version: v5.3.5(50305), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.6(50306)
+- Latest beta version: v5.3.7(50307)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.7](https://github.com/d4rken/sdmaid-public/milestone/155?closed=1) 23.11.2021
+### Core
+* Improved: Additional debug output and code changes to make it easier for be to debug permission issues on specific ROMs.
+* Fixed: Permission setup for `Android/data` on OnePlus devices with Android 11+ (Thanks Craig).
+
+### AppControl
+- Fixed: App estates showing all potential folders belong to an app instead of just those that exist.
+
+### StorageAnalyzer
+- Fixed: `/data/data` being empty on Android 11+, SD Maid will apply `--mount-master` when scanning `/data` to circumvent the bind mount from `/data_mirror` #5201).
 
 ## SD Maid [v5.3.6](https://github.com/d4rken/sdmaid-public/milestone/154?closed=1) 17.11.2021
 ### Core
