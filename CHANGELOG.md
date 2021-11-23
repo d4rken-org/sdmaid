@@ -9,7 +9,7 @@
 * Fixed: Permission setup for `Android/data` on OnePlus devices with Android 11+ (Thanks Craig).
 
 ### AppControl
-- Fixed: App estates showing all potential folders belong to an app instead of just those that exist.
+- Fixed: App estates showing all potential folders belonging to an app instead of just those that exist.
 
 ### StorageAnalyzer
 - Fixed: `/data/data` being empty on Android 11+, SD Maid will apply `--mount-master` when scanning `/data` to circumvent the bind mount from `/data_mirror` #5201).
