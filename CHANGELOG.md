@@ -1,8 +1,15 @@
 # Changelog
-- Latest production version: v5.3.5(50305), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.7(50307)
+- Latest production version: v5.3.8(50308), Unlocker v4.4.1(40401)
+- Latest beta version: 🦠😷🔬💉
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
+## SD Maid v5.3.8 29.11.2021
+### Core
+- Improved: Translations.
+- Fixed: Crash during SAF setup. If the newer storage API don't return a path for a StorageVolume, we now try the legacy (reflection-based) APIs as fallback.
+- Fixed: Crash on faulty ROMs, where an API is not available despite the Android version being high enough.
+- Fixed: Crash when deleting files and the storage state changes, after search but before deletion, e.g. storage being mounted/unmounted/ejecting. We'll now just skip such a file, results in most tools correctly refect the deletion failure, as X items remaining/skipped.
+ 
 ## SD Maid [v5.3.7](https://github.com/d4rken/sdmaid-public/milestone/155?closed=1) 23.11.2021
 ### Core
 * Improved: Additional debug output and code changes to make it easier for be to debug permission issues on specific ROMs.
