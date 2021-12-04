@@ -1,7 +1,21 @@
 # Changelog
 - Latest production version: v5.3.8(50308), Unlocker v4.4.1(40401)
-- Latest beta version: 🦠😷🔬💉
+- Latest beta version: v5.3.9(50309)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.3.9 04.12.2021
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Added: I've added a grace period that keeps the pro status for a bit, when upgrading via Google Play In-App purchase, as Google Play does not reliably return IAP data.
+- Fixed: Api level check. Some devices where crashing due to supplying inconsistent version information (faking higher Android versions).
+- Fixed: Read check for single files/directories when using SAF mode. It always returned `exists=true`, afaict it only affected copy/move within the explorer.
+
+### Explorer
+- Fixed: Crash when trying to copy/move some files that require SAF mode.
+
+### AppCleaner
+- Improved: ACS matching on Android 12 for `pl`.
 
 ## SD Maid v5.3.8 29.11.2021
 ### Core
