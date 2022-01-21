@@ -1,7 +1,18 @@
 # Changelog
 - Latest production version: v5.3.10(50310), Unlocker v4.4.1(40401)
-- Latest beta version: 🤷
+- Latest beta version: v5.3.11(50311)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.11](https://github.com/d4rken/sdmaid-public/milestone/157?closed=1) 21.01.2022
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+- Improved: ACS should now handle non-breaking-spaces correctly in AppControl/AppCleaner (#5238).
+
+### AppCleaner
+- Improved: ACS support for Android 10+ on AOSP devices (#5266)
+- Improved: ACS support on Samsung devices with Android 9+.
+- Improved: ACS support on MIUI11 ROMs.
 
 ## SD Maid [v5.3.10](https://github.com/d4rken/sdmaid-public/milestone/156?closed=1) 07.12.2021
 ### Core
