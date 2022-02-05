@@ -1,7 +1,20 @@
 # Changelog
-- Latest production version: v5.3.10(50310), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.11(50311)
+- Latest production version: v5.3.11(50311), Unlocker v4.4.1(40401)
+- Latest beta version: v5.3.12(50312)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.12](https://github.com/d4rken/sdmaid-public/milestone/158?closed=1) 05.02.2022
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+- Fixed: Statusbar overlaping navigation header card.
+
+### AppCleaner
+- Improved: ACS matching for `ru` on OnePlus devices with Android 12.
+- Improved: Exclusions are now applied earlier during scan, this should make it easier for low powered devices to exclude large folders from being scanned (#5324).
+
+### StorageAnalyzer
+- Fixed: Not being able to delete some items on rooted Android 12 under `/data/data` (#5325).
 
 ## SD Maid [v5.3.11](https://github.com/d4rken/sdmaid-public/milestone/157?closed=1) 21.01.2022
 ### Core
