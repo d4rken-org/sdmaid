@@ -1,7 +1,17 @@
 # Changelog
 - Latest production version: v5.3.12(50312), Unlocker v4.4.1(40401)
-- Latest beta version: @
+- Latest beta version: v5.3.13(50313)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.13](https://github.com/d4rken/sdmaid-public/milestone/159?closed=1) 12.02.2022
+### Core
+- Improved: Updated translations.
+- Improved: Clutter database.
+- Fixed: Status bar overlaying elements in a few cases (i.e. header card in the nav drawer).
+- Changed: Instead access of private app data on rooted device with Android 11+. Instead of working with `/data_mirror` for which SD Maid still has incomplete support, SD Maid will now use Magisk's `--mount-master` to restore pre Android 11 behavior with regards to accessing `/data/data`.
+
+### AppCleaner
+- Improved: ACS matching on Samsung ROMs.
 
 ## SD Maid [v5.3.12](https://github.com/d4rken/sdmaid-public/milestone/158?closed=1) 05.02.2022
 ### Core
