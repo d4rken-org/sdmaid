@@ -1,7 +1,16 @@
 # Changelog
-- Latest production version: v5.3.15(50315), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.18(50318)
+- Latest production version: v5.3.18(50318), Unlocker v4.4.1(40401)
+- Latest beta version: v5.3.19(50319)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.3.19](https://github.com/d4rken/sdmaid-public/milestone/164?closed=1) 21.04.2022
+### Core
+- Added: Easter egg.
+- Changed: Increasd IAP grace period.
+
+### AppCleaner
+- Fixed: ACS based deletion crashing on some ROMs.
+- Fixed: Accessibility service looping on Pixel devices since March security update.
 
 ## SD Maid [v5.3.18](https://github.com/d4rken/sdmaid-public/milestone/163?closed=1) 09.04.2022
 ### Core
