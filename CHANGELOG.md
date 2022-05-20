@@ -1,8 +1,16 @@
 # Changelog
 - Latest production version: v5.3.19(50319), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.21(50321)
+- Latest beta version: v5.3.22(50322)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
-- 
+
+## SD Maid [v5.3.22](https://github.com/d4rken/sdmaid-public/milestone/167?closed=1) 20.05.2022
+### Core
+- Improved: Clutter database (Huawei specific).
+
+### AppCleaner
+- Improved: Filter for hidden caches.
+- Improved: Accessibility service compatibility with OnePlus. 
+
 ## SD Maid [v5.3.21](https://github.com/d4rken/sdmaid-public/milestone/166?closed=1) 15.05.2022
 ### Core
 - Improved: Translations.
