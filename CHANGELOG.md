@@ -1,7 +1,92 @@
 # Changelog
-- Latest production version: v5.3.11(50311), Unlocker v4.4.1(40401)
-- Latest beta version: v5.3.12(50312)
+- Latest production version: v5.3.19(50319), Unlocker v4.4.1(40401)
+- Latest beta version: v5.3.21(50321)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+- 
+## SD Maid [v5.3.21](https://github.com/d4rken/sdmaid-public/milestone/166?closed=1) 15.05.2022
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+
+### AppCleaner
+- Improved: Filter for advertisement files.
+- Improved: Filter for debug files.
+- Improved: Accessibility service compatibility with different ROMs (OnePlus, Realme, Huawei). 
+
+## SD Maid [v5.3.20](https://github.com/d4rken/sdmaid-public/milestone/165?closed=1) 01.05.2022
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+
+### AppCleaner
+- Improved: Previously SD Maid relied on a lot of hardcoded values to determine what SD Maid needs to click when using the AppCleaner accessibility service option. Now SD Maid will attempt to read the correct labels from the system settings APK directly and only use the previous way as fallback. This allows SD Maid to automatically support all languages for a ROM if support is added. Finding the right strings is based on the string IDs. These may differ between ROMs. I could only confirm AOSP/Pixel and Samsung ROMs. If v5.3.20 loops on your ROM, but v5.3.19 didn't: Make an issue ticket and upload your ROMs system settings APK, so I can find the right string IDs, or you do that and just tell me the IDs ;).
+
+## SD Maid [v5.3.19](https://github.com/d4rken/sdmaid-public/milestone/164?closed=1) 21.04.2022
+### Core
+- Added: Easter egg.
+- Changed: Increasd IAP grace period.
+
+### AppCleaner
+- Fixed: ACS based deletion crashing on some ROMs.
+- Fixed: Accessibility service looping on Pixel devices since March security update.
+
+## SD Maid [v5.3.18](https://github.com/d4rken/sdmaid-public/milestone/163?closed=1) 09.04.2022
+### Core
+- Improved: Clutter database.
+- Improved: Translations.
+
+### AppControl
+- Improved: Retreived information about `LIBRARY` type packages-
+- Added: Support for uninstalling `LIBRARY` packages if rooted (e.g. `Trichrome Library` packages).
+
+### AppCleaner
+- Improved: ACS matching for various ROMs and languages.
+
+## SD Maid v5.3.17 03.04.2022
+### Core
+- Fixed: App crash when using accessibility service based features (NPE due to race condition).
+
+## SD Maid [v5.3.16](https://github.com/d4rken/sdmaid-public/milestone/162?closed=1) 27.03.2022
+### Core
+- Improved: Clutter database.
+- Improved: Added additional fallback options to how SD Maids accessibility service works, this increases resilience and compatibility with different ROMs, but does not fix all current issues.
+
+### Explorer
+- Fixed: UI issues where snackbars and dialogs would reappear after pausing/resuming SD Maid.
+
+### AppCleaner
+- Improved: Bugreporting filter.
+- Improved: Hidden chaches filter on MIUI ROMs.
+- Improved: ACS retry mechanism. Some ROMs (e.g. Huawei) need a short delay to calculate the values displayed in an app's settings page. If SD Maid reads the page too quickly, the items we are looking for at not found on screen. So now if SD Maid sees an ellispsis characters and the initial check failed, a short delay is added before the next try (#5401).
+- Improved: ACS support for Ukranian.
+
+### Statistics
+- Fixed: Default retention now being correctly reflected in the settings UI.
+- Changed: Statistics limit has been increased to 365 days.
+
+## SD Maid [v5.3.15](https://github.com/d4rken/sdmaid-public/milestone/161?closed=1) 03.03.2022
+### Core
+- Fixed: Storage detection on Samsung S22 devices running Android 12.
+
+### AppCleaner
+- Improved: ACS matching for Huawei devices running Android 12 and locale `ca`.
+- Improved: Telegram filter (location moved to Android/data).
+
+## SD Maid [v5.3.14](https://github.com/d4rken/sdmaid-public/milestone/160?closed=1) 19.02.2022
+### AppCleaner
+- Improve: ACS matching for MIUI ROMs.
+- Added: Offline cache filter targeting Google Play Instant Apps.
+- Fixed: WhatsApp backup filter.
+
+## SD Maid [v5.3.13](https://github.com/d4rken/sdmaid-public/milestone/159?closed=1) 12.02.2022
+### Core
+- Improved: Updated translations.
+- Improved: Clutter database.
+- Fixed: Status bar overlaying elements in a few cases (i.e. header card in the nav drawer).
+- Changed: Instead access of private app data on rooted device with Android 11+. Instead of working with `/data_mirror` for which SD Maid still has incomplete support, SD Maid will now use Magisk's `--mount-master` to restore pre Android 11 behavior with regards to accessing `/data/data`.
+
+### AppCleaner
+- Improved: ACS matching on Samsung ROMs.
 
 ## SD Maid [v5.3.12](https://github.com/d4rken/sdmaid-public/milestone/158?closed=1) 05.02.2022
 ### Core
