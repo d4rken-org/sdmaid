@@ -1,7 +1,30 @@
 # Changelog
 - Latest production version: v5.3.23(50323), Unlocker v4.4.1(40401)
-- Latest beta version: ~
+- Latest beta version: v5.4.0(50400)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.4.0](https://github.com/d4rken/sdmaid-public/milestone/169?closed=1) 12.07.2022
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+
+### Explorer
+- Added: Support for installing split APKs. Works with the APK export format that SD Maid produces, but should also work with any export in the same format. You need to click and press "install apk" on the `<IDENTIFIER>-base.apk` and the other files need to be named `<IDENTIFIER>-otherlabels.apk`. SD Maid will recognize the other APK parts by their common prefix (`<IDENTIFIER>`).
+
+### AppControl
+- Removed: `BOOT` tag from list view. You can still filter for it. See here why the `BOOT` tag is not what you think it is: https://github.com/d4rken/sdmaid-public/wiki/AppControl#receiver-manager-autostart
+- Added: Add a new `No internet permission` tag. Apps without internet permission (`android.permission.INTERNET`) are now highlighted and can be filtered for. The idea is that this highlights apps with good privacy/no tracking (see discussion in #5591).
+
+### CorpseFinder
+- Fixed: Corpse filename not matching actual file. Filenames on public storage are case-insensitive. SD Maid would match `MiBand` but display it as `miband` as the clutter marker is called `miband` and for the sdcard root, SD Maid does a reverse lookup (load marker, check if exists) which returns `miband.exists() == true` due to case-insensitivity even though the folder is called `MiBand`. This is not problematic for deletion, but for exclusions. If you now create an exclusion from the CorpseFinder UI for `miband` it won't match `MiBand`.
+- Changed: CorpseFinder (or global) exclusion will now use case-insensitive matching for files on the sdcard (not necessary to fix the above issue, but a sane change nonetheless). This currently only applies to the CorpseFinder tool.
+
+### Duplicates
+- Added: `TWRP/backup` to default exclusions (#5604).
+
+### AppCleaner
+- Improved: ROM detection for `Iode` custom ROMs that are based on lineageOS.
+- Improved: Default exclusions for apps that can't be cleared (#5583).
 
 ## SD Maid [v5.3.23](https://github.com/d4rken/sdmaid-public/milestone/168?closed=1) 25.05.2022
 ### Core
