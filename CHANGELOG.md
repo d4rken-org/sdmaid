@@ -1,7 +1,28 @@
 # Changelog
 - Latest production version: v5.3.23(50323), Unlocker v4.4.1(40401)
-- Latest beta version: v5.4.0(50400)
+- Latest beta version: v5.4.1(50401)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.4.1](https://github.com/d4rken/sdmaid-public/milestone/170?closed=1) 29.07.2022
+### Core
+- Improved: Translations.
+- Improved: Clutter database.
+
+### Explorer
+- Changed: Decreased timeout check when installing split APKs.
+- Fixed: Sometimes not entering the correct path when going from another tool (e.g. AppControl export) to the Explorer.
+- Fixed: Crash on Android <=9 when trying to report clutter.
+
+### AppControl
+- Added: Support for checking indirect internet access, i.e. one app has internet access, another one does not, but both share the same user ID.
+- Added: Search support for `sharedUserId`.
+- Added: App details now show which apps share a user ID.
+- Improved: Tag coloring.
+- Changed: System apps are always assumed to have internet access.
+- Fixed: Crash when entering app details.
+
+### AppCleaner
+- Fixed: Random crash on some ROMs when running via accessibility service and encountering weird nodes.
 
 ## SD Maid [v5.4.0](https://github.com/d4rken/sdmaid-public/milestone/169?closed=1) 12.07.2022
 ### Core
