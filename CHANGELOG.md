@@ -1,7 +1,19 @@
 # Changelog
 - Latest production version: v5.4.1(50401), Unlocker v4.4.1(40401)
-- Latest beta version: ~
+- Latest beta version: v5.4.2(50402)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+- 
+## SD Maid [v5.4.2](https://github.com/d4rken/sdmaid-public/milestone/171?closed=1) 26.08.2022
+### Core
+- Improved: Clutter database.
+- Improved: Improved translations.
+- Changed: Until we have a better solution SAF permission setup can be skipped directly on Android 13.
+- Removed: Analytics (don't need the information anymore, #5677).
+
+### AppCleaner
+- Improved: Trash filter (#5666).
+- Improved: Support for TCL ROMs by increasting the maximum nesting level for searched from 3 to 6.
+- Improved: Screen search. SD Maid should no longer endlessly retry on some apps. To determine whether SD Maid is on the right screen, both the launcher app name and the application name is now checked. Previous we only checked the app name, but this differs for some apps from the launcher name (e.g. Duo/Meet).
 
 ## SD Maid [v5.4.1](https://github.com/d4rken/sdmaid-public/milestone/170?closed=1) 29.07.2022
 ### Core
