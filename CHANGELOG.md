@@ -1,8 +1,27 @@
 # Changelog
 - Latest production version: v5.4.1(50401), Unlocker v4.4.1(40401)
-- Latest beta version: v5.4.2(50402)
+- Latest beta version: v5.4.3(50403)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
-- 
+
+## SD Maid [v5.4.3](https://github.com/d4rken/sdmaid-public/milestone/172?closed=1) 13.09.2022
+### Core
+- Improved: Clutter database.
+- Improved: Improved translations.
+- Changed: SAF storage access request for `Android/data` is now hidden on Android 13+ until a solution is found. 
+- Fixed: Crash on WearOS. UI isn't really usable on WearOS, but the app doesn't crash on launch anymore. ¯\\\_(ツ)_/¯
+- Fixed: SD Maid failing to setup the `GrepApplet` on Android 13 emulators.
+- Improved: Behavior of file picker that is used throughout SD Maid.
+
+### AppControl
+- Improved: Permissions are now sorted by name (for more infos about permissions, check out my new app [Permission Pilot](https://play.google.com/store/apps/details?id=eu.darken.myperm))
+
+### AppCleaner
+- Improved: Hidden caches filter (#5702,#5702).
+- Improved: Recycle/Trash bin filter (#5643).
+
+### Duplicates
+- Fixed: Secondary storage not being selectable in settings (#5661,#5343).
+
 ## SD Maid [v5.4.2](https://github.com/d4rken/sdmaid-public/milestone/171?closed=1) 26.08.2022
 ### Core
 - Improved: Clutter database.
