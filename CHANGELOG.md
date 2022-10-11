@@ -10,6 +10,7 @@
 - Improved: Translations.
 - Improved: Clutter database.
 - Changed: Target and compile API level to 31.
+- Changed: Setup flow and some texts to comply with new Google Play policies.
 
 ### AppCleaner
 - Improved: Added extra error handling to prevent the accessibility service from crashing on some ROMs.
