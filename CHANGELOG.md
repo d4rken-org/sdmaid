@@ -12,6 +12,9 @@
 - Changed: Target and compile API level to 31.
 - Changed: Setup flow and some texts to comply with new Google Play policies.
 
+### AppControl
+- Improved: APK bundle installation, better error handling, crash fixes.
+
 ### AppCleaner
 - Improved: Added extra error handling to prevent the accessibility service from crashing on some ROMs.
 - Fixed: ACS matching on some OnePlus Android 11 ROMs.
