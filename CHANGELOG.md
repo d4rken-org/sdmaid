@@ -13,6 +13,7 @@
 
 ### AppCleaner
 - Improved: Added extra error handling to prevent the accessibility service from crashing on some ROMs.
+- Fixed: ACS matching on some OnePlus Android 11 ROMs.
 
 ## SD Maid [v5.4.3](https://github.com/d4rken/sdmaid-public/milestone/172?closed=1) 13.09.2022
 ### Core
