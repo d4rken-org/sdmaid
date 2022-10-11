@@ -14,7 +14,7 @@ My underlying privacy principle is the [Golden Rule](https://en.wikipedia.org/wi
 
 ## AccessibilityService API
 
-SD Maid contains optional features that utilize Androids AccessibilityService API to automate tedious actions.
+SD Maid contains optional features that utilize Android's AccessibilityService API to automate tedious actions.
 
 Usage of the AccessibilityService API is optional, opt-in and can be disabled at any time.
 
