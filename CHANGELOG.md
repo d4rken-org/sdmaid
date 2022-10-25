@@ -1,7 +1,18 @@
 # Changelog
 - Latest production version: v5.4.3(50403), Unlocker v4.5.0(40500)
-- Latest beta version: v5.5.2(50502) ☕
+- Latest beta version: v5.5.3(50503) ☕
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.5.3](https://github.com/d4rken/sdmaid-public/milestone/176?closed=1) 25.10.2022
+### Core
+- Improved: Clutter database.
+- Improved: Improved translations.
+
+### AppControl
+- Fixed: Crash when loading app owned files, their estates (#5776).
+
+### AppCleaner
+- Improved: Compatibility with OnePlus Android 11 ROMs.
 
 ## SD Maid [v5.5.2](https://github.com/d4rken/sdmaid-public/milestone/175?closed=1) 14.10.2022
 ### Core
