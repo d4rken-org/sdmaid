@@ -14,6 +14,13 @@
 ### Scheduler
 - Fixed: Scheduler not working on newer Android versions due to battery optimizations.
 
+## SD Maid [v5.5.4](https://github.com/d4rken/sdmaid-public/milestone/177?closed=1) 28.10.2022
+### Core
+- Improved: Clutter database.
+- Improved: Improved translations.
+- Improved: Updated internal build plugins.
+- Improved: Wording of some texts to reduce user confusion (and emails send to me).
+
 ### Scheduler
 - Fixed: Crash on Android 12+ due to permission issue.
 
