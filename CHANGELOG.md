@@ -1,14 +1,18 @@
 # Changelog
 - Latest production version: v5.5.4(50504), Unlocker v4.5.0(40500)
-- Latest beta version: ☕
+- Latest beta version: v5.5.5(50505)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid [v5.5.4](https://github.com/d4rken/sdmaid-public/milestone/177?closed=1) 28.10.2022
+## SD Maid [v5.5.5](https://github.com/d4rken/sdmaid-public/milestone) 16.11.2022
 ### Core
-- Improved: Clutter database.
 - Improved: Improved translations.
-- Improved: Updated internal build plugins.
-- Improved: Wording of some texts to reduce user confusion (and emails send to me).
+- Improved: Permission setup.
+
+### CorpseFinder
+- Fixed: Uninstall watcher not working on newer Android versions due to battery optimizations.
+
+### Scheduler
+- Fixed: Scheduler not working on newer Android versions due to battery optimizations.
 
 ### Scheduler
 - Fixed: Crash on Android 12+ due to permission issue.
