@@ -1,7 +1,15 @@
 # Changelog
 - Latest production version: v5.5.4(50504), Unlocker v4.5.0(40500)
-- Latest beta version: v5.5.5(50505)
+- Latest beta version: v5.5.6(50506)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid [v5.5.6](https://github.com/d4rken/sdmaid-public/milestone/178?closed=1) 17.11.2022
+### Core
+- Improved: Improved translations.
+- Changed: Removed step to disable battery optimizations for Android TV devices (#5814).
+
+### AppCleaner
+- Fixed: `Unable to add window` when using the ACS feature (#5813).
 
 ## SD Maid [v5.5.5](https://github.com/d4rken/sdmaid-public/milestone) 16.11.2022
 ### Core
