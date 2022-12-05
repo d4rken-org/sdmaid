@@ -1,7 +1,17 @@
 # Changelog
-- Latest production version: v5.5.4(50504), Unlocker v4.5.0(40500)
-- Latest beta version: v5.5.6(50506)
+- Latest production version: v5.5.6(50506), Unlocker v4.5.0(40500)
+- Latest beta version: v5.5.7(50507)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.5.7 05.12.2022
+### Core
+- Improved: Improved translations.
+- Changed: Ask for battery optimizations to be disabled independent of what features are enabled to fix additional background crashes (e.g. trigger via widget).
+- Fixed: Advanced option for forced setup execution.
+
+### AppCleaner
+- Fixed: Fixed various crashes when running the accessibility service.
+- Fixed: Crash when changing AppCleaner settings.
 
 ## SD Maid [v5.5.6](https://github.com/d4rken/sdmaid-public/milestone/178?closed=1) 17.11.2022
 ### Core
