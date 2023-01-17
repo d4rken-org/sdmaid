@@ -1,7 +1,12 @@
 # Changelog
-- Latest production version: v5.5.7(50507), Unlocker v4.5.0(40500)
+- Latest production version: v5.5.8(50508), Unlocker v4.5.0(40500)
 - Latest beta version: 🎄
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.5.8 17.01.2023
+### Core
+- Fixed: Some website URLs
+- Removed: `REQUEST_INSTALL_PACKAGES` permission, Google says SD Maid is not allowed to have this permission. I argued, I appealed, but they didn't budge 😢.
 
 ## SD Maid v5.5.7 05.12.2022
 ### Core
