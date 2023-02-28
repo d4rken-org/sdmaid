@@ -1,7 +1,16 @@
 # Changelog
 - Latest production version: v5.5.8(50508), Unlocker v4.5.0(40500)
-- Latest beta version: 🎄
+- Latest beta version: v5.5.9(50509)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.5.9 28.02.2023
+### Core
+- Improved: Improved translations.
+- Improved: Clutter database.
+
+### AppCleaner
+- Added: Support for MIUI 14 based devices (Redmi, Mi, Poco).
+- Improved: Filters for hidden caches.
 
 ## SD Maid v5.5.8 17.01.2023
 ### Core
