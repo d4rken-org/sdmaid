@@ -1,7 +1,16 @@
 # Changelog
 - Latest production version: v5.5.9(50509), Unlocker v4.5.0(40500)
-- Latest beta version: ~
+- Latest beta version: v5.5.10(50510)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.5.10 05.07.2023
+### Core
+- Improved: Translations.
+- Improved: Updated internal dependencies.
+- Fixed: Various small UI issues.
+- Added: Small hint about SD Maid SE.
+- Fixed: Issue with Google Play billing SDK.
+- Fixed: Issue with Android TV compliance.
 
 ## SD Maid v5.5.9 28.02.2023
 ### Core
