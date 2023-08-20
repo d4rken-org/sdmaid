@@ -1,7 +1,16 @@
 # Changelog
-- Latest production version: v5.5.10(50510), Unlocker v4.5.0(40500)
-- Latest beta version: 🤗
+- Latest production version: v5.5.10(50510), Unlocker v5.6.0(50600)
+- Latest beta version: v5.6.0(50600)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.6.0 20.08.2023
+### Core
+- Improved: Support for Android 12 and 13.
+- Improved: Setup on Android 13.
+- Fixed: Google requirement so App stays available on Android 13.
+   
+### Exporer
+- Added: Sort-reverse is now being remembered.
 
 ## SD Maid v5.5.10 05.07.2023
 ### Core
