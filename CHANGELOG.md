@@ -3,7 +3,7 @@
 - Latest beta version: v5.6.1(50600)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
-## SD Maid v5.6.1 ?
+## SD Maid v5.6.1 09.09.2023
 ### Core
 - Added: Info during setup about potential compatibility issues with Android 13+ and link to SD Maid 2.
 - Added: Notification permission setup for Android 13+.
