@@ -1,12 +1,15 @@
 # Changelog
 - Latest production version: v5.5.10(50510), Unlocker v5.6.0(50600)
-- Latest beta version: v5.6.0(50600)
+- Latest beta version: v5.6.1(50600)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
 ## SD Maid v5.6.1 ?
 ### Core
-- Added: Hint about potential compatibility issues with Android 13+ and link to SD Maid 2.
+- Added: Info during setup about potential compatibility issues with Android 13+ and link to SD Maid 2.
 - Added: Notification permission setup for Android 13+.
+- Changed: Some upgrade related texts and UI components.
+- Changed: Updated bug tracking code and dependencies.
+- Removed: Delcared SUPERUSER permission, this was a remnant from older SuperSU days and is unused with Magisk.
 
 ## SD Maid v5.6.0 20.08.2023
 ### Core
