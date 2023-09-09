@@ -11,6 +11,9 @@
 - Changed: Updated bug tracking code and dependencies.
 - Removed: Delcared SUPERUSER permission, this was a remnant from older SuperSU days and is unused with Magisk.
 
+### AppCleaner
+- Improved: Android 13 compatibility.
+
 ## SD Maid v5.6.0 20.08.2023
 ### Core
 - Improved: Support for Android 12 and 13.
