@@ -1,5 +1,5 @@
 # Changelog
-- Latest production version: v5.5.10(50510), Unlocker v5.6.0(50600)
+- Latest production version: v5.5.10(50510), Unlocker v5.6.1(50601)
 - Latest beta version: v5.6.1(50600)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
 
