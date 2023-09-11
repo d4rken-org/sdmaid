@@ -42,6 +42,12 @@ Upon launch, SD Maid will tell my server its version and in return get told if t
 There are quite a few people who use SD Maid without Google Play and this allows them know about updates without manually checking.
 The update check transmits your SD Maid and Android version.
 
+## License check
+
+If you bought a license/serial key and use that to unlock SD Maid, then SD Maid communicates with apps.darken.eu to verify the license. To do so it sends the license key, your Android version, SD Maid version and what type of device you have (e.g. Samsung S22) to my server.
+
+The privacy policy for apps.darken.eu can be found here: https://apps.darken.eu/privacy
+
 ## Clutter reports
 
 The ClutterReporter is a manual tool inside the Explorer and CorpseFinder. It allows you to tell me about false results or report files/directories that SD Maid doesn't know. You use it to tell me to which app a file or directory belongs. I regularly review these reports and improve SD Maids databases accordingly.
