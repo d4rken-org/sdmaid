@@ -22,6 +22,8 @@ SD Maid does not use the AccessibilityService API to collect, send or transmit i
 
 ## Automatic crash reports
 
+*Removed in v5.6.1*
+
 Anonymous device information may be collected in the event of an app crash or error.
 
 To do this the app uses the service "Bugsnag":
