@@ -1,7 +1,14 @@
 # Changelog
-- Latest production version: v5.6.1(50600), Unlocker v5.6.1(50601)
-- Latest beta version: 👋
+- Latest production version: v5.6.1(50601), Unlocker v5.6.1(50601)
+- Latest beta version: v5.6.2(506012)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.6.2 09.10.2023
+### Core
+- Changed: Prepared the access key based upgrade system for a future deprecation of apps.darken.eu. Access keys will keep working of course, but the website will not be available anymore at some point.
+
+### CorpseFinder
+- Removed: Disabled the corpse filter for `/data/app` on Android 14+ due to false-positive results, use SD Maid 2/SE on Android 13+.  
 
 ## SD Maid v5.6.1 09.09.2023
 ### Core
