@@ -1,7 +1,11 @@
 # Changelog
 - Latest production version: v5.6.2(506012), Unlocker v5.6.1(50601)
-- Latest beta version: 🧑‍🔬
+- Latest beta version: v5.6.3(506013)
 - Legacy versions: [v4.15.15](changelogV4.md), [v3.1.5.4](changelogV3.txt), [v2.1.4.1](changelogV2.txt), [v0.9.8.9](changelogV1.txt).
+
+## SD Maid v5.6.3 28.11.2023
+### CorpseFinder
+- Changed: Some root related corpse detections have been disabled on Android 14+ due to risk of false-positives, use SD Maid 2/SE on Android 13+. 
 
 ## SD Maid v5.6.2 09.10.2023
 ### Core
