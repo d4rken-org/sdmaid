@@ -13,12 +13,12 @@ SD Maid is an Android app that helps you manage files and apps.
 ## Download
 ### Production
 - [SD Maid - Google Play](https://play.google.com/store/apps/details?id=eu.thedarken.sdm)
-- [SD Maid - darken's server](http://sdmaid.darken.eu/download)
+- [SD Maid - GitHub](https://github.com/d4rken-org/sdmaid/releases)
 - [Pro Version Unlocker - Google Play](https://play.google.com/store/apps/details?id=eu.thedarken.sdm.unlocker)
 
 ### Beta
 - [SD Maid - Google Play](https://play.google.com/apps/testing/eu.thedarken.sdm)
-- [SD Maid - darken's server](http://sdmaid.darken.eu/download)
+- [SD Maid - GitHub](https://github.com/d4rken-org/sdmaid/releases)
 - [Pro Version Unlocker - Google Play](https://play.google.com/apps/testing/eu.thedarken.sdm.unlocker)
 
 ## Help
