@@ -22,13 +22,13 @@ SD Maid is an Android app that helps you manage files and apps.
 - [Pro Version Unlocker - Google Play](https://play.google.com/apps/testing/eu.thedarken.sdm.unlocker)
 
 ## Help
-[Help can be found here](http://sdmaid.darken.eu/help).
+[Help can be found here](https://github.com/d4rken-org/sdmaid/wiki).
 
 ## Changelog
 [Changelog](CHANGELOG.md)
 
 ## Translation
-If you would like to help translate SD Maid, [look here](http://sdmaid.darken.eu/translation).
+If you would like to help translate SD Maid, [look here](https://crowdin.com/project/sdmaid).
 
 ## Report a bug / Request a feature
-The prefered way to report a bug or request features is through the [issue tracker](http://sdmaid.darken.eu/issues).
+The prefered way to report a bug or request features is through the [issue tracker](https://github.com/d4rken-org/sdmaid/issues).
