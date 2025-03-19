@@ -1,6 +1,12 @@
+---
+layout: plain
+permalink: /privacy
+title: "Privacy Policy"
+---
+
 # Privacy policy
 
-This is the privacy policy for the Android app "SD Maid - System Cleaning Tool".
+This is the privacy policy for the Android app "SD Maid - System Cleaning Tool" by Matthias Urhahn (darken).
 
 ## Preamble
 
