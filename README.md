@@ -1,7 +1,5 @@
 # SD Maid
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/sdmaid/localized.svg)](https://crowdin.com/project/sdmaid)
-
 SD Maid is an Android app that helps you manage files and apps.
 
 > **SD Maid has a successor called [SD Maid 2/SE](https://play.google.com/store/apps/details?id=eu.darken.sdmse).**
