@@ -25,8 +25,5 @@ SD Maid is an Android app that helps you manage files and apps.
 ## Changelog
 [Changelog](CHANGELOG.md)
 
-## Translation
-If you would like to help translate SD Maid, [look here](https://crowdin.com/project/sdmaid).
-
 ## Report a bug / Request a feature
 The prefered way to report a bug or request features is through the [issue tracker](https://github.com/d4rken-org/sdmaid/issues).
