@@ -1,0 +1,16 @@
+theme: minima
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+
+title: "SD Maid"
+description: "An Android app that helps you manage files and apps."
+author: "by Matthias Urhahn"
+
+include:
+  - PRIVACY_POLICY.md
+exclude:
+  - CHANGELOG.md
+  - changelogV*
