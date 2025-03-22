@@ -1,3 +1,9 @@
+---
+layout: plain
+permalink: /changelog
+title: "Changelog"
+---
+
 # Changelog
 - Latest production version: v5.6.3(506013), Unlocker v5.6.1(50601)
 - Latest beta version: 🎅
