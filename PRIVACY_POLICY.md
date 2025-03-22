@@ -6,7 +6,7 @@ title: "Privacy Policy"
 
 # Privacy policy
 
-This is the privacy policy for the Android app "SD Maid - System Cleaning Tool" by Matthias Urhahn (darken).
+This is the privacy policy for the Android app "SD Maid 1 - System Cleaner" by Matthias Urhahn (darken).
 
 ## Preamble
 
@@ -49,6 +49,8 @@ There are quite a few people who use SD Maid without Google Play and this allows
 The update check transmits your SD Maid and Android version.
 
 ## License check
+
+**Removed since v5.6.3**
 
 If you bought a license/serial key and use that to unlock SD Maid, then SD Maid communicates with apps.darken.eu to verify the license. To do so it sends the license key, your Android version, SD Maid version and what type of device you have (e.g. Samsung S22) to my server.
 
