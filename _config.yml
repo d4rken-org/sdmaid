@@ -11,6 +11,6 @@ author: "by Matthias Urhahn"
 
 include:
   - PRIVACY_POLICY.md
-exclude:
   - CHANGELOG.md
+exclude:
   - changelogV*
